@@ -328,13 +328,13 @@ class PublicationStateTests(unittest.TestCase):
     def structured_result(publication: Publication) -> dict:
         return {
             "id": publication_identity(publication),
-            "title": publication.title,
+            "title": {"pt": "Título controlado", "en": publication.title},
             "source": "OpenAI News",
             "published_at": publication.published_at.isoformat(),
-            "categories": list(publication.categories),
-            "objective_summary": "Resumo objetivo.",
-            "main_novelty": "Principal novidade.",
-            "relevance_reason": "Motivo da relevância.",
+            "categories": {"pt": ["Pesquisa"], "en": list(publication.categories)},
+            "objective_summary": {"pt": "Resumo objetivo.", "en": "Objective summary."},
+            "main_novelty": {"pt": "Principal novidade.", "en": "Main novelty."},
+            "relevance_reason": {"pt": "Motivo da relevância.", "en": "Relevance reason."},
             "original_url": publication.url,
         }
 
@@ -518,15 +518,15 @@ class ConsumptionOutputTests(unittest.TestCase):
     @staticmethod
     def persisted_record(identity: str, title: str, published_at: str) -> dict:
         return {
-            "schema_version": 1,
+            "schema_version": 2,
             "id": identity,
-            "title": title,
+            "title": {"pt": title, "en": title},
             "source": "OpenAI News",
             "published_at": published_at,
-            "categories": ["Research"],
-            "objective_summary": f"Resumo de {title}.",
-            "main_novelty": f"Novidade de {title}.",
-            "relevance_reason": f"Relevância de {title}.",
+            "categories": {"pt": ["Pesquisa"], "en": ["Research"]},
+            "objective_summary": {"pt": f"Resumo de {title}.", "en": f"Summary of {title}."},
+            "main_novelty": {"pt": f"Novidade de {title}.", "en": f"Novelty of {title}."},
+            "relevance_reason": {"pt": f"Relevância de {title}.", "en": f"Relevance of {title}."},
             "original_url": f"https://openai.com/index/{identity}",
             "processed_at": "2026-09-04T12:00:00+00:00",
         }
@@ -538,7 +538,7 @@ class ConsumptionOutputTests(unittest.TestCase):
 
             payload = build_consumption_output(root / ".radaria" / "state.json", output_path)
 
-            self.assertEqual(payload, {"contract_version": "1.0", "items": []})
+            self.assertEqual(payload, {"contract_version": "2.0", "items": []})
             self.assertEqual(
                 json.loads(output_path.read_text(encoding="utf-8")), payload
             )

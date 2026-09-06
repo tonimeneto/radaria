@@ -58,7 +58,9 @@ Preserve título, fonte, data, categorias e URL obtidos da fonte.
 
 Se irrelevante, crie `.radaria/decision-to-save.json` com `id`, `title`, `source`, `published_at`, `categories`, `original_url`, `relevant: false`, `related_topics` e `reason`. Execute `python radaria.py --discard-publication .radaria/decision-to-save.json`, remova o temporário e prossiga. Não gere conhecimento.
 
-Se relevante, gere no idioma original um resumo factual e conciso que responda ao que aconteceu, ao que há de novo e por que pode importar. Crie `.radaria/result-to-save.json` com `id`, `title`, `source`, `published_at`, `categories`, `original_url`, `objective_summary`, `main_novelty` e `relevance_reason`.
+Se relevante, faça uma única análise do conteúdo e produza na mesma etapa versões semanticamente equivalentes em português natural do Brasil e inglês natural. Preserve nomes próprios, produtos, frameworks, padrões, siglas e termos técnicos normalmente usados em inglês. Não execute pesquisas ou análises independentes por idioma.
+
+Crie `.radaria/result-to-save.json` com `id`, `source`, `published_at` e `original_url` como strings únicas. Use objetos com exatamente as chaves `pt` e `en` em `title`, `objective_summary`, `main_novelty` e `relevance_reason`. Use em `categories` um objeto com `pt` e `en`, cada qual contendo uma lista semanticamente equivalente. Os dois idiomas devem comunicar a mesma informação, com diferenças apenas linguísticas.
 
 Execute `python radaria.py --save-result .radaria/result-to-save.json`, remova o temporário e prossiga. Esse comando persiste o conhecimento, atualiza `output/radaria.json` e só então confirma o item no estado.
 

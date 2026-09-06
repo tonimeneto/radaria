@@ -29,9 +29,9 @@ USER_AGENT = "RadarIA/0.1 (+local functional proof)"
 TIMEOUT_SECONDS = 30
 STATE_PATH = Path(__file__).resolve().parent / ".radaria" / "state.json"
 STATE_VERSION = 1
-RESULT_SCHEMA_VERSION = 1
+RESULT_SCHEMA_VERSION = 2
 DISCARD_SCHEMA_VERSION = 1
-OUTPUT_CONTRACT_VERSION = "1.0"
+OUTPUT_CONTRACT_VERSION = "2.0"
 OUTPUT_PATH = Path(__file__).resolve().parent / "output" / "radaria.json"
 
 
@@ -688,12 +688,8 @@ def validate_persisted_record(record: dict) -> None:
 def validate_result(result: dict) -> None:
     string_fields = (
         "id",
-        "title",
         "source",
         "published_at",
-        "objective_summary",
-        "main_novelty",
-        "relevance_reason",
         "original_url",
     )
     if any(
@@ -701,12 +697,27 @@ def validate_result(result: dict) -> None:
         for field in string_fields
     ):
         raise RuntimeError("O resultado estruturado está incompleto.")
+    for field in ("title", "objective_summary", "main_novelty", "relevance_reason"):
+        localized = result.get(field)
+        if not isinstance(localized, dict) or set(localized) != {"pt", "en"}:
+            raise RuntimeError(f"O campo bilíngue {field} é inválido.")
+        if any(
+            not isinstance(localized.get(language), str)
+            or not localized[language].strip()
+            for language in ("pt", "en")
+        ):
+            raise RuntimeError(f"O campo bilíngue {field} está incompleto.")
+
     categories = result.get("categories")
-    if not isinstance(categories, list) or any(
-        not isinstance(category, str) or not category.strip()
-        for category in categories
-    ):
-        raise RuntimeError("As categorias do resultado são inválidas.")
+    if not isinstance(categories, dict) or set(categories) != {"pt", "en"}:
+        raise RuntimeError("As categorias bilíngues do resultado são inválidas.")
+    for language in ("pt", "en"):
+        values = categories[language]
+        if not isinstance(values, list) or any(
+            not isinstance(category, str) or not category.strip()
+            for category in values
+        ):
+            raise RuntimeError("As categorias bilíngues do resultado são inválidas.")
 
 
 def validate_discard(decision: dict) -> None:
@@ -802,13 +813,13 @@ def persist_result(
         record = {
             "schema_version": RESULT_SCHEMA_VERSION,
             "id": identity,
-            "title": result["title"].strip(),
+            "title": {language: result["title"][language].strip() for language in ("pt", "en")},
             "source": result["source"].strip(),
             "published_at": result["published_at"].strip(),
-            "categories": [category.strip() for category in result["categories"]],
-            "objective_summary": result["objective_summary"].strip(),
-            "main_novelty": result["main_novelty"].strip(),
-            "relevance_reason": result["relevance_reason"].strip(),
+            "categories": {language: [category.strip() for category in result["categories"][language]] for language in ("pt", "en")},
+            "objective_summary": {language: result["objective_summary"][language].strip() for language in ("pt", "en")},
+            "main_novelty": {language: result["main_novelty"][language].strip() for language in ("pt", "en")},
+            "relevance_reason": {language: result["relevance_reason"][language].strip() for language in ("pt", "en")},
             "original_url": result["original_url"].strip(),
             "processed_at": (processed_at or datetime.now(timezone.utc)).isoformat(),
         }
@@ -843,16 +854,16 @@ def print_latest_post(payload: dict) -> None:
         print("RadarIA — nenhuma novidade disponível para consumo.")
         return
     item = items[0]
-    categories = ", ".join(item["categoria"]) or "Não informada"
+    categories = ", ".join(item["categoria"]["pt"]) or "Não informada"
     print("RadarIA — item mais recente")
     print("=" * 28)
-    print(f"Título: {item['titulo']}")
+    print(f"Título: {item['titulo']['pt']}")
     print(f"Fonte: {item['fonte']}")
     print(f"Data: {item['data']}")
     print(f"Categoria: {categories}")
-    print(f"Resumo: {item['resumo']}")
-    print(f"Principal novidade: {item['novidade_principal']}")
-    print(f"Relevância: {item['relevancia']}")
+    print(f"Resumo: {item['resumo']['pt']}")
+    print(f"Principal novidade: {item['novidade_principal']['pt']}")
+    print(f"Relevância: {item['relevancia']['pt']}")
     print(f"Link original: {item['url']}")
 
 
