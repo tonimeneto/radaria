@@ -1,0 +1,8 @@
+.radaria/
+__pycache__/
+*.pyc
+*.pyo
+*.tmp
+.env
+.env.*
+!.env.example
