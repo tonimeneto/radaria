@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>GitHub Copilot Changelog</title>
+    <item>
+      <title>Nova opção para coding agents</title>
+      <link>https://github.blog/changelog/2026-09-04-new-coding-agent-option</link>
+      <guid>https://github.blog/changelog/2026-09-04-new-coding-agent-option</guid>
+      <pubDate>Fri, 04 Sep 2026 18:59:51 +0000</pubDate>
+      <category>Release</category>
+      <category>copilot</category>
+    </item>
+  </channel>
+</rss>

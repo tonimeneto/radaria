@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>GitHub Copilot Blog</title>
+    <item>
+      <title>Orquestração de agentes no Copilot</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/agent-orchestration/</link>
+      <guid>https://github.blog/?p=12345</guid>
+      <pubDate>Fri, 04 Sep 2026 16:04:14 +0000</pubDate>
+      <category>AI &amp; ML</category>
+      <category>GitHub Copilot</category>
+    </item>
+  </channel>
+</rss>

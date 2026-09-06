@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>OpenAI News</title>
+    <item>
+      <title>Documento externo mais recente</title>
+      <link>https://deploymentsafety.openai.com/external-document</link>
+      <guid>https://deploymentsafety.openai.com/external-document</guid>
+      <category>Safety</category>
+      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Publicação editorial esperada</title>
+      <link>https://openai.com/index/expected-publication</link>
+      <guid>https://openai.com/index/expected-publication</guid>
+      <category>Research</category>
+      <category>Product</category>
+      <pubDate>Thu, 03 Sep 2026 11:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Publicação editorial anterior</title>
+      <link>https://openai.com/index/older-publication</link>
+      <guid>https://openai.com/index/older-publication</guid>
+      <category>Company</category>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
