@@ -140,6 +140,43 @@
       "processado_em": "2026-09-06T20:12:40.343870+00:00"
     },
     {
+      "id": "url:https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber",
+      "titulo": {
+        "pt": "Apresentando Gemini 3.8 Flash e 3.8 Flash Cyber",
+        "en": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
+      },
+      "fonte": "Google",
+      "data": "2026-09-02T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos",
+          "Engenharia de software",
+          "IA agêntica",
+          "Cibersegurança"
+        ],
+        "en": [
+          "Models",
+          "Software engineering",
+          "Agentic AI",
+          "Cybersecurity"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google lançou o Gemini 3.8 Flash, voltado a coding de longo horizonte e agentes autônomos, e o Gemini 3.8 Flash Cyber, especializado em descoberta de vulnerabilidades e correção automatizada. Os modelos combinam maior diligência em raciocínio e chamadas iterativas de ferramentas com melhorias de robustez contra prompt injection.",
+        "en": "Google released Gemini 3.8 Flash for long-horizon coding and autonomous agents, and Gemini 3.8 Flash Cyber for vulnerability discovery and automated remediation. The models combine more diligent reasoning and iterative tool calls with improved prompt-injection robustness."
+      },
+      "novidade_principal": {
+        "pt": "A família 3.8 aplica loops agênticos longos para avaliar e refinar modelos; a variante Flash supera modelos maiores em tarefas autônomas de engenharia de software, enquanto a Cyber alcança desempenho de fronteira em descoberta e patching de vulnerabilidades e fica restrita a defensores confiáveis.",
+        "en": "The 3.8 family uses long-running agentic loops to evaluate and refine models; Flash outperforms larger models on autonomous software-engineering tasks, while Cyber reaches frontier-level vulnerability discovery and patching performance and is restricted to trusted defenders."
+      },
+      "relevancia": {
+        "pt": "É diretamente aplicável à seleção de modelos para agentes de programação, ao desenho de loops com ferramentas e à governança de capacidades cibernéticas, além de oferecer evidência prática sobre o equilíbrio entre desempenho, custo, esforço de raciocínio e segurança.",
+        "en": "It directly informs model selection for coding agents, tool-using loop design, and governance of cyber capabilities, while providing practical evidence about tradeoffs among performance, cost, reasoning effort, and safety."
+      },
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "processado_em": "2026-09-07T14:38:05.080998+00:00"
+    },
+    {
       "id": "url:https://anthropic.com/news/enterprise-frontier-safeguards",
       "titulo": {
         "pt": "Desenvolvendo salvaguardas empresariais de fronteira com nossos clientes",
