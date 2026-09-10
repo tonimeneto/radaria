@@ -2,6 +2,243 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-08-26-enterprise-managed-permissions-for-github-copilot-agent-operations",
+      "titulo": {
+        "pt": "Permissões gerenciadas pela empresa para operações do agente GitHub Copilot",
+        "en": "Enterprise managed permissions for GitHub Copilot agent operations"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-09T20:08:14+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "aplicativos cliente",
+          "Copilot",
+          "ferramentas de gestão empresarial"
+        ],
+        "en": [
+          "Improvement",
+          "client apps",
+          "Copilot",
+          "enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "Administradores do GitHub Copilot Business e Enterprise agora podem definir centralmente quais operações de agentes são bloqueadas, exigem aprovação humana ou podem prosseguir sem confirmação. As políticas abrangem comandos de shell, leitura e edição de arquivos e domínios de rede, com regras específicas por equipe.",
+        "en": "GitHub Copilot Business and Enterprise administrators can now centrally define which agent operations are blocked, require human approval, or may proceed without confirmation. Policies cover shell commands, file reads and edits, and network domains, with team-specific rules."
+      },
+      "novidade_principal": {
+        "pt": "As restrições corporativas passam a prevalecer sobre configurações do usuário e do workspace, autoaprovação e aprovações previamente salvas, criando guardrails não contornáveis para sessões baseadas no Agent Host.",
+        "en": "Enterprise restrictions now override user and workspace settings, auto-approval, and previously saved approvals, creating non-bypassable guardrails for Agent Host-based sessions."
+      },
+      "relevancia": {
+        "pt": "A novidade oferece um mecanismo prático de governança e segurança para adoção de agentes de programação em organizações, conciliando autonomia operacional com políticas centralizadas, segmentação por equipe e aprovação humana baseada em risco.",
+        "en": "This provides a practical governance and security mechanism for adopting coding agents in organizations, combining operational autonomy with centralized policies, team segmentation, and risk-based human approval."
+      },
+      "url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations",
+      "processado_em": "2026-09-10T13:45:29.213344+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/ai-policy-window",
+      "titulo": {
+        "pt": "A janela para políticas de IA está aberta. Precisamos agir.",
+        "en": "The AI policy window is open. We need to act."
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-09T13:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Assuntos globais"
+        ],
+        "en": [
+          "Global Affairs"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI defende requisitos nacionais obrigatórios e proporcionais à capacidade para IA de fronteira, combinados com avaliações independentes, padrões de auditoria, reporte de incidentes e critérios compartilhados para desacelerar ou interromper o desenvolvimento quando as salvaguardas forem insuficientes.",
+        "en": "OpenAI advocates mandatory, capability-proportional national requirements for frontier AI, combined with independent assessments, audit standards, incident reporting, and shared criteria for slowing or stopping development when safeguards are insufficient."
+      },
+      "novidade_principal": {
+        "pt": "A abordagem conecta governança externa a controles técnicos no ciclo de desenvolvimento: isolamento reforçado de workloads de pesquisa, monitoramento do comportamento durante treino e evals com tools, monitoramento universal de trajetórias completas e um gate obrigatório de avaliação de alinhamento antes de uma implantação interna mais ampla.",
+        "en": "The approach connects external governance to technical controls in the development lifecycle: stronger isolation for research workloads, behavior monitoring during tool-enabled training and evals, universal monitoring of full trajectories, and a mandatory alignment-evaluation gate before broader internal deployment."
+      },
+      "relevancia": {
+        "pt": "O conteúdo oferece padrões concretos para governança de sistemas agênticos e modelos avançados: controles baseados em capacidade, supervisão humana significativa, monitoramento de execução ponta a ponta, gates de validação e critérios explícitos de parada.",
+        "en": "The content provides concrete patterns for governing agentic systems and advanced models: capability-based controls, meaningful human oversight, end-to-end execution monitoring, validation gates, and explicit stop criteria."
+      },
+      "url": "https://openai.com/index/ai-policy-window",
+      "processado_em": "2026-09-10T13:46:59.846159+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/gpt-6-astra-next-generation-work",
+      "titulo": {
+        "pt": "GPT-6 Astra: a próxima geração de inteligência para o trabalho",
+        "en": "GPT-6 Astra: The next generation in intelligence for work"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-09T11:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Produto"
+        ],
+        "en": [
+          "Product"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI disponibilizou o GPT-6 Astra no ChatGPT Work, Codex e API, com avanços em software engineering, computer use, browsing, cibersegurança, coordenação multiagente, eficiência por tarefa e aderência à intenção e à autorização humanas.",
+        "en": "OpenAI made GPT-6 Astra available in ChatGPT Work, Codex, and the API, with advances in software engineering, computer use, browsing, cybersecurity, multi-agent coordination, per-task efficiency, and adherence to human intent and authorization."
+      },
+      "novidade_principal": {
+        "pt": "O modelo alcançou 57,9% no Terminal-Bench 4.0 e 74% no DeepSWE v1.1, melhorou em 20% o pass rate de workflows agênticos de mais de cinco horas em uma avaliação externa e reduziu resultados não intencionais em computer use em 89% frente ao GPT-5.6 Sol; confirmações e revisão automatizada elevaram ainda mais a segurança.",
+        "en": "The model reached 57.9% on Terminal-Bench 4.0 and 74% on DeepSWE v1.1, improved the pass rate of agentic workflows longer than five hours by 20% in an external evaluation, and reduced unintended computer-use outcomes by 89% versus GPT-5.6 Sol; confirmations and automated review further improved safety."
+      },
+      "relevancia": {
+        "pt": "A combinação de melhor desempenho em tarefas longas de engenharia, menos chamadas de inferência, revisão de código com raciocínio entre arquivos e controles graduais de acesso fornece evidências e padrões úteis para selecionar modelos e projetar agentes confiáveis.",
+        "en": "The combination of stronger performance on long-running engineering tasks, fewer inference calls, cross-file code-review reasoning, and gradual access controls provides useful evidence and patterns for model selection and reliable agent design."
+      },
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "processado_em": "2026-09-10T13:48:02.792837+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains",
+      "titulo": {
+        "pt": "Sandbox gerenciado pela empresa no Copilot para JetBrains",
+        "en": "Enterprise-managed sandbox in Copilot for JetBrains"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-09T02:43:38+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot",
+          "ferramentas de gestão empresarial"
+        ],
+        "en": [
+          "Release",
+          "Copilot",
+          "enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub Copilot para JetBrains adicionou políticas corporativas de sandbox, contexto global de projeto, diagnóstico de políticas, integração entre sessões do Copilot CLI e a IDE, seleção de modelos para subagentes e melhorias de confiabilidade em MCP e sessões agênticas.",
+        "en": "GitHub Copilot for JetBrains added enterprise sandbox policies, global project context, policy diagnostics, integration between Copilot CLI sessions and the IDE, model selection for subagents, and reliability improvements across MCP and agent sessions."
+      },
+      "novidade_principal": {
+        "pt": "Administradores podem impor limites de filesystem, rede, proxy, ferramentas de desenvolvimento e Keychain que prevalecem sobre preferências do usuário; ao mesmo tempo, o comando /ide conecta sessões de terminal a seleções, diagnósticos e referências de arquivos da IDE.",
+        "en": "Administrators can enforce filesystem, network, proxy, developer-tool, and Keychain boundaries that override user preferences; meanwhile, the /ide command connects terminal sessions to IDE selections, diagnostics, and file references."
+      },
+      "relevancia": {
+        "pt": "A atualização reúne padrões diretamente aplicáveis a agentes de programação corporativos: sandbox centralizado, verificação da aplicação de políticas, compartilhamento explícito de contexto entre superfícies, escolha de modelo por subagente e observabilidade via OpenTelemetry.",
+        "en": "The update combines patterns directly applicable to enterprise coding agents: centralized sandboxing, policy-enforcement verification, explicit context sharing across surfaces, per-subagent model selection, and OpenTelemetry observability."
+      },
+      "url": "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains",
+      "processado_em": "2026-09-10T13:48:49.765421+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond",
+      "titulo": {
+        "pt": "Anúncio do ADK para Kotlin 1.0: construindo agentes de IA prontos para produção em Kotlin, Android e além",
+        "en": "Announcing ADK for Kotlin 1.0: Building Production-Ready AI Agents in Kotlin, Android, and Beyond"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-09-09T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agent Development Kit",
+          "Kotlin",
+          "Android",
+          "sistemas multiagentes"
+        ],
+        "en": [
+          "Agent Development Kit",
+          "Kotlin",
+          "Android",
+          "multi-agent systems"
+        ]
+      },
+      "resumo": {
+        "pt": "O Agent Development Kit para Kotlin 1.0 chega à disponibilidade geral com paridade ao ADK Core, núcleo Kotlin Multiplatform independente de modelo, orquestração multiagente, compactação de contexto, HITL, tools tipadas, sessões retomáveis e extensões Android on-device e híbridas.",
+        "en": "Agent Development Kit for Kotlin 1.0 reaches general availability with ADK Core parity, a model-agnostic Kotlin Multiplatform core, multi-agent orchestration, context compaction, HITL, typed tools, resumable sessions, and on-device and hybrid Android extensions."
+      },
+      "novidade_principal": {
+        "pt": "A versão combina geração de schemas de function calling em tempo de compilação via KSP, sem reflection em runtime, com skills carregadas sob demanda por progressive disclosure e persistência de sessão e memória que sobrevive a reinícios de processo.",
+        "en": "The release combines compile-time function-calling schema generation through KSP, without runtime reflection, with skills loaded on demand through progressive disclosure and session and memory persistence that survives process restarts."
+      },
+      "relevancia": {
+        "pt": "O kit oferece uma arquitetura concreta para agentes de produção em JVM e Android, cobrindo coordenação hierárquica, estado, memória, controle humano de ações sensíveis, tools type-safe e execução local, cloud ou híbrida.",
+        "en": "The toolkit offers a concrete production-agent architecture for JVM and Android, covering hierarchical coordination, state, memory, human control of sensitive actions, type-safe tools, and local, cloud, or hybrid execution."
+      },
+      "url": "https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/",
+      "processado_em": "2026-09-10T13:50:23.729363+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents",
+      "titulo": {
+        "pt": "A anatomia de Harness Engineering: como avaliar, iterar e proteger agentes de programação com IA",
+        "en": "The Anatomy of Harness Engineering: How to Evaluate, Iterate, and Guard AI Coding Agents"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-09-09T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Harness engineering",
+          "evals comportamentais",
+          "agentes de programação"
+        ],
+        "en": [
+          "Harness engineering",
+          "behavioral evals",
+          "coding agents"
+        ]
+      },
+      "resumo": {
+        "pt": "O artigo propõe complementar benchmarks end-to-end com evals comportamentais que verificam ações intermediárias observáveis dos agentes, como pedir esclarecimento diante de ambiguidade, executar validadores locais e produzir links canônicos.",
+        "en": "The article proposes complementing end-to-end benchmarks with behavioral evals that verify observable intermediate agent actions, such as asking for clarification under ambiguity, running local validators, and producing canonical links."
+      },
+      "novidade_principal": {
+        "pt": "Evals comportamentais são tratadas como testes unitários e de integração do harness: checks rápidos e determinísticos sobre tool calls e modificações de arquivos formam uma barreira de regressão para mudanças de prompt, schema de tools ou modelo e podem sustentar loops automatizados de otimização de prompts.",
+        "en": "Behavioral evals are treated as unit and integration tests for the harness: fast, deterministic checks over tool calls and file modifications form a regression barrier for prompt, tool-schema, or model changes and can support automated prompt-optimization loops."
+      },
+      "relevancia": {
+        "pt": "A técnica transforma falhas reais de agentes em casos de teste pequenos e explicáveis, permitindo evolução segura do harness sem depender apenas de uma pontuação agregada que não revela por que o comportamento melhorou ou regrediu.",
+        "en": "The technique turns real agent failures into small, explainable test cases, enabling safe harness evolution without relying only on an aggregate score that does not reveal why behavior improved or regressed."
+      },
+      "url": "https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/",
+      "processado_em": "2026-09-10T13:49:35.808654+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/codex-quantum-computing-experiments",
+      "titulo": {
+        "pt": "Como o GPT-5.6 Sol ajuda a executar experimentos de computação quântica",
+        "en": "How GPT-5.6 Sol helps run quantum computing experiments"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-08T17:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "IA aplicada"
+        ],
+        "en": [
+          "Applied AI"
+        ]
+      },
+      "resumo": {
+        "pt": "Um agente Codex com GPT-5.6 Sol foi conectado ao software de laboratório para escolher parâmetros, operar hardware, analisar medições e adaptar etapas seguintes na calibração de chips quânticos, executando fluxos rotineiros por horas com pouca supervisão.",
+        "en": "A Codex agent using GPT-5.6 Sol was connected to laboratory software to choose parameters, operate hardware, analyze measurements, and adapt subsequent steps in quantum-chip calibration, running routine workflows for hours with little supervision."
+      },
+      "novidade_principal": {
+        "pt": "Skills específicas de medição deram ao agente procedimentos para executar e avaliar experimentos interdependentes; ele conseguiu fechar autonomamente o loop entre ação física, análise de dados e decisão, embora sinais fracos ou ruidosos ainda exigissem orientação especializada.",
+        "en": "Measurement-specific skills gave the agent procedures for running and evaluating interdependent experiments; it autonomously closed the loop between physical action, data analysis, and decision-making, although weak or noisy signals still required expert guidance."
+      },
+      "relevancia": {
+        "pt": "O caso demonstra uma arquitetura híbrida útil para automação agêntica: skills procedurais, tools conectadas ao mundo físico, execução longa, feedback do ambiente e escalonamento humano quando a evidência fica ambígua.",
+        "en": "The case demonstrates a useful hybrid architecture for agentic automation: procedural skills, tools connected to the physical world, long-running execution, environmental feedback, and human escalation when evidence becomes ambiguous."
+      },
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "processado_em": "2026-09-10T13:51:28.409191+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/an-alien-mind",
       "titulo": {
         "pt": "Uma mente alienígena",
