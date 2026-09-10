@@ -12,6 +12,7 @@ from radaria import (
     build_collected_publication,
     extract_editorial_content,
     extract_anthropic_structured_content,
+    extract_publication_content,
     google_developer_publication,
     google_publications,
     github_publications,
@@ -217,6 +218,37 @@ class GooglePublicationTests(unittest.TestCase):
                 "Primeiro bloco DeepMind.",
                 "Detalhes do modelo",
                 "Segundo bloco DeepMind.",
+            ],
+        )
+
+    def test_extracts_deepmind_body_from_new_main_layout(self) -> None:
+        publication = Publication(
+            title="Nova publicaÃ§Ã£o DeepMind",
+            url="https://deepmind.google/blog/new-layout/",
+            published_at=datetime(2026, 9, 8, tzinfo=timezone.utc),
+            categories=("Research",),
+            source="Google DeepMind",
+        )
+        html = """
+        <main>
+          <h1>Nova publicaÃ§Ã£o DeepMind</h1>
+          <p>Primeiro bloco editorial.</p>
+          <h2>Detalhes tÃ©cnicos</h2>
+          <p>Segundo bloco editorial.</p>
+          <h2>Related posts</h2>
+          <p>ConteÃºdo recomendado que nÃ£o pertence ao artigo.</p>
+        </main>
+        <article><p>Card relacionado.</p></article>
+        """
+
+        content = extract_publication_content(publication, html)
+
+        self.assertEqual(
+            content,
+            [
+                "Primeiro bloco editorial.",
+                "Detalhes tÃ©cnicos",
+                "Segundo bloco editorial.",
             ],
         )
 

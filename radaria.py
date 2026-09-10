@@ -1047,6 +1047,60 @@ def build_collected_publication(publication: Publication, content: list[str]) ->
     }
 
 
+def extract_publication_content(
+    publication: Publication, article_html: str
+) -> list[str]:
+    stop_markers = (
+        ("keep reading", "related content")
+        if publication.source == "Anthropic News"
+        else ("keep reading",)
+    )
+    root_tag = "article"
+    root_class = None
+    if publication.source == "Google Developers Blog":
+        root_tag = "div"
+        root_class = "rich-content"
+    elif publication.source == "Google DeepMind":
+        stop_markers = (
+            "keep reading",
+            "get the latest news from google in your inbox",
+            "related posts",
+        )
+        try:
+            return extract_editorial_content(
+                article_html,
+                publication.title,
+                stop_markers,
+                root_tag="div",
+                root_class="article-container__content",
+            )
+        except RuntimeError:
+            return extract_editorial_content(
+                article_html,
+                publication.title,
+                stop_markers,
+                root_tag="main",
+            )
+    elif publication.source == "GitHub Copilot Blog":
+        root_tag = "section"
+        root_class = "post__content"
+    elif publication.source == "GitHub Copilot Changelog":
+        root_tag = "div"
+        root_class = "PostContent-main"
+    try:
+        return extract_editorial_content(
+            article_html,
+            publication.title,
+            stop_markers,
+            root_tag,
+            root_class,
+        )
+    except RuntimeError:
+        if publication.source != "Anthropic News":
+            raise
+        return extract_anthropic_structured_content(article_html, publication.title)
+
+
 def print_result(publication: Publication, content: list[str]) -> None:
     categories = ", ".join(publication.categories) or "Não informada"
     print("RadarIA — prova funcional OpenAI News")
@@ -1155,43 +1209,7 @@ def main() -> int:
                 print("Não existem novas publicações para processar.")
             return 0
         article_html = fetch(publication.url)
-        stop_markers = (
-            ("keep reading", "related content")
-            if publication.source == "Anthropic News"
-            else ("keep reading",)
-        )
-        root_tag = "article"
-        root_class = None
-        if publication.source == "Google Developers Blog":
-            root_tag = "div"
-            root_class = "rich-content"
-        elif publication.source == "Google DeepMind":
-            root_tag = "div"
-            root_class = "article-container__content"
-            stop_markers = (
-                "keep reading",
-                "get the latest news from google in your inbox",
-            )
-        elif publication.source == "GitHub Copilot Blog":
-            root_tag = "section"
-            root_class = "post__content"
-        elif publication.source == "GitHub Copilot Changelog":
-            root_tag = "div"
-            root_class = "PostContent-main"
-        try:
-            content = extract_editorial_content(
-                article_html,
-                publication.title,
-                stop_markers,
-                root_tag,
-                root_class,
-            )
-        except RuntimeError:
-            if publication.source != "Anthropic News":
-                raise
-            content = extract_anthropic_structured_content(
-                article_html, publication.title
-            )
+        content = extract_publication_content(publication, article_html)
         if "--json" in arguments:
             print(
                 json.dumps(
