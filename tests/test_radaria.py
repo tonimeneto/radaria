@@ -83,6 +83,41 @@ class ExtractEditorialContentTests(unittest.TestCase):
             with self.subTest(discarded_text=discarded_text):
                 self.assertNotIn(discarded_text, extracted_text)
 
+    def test_falls_back_to_main_when_openai_article_has_only_metadata(self) -> None:
+        html = """
+        <main>
+          <article>
+            <p>September 8, 2026</p>
+            <p>Resumo curto que não substitui o corpo editorial.</p>
+          </article>
+          <div data-toc-content="">
+            <h1>Nova publicação da OpenAI</h1>
+            <p>Primeiro parágrafo editorial fora do elemento article.</p>
+            <h2>Detalhes técnicos</h2>
+            <p>Segundo parágrafo editorial.</p>
+            <h2>Keep reading</h2>
+            <p>Outra publicação.</p>
+          </div>
+        </main>
+        """
+        publication = Publication(
+            title="Nova publicação da OpenAI",
+            url="https://openai.com/index/new-publication/",
+            published_at=datetime(2026, 9, 8, tzinfo=timezone.utc),
+            categories=("Product",),
+        )
+
+        content = extract_publication_content(publication, html)
+
+        self.assertEqual(
+            content,
+            [
+                "Primeiro parágrafo editorial fora do elemento article.",
+                "Detalhes técnicos",
+                "Segundo parágrafo editorial.",
+            ],
+        )
+
     def test_extracts_anthropic_article_without_related_content(self) -> None:
         html = (FIXTURES / "anthropic-article.html").read_text(encoding="utf-8")
 

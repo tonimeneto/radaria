@@ -872,10 +872,16 @@ class ArticleTextExtractor(HTMLParser):
     EXCLUDED_TAGS = {"nav", "footer", "button", "script", "style", "svg", "template"}
     VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 
-    def __init__(self, root_tag: str = "article", root_class: str | None = None) -> None:
+    def __init__(
+        self,
+        root_tag: str = "article",
+        root_class: str | None = None,
+        root_attribute: str | None = None,
+    ) -> None:
         super().__init__(convert_charrefs=True)
         self.root_tag = root_tag
         self.root_class = root_class
+        self.root_attribute = root_attribute
         self.article_depth = 0
         self.excluded_depth = 0
         self.capture_tag: str | None = None
@@ -890,6 +896,8 @@ class ArticleTextExtractor(HTMLParser):
             classes = (attributes.get("class") or "").split()
             if tag == self.root_tag and (
                 self.root_class is None or self.root_class in classes
+            ) and (
+                self.root_attribute is None or self.root_attribute in attributes
             ):
                 self.article_depth = 1
             return
@@ -944,8 +952,9 @@ def extract_editorial_content(
     stop_markers: tuple[str, ...] = ("keep reading",),
     root_tag: str = "article",
     root_class: str | None = None,
+    root_attribute: str | None = None,
 ) -> list[str]:
-    parser = ArticleTextExtractor(root_tag, root_class)
+    parser = ArticleTextExtractor(root_tag, root_class, root_attribute)
     parser.feed(html)
     parser.close()
 
@@ -1088,14 +1097,38 @@ def extract_publication_content(
         root_tag = "div"
         root_class = "PostContent-main"
     try:
-        return extract_editorial_content(
+        content = extract_editorial_content(
             article_html,
             publication.title,
             stop_markers,
             root_tag,
             root_class,
         )
+        if publication.source == "OpenAI News":
+            try:
+                structured_content = extract_editorial_content(
+                    article_html,
+                    publication.title,
+                    stop_markers,
+                    root_tag="div",
+                    root_attribute="data-toc-content",
+                )
+                if len(content_for_analysis(structured_content)) > len(
+                    content_for_analysis(content)
+                ):
+                    return structured_content
+            except RuntimeError:
+                content_for_analysis(content)
+        return content
     except RuntimeError:
+        if publication.source == "OpenAI News":
+            return extract_editorial_content(
+                article_html,
+                publication.title,
+                stop_markers,
+                root_tag="div",
+                root_attribute="data-toc-content",
+            )
         if publication.source != "Anthropic News":
             raise
         return extract_anthropic_structured_content(article_html, publication.title)

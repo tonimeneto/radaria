@@ -2,6 +2,331 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "titulo": {
+        "pt": "Perplexity confia sistemas de ponta a ponta ao GPT-6 Astra",
+        "en": "Perplexity trusts GPT-6 Astra with end-to-end systems"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-14T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Testes e validação",
+          "Observabilidade"
+        ],
+        "en": [
+          "Coding agents",
+          "Testing and validation",
+          "Observability"
+        ]
+      },
+      "resumo": {
+        "pt": "A Perplexity relata usar o GPT-6 Astra para escrever comunicações, modificar software, monitorar produção e criar programas de teste que simulam APIs e conectores em fluxos completos.",
+        "en": "Perplexity reports using GPT-6 Astra to write communications, modify software, monitor production, and create test programs that simulate APIs and connectors across complete workflows."
+      },
+      "novidade_principal": {
+        "pt": "O modelo recebe responsabilidade sobre sistemas end-to-end e gera simuladores realistas de serviços externos para validar como aplicações respondem, exigindo menos acompanhamento humano que gerações anteriores.",
+        "en": "The model is entrusted with end-to-end systems and generates realistic external-service simulators to validate application behavior, requiring less human supervision than earlier generations."
+      },
+      "relevancia": {
+        "pt": "O caso mostra um padrão aplicável de validação agêntica: usar o modelo para construir doubles de APIs e conectores, executar testes de ponta a ponta e acompanhar sistemas de produção com supervisão reduzida.",
+        "en": "The case demonstrates an applicable agentic validation pattern: using the model to build API and connector doubles, run end-to-end tests, and monitor production systems with reduced supervision."
+      },
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "processado_em": "2026-09-14T13:50:55.156001+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics",
+      "titulo": {
+        "pt": "Agentes do VS Code entram nas métricas de uso do Copilot",
+        "en": "VS Code Agents added to Copilot usage metrics"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-11T21:30:30+00:00",
+      "categoria": {
+        "pt": [
+          "Observabilidade",
+          "Agentes de programação",
+          "Governança"
+        ],
+        "en": [
+          "Observability",
+          "Coding agents",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "Os relatórios de métricas do GitHub Copilot agora medem usuários ativos, sessões e mensagens na janela dedicada de Agents do VS Code em níveis agregado e individual.",
+        "en": "GitHub Copilot metrics reports now measure active users, sessions, and messages in the dedicated VS Code Agents window at aggregate and individual levels."
+      },
+      "novidade_principal": {
+        "pt": "As APIs de períodos de 1 e 28 dias ganharam campos opcionais específicos para adoção e engajamento com VS Code Agents, separados do Agent Mode do editor e dos totais genéricos.",
+        "en": "The 1-day and 28-day APIs gained optional fields specifically for VS Code Agents adoption and engagement, separate from editor Agent Mode and generic rollups."
+      },
+      "relevancia": {
+        "pt": "As métricas permitem observar adoção e intensidade de uso de agentes por organização e equipe, oferecendo base objetiva para governança, avaliação de investimento e evolução de práticas agênticas.",
+        "en": "The metrics make agent adoption and usage intensity observable by organization and team, providing an objective basis for governance, investment evaluation, and improving agentic practices."
+      },
+      "url": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics",
+      "processado_em": "2026-09-14T13:51:26.092241+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review",
+      "titulo": {
+        "pt": "Revisão de código do Copilot ganha autorresolução e análise aprimorada",
+        "en": "Copilot code review gains auto-resolution and enhanced analysis"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-11T20:00:07+00:00",
+      "categoria": {
+        "pt": [
+          "Revisão de código",
+          "Orquestração multiagente",
+          "Testes e validação"
+        ],
+        "en": [
+          "Code review",
+          "Multi-agent orchestration",
+          "Testing and validation"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot code review passou a resolver comentários já atendidos, gerar mensagens de commit para autofixes, usar mais ferramentas shell na validação e combinar múltiplos agentes nas revisões Lite.",
+        "en": "Copilot code review now resolves addressed comments, generates commit messages for autofixes, uses more shell tools for validation, and combines multiple agents in Lite reviews."
+      },
+      "novidade_principal": {
+        "pt": "Um ensemble de agentes substitui o agente único no nível Lite e elevou comentários atendidos em achados de alta severidade em 47%, ao mesmo tempo que reduziu o custo de revisão em cerca de 8%.",
+        "en": "An agent ensemble replaces the single agent at the Lite effort level and increased addressed comments for high-severity findings by 47% while reducing review cost by about 8%."
+      },
+      "relevancia": {
+        "pt": "A atualização fornece evidência prática de que orquestração multiagente e acesso controlado a build, testes, scripts e APIs podem aumentar a qualidade da validação com custo menor.",
+        "en": "The update provides practical evidence that multi-agent orchestration and controlled access to builds, tests, scripts, and APIs can improve validation quality at lower cost."
+      },
+      "url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review",
+      "processado_em": "2026-09-14T13:51:55.840239+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=98799",
+      "titulo": {
+        "pt": "Operações de marketing como código: automatizando eventos do planejamento ao acompanhamento no GitHub",
+        "en": "Marketing ops as code: Automating events from planning to follow-up on GitHub"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-09-11T18:26:10+00:00",
+      "categoria": {
+        "pt": [
+          "Skills e contexto",
+          "Automação",
+          "Arquitetura híbrida",
+          "Governança"
+        ],
+        "en": [
+          "Skills and context",
+          "Automation",
+          "Hybrid architecture",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "Um fluxo real usa Issues estruturadas, labels, GitHub Actions, AGENTS.md e skills do Copilot para automatizar eventos, mantendo decisões humanas antes das mutações e procedimentos flexíveis em Markdown.",
+        "en": "A real workflow uses structured Issues, labels, GitHub Actions, AGENTS.md, and Copilot skills to automate events while keeping human decisions ahead of mutations and flexible procedures in Markdown."
+      },
+      "novidade_principal": {
+        "pt": "O desenho separa conversa probabilística e decisão humana da execução determinística: o agente prepara a Issue, labels acionam pipelines, skills cobrem variações, e um DRY_RUN comum permite ensaiar todas as integrações sem alterar sistemas externos.",
+        "en": "The design separates probabilistic conversation and human decisions from deterministic execution: the agent prepares the Issue, labels trigger pipelines, skills handle variations, and a shared DRY_RUN rehearses every integration without changing external systems."
+      },
+      "relevancia": {
+        "pt": "É uma arquitetura híbrida reutilizável para o Ecossistema DEV, com runbooks versionados, revisão via CODEOWNERS, testes em pull requests, proteção de segredos, seleção de modelo por tarefa e alerta explícito para falhas de automações agendadas.",
+        "en": "It is a reusable hybrid architecture for the DEV Ecosystem, with versioned runbooks, CODEOWNERS review, pull-request tests, secret protection, per-task model selection, and explicit alerts for scheduled automation failures."
+      },
+      "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
+      "processado_em": "2026-09-14T13:52:35.011840+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/cognition-devin-testing-with-astra",
+      "titulo": {
+        "pt": "Cognition ajuda o Devin a testar o próprio trabalho com GPT-6 Astra",
+        "en": "Cognition helps Devin test its own work with GPT-6 Astra"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-11T16:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Testes e validação",
+          "Evidência de execução"
+        ],
+        "en": [
+          "Coding agents",
+          "Testing and validation",
+          "Execution evidence"
+        ]
+      },
+      "resumo": {
+        "pt": "A Cognition usa GPT-6 Astra no Devin para testar mudanças de software e devolver evidências verificáveis, como gravações de simulador, relatórios de cobertura e capturas de tela após correções.",
+        "en": "Cognition uses GPT-6 Astra in Devin to test software changes and return verifiable evidence such as simulator recordings, coverage reports, and screenshots after fixes."
+      },
+      "novidade_principal": {
+        "pt": "O agente não apenas implementa a mudança: ele demonstra o comportamento resultante e explicita tanto as verificações aprovadas quanto as áreas que não foram testadas.",
+        "en": "The agent does more than implement the change: it demonstrates the resulting behavior and explicitly reports both successful checks and areas left untested."
+      },
+      "relevancia": {
+        "pt": "O padrão de produzir evidências executáveis e declarar lacunas de validação reduz a dependência de revisão manual de código e torna entregas autônomas mais auditáveis e confiáveis.",
+        "en": "The pattern of producing executable evidence and declaring validation gaps reduces dependence on manual code review and makes autonomous delivery more auditable and trustworthy."
+      },
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "processado_em": "2026-09-14T13:53:05.538706+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "titulo": {
+        "pt": "Escalando rapidamente armazenamento online para mais de 1 bilhão de usuários do ChatGPT",
+        "en": "Rapidly scaling online storage to serve over 1 billion ChatGPT users"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-11T10:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Arquitetura de software",
+          "Sistemas distribuídos",
+          "Observabilidade",
+          "Segurança"
+        ],
+        "en": [
+          "Software architecture",
+          "Distributed systems",
+          "Observability",
+          "Security"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve a evolução do Habitat, de biblioteca Python para plataforma distribuída que atende mais de 70 milhões de requisições por segundo, 500 PB e quase 40 regiões.",
+        "en": "OpenAI describes Habitat's evolution from a Python library into a distributed platform serving more than 70 million requests per second, 500 PB, and nearly 40 regions."
+      },
+      "novidade_principal": {
+        "pt": "A lógica de armazenamento foi retirada dos clientes e centralizada em um serviço para reduzir fan-out operacional, unificar deploy, observabilidade, roteamento, auditoria e controles contra acesso indevido inclusive por agentes; Python foi mantido como dívida técnica estratégica para estabilizar APIs antes de uma migração.",
+        "en": "Storage logic moved out of clients into a centralized service to reduce operational fan-out and unify deployment, observability, routing, auditing, and controls against unauthorized access including agent actors; Python was retained as strategic technical debt to stabilize APIs before migration."
+      },
+      "relevancia": {
+        "pt": "O relato oferece decisões arquiteturais concretas sobre centralização de políticas, evolução incremental, dívida técnica deliberada e observação de latência de cauda causada por agendamento asyncio em serviços Python de alto throughput.",
+        "en": "The account provides concrete architectural decisions around policy centralization, incremental evolution, deliberate technical debt, and observing tail latency caused by asyncio scheduling in high-throughput Python services."
+      },
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "processado_em": "2026-09-14T13:54:29.854754+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/autonomous-llm-post-training-with-tunix-on-tpus",
+      "titulo": {
+        "pt": "Pós-treinamento autônomo de LLMs com Tunix em TPUs",
+        "en": "Autonomous LLM post-training with Tunix on TPUs"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-09-11T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Loops agênticos",
+          "Evals",
+          "Pós-treinamento de modelos",
+          "Controle e validação"
+        ],
+        "en": [
+          "Agentic loops",
+          "Evals",
+          "Model post-training",
+          "Control and validation"
+        ]
+      },
+      "resumo": {
+        "pt": "O projeto autofinetune aplica loops autônomos de pesquisa ao SFT e ao GRPO usando Tunix, Gemma, Cloud TPUs, Antigravity CLI e Gemini Flash 3.7 para executar e avaliar experimentos sem intervenção contínua.",
+        "en": "The autofinetune project applies autonomous research loops to SFT and GRPO using Tunix, Gemma, Cloud TPUs, Antigravity CLI, and Gemini Flash 3.7 to run and evaluate experiments without continuous intervention."
+      },
+      "novidade_principal": {
+        "pt": "Uma especificação `program.md` define limites e métrica, enquanto o agente modifica `run.py`, executa treinamento, mantém commits vencedores, reverte regressões e registra resultados; em GRPO, 40 experimentos em 2–3 dias elevaram a recompensa em cerca de 10%.",
+        "en": "A `program.md` specification defines boundaries and the metric while the agent modifies `run.py`, runs training, keeps winning commits, reverts regressions, and logs results; in GRPO, 40 experiments over 2–3 days improved reward by about 10%."
+      },
+      "relevancia": {
+        "pt": "O desenho exemplifica um loop agêntico controlado por artefatos simples, com espaço de ação explícito, avaliação determinística, rollback via Git e memória experimental estruturada — padrões transferíveis para engenharia autônoma.",
+        "en": "The design exemplifies an agentic loop controlled by simple artifacts, with an explicit action space, deterministic evaluation, Git-based rollback, and structured experimental memory—patterns transferable to autonomous engineering."
+      },
+      "url": "https://developers.googleblog.com/autonomous-llm-post-training-with-tunix-on-tpus/",
+      "processado_em": "2026-09-14T13:55:06.207742+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7",
+      "titulo": {
+        "pt": "Lançamentos semanais do GitHub Copilot — 7 de setembro",
+        "en": "GitHub Copilot weekly releases — September 7"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-10T22:55:07+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de modelos",
+          "Automação",
+          "Sandbox e governança",
+          "Agentes de programação"
+        ],
+        "en": [
+          "Model orchestration",
+          "Automation",
+          "Sandbox and governance",
+          "Coding agents"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot ganhou integração com Jira no app, roteamento semântico adaptativo no CLI, automações recorrentes e voz no VS Code, além de políticas empresariais de sandbox no JetBrains.",
+        "en": "Copilot gained Jira integration in the app, adaptive semantic routing in the CLI, recurring automations and voice in VS Code, plus enterprise sandbox policies in JetBrains."
+      },
+      "novidade_principal": {
+        "pt": "O Project HydraFusion seleciona automaticamente fluxos entre modelos locais, cloud e compostos conforme desempenho, custo e latência; em paralelo, administradores podem controlar centralmente filesystem, rede, proxy, ferramentas e Keychain do sandbox do agente.",
+        "en": "Project HydraFusion automatically selects workflows across local, cloud, and compound models based on performance, cost, and latency; meanwhile, administrators can centrally control filesystem, network, proxy, tools, and Keychain access in the agent sandbox."
+      },
+      "relevancia": {
+        "pt": "A combinação trata três pontos centrais de sistemas agênticos: roteamento de modelos por tarefa, execução recorrente e governança granular das capacidades concedidas ao agente.",
+        "en": "The combination addresses three central concerns in agentic systems: per-task model routing, recurring execution, and granular governance of capabilities granted to the agent."
+      },
+      "url": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7",
+      "processado_em": "2026-09-14T13:55:35.803100+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/put-data-to-work",
+      "titulo": {
+        "pt": "Agora todos podem colocar os dados para trabalhar",
+        "en": "Now everyone can put data to work"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-10T15:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de dados",
+          "Context engineering",
+          "RAG",
+          "Governança"
+        ],
+        "en": [
+          "Data agents",
+          "Context engineering",
+          "RAG",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "O Data agent do ChatGPT Work conecta fontes corporativas, camadas semânticas, documentos e ferramentas de BI para investigar perguntas, produzir dashboards e executar ações aprovadas em linguagem natural.",
+        "en": "The ChatGPT Work Data agent connects enterprise sources, semantic layers, documents, and BI tools to investigate questions, produce dashboards, and execute approved actions through natural language."
+      },
+      "novidade_principal": {
+        "pt": "O agente combina dados em tempo real com definições, cálculos e relacionamentos confiáveis da organização, preservando permissões de tabela, linha e coluna e submetendo ações externas à aprovação do usuário.",
+        "en": "The agent combines real-time data with trusted organizational definitions, calculations, and relationships while preserving table-, row-, and column-level permissions and placing external actions behind user approval."
+      },
+      "relevancia": {
+        "pt": "É um exemplo concreto de context engineering governado: recuperação sobre múltiplas fontes, grounding por camada semântica, herança de controles de acesso, evidências revisáveis e separação entre análise e ação.",
+        "en": "It is a concrete example of governed context engineering: retrieval across multiple sources, semantic-layer grounding, inherited access controls, reviewable evidence, and separation between analysis and action."
+      },
+      "url": "https://openai.com/index/put-data-to-work",
+      "processado_em": "2026-09-14T13:57:28.298938+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-08-26-enterprise-managed-permissions-for-github-copilot-agent-operations",
       "titulo": {
         "pt": "Permissões gerenciadas pela empresa para operações do agente GitHub Copilot",
@@ -237,6 +562,41 @@
       },
       "url": "https://openai.com/index/codex-quantum-computing-experiments",
       "processado_em": "2026-09-10T13:51:28.409191+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/introducing-chatgpt-images-2-5",
+      "titulo": {
+        "pt": "Apresentando o ChatGPT Images 2.5",
+        "en": "Introducing ChatGPT Images 2.5"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-08T11:30:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos e APIs",
+          "Automação visual",
+          "Desenvolvimento com IA"
+        ],
+        "en": [
+          "Models and APIs",
+          "Visual automation",
+          "AI-assisted development"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI apresentou o ChatGPT Images 2.5 e os modelos de API GPT-Image-2.5 Flare e Sunburst, com maior fidelidade a referências, edição mais precisa, consistência em múltiplos turnos e geração mais rápida.",
+        "en": "OpenAI introduced ChatGPT Images 2.5 and the GPT-Image-2.5 Flare and Sunburst API models, with stronger reference fidelity, more precise editing, multi-turn consistency, and faster generation."
+      },
+      "novidade_principal": {
+        "pt": "O Flare entrega qualidade superior ao GPT-Image-2 com latência 50% menor, enquanto o Sunburst prioriza controle refinado em fluxos visuais de alta qualidade; ambos ampliam a confiabilidade de edições localizadas e iterativas.",
+        "en": "Flare delivers higher quality than GPT-Image-2 with 50% lower latency, while Sunburst prioritizes fine-grained control in premium visual workflows; both improve the reliability of localized, iterative edits."
+      },
+      "relevancia": {
+        "pt": "Os novos modelos podem melhorar geração programática de assets, protótipos de UI, fundos transparentes e pipelines de edição visual que precisam preservar composição e identidade ao longo de várias iterações.",
+        "en": "The new models can improve programmatic asset generation, UI prototypes, transparent backgrounds, and visual editing pipelines that must preserve composition and identity across multiple iterations."
+      },
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "processado_em": "2026-09-14T13:50:24.983899+00:00"
     },
     {
       "id": "guid:https://openai.com/index/an-alien-mind",
