@@ -3,6 +3,10 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import json
 import unittest
+from unittest.mock import MagicMock, patch
+from urllib.error import HTTPError
+
+import radaria
 
 from radaria import (
     Publication,
@@ -10,9 +14,11 @@ from radaria import (
     build_consumption_output,
     deepmind_publications,
     build_collected_publication,
+    collect_official_publications,
     extract_editorial_content,
     extract_anthropic_structured_content,
     extract_publication_content,
+    fetch,
     google_developer_publication,
     google_publications,
     github_publications,
@@ -365,6 +371,83 @@ class GitHubPublicationTests(unittest.TestCase):
                 self.assertEqual(content, expected)
                 self.assertNotIn("Navegação GitHub", "\n".join(content))
                 self.assertNotIn("Rodapé GitHub", "\n".join(content))
+
+class ResilientCollectionTests(unittest.TestCase):
+    def test_retries_transient_http_error(self) -> None:
+        response = MagicMock()
+        response.__enter__.return_value = response
+        response.headers.get_content_charset.return_value = "utf-8"
+        response.read.return_value = b"ok"
+        error = HTTPError(
+            "https://example.com/feed", 403, "Forbidden", None, None
+        )
+
+        with patch(
+            "radaria.urllib.request.urlopen", side_effect=[error, response]
+        ) as urlopen, patch("radaria.time.sleep") as sleep:
+            content = fetch("https://example.com/feed")
+
+        self.assertEqual(content, "ok")
+        self.assertEqual(urlopen.call_count, 2)
+        sleep.assert_called_once()
+
+    def test_keeps_other_sources_when_one_source_fails(self) -> None:
+        responses = {
+            radaria.RSS_URL: "openai-news.xml",
+            radaria.DEEPMIND_RSS_URL: "google-deepmind.xml",
+            radaria.GOOGLE_DEVELOPERS_RSS_URL: "google-developers.xml",
+            radaria.GITHUB_COPILOT_BLOG_RSS_URL: "github-copilot-blog.xml",
+            radaria.GITHUB_COPILOT_CHANGELOG_RSS_URL: (
+                "github-copilot-changelog.xml"
+            ),
+            "https://developers.googleblog.com/current": (
+                "google-developer-article.html"
+            ),
+        }
+
+        def fake_fetch(url: str) -> str:
+            if url == radaria.ANTHROPIC_NEWS_URL:
+                raise OSError("HTTP Error 403: Forbidden")
+            return (FIXTURES / responses[url]).read_text(encoding="utf-8")
+
+        with TemporaryDirectory() as directory, patch(
+            "radaria.fetch", side_effect=fake_fetch
+        ):
+            publications, warnings = collect_official_publications(
+                Path(directory) / "state.json"
+            )
+
+        self.assertTrue(publications)
+        self.assertNotIn(
+            "Anthropic News", {publication.source for publication in publications}
+        )
+        self.assertEqual(len(warnings), 1)
+        self.assertEqual(warnings[0].source, "Anthropic News")
+        self.assertEqual(warnings[0].stage, "collection")
+        self.assertIn("403", warnings[0].error)
+
+    def test_reports_every_source_when_collection_fails_completely(self) -> None:
+        with TemporaryDirectory() as directory, patch(
+            "radaria.fetch", side_effect=OSError("network unavailable")
+        ):
+            publications, warnings = collect_official_publications(
+                Path(directory) / "state.json"
+            )
+
+        self.assertEqual(publications, [])
+        self.assertEqual(len(warnings), 6)
+        self.assertEqual(
+            {warning.source for warning in warnings},
+            {
+                "OpenAI News",
+                "Anthropic News",
+                "Google DeepMind",
+                "Google Developers Blog",
+                "GitHub Copilot Blog",
+                "GitHub Copilot Changelog",
+            },
+        )
+
 
 class CollectedPublicationTests(unittest.TestCase):
     def test_builds_structured_input_with_only_relevant_editorial_content(self) -> None:

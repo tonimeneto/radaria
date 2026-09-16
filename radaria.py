@@ -7,6 +7,8 @@ import hashlib
 import re
 import sys
 import textwrap
+import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
@@ -27,6 +29,8 @@ GITHUB_COPILOT_CHANGELOG_RSS_URL = (
 )
 USER_AGENT = "RadarIA/0.1 (+local functional proof)"
 TIMEOUT_SECONDS = 30
+FETCH_ATTEMPTS = 3
+FETCH_BACKOFF_SECONDS = 0.5
 STATE_PATH = Path(__file__).resolve().parent / ".radaria" / "state.json"
 STATE_VERSION = 1
 RESULT_SCHEMA_VERSION = 2
@@ -52,17 +56,47 @@ class FeedEntry:
     guid: str
 
 
+@dataclass(frozen=True)
+class CollectionWarning:
+    source: str
+    stage: str
+    error: str
+
+    def as_dict(self) -> dict[str, str]:
+        return {"source": self.source, "stage": self.stage, "error": self.error}
+
+
 def fetch(url: str) -> str:
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "application/rss+xml, application/xml, text/html;q=0.9",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
-        charset = response.headers.get_content_charset() or "utf-8"
-        return response.read().decode(charset, errors="replace")
+    last_error: OSError | None = None
+    for attempt in range(FETCH_ATTEMPTS):
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "application/rss+xml, application/xml, text/html;q=0.9",
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
+                charset = response.headers.get_content_charset() or "utf-8"
+                return response.read().decode(charset, errors="replace")
+        except urllib.error.HTTPError as error:
+            last_error = error
+            if error.code not in {403, 408, 429} and error.code < 500:
+                raise
+            retry_after = error.headers.get("Retry-After") if error.headers else None
+            delay = (
+                min(float(retry_after), TIMEOUT_SECONDS)
+                if retry_after and retry_after.isdigit()
+                else FETCH_BACKOFF_SECONDS * (2**attempt)
+            )
+        except (urllib.error.URLError, TimeoutError) as error:
+            last_error = error
+            delay = FETCH_BACKOFF_SECONDS * (2**attempt)
+        if attempt + 1 < FETCH_ATTEMPTS:
+            time.sleep(delay)
+    assert last_error is not None
+    raise last_error
 
 
 def is_openai_editorial_page(url: str) -> bool:
@@ -286,6 +320,74 @@ def github_publications(
         state_path,
     )
     return copilot_blog + copilot_changelog
+
+
+def collect_official_publications(
+    state_path: Path = STATE_PATH,
+) -> tuple[list[Publication], list[CollectionWarning]]:
+    publications: list[Publication] = []
+    warnings: list[CollectionWarning] = []
+
+    def collect(source: str, operation) -> None:
+        try:
+            publications.extend(operation())
+        except (ET.ParseError, OSError, RuntimeError) as error:
+            warnings.append(CollectionWarning(source, "collection", str(error)))
+
+    collect("OpenAI News", lambda: editorial_publications(fetch(RSS_URL)))
+    collect("Anthropic News", lambda: anthropic_publications(fetch(ANTHROPIC_NEWS_URL)))
+    collect("Google DeepMind", lambda: deepmind_publications(fetch(DEEPMIND_RSS_URL)))
+
+    def collect_google_developers() -> list[Publication]:
+        rss = fetch(GOOGLE_DEVELOPERS_RSS_URL)
+        entries = rss_feed_entries(rss, {"developers.googleblog.com"})
+        remember_urls([entry.url for entry in entries], state_path)
+        state = initialize_source_baselines(
+            {
+                "google_developers_blog": [
+                    feed_entry_identity(entry) for entry in entries
+                ]
+            },
+            state_path,
+        )
+        known_ids = set(state.get("processed_ids", [])) | set(
+            state.get("discarded_ids", [])
+        )
+        for identities in state.get("source_baselines", {}).values():
+            known_ids.update(identities)
+        return [
+            google_developer_publication(entry, fetch(entry.url))
+            for entry in entries
+            if feed_entry_identity(entry) not in known_ids
+        ]
+
+    collect("Google Developers Blog", collect_google_developers)
+
+    def collect_github(url: str, source: str, baseline_key: str) -> list[Publication]:
+        items = dated_rss_publications(fetch(url), {"github.blog"}, source)
+        initialize_source_baselines(
+            {baseline_key: [publication_identity(item) for item in items]},
+            state_path,
+        )
+        return items
+
+    collect(
+        "GitHub Copilot Blog",
+        lambda: collect_github(
+            GITHUB_COPILOT_BLOG_RSS_URL,
+            "GitHub Copilot Blog",
+            "github_copilot_blog",
+        ),
+    )
+    collect(
+        "GitHub Copilot Changelog",
+        lambda: collect_github(
+            GITHUB_COPILOT_CHANGELOG_RSS_URL,
+            "GitHub Copilot Changelog",
+            "github_copilot_changelog",
+        ),
+    )
+    return publications, warnings
 
 
 class AnthropicNewsParser(HTMLParser):
@@ -1206,32 +1308,51 @@ def main() -> int:
                 "--discard-publication ARQUIVO_JSON | "
                 "--save-result ARQUIVO_JSON]"
             )
-        openai_rss = fetch(RSS_URL)
-        anthropic_news = fetch(ANTHROPIC_NEWS_URL)
-        deepmind_rss = fetch(DEEPMIND_RSS_URL)
-        google_developers_rss = fetch(GOOGLE_DEVELOPERS_RSS_URL)
-        github_copilot_blog_rss = fetch(GITHUB_COPILOT_BLOG_RSS_URL)
-        github_copilot_changelog_rss = fetch(GITHUB_COPILOT_CHANGELOG_RSS_URL)
-        publications = editorial_publications(openai_rss) + anthropic_publications(
-            anthropic_news
-        ) + google_publications(
-            deepmind_rss, google_developers_rss
-        ) + github_publications(
-            github_copilot_blog_rss, github_copilot_changelog_rss
-        )
+        publications, collection_warnings = collect_official_publications()
+        warning_payload = [warning.as_dict() for warning in collection_warnings]
+        if not publications:
+            payload = {
+                "status": "collection_failed",
+                "message": "Nenhuma fonte oficial pôde ser coletada.",
+                "warnings": warning_payload,
+            }
+            if "--json" in arguments:
+                print(json.dumps(payload, ensure_ascii=False, indent=2))
+            else:
+                print(payload["message"])
+            return 1
         remember_publication_urls(publications)
-        publication = next_from_publications(publications)
+        try:
+            publication = next_from_publications(publications)
+        except RuntimeError as error:
+            if not collection_warnings:
+                raise
+            payload = {
+                "status": "collection_deferred",
+                "message": str(error),
+                "warnings": warning_payload,
+            }
+            if "--json" in arguments:
+                print(json.dumps(payload, ensure_ascii=False, indent=2))
+            else:
+                print(payload["message"])
+            return 0
         if publication is None:
             if "--json" in arguments:
                 print(
                     json.dumps(
                         {
-                            "status": "no_new_publications",
+                            "status": (
+                                "no_new_publications_with_warnings"
+                                if collection_warnings
+                                else "no_new_publications"
+                            ),
                             "source": (
                                 "OpenAI News + Anthropic News + Google DeepMind + "
                                 "Google Developers Blog + GitHub Copilot Blog + "
                                 "GitHub Copilot Changelog"
                             ),
+                            "warnings": warning_payload,
                             "message": "Não existem novas publicações para processar.",
                         },
                         ensure_ascii=False,
@@ -1241,12 +1362,30 @@ def main() -> int:
             else:
                 print("Não existem novas publicações para processar.")
             return 0
-        article_html = fetch(publication.url)
-        content = extract_publication_content(publication, article_html)
+        try:
+            article_html = fetch(publication.url)
+            content = extract_publication_content(publication, article_html)
+        except (ET.ParseError, OSError, RuntimeError) as error:
+            warning_payload.append(
+                CollectionWarning(publication.source, "article", str(error)).as_dict()
+            )
+            payload = {
+                "status": "publication_deferred",
+                "identity": publication_identity(publication),
+                "message": "A publicação pendente será tentada novamente.",
+                "warnings": warning_payload,
+            }
+            if "--json" in arguments:
+                print(json.dumps(payload, ensure_ascii=False, indent=2))
+            else:
+                print(payload["message"])
+            return 0
         if "--json" in arguments:
+            payload = build_collected_publication(publication, content)
+            payload["warnings"] = warning_payload
             print(
                 json.dumps(
-                    build_collected_publication(publication, content),
+                    payload,
                     ensure_ascii=False,
                     indent=2,
                 )
