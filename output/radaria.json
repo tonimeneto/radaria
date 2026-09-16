@@ -2,6 +2,187 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
+      "titulo": {
+        "pt": "GitHub Copilot sugere definições de propriedades personalizadas",
+        "en": "GitHub Copilot suggests custom properties definitions"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-15T19:07:47+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot",
+          "Governança de plataforma"
+        ],
+        "en": [
+          "Release",
+          "Copilot",
+          "Platform governance"
+        ]
+      },
+      "resumo": {
+        "pt": "Em public preview para Copilot Business e Enterprise, o GitHub Copilot agora sugere valores permitidos ao criar propriedades personalizadas de repositórios no nível de organização ou empresa. Essas propriedades servem como metadados de governança e podem delimitar a aplicação de rulesets; administradores podem aceitar sugestões e controlar o recurso por política.",
+        "en": "In public preview for Copilot Business and Enterprise, GitHub Copilot now suggests allowed values when creating repository custom properties at the organization or enterprise level. These properties act as governance metadata and can scope ruleset enforcement; administrators can accept suggestions and control the feature through policy."
+      },
+      "novidade_principal": {
+        "pt": "A IA passa a propor os valores de uma taxonomia de governança a partir do nome e do tipo da propriedade, reduzindo a barreira inicial e a inconsistência de metadados usados para aplicar regras em muitos repositórios.",
+        "en": "AI now proposes values for a governance taxonomy from the property's name and type, reducing the initial setup barrier and inconsistency in metadata used to enforce rules across many repositories."
+      },
+      "relevancia": {
+        "pt": "Mostra uma aplicação concreta de IA à governança de engenharia de software: metadados sugeridos assistem a classificação de repositórios e o escopo de controles, mantendo aceitação humana e uma política administrativa de disponibilidade.",
+        "en": "It demonstrates a concrete application of AI to software-engineering governance: suggested metadata assists repository classification and control scoping while preserving human acceptance and an administrative availability policy."
+      },
+      "url": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
+      "processado_em": "2026-09-16T13:10:25.037832+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+      "titulo": {
+        "pt": "Apresentando Gemini 3.8 Live e 3.8 Live Extended Thinking",
+        "en": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-09-15T17:05:57+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos",
+          "Agentes de voz",
+          "Tool calling",
+          "Multimodalidade"
+        ],
+        "en": [
+          "Models",
+          "Voice agents",
+          "Tool calling",
+          "Multimodality"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google DeepMind lançou Gemini 3.8 Live, otimizado para escala e custo, e Gemini 3.8 Live Extended Thinking, voltado a tarefas complexas com raciocínio em múltiplas etapas. Os modelos combinam voz quase em tempo real, grounding visual, suporte a 97 idiomas, chamadas assíncronas de ferramentas e APIs e disponibilidade inicial pela Gemini API e Google AI Studio.",
+        "en": "Google DeepMind launched Gemini 3.8 Live, optimized for scale and cost, and Gemini 3.8 Live Extended Thinking, aimed at complex tasks with multi-step reasoning. The models combine near-real-time voice, visual grounding, support for 97 languages, asynchronous tool and API calls, and initial availability through the Gemini API and Google AI Studio."
+      },
+      "novidade_principal": {
+        "pt": "Agentes podem manter o diálogo enquanto ferramentas e tarefas de múltiplas etapas rodam em segundo plano; a variante Extended Thinking também raciocina e fala simultaneamente, emitindo confirmações e progresso sem interromper a interação.",
+        "en": "Agents can keep the dialogue flowing while tools and multi-step tasks run in the background; the Extended Thinking variant also reasons and speaks simultaneously, providing acknowledgments and progress updates without interrupting the interaction."
+      },
+      "relevancia": {
+        "pt": "O lançamento oferece componentes diretamente aplicáveis a agentes de voz de produção e automações multimodais, especialmente para orquestração assíncrona, feedback de progresso, function calling, baixa latência e transparência de áudio gerado por IA com SynthID.",
+        "en": "The release provides building blocks directly applicable to production voice agents and multimodal automation, especially asynchronous orchestration, progress feedback, function calling, low latency, and transparency for AI-generated audio through SynthID."
+      },
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "processado_em": "2026-09-16T13:11:08.589501+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/build-zero-trust-ai-agents-that-judge-intent-not-just-syntax",
+      "titulo": {
+        "pt": "Construa agentes de IA zero-trust que julgam intenção, não apenas sintaxe",
+        "en": "Build zero-trust AI agents that judge intent, not just syntax"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-09-15T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Governança em runtime",
+          "Tool calling",
+          "Observabilidade"
+        ],
+        "en": [
+          "Agent security",
+          "Runtime governance",
+          "Tool calling",
+          "Observability"
+        ]
+      },
+      "resumo": {
+        "pt": "A segunda parte da série Zero-trust Agents descreve governança em runtime aplicada pelo Agent Gateway. A arquitetura combina Model Armor para filtrar prompts e respostas, Semantic Governance Policies para avaliar cada tool call contra intenção e regras de negócio antes da execução, e Agent Anomaly Detection para identificar ataques distribuídos por múltiplos turnos a partir de logs e telemetria.",
+        "en": "Part two of the Zero-trust Agents series describes runtime governance enforced by Agent Gateway. The architecture combines Model Armor to filter prompts and responses, Semantic Governance Policies to evaluate every tool call against intent and business rules before execution, and Agent Anomaly Detection to identify attacks distributed across multiple turns from logs and telemetry."
+      },
+      "novidade_principal": {
+        "pt": "O controle deixa de depender apenas de sintaxe e validações por chamada: uma camada semântica autoriza ferramentas antes que alterem estado, enquanto análise de sessão detecta padrões cumulativos e permite criar uma nova restrição em linguagem natural que entra em vigor sem alterar ou reimplantar o agente.",
+        "en": "Control no longer depends only on syntax and per-call validation: a semantic layer authorizes tools before they change state, while session analysis detects cumulative patterns and enables a new natural-language constraint to take effect without changing or redeploying the agent."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão técnico concreto de defesa em profundidade para agentes e MCP, cobrindo prompt injection, vazamento de dados, autorização por intenção, ataques multi-turno, telemetria e fechamento adaptativo do ciclo de resposta sem abandonar controles determinísticos de assinatura e validação.",
+        "en": "It provides a concrete defense-in-depth pattern for agents and MCP, covering prompt injection, data leakage, intent-based authorization, multi-turn attacks, telemetry, and adaptive response-loop closure without abandoning deterministic signing and validation controls."
+      },
+      "url": "https://developers.googleblog.com/build-zero-trust-ai-agents-that-judge-intent-not-just-syntax/",
+      "processado_em": "2026-09-16T13:11:48.725603+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "titulo": {
+        "pt": "Configure custo e qualidade na seleção automática de modelos do Copilot",
+        "en": "Configure cost and quality in Copilot auto model selection"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-14T16:05:27+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot",
+          "Roteamento de modelos"
+        ],
+        "en": [
+          "Release",
+          "Copilot",
+          "Model routing"
+        ]
+      },
+      "resumo": {
+        "pt": "A seleção automática de modelos do GitHub Copilot passa a oferecer três perfis: Efficiency, Balance e Intelligence. O perfil define a prioridade relativa entre custo, qualidade e tempo de resposta, enquanto o Copilot avalia cada prompt para escolher um modelo adequado; o recurso está chegando ao VS Code, Copilot CLI e aplicativo do GitHub Copilot.",
+        "en": "GitHub Copilot automatic model selection now offers three profiles: Efficiency, Balance, and Intelligence. The profile defines the relative priority of cost, quality, and response time, while Copilot evaluates each prompt to choose a suitable model; the feature is rolling out to VS Code, Copilot CLI, and the GitHub Copilot app."
+      },
+      "novidade_principal": {
+        "pt": "O usuário configura a política de otimização, não um modelo fixo: mesmo no perfil Intelligence, uma tarefa simples pode ser roteada para um modelo menor, e a cobrança acompanha o modelo efetivamente selecionado.",
+        "en": "The user configures an optimization policy rather than a fixed model: even under the Intelligence profile, a simple task may be routed to a smaller model, and billing follows the model actually selected."
+      },
+      "relevancia": {
+        "pt": "Materializa um padrão útil para sistemas com múltiplos modelos: separar a intenção de qualidade/custo definida pelo usuário da decisão adaptativa por tarefa, tornando explícitos os trade-offs de roteamento sem exigir seleção manual a cada interação.",
+        "en": "It implements a useful pattern for multi-model systems: separating the user's quality/cost intent from adaptive per-task decisions, making routing tradeoffs explicit without requiring manual model selection for every interaction."
+      },
+      "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "processado_em": "2026-09-16T13:12:27.460626+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/fyxer",
+      "titulo": {
+        "pt": "Como a Fyxer construiu um assistente executivo de IA em que as pessoas confiam",
+        "en": "How Fyxer built an AI executive assistant people trust"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-14T12:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Estudo de caso",
+          "Arquitetura de IA",
+          "Memória",
+          "Evals"
+        ],
+        "en": [
+          "Case study",
+          "AI architecture",
+          "Memory",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "A Fyxer descreve um assistente executivo que divide o fluxo de email entre 30 a 50 modelos especializados, recupera e reordena memórias relevantes por pessoa e conversa, e usa dados de mais de 500 mil horas de trabalho de assistentes. Cada componente é avaliado em conjuntos próprios por precisão, latência e custo; edições feitas pelos usuários alimentam treinamento por DPO e mudanças são promovidas somente após A/B tests significativos.",
+        "en": "Fyxer describes an executive assistant that splits the email workflow across 30 to 50 specialized models, retrieves and reranks relevant memories by person and thread, and uses data from more than 500,000 hours of assistant work. Each component is evaluated on task-specific sets for accuracy, latency, and cost; user edits feed DPO training, and changes are promoted only after statistically significant A/B tests."
+      },
+      "novidade_principal": {
+        "pt": "Em vez de um único modelo gerar emails ponta a ponta, o sistema decompõe decisões, intenção, resultado esperado, recuperação de contexto e redação em previsões estreitas, fechando o ciclo com a diferença entre o rascunho e a edição final do usuário como sinal de preferência.",
+        "en": "Instead of one model generating emails end to end, the system decomposes reply decisions, intent, expected outcome, context retrieval, and drafting into narrow predictions, closing the loop with the difference between the draft and the user's final edit as a preference signal."
+      },
+      "relevancia": {
+        "pt": "É um exemplo concreto de arquitetura híbrida e context engineering para um produto altamente contextual, combinando especialização, memória seletiva, fine-tuning, feedback comportamental, evals e promoção controlada de versões.",
+        "en": "It is a concrete example of hybrid architecture and context engineering for a highly contextual product, combining specialization, selective memory, fine-tuning, behavioral feedback, evals, and controlled version promotion."
+      },
+      "url": "https://openai.com/index/fyxer",
+      "processado_em": "2026-09-16T13:13:19.707974+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/perplexity-improving-accuracy-with-astra",
       "titulo": {
         "pt": "Perplexity confia sistemas de ponta a ponta ao GPT-6 Astra",
@@ -325,6 +506,78 @@
       },
       "url": "https://openai.com/index/put-data-to-work",
       "processado_em": "2026-09-14T13:57:28.298938+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "titulo": {
+        "pt": "Crie experiências de voz mais naturais com GPT-Live-1 na API",
+        "en": "Build more natural voice experiences with GPT-Live-1 in the API"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-10T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Produto",
+          "Agentes de voz",
+          "Tool calling",
+          "Orquestração de modelos"
+        ],
+        "en": [
+          "Product",
+          "Voice agents",
+          "Tool calling",
+          "Model orchestration"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI lançou GPT-Live-1 na API para conversas de voz full-duplex, com escuta e fala simultâneas, tratamento de interrupções, controle de tom e ritmo, suporte a telefonia e maior confiabilidade em sessões longas. O modelo pode delegar raciocínio e tool calls a modelos de texto próprios ou de terceiros enquanto mantém a conversa.",
+        "en": "OpenAI launched GPT-Live-1 in the API for full-duplex voice conversations, with simultaneous listening and speaking, interruption handling, tone and pace control, telephony support, and greater long-session reliability. The model can delegate reasoning and tool calls to OpenAI or third-party text models while keeping the conversation flowing."
+      },
+      "novidade_principal": {
+        "pt": "Uma única camada de voz processa áudio de entrada e saída conjuntamente e preserva a interação em tempo real, enquanto tarefas mais profundas são roteadas para modelos e ferramentas de backend escolhidos pelo desenvolvedor.",
+        "en": "A single voice layer jointly processes incoming and outgoing audio and preserves real-time interaction while deeper tasks are routed to developer-selected backend models and tools."
+      },
+      "relevancia": {
+        "pt": "Apresenta uma arquitetura híbrida aplicável a agentes de voz: separa a conversação de baixa latência do raciocínio e da execução de ferramentas, permitindo otimizar custo, velocidade e capacidade por tarefa sem a fragilidade de pipelines encadeados de STT, LLM e TTS.",
+        "en": "It presents a hybrid architecture applicable to voice agents: it separates low-latency conversation from reasoning and tool execution, allowing cost, speed, and capability to be optimized per task without the brittleness of chained STT, LLM, and TTS pipelines."
+      },
+      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "processado_em": "2026-09-16T13:50:00.306504+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/introducing-the-agents-api",
+      "titulo": {
+        "pt": "Apresentando a Agents API",
+        "en": "Introducing the Agents API"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-10T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Produto",
+          "Agentes de IA",
+          "Orquestração"
+        ],
+        "en": [
+          "Product",
+          "AI Agents",
+          "Orchestration"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI lançou em beta público a Agents API, que disponibiliza como serviço gerenciado o harness e a infraestrutura usados pelo Codex para executar agentes de longa duração. Desenvolvedores definem tarefa, modelo, ferramentas e ambiente, podendo usar sandbox gerenciado, infraestrutura própria ou parceiros, enquanto a plataforma cuida de contexto, coordenação de subagentes, recuperação e execução assíncrona.",
+        "en": "OpenAI launched the Agents API in public beta, offering the harness and infrastructure used by Codex as a managed service for long-running agents. Developers define the task, model, tools, and environment and may use a managed sandbox, their own infrastructure, or partners, while the platform handles context, subagent coordination, recovery, and asynchronous execution."
+      },
+      "novidade_principal": {
+        "pt": "O harness de produção do Codex passa a ser consumível por uma única API, separando a orquestração durável do ambiente de execução e oferecendo sessões, subagentes e cargas assíncronas sem exigir que cada equipe construa essa infraestrutura.",
+        "en": "The production Codex harness is now consumable through a single API, separating durable orchestration from the execution environment and providing sessions, subagents, and asynchronous workloads without requiring every team to build that infrastructure."
+      },
+      "relevancia": {
+        "pt": "É diretamente aplicável à arquitetura de sistemas agênticos: oferece uma alternativa gerenciada para loops longos, coordenação de subagentes, gerenciamento de contexto, isolamento de execução e recuperação de falhas, com impacto potencial em custo, latência e confiabilidade.",
+        "en": "It is directly applicable to agentic-system architecture: it provides a managed alternative for long-running loops, subagent coordination, context management, execution isolation, and failure recovery, with potential impact on cost, latency, and reliability."
+      },
+      "url": "https://openai.com/index/introducing-the-agents-api",
+      "processado_em": "2026-09-16T13:09:34.675779+00:00"
     },
     {
       "id": "guid:https://github.blog/changelog/2026-08-26-enterprise-managed-permissions-for-github-copilot-agent-operations",
