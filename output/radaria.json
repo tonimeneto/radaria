@@ -2,6 +2,150 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement",
+      "titulo": {
+        "pt": "O painel de impacto do Copilot agora mostra engajamento por recurso",
+        "en": "Copilot impact dashboard now shows feature engagement"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-17T21:47:27+00:00",
+      "categoria": {
+        "pt": [
+          "Observabilidade",
+          "Governança de IA",
+          "Agentes de programação"
+        ],
+        "en": [
+          "Observability",
+          "AI governance",
+          "Coding agents"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub ampliou o painel de impacto e as APIs de relatórios do Copilot com contagens agregadas de usuários ativos por recurso em janelas de 28 dias, cobrindo code completion, agent edit, code review, cloud agent, CLI e aplicativo. Os relatórios também passam a mostrar a população completa de cada fase de adoção de IA na janela móvel.",
+        "en": "GitHub expanded the Copilot impact dashboard and reporting APIs with aggregate active-user counts by feature over 28-day windows, covering code completion, agent edit, code review, cloud agent, CLI, and app usage. Reports now also show the full population in each AI adoption phase over the rolling window."
+      },
+      "novidade_principal": {
+        "pt": "Organizações agora podem medir uso recorrente de recursos específicos do Copilot e distinguir code review ativo de passivo, com os mesmos dados disponíveis nas APIs agregadas de organização e empresa.",
+        "en": "Organizations can now measure recurring use of specific Copilot features and distinguish active from passive code review, with the same data available through aggregate organization and enterprise APIs."
+      },
+      "relevancia": {
+        "pt": "As métricas permitem avaliar adoção real de capacidades agênticas, orientar treinamento e configuração e acompanhar a incorporação da IA aos fluxos de engenharia sem expor dados individuais.",
+        "en": "The metrics support evaluation of real agentic-feature adoption, guide training and configuration, and track how AI becomes embedded in engineering workflows without exposing individual-level data."
+      },
+      "url": "https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement",
+      "processado_em": "2026-09-18T14:39:25.693087+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api",
+      "titulo": {
+        "pt": "Customizações agênticas do CLI agora estão na API de métricas de uso",
+        "en": "Agentic CLI customizations are now in the usage metrics API"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-17T21:08:50+00:00",
+      "categoria": {
+        "pt": [
+          "Observabilidade",
+          "Skills e tools",
+          "MCP",
+          "Governança de agentes"
+        ],
+        "en": [
+          "Observability",
+          "Skills and tools",
+          "MCP",
+          "Agent governance"
+        ]
+      },
+      "resumo": {
+        "pt": "A API de métricas de uso do GitHub Copilot passou a reportar atividade de skills, agentes personalizados, servidores MCP, slash commands e plugins do Copilot CLI. Relatórios individuais e agregados mostram os cinco itens com maior atividade e a quantidade de itens distintos usados.",
+        "en": "The GitHub Copilot usage metrics API now reports activity for skills, custom agents, MCP servers, slash commands, and Copilot CLI plugins. Per-user and aggregate reports show the five most active items and the number of distinct items used."
+      },
+      "novidade_principal": {
+        "pt": "A telemetria corporativa ganha métricas específicas para customizações agênticas, incluindo contagens de invocações, início de agentes e tentativas de conexão MCP, enquanto nomes definidos por clientes são agrupados para preservar privacidade.",
+        "en": "Enterprise telemetry gains metrics tailored to agentic customizations, including invocation counts, agent starts, and MCP connection attempts, while customer-defined names are grouped to preserve privacy."
+      },
+      "relevancia": {
+        "pt": "Os dados ajudam equipes a identificar automações realmente adotadas, lacunas de capacitação e prioridades de investimento, além de oferecer um modelo prático de observabilidade com proteção de informações internas.",
+        "en": "The data helps teams identify automations that are actually adopted, enablement gaps, and investment priorities, while providing a practical observability model that protects internal information."
+      },
+      "url": "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api",
+      "processado_em": "2026-09-18T14:39:54.337934+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/cooley-gopublic",
+      "titulo": {
+        "pt": "Como a Cooley está acelerando o trabalho de IPO com o ChatGPT",
+        "en": "How Cooley is accelerating IPO work with ChatGPT"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-17T12:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de agentes",
+          "Governança de agentes",
+          "Validação humana"
+        ],
+        "en": [
+          "Agent orchestration",
+          "Agent governance",
+          "Human validation"
+        ]
+      },
+      "resumo": {
+        "pt": "A Cooley criou o GO Public, um produto proprietário sobre o ChatGPT Work cujo harness agêntico combina dados do cliente, fontes públicas e precedentes curados para preparar análises de IPO que advogados revisam e validam.",
+        "en": "Cooley built GO Public, a proprietary product on ChatGPT Work whose agentic harness combines client data, public sources, and curated precedents to prepare IPO analyses that lawyers review and validate."
+      },
+      "novidade_principal": {
+        "pt": "O harness formaliza quais etapas os agentes podem executar automaticamente, onde a validação humana é obrigatória e como conhecimento especializado previamente curado orienta o fluxo completo.",
+        "en": "The harness formalizes which steps agents may perform automatically, where human validation is mandatory, and how previously curated expert knowledge guides the end-to-end workflow."
+      },
+      "relevancia": {
+        "pt": "O caso oferece um padrão prático para sistemas agênticos em domínios de alto impacto: automatizar síntese intensiva em informação, preservar pontos explícitos de controle humano e concentrar especialistas em julgamento e responsabilização.",
+        "en": "The case offers a practical pattern for agentic systems in high-impact domains: automate information-intensive synthesis, preserve explicit human control points, and focus experts on judgment and accountability."
+      },
+      "url": "https://openai.com/index/cooley-gopublic",
+      "processado_em": "2026-09-18T14:40:22.536062+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=98713",
+      "titulo": {
+        "pt": "Migrando o runtime do GitHub Copilot para Rust com o Copilot",
+        "en": "Migrating the GitHub Copilot runtime to Rust using Copilot"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-09-17T00:26:43+00:00",
+      "categoria": {
+        "pt": [
+          "Engenharia de software com IA",
+          "Orquestração e subagentes",
+          "Arquitetura agêntica",
+          "Validação"
+        ],
+        "en": [
+          "AI-assisted software engineering",
+          "Orchestration and subagents",
+          "Agentic architecture",
+          "Validation"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub relata a migração do runtime agêntico compartilhado do Copilot, de TypeScript/Node.js para mais de 800 mil linhas de Rust, conduzida principalmente por agentes em 128 pull requests incrementais. A arquitetura resultante separa o runtime da interface, permite uso in-process por SDKs via C ABI e preserva opções out-of-process.",
+        "en": "GitHub reports the migration of Copilot's shared agent runtime from TypeScript/Node.js to more than 800,000 lines of Rust, carried out primarily by agents through 128 incremental pull requests. The resulting architecture separates the runtime from the interface, enables in-process SDK use through a C ABI, and preserves out-of-process options."
+      },
+      "novidade_principal": {
+        "pt": "A experiência demonstra uma estratégia de substituição atômica por componentes com branch principal sempre publicável, testes end-to-end em cada etapa e rollout contínuo. Os registros também mostram que agentes dedicaram muito mais esforço a leitura e investigação do que a edição, enquanto subagentes exploraram em paralelo e o agente coordenador concentrou integração e mudanças.",
+        "en": "The experience demonstrates a component-by-component atomic replacement strategy with an always-shippable main branch, end-to-end tests at every step, and continuous rollout. Session logs also show agents spending far more effort reading and investigating than editing, while subagents explored in parallel and the coordinating agent concentrated integration and changes."
+      },
+      "relevancia": {
+        "pt": "O relato fornece padrões concretos para migrações assistidas por IA: começar por componentes puros e bem testados, avançar das folhas para a orquestração, limitar mutações ao coordenador, isolar trabalhos paralelos e definir autoridade, fronteiras e desempate explícitos entre agentes. Também evidencia que autonomia precisa de limites para ações fora da própria branch e que builds concorrentes exigem coordenação de recursos.",
+        "en": "The report provides concrete patterns for AI-assisted migrations: begin with pure, well-tested components, move from leaves toward orchestration, keep mutations with the coordinator, isolate parallel work, and define explicit authority, boundaries, and tie-breaking among agents. It also shows that autonomy needs limits for actions outside an agent's own branch and that concurrent builds require resource coordination."
+      },
+      "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+      "processado_em": "2026-09-18T14:40:53.181770+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
       "titulo": {
         "pt": "GitHub Copilot sugere definições de propriedades personalizadas",
