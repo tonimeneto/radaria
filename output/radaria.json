@@ -2,6 +2,111 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://openai.com/index/v7",
+      "titulo": {
+        "pt": "Como a V7 dá memória institucional a agentes de IA",
+        "en": "How V7 gives AI agents institutional memory"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-21T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Memória de agentes",
+          "RAG",
+          "MCP",
+          "Evals"
+        ],
+        "en": [
+          "Agent memory",
+          "RAG",
+          "MCP",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "A V7 descreve um Context Graph que extrai entidades, relações e fatos de arquivos corporativos, liga cada fato à evidência original e oferece consultas para agentes via MCP. Conversas recentes ficam no contexto ativo; material antigo é recuperado do grafo quando necessário, com busca documental por RAG como alternativa.",
+        "en": "V7 describes a Context Graph that extracts entities, relationships, and facts from company files, links each fact to its original evidence, and exposes queries to agents through MCP. Recent exchanges stay in active context; older material is retrieved from the graph when needed, with document search through RAG as a fallback."
+      },
+      "novidade_principal": {
+        "pt": "A combinação de grafo de contexto com evidência citável, consulta por MCP e recuperação RAG de reserva cria memória compartilhada para workflows longos. A empresa também relata avaliação contínua de citações, extração, acurácia, seguimento de instruções, latência e custo.",
+        "en": "Combining a context graph with citable evidence, MCP querying, and fallback RAG creates shared memory for long workflows. The company also reports continuous evaluation of citations, extraction, accuracy, instruction following, latency, and cost."
+      },
+      "relevancia": {
+        "pt": "É um exemplo arquitetural aplicável a context engineering e memória de agentes: manter fatos rastreáveis fora da janela ativa e recuperar apenas o necessário. Os ganhos numéricos divulgados são medições da V7 em seus próprios testes, não validação independente.",
+        "en": "It is an architectural example for context engineering and agent memory: keep traceable facts outside the active window and retrieve only what is needed. The published numerical gains come from V7's own tests, not independent validation."
+      },
+      "url": "https://openai.com/index/v7/",
+      "processado_em": "2026-09-22T13:05:17.587589+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/building-standards-next-phase-ai",
+      "titulo": {
+        "pt": "Construindo padrões para a próxima fase da IA",
+        "en": "Building standards for the next phase of AI"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-21T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de IA",
+          "Avaliação de agentes",
+          "Supervisão humana"
+        ],
+        "en": [
+          "AI governance",
+          "Agent evaluation",
+          "Human oversight"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI propõe cooperação internacional para estabelecer padrões técnicos de avaliação de capacidades, gestão de riscos e suficiência de salvaguardas em IA avançada, com atenção especial à pesquisa autônoma e à melhoria recursiva de sistemas.",
+        "en": "OpenAI proposes international cooperation on technical standards for capability evaluation, risk management, and safeguard adequacy in advanced AI, with particular attention to autonomous research and recursive system improvement."
+      },
+      "novidade_principal": {
+        "pt": "A proposta especifica três medições compartilhadas: progresso da pesquisa autônoma, pontos em que a supervisão humana deve ser acionada e níveis e limiares comuns para classificar, registrar e comunicar incidentes.",
+        "en": "The proposal specifies three shared measurements: progress in autonomous research, triggers for human review, and common severity levels and thresholds for classifying, tracking, and reporting incidents."
+      },
+      "relevancia": {
+        "pt": "Oferece critérios de governança que podem orientar evals, pontos de aprovação humana e registro de incidentes em sistemas de agentes. São padrões propostos, ainda sem especificação ou adoção obrigatória.",
+        "en": "It offers governance criteria that can inform evals, human approval gates, and incident logging in agent systems. These are proposed standards, without a binding specification or mandatory adoption yet."
+      },
+      "url": "https://openai.com/index/building-standards-next-phase-ai/",
+      "processado_em": "2026-09-22T13:03:54.660414+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience",
+      "titulo": {
+        "pt": "Copilot code review: uma experiência de revisão aprimorada",
+        "en": "Copilot code review: An improved review experience"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-18T20:17:22+00:00",
+      "categoria": {
+        "pt": [
+          "Revisão de código",
+          "Validação de agentes"
+        ],
+        "en": [
+          "Code review",
+          "Agent validation"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot code review passou a acompanhar descobertas entre revisões de uma pull request, agrupando problemas em abertos, resolvidos desde a última revisão e encontrados posteriormente em código já existente. O resumo mostra o nível de esforço da revisão e mantém o histórico das descobertas.",
+        "en": "Copilot code review now tracks findings across reviews of a pull request, grouping issues as open, resolved since the last review, or newly found in existing changes. Its overview shows review effort and preserves the history of findings."
+      },
+      "novidade_principal": {
+        "pt": "O Copilot valida correções entre commits, resolve comentários próprios com motivo e respeita respostas que pedem mantê-los abertos. A categoria de problemas encontrados posteriormente torna visíveis falhas que a revisão anterior não detectou.",
+        "en": "Copilot validates fixes across commits, resolves its own comments with a reason, and honors replies asking to keep them open. The previously missed category exposes issues earlier reviews failed to detect."
+      },
+      "relevancia": {
+        "pt": "O histórico de achados e os motivos de resolução ajudam a auditar a revisão automatizada e a distinguir correção real, falso positivo e descoberta tardia ao validar código produzido por agentes.",
+        "en": "Finding history and resolution reasons help audit automated reviews and distinguish actual fixes, false positives, and late discoveries when validating agent-produced code."
+      },
+      "url": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience",
+      "processado_em": "2026-09-22T13:05:57.064278+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement",
       "titulo": {
         "pt": "O painel de impacto do Copilot agora mostra engajamento por recurso",
