@@ -1,4 +1,6 @@
 from datetime import datetime, timezone
+from contextlib import redirect_stdout
+from io import StringIO
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import json
@@ -373,6 +375,33 @@ class GitHubPublicationTests(unittest.TestCase):
                 self.assertNotIn("Rodapé GitHub", "\n".join(content))
 
 class ResilientCollectionTests(unittest.TestCase):
+    def test_deferred_article_keeps_feed_metadata_for_native_recovery(self) -> None:
+        publication = Publication(
+            title="Artigo de teste",
+            url="https://openai.com/index/article",
+            published_at=datetime(2026, 9, 21, 12, tzinfo=timezone.utc),
+            categories=("Research",),
+            guid="https://openai.com/index/article",
+        )
+        output = StringIO()
+        with patch(
+            "radaria.collect_official_publications", return_value=([publication], [])
+        ), patch("radaria.remember_publication_urls"), patch(
+            "radaria.next_from_publications", return_value=publication
+        ), patch("radaria.fetch", side_effect=OSError("HTTP Error 403")), patch.object(
+            radaria.sys, "argv", ["radaria.py", "--json"]
+        ), redirect_stdout(output):
+            status = radaria.main()
+
+        payload = json.loads(output.getvalue())
+        self.assertEqual(status, 0)
+        self.assertEqual(payload["status"], "publication_deferred")
+        self.assertEqual(payload["identity"], publication_identity(publication))
+        self.assertEqual(payload["title"], publication.title)
+        self.assertEqual(payload["published_at"], publication.published_at.isoformat())
+        self.assertEqual(payload["categories"], ["Research"])
+        self.assertEqual(payload["url"], publication.url)
+
     def test_retries_transient_http_error(self) -> None:
         response = MagicMock()
         response.__enter__.return_value = response
@@ -586,7 +615,7 @@ class PublicationStateTests(unittest.TestCase):
             self.assertIsNone(next_publication(rss, state_path))
             self.assertFalse((Path(directory) / "results").exists())
 
-    def test_deduplicates_active_candidate_by_canonical_url(self) -> None:
+    def test_observed_but_unprocessed_url_reuses_feed_identity(self) -> None:
         publication = Publication(
             title="Item visto no feed",
             url="https://example.com/articles/item/?tracking=1",
@@ -609,10 +638,19 @@ class PublicationStateTests(unittest.TestCase):
             result = register_active_candidate(candidate, state_path)
             state = json.loads(state_path.read_text(encoding="utf-8"))
 
-        self.assertEqual(result["status"], "already_known")
+        self.assertEqual(result["status"], "candidate_registered")
+        self.assertEqual(result["identity"], "guid:opaque-feed-guid")
         self.assertIsNone(state["pending_id"])
+        self.assertEqual(state["active_pending_ids"], ["guid:opaque-feed-guid"])
 
-    def test_registers_new_active_candidate_in_existing_pending_flow(self) -> None:
+    def test_active_candidate_can_be_saved_while_feed_item_is_pending(self) -> None:
+        feed_publication = Publication(
+            title="Artigo temporariamente inacessível",
+            url="https://example.com/feed-pending",
+            published_at=datetime(2026, 9, 6, tzinfo=timezone.utc),
+            categories=(),
+            guid="https://example.com/feed-pending",
+        )
         candidate = {
             "title": "Novidade descoberta ativamente",
             "source": "Fonte primária",
@@ -622,14 +660,89 @@ class PublicationStateTests(unittest.TestCase):
         }
         with TemporaryDirectory() as directory:
             state_path = Path(directory) / "state.json"
+            next_from_publications([feed_publication], state_path)
 
             result = register_active_candidate(candidate, state_path)
+            active_publication = Publication(
+                title=candidate["title"],
+                url=candidate["original_url"],
+                published_at=datetime(2026, 9, 6, 10, tzinfo=timezone.utc),
+                categories=("Agents",),
+                source=candidate["source"],
+            )
+            persist_result(self.structured_result(active_publication), state_path)
             state = json.loads(state_path.read_text(encoding="utf-8"))
+            next_feed = next_from_publications([feed_publication], state_path)
 
         self.assertEqual(result["status"], "candidate_registered")
-        self.assertEqual(
-            state["pending_id"], "url:https://example.com/new-agent-technique"
+        self.assertEqual(result["identity"], "url:https://example.com/new-agent-technique")
+        self.assertEqual(state["pending_id"], publication_identity(feed_publication))
+        self.assertEqual(state["active_pending_ids"], [])
+        self.assertIn(result["identity"], state["processed_ids"])
+        self.assertEqual(next_feed, feed_publication)
+
+    def test_active_search_can_finish_the_feed_item_that_returned_403(self) -> None:
+        publication = Publication(
+            title="Artigo inacessível pelo coletor",
+            url="https://example.com/article/",
+            published_at=datetime(2026, 9, 6, tzinfo=timezone.utc),
+            categories=("Research",),
+            guid="https://example.com/article/",
         )
+        candidate = {
+            "title": publication.title,
+            "source": publication.source,
+            "published_at": publication.published_at.isoformat(),
+            "categories": list(publication.categories),
+            "original_url": publication.url,
+        }
+        with TemporaryDirectory() as directory:
+            state_path = Path(directory) / "state.json"
+            next_from_publications([publication], state_path)
+            remember_publication_urls([publication], state_path)
+
+            result = register_active_candidate(candidate, state_path)
+            persisted = persist_result(self.structured_result(publication), state_path)
+            persisted_exists = persisted.exists()
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(result, {
+            "status": "candidate_registered",
+            "identity": publication_identity(publication),
+        })
+        self.assertTrue(persisted_exists)
+        self.assertIsNone(state["pending_id"])
+        self.assertIn(result["identity"], state["processed_ids"])
+
+    def test_feed_does_not_repeat_an_active_result_with_the_same_url(self) -> None:
+        publication = Publication(
+            title="Novidade",
+            url="https://example.com/novidade/",
+            published_at=datetime(2026, 9, 6, tzinfo=timezone.utc),
+            categories=(),
+            guid="opaque-feed-guid",
+        )
+        candidate = {
+            "title": publication.title,
+            "source": publication.source,
+            "published_at": publication.published_at.isoformat(),
+            "categories": [],
+            "original_url": publication.url,
+        }
+        with TemporaryDirectory() as directory:
+            state_path = Path(directory) / "state.json"
+            registered = register_active_candidate(candidate, state_path)
+            persist_result(self.structured_result(Publication(
+                publication.title,
+                publication.url,
+                publication.published_at,
+                publication.categories,
+            )), state_path)
+            remember_publication_urls([publication], state_path)
+            repeated = next_from_publications([publication], state_path)
+
+        self.assertEqual(registered["status"], "candidate_registered")
+        self.assertIsNone(repeated)
 
     def test_deduplicates_active_url_against_equivalent_feed_guid(self) -> None:
         candidate = {

@@ -270,7 +270,11 @@ def google_publications(
     developer_entries = rss_feed_entries(
         developers_rss, {"developers.googleblog.com"}
     )
-    remember_urls([entry.url for entry in developer_entries], state_path)
+    remember_urls(
+        [entry.url for entry in developer_entries],
+        state_path,
+        {entry.url: feed_entry_identity(entry) for entry in developer_entries},
+    )
     baseline_inputs = {
         "google_deepmind": [publication_identity(item) for item in deepmind],
         "google_developers_blog": [
@@ -341,7 +345,11 @@ def collect_official_publications(
     def collect_google_developers() -> list[Publication]:
         rss = fetch(GOOGLE_DEVELOPERS_RSS_URL)
         entries = rss_feed_entries(rss, {"developers.googleblog.com"})
-        remember_urls([entry.url for entry in entries], state_path)
+        remember_urls(
+            [entry.url for entry in entries],
+            state_path,
+            {entry.url: feed_entry_identity(entry) for entry in entries},
+        )
         state = initialize_source_baselines(
             {
                 "google_developers_blog": [
@@ -527,7 +535,9 @@ def empty_state() -> dict:
         "discarded_ids": [],
         "source_baselines": {},
         "known_urls": [],
+        "known_url_identities": {},
         "pending_id": None,
+        "active_pending_ids": [],
     }
 
 
@@ -543,6 +553,8 @@ def load_state(path: Path = STATE_PATH) -> dict:
     state.setdefault("discarded_ids", [])
     state.setdefault("source_baselines", {})
     state.setdefault("known_urls", [])
+    state.setdefault("known_url_identities", {})
+    state.setdefault("active_pending_ids", [])
     return state
 
 
@@ -556,19 +568,36 @@ def save_state(state: dict, path: Path = STATE_PATH) -> None:
     temporary_path.replace(path)
 
 
-def remember_urls(urls: list[str], path: Path = STATE_PATH) -> None:
+def remember_urls(
+    urls: list[str],
+    path: Path = STATE_PATH,
+    identities: dict[str, str] | None = None,
+) -> None:
     state = load_state(path)
     known_urls = set(state.get("known_urls", []))
     updated_urls = known_urls | {normalize_url(url) for url in urls}
-    if updated_urls != known_urls:
+    known_identities = dict(state.get("known_url_identities", {}))
+    updated_identities = known_identities | {
+        normalize_url(url): identity
+        for url, identity in (identities or {}).items()
+    }
+    if updated_urls != known_urls or updated_identities != known_identities:
         state["known_urls"] = sorted(updated_urls)
+        state["known_url_identities"] = updated_identities
         save_state(state, path)
 
 
 def remember_publication_urls(
     publications: list[Publication], path: Path = STATE_PATH
 ) -> None:
-    remember_urls([publication.url for publication in publications], path)
+    remember_urls(
+        [publication.url for publication in publications],
+        path,
+        {
+            publication.url: publication_identity(publication)
+            for publication in publications
+        },
+    )
 
 
 def register_active_candidate(candidate: dict, path: Path = STATE_PATH) -> dict:
@@ -590,30 +619,40 @@ def register_active_candidate(candidate: dict, path: Path = STATE_PATH) -> dict:
     if parsed_url.scheme not in {"http", "https"} or not parsed_url.hostname:
         raise RuntimeError("A URL do candidato é inválida.")
 
-    identity = f"url:{normalized_url}"
     state = load_state(path)
+    url_identity = f"url:{normalized_url}"
+    equivalent_guid = f"guid:{normalized_url}"
+    observed_identity = state.get("known_url_identities", {}).get(normalized_url)
+    active_pending_ids = set(state.get("active_pending_ids", []))
+    identity = (
+        url_identity
+        if url_identity in active_pending_ids
+        else observed_identity or url_identity
+    )
     known_ids = set(state.get("baseline_ids", [])) | set(
         state.get("processed_ids", [])
     ) | set(state.get("discarded_ids", []))
     for identities in state.get("source_baselines", {}).values():
         known_ids.update(identities)
-    equivalent_guid = f"guid:{normalized_url}"
     if (
         identity in known_ids
+        or url_identity in known_ids
         or equivalent_guid in known_ids
-        or normalized_url in state.get("known_urls", [])
+        or (
+            observed_identity is None
+            and normalized_url in state.get("known_urls", [])
+            and state.get("pending_id") not in {url_identity, equivalent_guid}
+            and url_identity not in active_pending_ids
+        )
     ):
-        if state.get("pending_id") == identity:
-            state["pending_id"] = None
-            save_state(state, path)
         return {"status": "already_known", "identity": identity}
 
-    pending_id = state.get("pending_id")
-    if pending_id and pending_id != identity:
-        raise RuntimeError("Já existe outra publicação pendente.")
-
-    state["pending_id"] = identity
-    save_state(state, path)
+    if state.get("pending_id") in {url_identity, equivalent_guid}:
+        identity = state["pending_id"]
+    if state.get("pending_id") != identity:
+        if identity not in active_pending_ids:
+            state["active_pending_ids"] = sorted(active_pending_ids | {identity})
+            save_state(state, path)
     return {"status": "candidate_registered", "identity": identity}
 
 
@@ -639,12 +678,14 @@ def next_from_publications(
     known_ids = set(state.get("baseline_ids", [])) | set(
         state.get("processed_ids", [])
     ) | set(state.get("discarded_ids", []))
+    known_ids.update(state.get("active_pending_ids", []))
     for identities in state.get("source_baselines", {}).values():
         known_ids.update(identities)
     candidates = [
         publication
         for publication in publications
         if publication_identity(publication) not in known_ids
+        and f"url:{normalize_url(publication.url)}" not in known_ids
     ]
     if not candidates:
         return None
@@ -669,23 +710,29 @@ def next_publication(rss: str, path: Path = STATE_PATH) -> Publication | None:
 
 def mark_processed(identity: str, path: Path = STATE_PATH) -> None:
     state = load_state(path)
-    if state.get("pending_id") != identity:
+    active_pending_ids = set(state.get("active_pending_ids", []))
+    if state.get("pending_id") != identity and identity not in active_pending_ids:
         raise RuntimeError("O identificador não corresponde à publicação pendente.")
     processed_ids = set(state.get("processed_ids", []))
     processed_ids.add(identity)
     state["processed_ids"] = sorted(processed_ids)
-    state["pending_id"] = None
+    if state.get("pending_id") == identity:
+        state["pending_id"] = None
+    state["active_pending_ids"] = sorted(active_pending_ids - {identity})
     save_state(state, path)
 
 
 def mark_discarded(identity: str, path: Path = STATE_PATH) -> None:
     state = load_state(path)
-    if state.get("pending_id") != identity:
+    active_pending_ids = set(state.get("active_pending_ids", []))
+    if state.get("pending_id") != identity and identity not in active_pending_ids:
         raise RuntimeError("O identificador não corresponde à publicação pendente.")
     discarded_ids = set(state.get("discarded_ids", []))
     discarded_ids.add(identity)
     state["discarded_ids"] = sorted(discarded_ids)
-    state["pending_id"] = None
+    if state.get("pending_id") == identity:
+        state["pending_id"] = None
+    state["active_pending_ids"] = sorted(active_pending_ids - {identity})
     save_state(state, path)
 
 
@@ -854,7 +901,9 @@ def persist_discard(
     validate_discard(decision)
     identity = decision["id"].strip()
     state = load_state(state_path)
-    is_pending = state.get("pending_id") == identity
+    is_pending = state.get("pending_id") == identity or identity in state.get(
+        "active_pending_ids", []
+    )
     is_already_discarded = identity in state.get("discarded_ids", [])
     if not is_pending and not is_already_discarded:
         raise RuntimeError("O descarte não corresponde a uma publicação conhecida.")
@@ -905,7 +954,9 @@ def persist_result(
     validate_result(result)
     identity = result["id"].strip()
     state = load_state(state_path)
-    is_pending = state.get("pending_id") == identity
+    is_pending = state.get("pending_id") == identity or identity in state.get(
+        "active_pending_ids", []
+    )
     is_already_processed = identity in state.get("processed_ids", [])
     if not is_pending and not is_already_processed:
         raise RuntimeError("O resultado não corresponde a uma publicação conhecida.")
@@ -1372,6 +1423,11 @@ def main() -> int:
             payload = {
                 "status": "publication_deferred",
                 "identity": publication_identity(publication),
+                "title": publication.title,
+                "source": publication.source,
+                "published_at": publication.published_at.isoformat(),
+                "categories": list(publication.categories),
+                "url": publication.url,
                 "message": "A publicação pendente será tentada novamente.",
                 "warnings": warning_payload,
             }

@@ -34,7 +34,7 @@ Pesquise novidades sobre:
 6. Em seguida, execute `python radaria.py --json` repetidamente e trate todas as novidades retornadas pelos coletores atuais: OpenAI News, Anthropic News, Google DeepMind, Google Developers Blog, GitHub Copilot Blog e GitHub Copilot Changelog. Preserve os `warnings` retornados para o relatório final.
 7. Mesmo que os coletores retornem `no_new_publications`, continue com os candidatos encontrados pela busca ativa.
 
-Os coletores são independentes. `publication_found` pode conter `warnings` de fontes que falharam sem invalidar a publicação entregue. Continue processando normalmente. `no_new_publications_with_warnings` encerra a fila dos coletores com sucesso parcial. `publication_deferred` ou `collection_deferred` preserva o item pendente para nova tentativa: encerre a fila sem descartar o item e prossiga para busca ativa e publicação do que já foi persistido. `collection_failed` significa que nenhuma fonte pôde ser coletada; não tente novamente indefinidamente, mas ainda publique resultados válidos já persistidos nesta execução.
+Os coletores são independentes. `publication_found` pode conter `warnings` de fontes que falharam sem invalidar a publicação entregue. Continue processando normalmente. `no_new_publications_with_warnings` encerra a fila dos coletores com sucesso parcial. Se `publication_deferred` ocorrer, tente ler a mesma página oficial pela pesquisa nativa usando os metadados e a `identity` retornados; se conseguir confirmar o conteúdo, filtre e persista esse item normalmente. Se a página continuar inacessível, preserve o pendente, encerre a fila dos coletores e prossiga com candidatos independentes da busca ativa e com a publicação do que já foi salvo. `collection_deferred` também preserva o pendente e permite essas etapas independentes. `collection_failed` significa que nenhuma fonte pôde ser coletada; não tente novamente indefinidamente, mas ainda publique resultados válidos já persistidos nesta execução. Se todas as fontes falharem por restrição de rede do ambiente, tente a coleta com a permissão de rede necessária antes de concluir que estão indisponíveis.
 
 ## Deduplicar
 
@@ -44,7 +44,7 @@ Execute `python radaria.py --register-candidate .radaria/candidate-to-register.j
 
 - Se retornar `already_known`, não analise novamente.
 - Se retornar `candidate_registered`, preserve a `identity` retornada e prossiga.
-- Se já existir outro item pendente ou qualquer etapa falhar, pare o processamento.
+- Se houver outro item pendente, preserve-o e continue com o candidato independente. Se o candidato for a própria publicação pendente, use a identity retornada. Pare apenas se o registro ou a persistência falhar.
 
 ## Filtrar
 
@@ -80,6 +80,8 @@ Publique a saída no próprio repositório RadarIA sempre que houver resultados 
 6. Faça push da branch atual para `origin`. Faça o push mesmo quando não houver mudança nova no JSON, para permitir nova tentativa de um commit local cuja publicação anterior tenha falhado. Não crie commit vazio.
 
 Se commit ou push falhar, não apague o JSON, não reverta o processamento e não mascare o erro. Informe objetivamente que os dados foram gerados, mas a publicação falhou, incluindo a causa necessária para nova tentativa.
+
+Só confirme que o site foi atualizado depois de verificar a saída publicada no destino que o consome. Commit local ou push bem-sucedido, isoladamente, não comprovam a atualização da página; se o destino não puder ser verificado, informe essa limitação.
 
 ## Apresentar
 
