@@ -7,17 +7,14 @@
 - Caminho oficial: `D:\MeusArquivos\Fs\Projetos\RadarIA`
 - Repositório esperado: `https://github.com/tonimeneto/radaria.git`
 
-Trabalhe somente neste projeto. Não acesse outros projetos nem transfira entre
-eles código, regras, arquitetura ou decisões sem autorização explícita.
+A raiz autorizada é este projeto. Referências externas são somente leitura,
+salvo autorização explícita compatível com a tarefa.
 
 ## Contexto progressivo
 
-Não carregue documentação indiscriminadamente. Consulte somente as fontes
-necessárias à tarefa atual.
-
-Quando a tarefa exigir conhecimento do produto, localize em `docs/` a
-documentação relevante e leia apenas os documentos que influenciam a decisão.
-O código e os testes completam o estado observável do projeto.
+Consulte progressivamente somente as fontes que influenciam a tarefa. Para
+conhecimento do produto, comece em `docs/`. Código, testes, configuração e
+ambiente completam o estado observável.
 
 Se existirem agentes de IA implementados pelo produto, suas especificações
 pertencem a `docs/agentes/`; este arquivo contém apenas instruções para o agente
@@ -25,26 +22,26 @@ de desenvolvimento.
 
 ## DevTOLAS
 
-O DevTOLAS é a fonte oficial do método de engenharia e está disponível para
-consulta em `D:\MeusArquivos\Fs\Projetos\DevTolas`. Consulte somente a norma correspondente quando
-a natureza da tarefa exigir orientação metodológica comum.
+O DevTOLAS é a fonte do método comum em
+`D:\MeusArquivos\Fs\Projetos\DevTolas`. Consulte somente a norma correspondente:
 
 - uso de LLM, contexto, prompts, RAG, memória ou agentes de IA:
   `D:\MeusArquivos\Fs\Projetos\DevTolas\docs\uso-de-llm.md`;
 - classificação ou organização documental:
   `D:\MeusArquivos\Fs\Projetos\DevTolas\docs\documentacao.md`;
-- governança metodológica:
-  `D:\MeusArquivos\Fs\Projetos\DevTolas\docs\governanca.md`.
+- governança, autoridade e escopo:
+  `D:\MeusArquivos\Fs\Projetos\DevTolas\docs\governanca.md`;
+- estado vigente, quando necessário:
+  `D:\MeusArquivos\Fs\Projetos\DevTolas\docs\estado-vigente.md`.
 
-Não altere o DevTOLAS durante tarefas normais deste projeto e não crie
-dependência de execução ou importação direta com ele.
+O DevTOLAS é referência externa somente leitura durante tarefas deste projeto.
 
 ## Regras específicas do projeto
 
 Nenhuma regra específica definida na criação.
 
-Não invente regras locais para preencher esta seção. Decisões permanentes do
-produto pertencem à documentação do projeto.
+Decisões permanentes pertencem à documentação do projeto. Decisões pendentes
+permanecem explicitamente pendentes.
 
 ## Fontes oficiais locais
 
@@ -58,20 +55,20 @@ produto pertencem à documentação do projeto.
 Ainda não definidos.
 ```
 
-Execute validações proporcionais ao risco. Não instale dependências nem altere
-serviços sem autorização compatível.
+Execute validações proporcionais ao risco. Dependências e serviços exigem
+autoridade compatível com a tarefa.
 
 ## Segurança e Git
 
 - Antes de editar, confirme raiz Git, branch e alterações locais.
-- Commits, operações remotas, troca de branch e alteração de remotos dependem
-  de autorização compatível.
+- A tarefa deve autorizar commits, operações remotas, troca de branch ou
+  alteração de remotos.
 - Não abra nem exponha arquivos de ambiente, tokens, senhas, certificados ou
   chaves sem necessidade e autorização específicas.
 - Preserve alterações existentes e mantenha a mudança limitada ao escopo.
 
 ## Conclusão
 
-Ao terminar, informe alterações, validações, documentação impactada e
-pendências. Confirme que não houve contaminação entre projetos nem exposição de
-segredos.
+Ao terminar, informe alterações, validações, documentação impactada e pendências.
+Ao substituir uma responsabilidade, aplique o fechamento preventivo definido em
+`D:\MeusArquivos\Fs\Projetos\DevTolas\docs\metodo-de-desenvolvimento.md`.
