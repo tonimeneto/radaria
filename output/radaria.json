@@ -2,6 +2,216 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "url:https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app",
+      "titulo": {
+        "pt": "Isolamento local no aplicativo GitHub Copilot",
+        "en": "Local sandboxing in the GitHub Copilot app"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-23T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Sandboxing",
+          "Governança"
+        ],
+        "en": [
+          "Agent security",
+          "Sandboxing",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "O aplicativo GitHub Copilot passou a oferecer sandboxing local por projeto para sessões em repositórios e working trees. A política controla acesso a arquivos, rede e credenciais; configurações empresariais podem torná-la mais restritiva.",
+        "en": "The GitHub Copilot app now offers per-project local sandboxing for repository and working-tree sessions. Its policy controls file, network, and credential access; enterprise-managed settings can make it more restrictive."
+      },
+      "novidade_principal": {
+        "pt": "A sessão falha se o sistema operacional não conseguir aplicar a política solicitada, em vez de executar sem isolamento. O recurso está em prévia pública, desativado por padrão e pode ser ligado em uma sessão ativa com `/sandbox on`.",
+        "en": "A session fails if the operating system cannot enforce the requested policy rather than running without isolation. The feature is in public preview, off by default, and can be enabled for an active session with `/sandbox on`."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão concreto de controle de agentes de programação com limites de arquivos, rede e credenciais e comportamento seguro quando a política não pode ser aplicada.",
+        "en": "It provides a concrete control pattern for coding agents with file, network, and credential boundaries and safe failure when the policy cannot be enforced."
+      },
+      "url": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "processado_em": "2026-09-23T17:24:04.772355+00:00"
+    },
+    {
+      "id": "url:https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+      "titulo": {
+        "pt": "Memória persistente protegida no Private AI Compute",
+        "en": "Protected persistent memory in Private AI Compute"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-09-23T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Memória de agentes",
+          "Privacidade",
+          "Arquitetura de segurança"
+        ],
+        "en": [
+          "Agent memory",
+          "Privacy",
+          "Security architecture"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google DeepMind apresentou uma arquitetura proposta de memória persistente em servidor para assistência de IA entre dispositivos. Dados por usuário ficam criptografados; chaves permanecem nos dispositivos e o processamento ocorre em enclaves isolados por canal autenticado e criptografado.",
+        "en": "Google DeepMind presented a proposed server-side persistent-memory architecture for AI assistance across devices. Per-user data remains encrypted; keys stay on devices and processing occurs in isolated enclaves over an authenticated encrypted channel."
+      },
+      "novidade_principal": {
+        "pt": "A memória deixa de ser estritamente sem estado: o enclave descriptografa temporariamente o contexto, processa a solicitação e o recriptografa. A proposta inclui verificação do software antes do envio de dados e registro público resistente a adulteração.",
+        "en": "Memory is no longer strictly stateless: the enclave temporarily decrypts context, processes the request, and re-encrypts it. The proposal includes software verification before data is sent and a tamper-resistant public record."
+      },
+      "relevancia": {
+        "pt": "Mostra um desenho para continuidade de contexto em agentes com separação entre armazenamento, chaves do usuário e computação confiável; é uma arquitetura anunciada, ainda não uma capacidade validada aqui.",
+        "en": "It illustrates a design for agent-context continuity separating storage, user-held keys, and trusted compute; this is an announced architecture, not a capability validated here."
+      },
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "processado_em": "2026-09-23T17:24:46.784739+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app",
+      "titulo": {
+        "pt": "OpenTelemetry no aplicativo GitHub Copilot",
+        "en": "OpenTelemetry in the GitHub Copilot app"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Observabilidade de agentes",
+          "OpenTelemetry",
+          "Governança"
+        ],
+        "en": [
+          "Agent observability",
+          "OpenTelemetry",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "O aplicativo GitHub Copilot agora permite configurar exportação de telemetria OpenTelemetry por políticas empresariais. Os traces mostram sessões de agentes, chamadas a modelos e uso de ferramentas em sistemas de monitoramento da organização.",
+        "en": "The GitHub Copilot app now supports OpenTelemetry export through enterprise-managed settings. Traces expose agent sessions, model requests, and tool use in an organization's monitoring systems."
+      },
+      "novidade_principal": {
+        "pt": "A propriedade `telemetry` em `managed-settings.json` define centralmente o endpoint de exportação. Conteúdo de prompts e respostas fica excluído por padrão, com captura sujeita a configuração explícita.",
+        "en": "The `telemetry` property in `managed-settings.json` centrally defines the export endpoint. Prompt and response content is excluded by default, with capture subject to explicit configuration."
+      },
+      "relevancia": {
+        "pt": "Traces por etapa ajudam a investigar comportamento inesperado e validar a execução de agentes sem depender apenas do resultado final, com controle central e atenção à privacidade.",
+        "en": "Step-by-step traces help investigate unexpected behavior and validate agent execution beyond the final result, with central control and privacy considerations."
+      },
+      "url": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "processado_em": "2026-09-23T17:24:15.924272+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/claude-opus-5-5",
+      "titulo": {
+        "pt": "Claude Opus 5.5 para programação agêntica",
+        "en": "Claude Opus 5.5 for agentic coding"
+      },
+      "fonte": "Anthropic News",
+      "data": "2026-09-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos para programação",
+          "Evals",
+          "Segurança de agentes"
+        ],
+        "en": [
+          "Coding models",
+          "Evals",
+          "Agent security"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic lançou Claude Opus 5.5 com foco em tarefas longas de programação, maior eficiência e salvaguardas. Segundo avaliações da própria empresa, o modelo melhorou em benchmarks de programação agêntica, reduziu em cerca de 40% o custo típico frente ao Opus 5 e ficou mais resistente a prompt injection.",
+        "en": "Anthropic released Claude Opus 5.5 for long-running coding tasks, with better efficiency and safeguards. In the company's own evaluations, it improved on agentic coding benchmarks, reduced typical cost by about 40% versus Opus 5, and became more resistant to prompt injection."
+      },
+      "novidade_principal": {
+        "pt": "O lançamento combina menor custo por token e por tarefa com testes comportamentais de ações difíceis de reverter, tarefas longas e limites de atuação. A Anthropic relata classificador antes de cada ação, sandbox auditável e revisão de código como controles adicionais.",
+        "en": "The release combines lower per-token and per-task cost with behavioral tests for hard-to-reverse actions, long tasks, and operating boundaries. Anthropic reports a pre-action classifier, auditable sandbox, and code review as additional controls."
+      },
+      "relevancia": {
+        "pt": "É uma opção para comparar qualidade, custo e segurança em agentes de programação; os resultados divulgados devem ser verificados em tarefas e avaliações próprias antes de orientar uma adoção.",
+        "en": "It is an option for comparing quality, cost, and safety in coding agents; the reported results should be checked against one's own tasks and evaluations before guiding adoption."
+      },
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "processado_em": "2026-09-23T17:24:36.711390+00:00"
+    },
+    {
+      "id": "url:https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "titulo": {
+        "pt": "Apresentação dos modelos GPT-6 Sol e Luna",
+        "en": "Introducing GPT-6 Sol and Luna"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos para programação",
+          "Computer use",
+          "Avaliação de agentes"
+        ],
+        "en": [
+          "Coding models",
+          "Computer use",
+          "Agent evaluation"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI lançou GPT-6 Sol e Luna para Codex e API, com foco em programação, computer use e menor custo. A empresa relata ganhos frente às versões GPT-5.6 e redução de preços de API de aproximadamente 50%, com diferentes equilíbrios entre capacidade e custo.",
+        "en": "OpenAI released GPT-6 Sol and Luna for Codex and the API, focusing on coding, computer use, and lower cost. The company reports gains over their GPT-5.6 counterparts and an approximately 50% API price reduction, with different capability-cost tradeoffs."
+      },
+      "novidade_principal": {
+        "pt": "Em DeepSWE v1.1, a OpenAI reporta 68,8% para Sol e 66,6% para Luna em esforço máximo, com custo por tarefa menor que modelos comparados. A publicação também relata melhorias em cache de contexto e em avaliações de alinhamento, inclusive afirmações enganosas sobre trabalho de programação.",
+        "en": "On DeepSWE v1.1, OpenAI reports 68.8% for Sol and 66.6% for Luna at maximum effort, with lower per-task costs than compared models. The publication also reports improvements in context caching and alignment evaluations, including misleading claims about coding work."
+      },
+      "relevancia": {
+        "pt": "Os modelos ampliam as opções para escolher capacidade, latência e custo em agentes de programação. Os resultados são avaliações divulgadas pela fabricante e pedem comparação em tarefas próprias antes de orientar uma troca.",
+        "en": "The models expand the options for balancing capability, latency, and cost in coding agents. The reported results are vendor-published evaluations and warrant comparison on one's own tasks before switching."
+      },
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "processado_em": "2026-09-23T17:26:18.152501+00:00"
+    },
+    {
+      "id": "url:https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "titulo": {
+        "pt": "Cache de prompts aprimorado para GPT-6",
+        "en": "Better prompt caching for GPT-6"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Context engineering",
+          "Cache de prompts",
+          "Agentes persistentes"
+        ],
+        "en": [
+          "Context engineering",
+          "Prompt caching",
+          "Persistent agents"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI ampliou o cache de prefixos compartilhados para agentes persistentes com GPT-6, com elegibilidade para desconto em reutilizações dentro de 30 minutos. Um painel e diagnósticos mostram taxas de acerto e causas de perdas de cache.",
+        "en": "OpenAI expanded shared-prefix caching for persistent GPT-6 agents, with discount eligibility for reuse within 30 minutes. A dashboard and diagnostics show hit rates and reasons for cache misses."
+      },
+      "novidade_principal": {
+        "pt": "Breakpoints explícitos selecionam prefixos reutilizáveis; `configuration_update` permite mudar o esforço de raciocínio sem quebrar o cache. Manter definições de ferramentas estáveis e restringir chamadas com `allowed_tools` preserva contexto compartilhado; prewarming pode reduzir latência.",
+        "en": "Explicit breakpoints select reusable prefixes; `configuration_update` allows reasoning-effort changes without breaking the cache. Keeping tool definitions stable and restricting calls with `allowed_tools` preserves shared context; prewarming can reduce latency."
+      },
+      "relevancia": {
+        "pt": "Traz técnicas operacionais para reduzir custo e latência de agentes longos e para diagnosticar regressões de cache provocadas por mudanças em ferramentas, configurações ou contexto.",
+        "en": "It offers operational techniques to reduce long-running agents' cost and latency and diagnose cache regressions caused by changes to tools, settings, or context."
+      },
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6/",
+      "processado_em": "2026-09-23T17:24:26.530470+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/v7",
       "titulo": {
         "pt": "Como a V7 dá memória institucional a agentes de IA",
