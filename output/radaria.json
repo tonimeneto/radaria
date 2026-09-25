@@ -2,6 +2,41 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
+      "titulo": {
+        "pt": "Atualizações do GitHub Copilot para Slack e Microsoft Teams",
+        "en": "Updates to GitHub Copilot for Slack and Microsoft Teams"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-25T16:33:42+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Engenharia de contexto",
+          "Governança de agentes"
+        ],
+        "en": [
+          "Coding agents",
+          "Context engineering",
+          "Agent governance"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot passa a usar anexos, links e histórico de conversas no Slack e no Teams como contexto para criar trabalho no GitHub, verificando issues semelhantes e preservando links para a discussão de origem.",
+        "en": "Copilot now uses attachments, links, and conversation history in Slack and Teams as context for creating GitHub work, checking for similar issues and preserving links to the source discussion."
+      },
+      "novidade_principal": {
+        "pt": "A integração conecta decisões em chats ao trabalho criado no GitHub e melhora o controle de sessões longas, inclusive impedindo que sessões substituídas continuem atuando em um repositório antigo.",
+        "en": "The integration links chat decisions to work created on GitHub and improves control of long-running sessions, including preventing superseded sessions from continuing to act in a former repository."
+      },
+      "relevancia": {
+        "pt": "Oferece padrões aplicáveis de rastreabilidade de contexto, prevenção de duplicatas e contenção de ações de agentes após mudança de repositório ou interrupção.",
+        "en": "It offers applicable patterns for context traceability, duplicate prevention, and containing agent actions after repository changes or interruptions."
+      },
+      "url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
+      "processado_em": "2026-09-25T17:02:52.545390+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
       "titulo": {
         "pt": "Ativação padrão de recursos do Copilot para Business e Enterprise",
@@ -66,6 +101,41 @@
       },
       "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
       "processado_em": "2026-09-25T13:23:12.268325+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
+      "titulo": {
+        "pt": "GitHub exige prova de presença para ações de alto impacto",
+        "en": "GitHub requires proof of presence for high-impact actions"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-09-24T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de agentes",
+          "Segurança",
+          "Controle de acesso"
+        ],
+        "en": [
+          "Agent governance",
+          "Security",
+          "Access control"
+        ]
+      },
+      "resumo": {
+        "pt": "GitHub Enterprise Cloud oferece, em prévia pública para empresas EMU com Microsoft Entra ID, reautenticação interativa ou MFA antes de ações sensíveis, como criar tokens e alterar configurações de segurança.",
+        "en": "GitHub Enterprise Cloud offers, in public preview for EMU enterprises using Microsoft Entra ID, interactive reauthentication or MFA before sensitive actions such as creating tokens and changing security settings."
+      },
+      "novidade_principal": {
+        "pt": "A autorização passa a exigir prova recente de uma pessoa no momento da ação, mesmo quando há sessão ou token válidos; depois do desafio, a sessão do navegador mantém a autorização por duas horas.",
+        "en": "Authorization requires fresh proof of a person at the time of action even with a valid session or token; after the challenge, the browser session remains authorized for two hours."
+      },
+      "relevancia": {
+        "pt": "A medida exemplifica um limite verificável para agentes com credenciais: operações de alto impacto podem exigir presença humana recente, reduzindo ações não percebidas ou decorrentes de sessão comprometida.",
+        "en": "The measure illustrates an enforceable boundary for credentialed agents: high-impact operations can require recent human presence, reducing unnoticed actions or actions from compromised sessions."
+      },
+      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+      "processado_em": "2026-09-25T17:03:53.836099+00:00"
     },
     {
       "id": "guid:https://developers.googleblog.com/turn-your-rest-apis-into-mcp-tools-with-google-cloud-api-gateway",
