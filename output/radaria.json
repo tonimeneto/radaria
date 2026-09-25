@@ -2,6 +2,245 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
+      "titulo": {
+        "pt": "Ativação padrão de recursos do Copilot para Business e Enterprise",
+        "en": "Default Enablement of Copilot Features for Copilot Business and Enterprise"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-25T03:13:23+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de IA",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "AI governance",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub introduziu uma política global para definir se recursos elegíveis do Copilot ficam habilitados por padrão, desabilitados ou sob decisão dos administradores da organização. A política pode ser configurada agora e passa a valer em 22 de outubro de 2026.",
+        "en": "GitHub introduced a global policy that determines whether eligible Copilot features are enabled by default, disabled, or left to organization administrators. It can be configured now and takes effect on October 22, 2026."
+      },
+      "novidade_principal": {
+        "pt": "A configuração passa a abranger recursos e clientes geralmente disponíveis, Copilot Code Review e servidores MCP no Copilot; decisões explícitas e adesões a prévias são preservadas.",
+        "en": "The setting covers generally available features and clients, Copilot Code Review, and MCP servers in Copilot; explicit decisions and preview opt-ins are preserved."
+      },
+      "relevancia": {
+        "pt": "Equipes que governam agentes e ferramentas de IA precisam revisar o padrão global antes da vigência para evitar habilitação não planejada de recursos e definir a autoridade dos administradores locais.",
+        "en": "Teams governing AI agents and tools should review the global default before it takes effect to avoid unplanned feature enablement and define local administrators' authority."
+      },
+      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/",
+      "processado_em": "2026-09-25T13:22:07.600838+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=98939",
+      "titulo": {
+        "pt": "Quando o chat é a interface errada",
+        "en": "When chat is the wrong UI"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-09-24T20:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Arquitetura de agentes",
+          "Interfaces para desenvolvedores"
+        ],
+        "en": [
+          "Agent architecture",
+          "Developer interfaces"
+        ]
+      },
+      "resumo": {
+        "pt": "O artigo propõe usar canvases no aplicativo GitHub Copilot como interfaces específicas para tarefas, conectadas ao agente. Os exemplos incluem consultar SQLite, gerenciar pacotes e conduzir etapas de um fluxo de desenvolvimento.",
+        "en": "The article proposes using canvases in the GitHub Copilot app as task-specific interfaces connected to the agent. Examples include querying SQLite, managing packages, and guiding stages of a development workflow."
+      },
+      "novidade_principal": {
+        "pt": "Um canvas pode combinar aplicação full-stack, execução local e comunicação bidirecional com o agente, transferindo interações repetíveis para uma interface determinística e reservando o agente para as etapas que exigem raciocínio.",
+        "en": "A canvas can combine a full-stack app, local execution, and two-way communication with the agent, moving repeatable interactions into a deterministic interface and reserving the agent for reasoning-intensive steps."
+      },
+      "relevancia": {
+        "pt": "A abordagem oferece um padrão prático de arquitetura híbrida para fluxos com agentes, com controles visuais, estado durável e pontos de revisão humana sem depender exclusivamente do chat.",
+        "en": "The approach offers a practical hybrid architecture pattern for agent workflows, with visual controls, durable state, and human review points beyond chat alone."
+      },
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
+      "processado_em": "2026-09-25T13:23:12.268325+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/turn-your-rest-apis-into-mcp-tools-with-google-cloud-api-gateway",
+      "titulo": {
+        "pt": "Transforme APIs REST em ferramentas MCP com Google Cloud API Gateway",
+        "en": "Turn your REST APIs into MCP tools with Google Cloud API Gateway"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-09-24T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "MCP",
+          "Arquitetura de agentes",
+          "Governança de ferramentas"
+        ],
+        "en": [
+          "MCP",
+          "Agent architecture",
+          "Tool governance"
+        ]
+      },
+      "resumo": {
+        "pt": "Em prévia pública, o Google Cloud API Gateway pode expor operações REST descritas em OpenAPI 3.x como ferramentas MCP mediante anotações na especificação, sem manter um servidor MCP separado.",
+        "en": "In public preview, Google Cloud API Gateway can expose REST operations described in OpenAPI 3.x as MCP tools through specification annotations, without maintaining a separate MCP server."
+      },
+      "novidade_principal": {
+        "pt": "O gateway traduz chamadas MCP JSON-RPC para REST e reutiliza autenticação, quotas e logs existentes. A descoberta por tools/list é pública por padrão e deve receber JWT quando os esquemas das ferramentas forem sensíveis; tools/call mantém a autenticação da operação REST.",
+        "en": "The gateway translates MCP JSON-RPC calls to REST and reuses existing authentication, quotas, and logs. Discovery through tools/list is public by default and should require JWT when tool schemas are sensitive; tools/call retains the REST operation's authentication."
+      },
+      "relevancia": {
+        "pt": "É um caminho concreto para oferecer capacidades existentes a agentes com uma única trilha de políticas e observabilidade, reduzindo infraestrutura duplicada e destacando um controle de segurança para descoberta de ferramentas.",
+        "en": "It provides a concrete way to expose existing capabilities to agents through one policy and observability path, reducing duplicate infrastructure while highlighting a security control for tool discovery."
+      },
+      "url": "https://developers.googleblog.com/turn-your-rest-apis-into-mcp-tools-with-google-cloud-api-gateway/",
+      "processado_em": "2026-09-25T13:24:55.823379+00:00"
+    },
+    {
+      "id": "url:https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+      "titulo": {
+        "pt": "Fuzzing com IA usando o GitHub Security Lab Taskflow Agent",
+        "en": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent"
+      },
+      "fonte": "GitHub Security Lab",
+      "data": "2026-09-24T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de software",
+          "Agentes",
+          "Fuzzing"
+        ],
+        "en": [
+          "Software security",
+          "Agents",
+          "Fuzzing"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub Security Lab apresentou um pipeline autônomo de fuzzing para C/C++ que identifica pontos de entrada, escreve harnesses, executa AFL++, mede cobertura, melhora os testes e faz triagem de falhas.",
+        "en": "GitHub Security Lab presented an autonomous fuzzing pipeline for C/C++ that identifies entry points, writes harnesses, runs AFL++, measures coverage, improves tests, and triages crashes."
+      },
+      "novidade_principal": {
+        "pt": "O agente decide alvos e próximos ajustes, enquanto ferramentas MCP executam primitivas controladas. As etapas compartilham estado em SQLite; cada harness tem binários separados para fuzzing e cobertura; o loop encerra após platô de cobertura, com orçamentos de tempo progressivos.",
+        "en": "The agent chooses targets and subsequent adjustments while MCP tools execute controlled primitives. Stages share state in SQLite; each harness has separate fuzzing and coverage binaries; the loop stops at a coverage plateau with progressive time budgets."
+      },
+      "relevancia": {
+        "pt": "É um exemplo concreto de orquestração híbrida de agentes para segurança de software, com estado persistente, métricas objetivas e critério de parada. A execução de builds e ferramentas escolhidas pelo agente exige ambiente descartável sem privilégios elevados.",
+        "en": "It is a concrete example of hybrid agent orchestration for software security, with persistent state, objective metrics, and a stopping criterion. Running builds and tools chosen by the agent requires a disposable environment without elevated privileges."
+      },
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+      "processado_em": "2026-09-25T13:31:18.571436+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews",
+      "titulo": {
+        "pt": "Novas formas de solicitar e configurar revisões do Copilot",
+        "en": "More ways to request and configure Copilot code reviews"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-23T21:25:58+00:00",
+      "categoria": {
+        "pt": [
+          "Revisão de código com IA",
+          "Governança de IA"
+        ],
+        "en": [
+          "AI code review",
+          "AI governance"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub disponibilizou a todos os planos do Copilot configurações pessoais de revisão automática e de esforço padrão. Administradores empresariais também podem definir o esforço padrão para repositórios da organização.",
+        "en": "GitHub made personal automatic review and default effort settings available on all Copilot plans. Enterprise administrators can also set a default review effort for organization repositories."
+      },
+      "novidade_principal": {
+        "pt": "A revisão automática agora pode ser controlada separadamente para novos pushes e pull requests em rascunho. O esforço pessoal pode ser Lite ou Balanced; a configuração empresarial é herdada, com possibilidade de substituição por organização e repositório.",
+        "en": "Automatic review can now be controlled separately for new pushes and draft pull requests. Personal effort can be Lite or Balanced; the enterprise setting is inherited and can be overridden by organizations and repositories."
+      },
+      "relevancia": {
+        "pt": "As opções permitem ajustar quando um agente revisa código e o nível de esforço aplicado, oferecendo controles operacionais para validar mudanças sem sobrecarregar todos os fluxos.",
+        "en": "The options let teams control when an agent reviews code and how much effort it applies, providing operational controls for validating changes without burdening every workflow."
+      },
+      "url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "processado_em": "2026-09-25T13:26:06.125661+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=99002",
+      "titulo": {
+        "pt": "Renderização de pull requests enormes no aplicativo GitHub Copilot",
+        "en": "Rendering huge pull requests in the GitHub Copilot app"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-09-23T18:29:49+00:00",
+      "categoria": {
+        "pt": [
+          "Engenharia de software",
+          "Validação automatizada",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "Software engineering",
+          "Automated validation",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub descreve como reconstruiu a visualização de diffs para lidar com um pull request de mais de um milhão de linhas e centenas de comentários. O código tem geometria determinística, enquanto os comentários usam blocos dinâmicos medidos sob demanda.",
+        "en": "GitHub describes rebuilding its diff viewer to handle a pull request with over a million changed lines and hundreds of comments. Code uses deterministic geometry while comments use dynamic blocks measured on demand."
+      },
+      "novidade_principal": {
+        "pt": "A solução separa as geometrias de código e comentários, corrige posições por âncoras estáveis e limita medições à área visível. Um loop autônomo de reprodução e medição usa sinais de integridade instrumentados no próprio aplicativo e limites verificados em testes.",
+        "en": "The solution separates code and comment geometry, corrects positions using stable anchors, and limits measurement to the visible area. An autonomous reproduce-and-measure loop uses health signals instrumented in the application itself and budgets asserted in tests."
+      },
+      "relevancia": {
+        "pt": "O caso mostra como combinar estrutura determinística, observabilidade e automação guiada por agentes para validar interfaces difíceis de testar manualmente, com critérios objetivos de sucesso.",
+        "en": "The case shows how to combine deterministic structure, observability, and agent-driven automation to validate interfaces that are difficult to test manually, with objective success criteria."
+      },
+      "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
+      "processado_em": "2026-09-25T13:26:40.510717+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains",
+      "titulo": {
+        "pt": "Novos recursos e melhorias do Copilot para JetBrains",
+        "en": "New features and improvements in Copilot for JetBrains"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-23T00:34:18+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Governança",
+          "MCP"
+        ],
+        "en": [
+          "Coding agents",
+          "Governance",
+          "MCP"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot para JetBrains 1.18.0 adiciona aprovações assistidas para chamadas de ferramentas, skills e instruções de organização, modo de planejamento no agente Codex e controles persistentes por ferramenta MCP.",
+        "en": "Copilot for JetBrains 1.18.0 adds assisted approvals for tool calls, organization skills and instructions, plan mode in the Codex agent, and persistent per-tool MCP controls."
+      },
+      "novidade_principal": {
+        "pt": "Chamadas de baixo risco podem receber aprovação automática em prévia pública, enquanto ações de maior risco pedem decisão humana; controles individuais de ferramentas MCP e orientações compartilhadas passam a persistir entre sessões.",
+        "en": "Low-risk calls can receive automatic approval in public preview while higher-risk actions require a human decision; individual MCP tool controls and shared guidance now persist across sessions."
+      },
+      "relevancia": {
+        "pt": "A atualização oferece mecanismos concretos para equilibrar autonomia, revisão humana e autoridade organizacional nos fluxos de agentes de programação.",
+        "en": "The update provides concrete mechanisms to balance autonomy, human review, and organizational authority in coding-agent workflows."
+      },
+      "url": "https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/",
+      "processado_em": "2026-09-25T13:31:47.615378+00:00"
+    },
+    {
       "id": "url:https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app",
       "titulo": {
         "pt": "Isolamento local no aplicativo GitHub Copilot",
@@ -37,6 +276,41 @@
       "processado_em": "2026-09-23T17:24:04.772355+00:00"
     },
     {
+      "id": "guid:https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
+      "titulo": {
+        "pt": "Suporte a modelos locais no Antigravity SDK",
+        "en": "Introducing Support for Local AI Models in the Antigravity SDK"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-09-23T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Modelos locais",
+          "Orquestração híbrida"
+        ],
+        "en": [
+          "Coding agents",
+          "Local models",
+          "Hybrid orchestration"
+        ]
+      },
+      "resumo": {
+        "pt": "O Antigravity SDK passou a executar fluxos de agentes com modelos locais, inicialmente Gemma 4 26B A4B via LiteRT, além de servidores compatíveis com OpenAI como Ollama, LM Studio e vLLM.",
+        "en": "The Antigravity SDK now runs agent workflows with local models, initially Gemma 4 26B A4B through LiteRT, as well as OpenAI-compatible servers such as Ollama, LM Studio, and vLLM."
+      },
+      "novidade_principal": {
+        "pt": "Um exemplo híbrido usa Gemini 3.8 Flash na nuvem apenas para planejar por nomes de arquivos e descrições; agentes Gemma locais reproduzem falhas, criam correções, criticam patches e executam testes sem enviar o código. Na demonstração, 97,2% dos tokens foram processados localmente.",
+        "en": "A hybrid example uses cloud Gemini 3.8 Flash only to plan from filenames and task descriptions; local Gemma agents reproduce vulnerabilities, create fixes, critique patches, and run tests without uploading code. In the demonstration, 97.2% of tokens were processed locally."
+      },
+      "relevancia": {
+        "pt": "Apresenta uma arquitetura concreta para separar planejamento remoto de execução sensível local, preservando privacidade do código e permitindo trocar o backend de inferência sem alterar ferramentas ou orquestração.",
+        "en": "It presents a concrete architecture separating remote planning from sensitive local execution, preserving code privacy and allowing inference backends to change without changing tools or orchestration."
+      },
+      "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/",
+      "processado_em": "2026-09-25T13:33:54.894319+00:00"
+    },
+    {
       "id": "url:https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
       "titulo": {
         "pt": "Memória persistente protegida no Private AI Compute",
@@ -70,6 +344,39 @@
       },
       "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
       "processado_em": "2026-09-23T17:24:46.784739+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-22-faster-c-code-intelligence-with-whole-codebase-indexing",
+      "titulo": {
+        "pt": "Inteligência de código C++ mais rápida com indexação de todo o repositório",
+        "en": "Faster C++ code intelligence with whole codebase indexing"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-22T22:24:48+00:00",
+      "categoria": {
+        "pt": [
+          "Recuperação de contexto",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "Context retrieval",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot CLI passou a manter um índice persistente de símbolos para projetos C++, incluindo arquivos ainda não abertos. O servidor de linguagem usa as informações de compilação para resolver tipos, inclusões e relações entre arquivos.",
+        "en": "Copilot CLI now maintains a persistent symbol index for C++ projects, including files not currently open. The language server uses compilation information to resolve types, includes, and relationships across files."
+      },
+      "novidade_principal": {
+        "pt": "A indexação completa fica ativa por padrão, é reutilizada e atualizada dinamicamente, acelerando busca de definições, referências e implementações; a primeira construção pode consumir tempo e memória adicionais.",
+        "en": "Whole codebase indexing is on by default, reused, and updated dynamically, speeding up definition, reference, and implementation lookup; the initial build can require extra time and memory."
+      },
+      "relevancia": {
+        "pt": "Mostra uma forma concreta de dar contexto estrutural reutilizável a agentes de programação em repositórios grandes, evitando redescoberta de símbolos a cada solicitação.",
+        "en": "It shows a concrete way to give coding agents reusable structural context in large repositories, avoiding symbol rediscovery on every request."
+      },
+      "url": "https://github.blog/changelog/2026-09-22-faster-c-code-intelligence-with-whole-codebase-indexing/",
+      "processado_em": "2026-09-25T13:34:29.739474+00:00"
     },
     {
       "id": "url:https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app",
@@ -140,6 +447,41 @@
       },
       "url": "https://www.anthropic.com/claude-opus-5-5",
       "processado_em": "2026-09-23T17:24:36.711390+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/priorities-principles-third-party-assessments",
+      "titulo": {
+        "pt": "Prioridades e princípios para avaliações independentes eficazes",
+        "en": "Priorities and principles for effective third party assessments"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de agentes",
+          "Segurança de IA",
+          "Evals"
+        ],
+        "en": [
+          "Agent governance",
+          "AI safety",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI propõe áreas e critérios para avaliações independentes de sistemas avançados de IA: casos de segurança, salvaguardas, cobertura das avaliações de capacidade e investigação de incidentes de desalinhamento.",
+        "en": "OpenAI proposes areas and criteria for independent assessments of advanced AI systems: safety cases, safeguards, capability-evaluation coverage, and investigation of misalignment incidents."
+      },
+      "novidade_principal": {
+        "pt": "A proposta define safety claims verificáveis e safety cases ligados a evidências, recomenda pré-registrar alegações e escopo, testar agentes contra controles reais como sandbox e acesso, revisar avaliações saturadas e explicitar incertezas e limitações nos relatórios.",
+        "en": "The proposal defines verifiable safety claims and evidence-linked safety cases, recommends preregistering claims and scope, testing agents against real controls such as sandboxing and access, refreshing saturated evaluations, and stating uncertainty and limitations in reports."
+      },
+      "relevancia": {
+        "pt": "Fornece um esquema prático de auditoria de agentes: alegação, evidência, teste independente, condições de operação, lacunas e acompanhamento de correções, útil para governança e validação.",
+        "en": "It provides a practical agent-audit structure: claim, evidence, independent test, operating conditions, gaps, and remediation follow-up, useful for governance and validation."
+      },
+      "url": "https://openai.com/index/priorities-principles-third-party-assessments/",
+      "processado_em": "2026-09-25T13:36:31.034087+00:00"
     },
     {
       "id": "url:https://openai.com/index/introducing-gpt-6-sol-and-luna",
