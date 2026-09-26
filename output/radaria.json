@@ -2,6 +2,146 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
+      "titulo": {
+        "pt": "Validador integrado para configurações corporativas gerenciadas",
+        "en": "Enterprise managed settings in-product validator"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-25T23:24:57+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "copilot",
+          "ferramentas de gestão corporativa"
+        ],
+        "en": [
+          "Improvement",
+          "copilot",
+          "enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub Copilot ganhou um validador de configurações corporativas que identifica JSON malformado, configurações não suportadas e mapeamentos de equipes inválidos. Cada erro aponta o arquivo e o caminho JSON afetados.",
+        "en": "GitHub Copilot now includes an enterprise settings validator that identifies malformed JSON, unsupported configurations, and invalid team mappings. Each error points to the affected file and JSON path."
+      },
+      "novidade_principal": {
+        "pt": "A validação integrada cobre managed-settings.json, team-mappings.json e os arquivos de equipes referenciados, permitindo conferir correções após publicá-las na branch padrão de .github-private.",
+        "en": "Built-in validation covers managed-settings.json, team-mappings.json, and referenced team settings files, allowing administrators to check fixes after committing them to the default branch of .github-private."
+      },
+      "relevancia": {
+        "pt": "Oferece uma referência prática para validar deterministicamente políticas de agentes e detectar configurações que impedem sua aplicação.",
+        "en": "Provides a practical reference for deterministic validation of agent policies and detection of configurations that prevent enforcement."
+      },
+      "url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
+      "processado_em": "2026-09-26T17:02:17.561550+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
+      "titulo": {
+        "pt": "API de métricas de uso passa a detalhar etapas de revisão de pull requests",
+        "en": "Usage metrics API adds pull request review stages"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-25T21:09:40+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "gestão de contas",
+          "copilot",
+          "ferramentas de gestão corporativa"
+        ],
+        "en": [
+          "Improvement",
+          "account management",
+          "copilot",
+          "enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "Os relatórios diários por repositório agora mostram mediana e percentil 90 do tempo até a primeira revisão, entre primeira e última revisão e entre última revisão e merge. Nesta versão, apenas autoria e revisões humanas entram nessas medidas.",
+        "en": "Daily repository reports now show median and 90th-percentile times to first review, between first and final review, and from final review to merge. This release measures only human-authored pull requests and human reviews."
+      },
+      "novidade_principal": {
+        "pt": "O array pull_request_review_times separa três gargalos do fluxo. Não há preenchimento retroativo; dias sem PRs elegíveis retornam uma lista vazia, e revisões de bots ou do próprio autor são ignoradas.",
+        "en": "The pull_request_review_times array separates three workflow bottlenecks. There is no backfill; days without qualifying pull requests return an empty array, and bot or author reviews are ignored."
+      },
+      "relevancia": {
+        "pt": "Ajuda a observar o fluxo de engenharia em equipes que usam IA sem confundir essas métricas com medições diretas do desempenho de revisores automáticos.",
+        "en": "Helps observe engineering workflows in teams using AI without mistaking these metrics for direct measurements of automated reviewer performance."
+      },
+      "url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
+      "processado_em": "2026-09-26T17:02:59.614743+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+      "titulo": {
+        "pt": "Agentic autofix passa a usar Copilot Memory",
+        "en": "Agentic autofix now uses Copilot Memory"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-25T17:25:50+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "segurança de aplicações",
+          "copilot"
+        ],
+        "en": [
+          "Improvement",
+          "application security",
+          "copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "Quando Copilot Memory está habilitado, agentic autofix consulta memórias do repositório para resolver alertas de segurança e salva o padrão da correção criada para uso futuro.",
+        "en": "When Copilot Memory is enabled, agentic autofix consults repository memories to resolve security alerts and saves the pattern of the generated fix for future use."
+      },
+      "novidade_principal": {
+        "pt": "Padrões de correção podem apoiar novos reparos e fornecer contexto a outros recursos, como Copilot code review e Copilot cloud agent. Tanto autofix quanto Memory permanecem em public preview.",
+        "en": "Fix patterns can support subsequent repairs and provide context to other features, including Copilot code review and Copilot cloud agent. Both autofix and Memory remain in public preview."
+      },
+      "relevancia": {
+        "pt": "Mostra uma aplicação concreta de memória persistente compartilhada entre agentes para reaproveitar padrões de desenvolvimento seguro específicos de um repositório.",
+        "en": "Shows a concrete use of persistent memory shared across agents to reuse secure development patterns specific to a repository."
+      },
+      "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+      "processado_em": "2026-09-26T17:04:01.265991+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
+      "titulo": {
+        "pt": "Lançamentos semanais do GitHub Copilot — 21 de setembro",
+        "en": "GitHub Copilot weekly releases — September 21"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-25T16:42:48+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "copilot"
+        ],
+        "en": [
+          "Release",
+          "copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O resumo semanal reúne novos modelos, sandbox local e melhorias em integrações do Copilot. No VS Code 1.139, destaca a execução de agentes em Dev Containers hospedados via SSH, Tunnel e WSL, com implantação gradual.",
+        "en": "The weekly roundup brings together new models, local sandboxing, and improvements to Copilot integrations. For VS Code 1.139, it highlights agents running in Dev Containers hosted through SSH, Tunnel, and WSL, with a gradual rollout."
+      },
+      "novidade_principal": {
+        "pt": "Agentes podem trabalhar com as ferramentas e dependências do projeto remoto dentro de Dev Containers; a versão também melhora a organização de sessões e oferece opções de layout de chats em preview.",
+        "en": "Agents can work with a remote project's tools and dependencies inside Dev Containers; the release also improves session organization and offers chat layout options in preview."
+      },
+      "relevancia": {
+        "pt": "A execução em ambientes remotos reproduzíveis é útil para avaliar fluxos de programação com agentes que dependem de ferramentas e dependências específicas do projeto.",
+        "en": "Execution in reproducible remote environments is useful for evaluating coding-agent workflows that depend on project-specific tools and dependencies."
+      },
+      "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
+      "processado_em": "2026-09-26T17:04:26.494268+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
       "titulo": {
         "pt": "Atualizações do GitHub Copilot para Slack e Microsoft Teams",
@@ -70,6 +210,39 @@
       "processado_em": "2026-09-25T13:22:07.600838+00:00"
     },
     {
+      "id": "url:https://docs.uipath.com/agents/automation-cloud/latest/release-notes/september-2026",
+      "titulo": {
+        "pt": "Setembro de 2026",
+        "en": "September 2026"
+      },
+      "fonte": "UiPath Agents Release Notes",
+      "data": "2026-09-25T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes",
+          "Notas de lançamento"
+        ],
+        "en": [
+          "Agents",
+          "Release notes"
+        ]
+      },
+      "resumo": {
+        "pt": "As notas de setembro da UiPath registram Autopilot Agent em preview no Studio Web, com criação e depuração de agentes, conjuntos de avaliação e guardrails. A entrada de 25/09 esclarece que o recurso foi lançado em 23/09; em 22/09, foi anunciado o preview de advanced agents.",
+        "en": "UiPath's September release notes document Autopilot Agent in preview in Studio Web, covering agent creation and debugging, evaluation sets, and guardrails. The September 25 entry clarifies that it launched on September 23; advanced agents were announced in preview on September 22."
+      },
+      "novidade_principal": {
+        "pt": "O advanced harness mantém trabalho intermediário em arquivos, delega tarefas a subagentes e chama ferramentas programaticamente em um interpretador JavaScript isolado. Autopilot reutiliza as skills e a CLI dos coding agents da plataforma.",
+        "en": "The advanced harness keeps intermediate work in files, delegates tasks to subagents, and calls tools programmatically in a sandboxed JavaScript interpreter. Autopilot reuses the platform's coding-agent skills and CLI."
+      },
+      "relevancia": {
+        "pt": "Oferece uma referência concreta para contexto externo ao prompt, orquestração de tarefas longas e validação integrada ao desenvolvimento de agentes.",
+        "en": "Provides a concrete reference for context outside the prompt, long-running task orchestration, and validation integrated into agent development."
+      },
+      "url": "https://docs.uipath.com/agents/automation-cloud/latest/release-notes/september-2026",
+      "processado_em": "2026-09-26T17:05:26.578794+00:00"
+    },
+    {
       "id": "guid:https://github.blog/?p=98939",
       "titulo": {
         "pt": "Quando o chat é a interface errada",
@@ -136,6 +309,37 @@
       },
       "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
       "processado_em": "2026-09-25T17:03:53.836099+00:00"
+    },
+    {
+      "id": "url:https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar",
+      "titulo": {
+        "pt": "Apresentando Gemini 3.8 Live com Live Avatar",
+        "en": "Introducing Gemini 3.8 Live with Live Avatar"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-09-24T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos Gemini"
+        ],
+        "en": [
+          "Gemini models"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google apresentou Live Avatar no Gemini Enterprise, combinando diálogo, áudio e vídeo em quase tempo real. O recurso usa chamadas assíncronas de ferramentas para buscar dados enquanto mantém a conversa.",
+        "en": "Google introduced Live Avatar in Gemini Enterprise, combining dialogue, audio, and video in near real time. It uses asynchronous tool calls to fetch data while keeping the conversation going."
+      },
+      "novidade_principal": {
+        "pt": "A interface multimodal mantém presença visual durante operações em segundo plano. Avatares personalizados exigem autorização empresarial, e áudio e vídeo gerados recebem marcação SynthID.",
+        "en": "The multimodal interface maintains visual presence during background operations. Custom avatars require enterprise allowlisting, and generated audio and video receive SynthID watermarking."
+      },
+      "relevancia": {
+        "pt": "Ilustra um padrão de agentes conversacionais que desacopla execução de ferramentas e interação contínua, com controles explícitos sobre personalização e identificação de conteúdo sintético.",
+        "en": "Illustrates a conversational-agent pattern that decouples tool execution from continuous interaction, with explicit controls over customization and identification of synthetic content."
+      },
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+      "processado_em": "2026-09-26T17:05:23.036772+00:00"
     },
     {
       "id": "guid:https://developers.googleblog.com/turn-your-rest-apis-into-mcp-tools-with-google-cloud-api-gateway",
