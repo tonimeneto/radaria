@@ -2,6 +2,274 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
+      "titulo": {
+        "pt": "HydraFusion chega ao VS Code e ao aplicativo GitHub Copilot",
+        "en": "HydraFusion arrives in VS Code and the GitHub Copilot app"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-30T14:31:19+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de modelos",
+          "Agentes de programação"
+        ],
+        "en": [
+          "Model orchestration",
+          "Coding agents"
+        ]
+      },
+      "resumo": {
+        "pt": "A prévia de pesquisa HydraFusion passa a estar disponível no VS Code e no aplicativo GitHub Copilot. Em vez de escolher apenas um modelo, ela seleciona um fluxo de execução conforme os recursos exigidos pela tarefa.",
+        "en": "The HydraFusion research preview is now available in VS Code and the GitHub Copilot app. Rather than selecting only one model, it chooses an execution workflow based on the capabilities the task requires."
+      },
+      "novidade_principal": {
+        "pt": "O orquestrador escolhe entre execução por um modelo, cascata com critério de qualidade e escalonamento, ou revisão por um crítico somente leitura de outra família de modelos seguida de uma revisão da resposta.",
+        "en": "The orchestrator chooses among single-model execution, a cascade with a quality gate and escalation, or review by a read-only critic from another model family followed by one revision."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão concreto de orquestração que combina custo, qualidade e validação independente em tarefas de programação com agentes.",
+        "en": "It provides a concrete orchestration pattern that combines cost, quality, and independent validation in agentic coding tasks."
+      },
+      "url": "https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
+      "processado_em": "2026-09-30T19:06:28.124404+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "titulo": {
+        "pt": "Interrupção de uma campanha coordenada de destilação de modelos",
+        "en": "Disrupting a coordinated model-distillation campaign"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-30T10:30:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de modelos",
+          "Governança de agentes"
+        ],
+        "en": [
+          "Model security",
+          "Agent governance"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI relatou uma campanha coordenada para extrair raciocínio protegido dos modelos por manipulação de interações. Segundo a empresa, não houve quebra de criptografia, acesso direto a conversas armazenadas ou comprometimento de banco de dados.",
+        "en": "OpenAI reported a coordinated campaign to extract protected model reasoning by manipulating interactions. The company said there was no encryption breach, direct access to stored conversations, or database compromise."
+      },
+      "novidade_principal": {
+        "pt": "A investigação identificou extração por reaproveitamento de raciocínio criptografado entre conversas e falhas relacionadas entre modelos e na compactação de contexto. A resposta incluiu bloquear a recuperação de raciocínio de outros usuários, verificar saídas em streaming, ampliar monitoramento e compartilhar indicadores com parceiros.",
+        "en": "The investigation identified extraction by replaying encrypted reasoning across conversations, along with related cross-model and context-compaction weaknesses. The response included blocking recovery of reasoning from other users, checking streamed output, expanding monitoring, and sharing indicators with partners."
+      },
+      "relevancia": {
+        "pt": "O caso evidencia que artefatos de raciocínio portáveis e mecanismos de compactação exigem controles próprios de isolamento, validação de saída e detecção de abuso em sistemas agênticos.",
+        "en": "The case shows that portable reasoning artifacts and compaction mechanisms need dedicated isolation, output validation, and abuse detection controls in agentic systems."
+      },
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+      "processado_em": "2026-09-30T19:07:32.530501+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
+      "titulo": {
+        "pt": "GPT-6.1 Sol no GitHub Copilot",
+        "en": "GPT-6.1 Sol in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-09-29T17:02:27+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos para programação",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "Coding models",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub iniciou a disponibilização geral de GPT-6.1 Sol no Copilot para planos Pro+, Max, Business e Enterprise, incluindo IDEs, CLI, agente de programação, aplicativo e github.com.",
+        "en": "GitHub began the general rollout of GPT-6.1 Sol in Copilot for Pro+, Max, Business, and Enterprise plans across IDEs, CLI, coding agent, app, and github.com."
+      },
+      "novidade_principal": {
+        "pt": "Segundo testes iniciais do GitHub, o modelo concluiu tarefas de programação em várias etapas usando menos tokens e etapas que modelos anteriores das famílias GPT-6 e GPT-5.6; administradores podem controlar seu acesso pela política de modelos.",
+        "en": "According to GitHub early tests, the model completed multistep coding tasks with fewer tokens and steps than earlier GPT-6 and GPT-5.6 models; administrators can control access through model policy."
+      },
+      "relevancia": {
+        "pt": "A disponibilidade nos fluxos reais de programação e o menor consumo observado podem orientar a escolha e a governança de modelos para agentes de desenvolvimento.",
+        "en": "Availability in actual coding workflows and the observed lower consumption can inform model selection and governance for development agents."
+      },
+      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot/",
+      "processado_em": "2026-09-30T19:08:52.278065+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/introducing-gpt-6-1-sol",
+      "titulo": {
+        "pt": "Apresentação do GPT-6.1 Sol",
+        "en": "Introducing GPT-6.1 Sol"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-29T10:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos para programação",
+          "Avaliação de agentes"
+        ],
+        "en": [
+          "Coding models",
+          "Agent evaluation"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI lançou GPT-6.1 Sol para Codex, ChatGPT Work e API, com foco em programação agêntica, computer use e trabalho profissional a custo menor que GPT-6 Astra.",
+        "en": "OpenAI released GPT-6.1 Sol for Codex, ChatGPT Work, and the API, targeting agentic coding, computer use, and professional work at a lower cost than GPT-6 Astra."
+      },
+      "novidade_principal": {
+        "pt": "Em DeepSWE v1.1, a OpenAI relata desempenho próximo ao Astra por cerca de um quinto do custo; o modelo supera o melhor resultado anterior do GPT-6 Sol em 6,4 pontos percentuais. Em avaliações de segurança, teve menos falhas de transparência sobre busca indisponível e de respeito a restrições explícitas.",
+        "en": "On DeepSWE v1.1, OpenAI reports performance near Astra at about one-fifth the cost; the model exceeds the previous best GPT-6 Sol score by 6.4 percentage points. In safety evaluations, it had fewer failures to disclose unavailable search and to respect explicit restrictions."
+      },
+      "relevancia": {
+        "pt": "Os resultados e custos publicados permitem revisar a escolha de modelos para agentes de programação e incorporar avaliações de transparência e cumprimento de limites.",
+        "en": "The published results and costs support revisiting model selection for coding agents and adding evaluations for transparency and adherence to constraints."
+      },
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "processado_em": "2026-09-30T19:09:21.304133+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/devday-2026-recap",
+      "titulo": {
+        "pt": "Resumo do DevDay 2026",
+        "en": "DevDay 2026 Recap"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-29T10:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Ferramentas para agentes",
+          "Automação",
+          "Segurança"
+        ],
+        "en": [
+          "Agent tools",
+          "Automation",
+          "Security"
+        ]
+      },
+      "resumo": {
+        "pt": "O DevDay 2026 reuniu lançamentos para agentes e desenvolvimento, incluindo Codex na nuvem, revisão de código, Codex Security Cloud, Agents API com computer use e Decisions API.",
+        "en": "DevDay 2026 brought together agent and developer releases, including cloud Codex, code review, Codex Security Cloud, Agents API with computer use, and Decisions API."
+      },
+      "novidade_principal": {
+        "pt": "A Agents API combina computer use com orquestração de múltiplos agentes, busca e chamada de ferramentas e compactação de contexto. A Decisions API permite decisões classificatórias com respostas predefinidas; o Codex Security Cloud analisa repositórios e prepara correções.",
+        "en": "The Agents API combines computer use with multi-agent orchestration, tool search and calling, and context compaction. The Decisions API supports classification with predefined answers; Codex Security Cloud analyzes repositories and prepares fixes."
+      },
+      "relevancia": {
+        "pt": "O conjunto oferece componentes concretos para arquitetar agentes com execução, roteamento determinístico, revisão e defesa contínua em fluxos de engenharia de software.",
+        "en": "Together these provide concrete components for designing agents with execution, deterministic routing, review, and continuous defense in software engineering workflows."
+      },
+      "url": "https://openai.com/index/devday-2026-recap/",
+      "processado_em": "2026-09-30T19:09:57.471099+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/introducing-dots",
+      "titulo": {
+        "pt": "Apresentação dos dots",
+        "en": "Introducing dots"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-09-29T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes persistentes",
+          "Governança de agentes",
+          "Memória"
+        ],
+        "en": [
+          "Persistent agents",
+          "Agent governance",
+          "Memory"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI apresentou dots, agentes persistentes com computador e navegador em nuvem, conexão a aplicativos e capacidade de trabalhar em objetivos contínuos com contexto entre canais.",
+        "en": "OpenAI introduced dots, persistent agents with a cloud computer and browser, app connections, and the ability to work on ongoing goals with context across channels."
+      },
+      "novidade_principal": {
+        "pt": "A pesquisa proativa em segundo plano usa ferramentas restritas a leitura; regras personalizadas definem ações autônomas, sujeitas a aprovação ou bloqueadas, e auto-review verifica ações com impacto. Dots especializados poderão ter identidade e credenciais próprias.",
+        "en": "Background proactive research uses read-only tools; custom rules define autonomous, approval-required, or blocked actions, while auto-review checks consequential actions. Specialist dots may have their own identity and credentials."
+      },
+      "relevancia": {
+        "pt": "Apresenta um desenho concreto para agentes duradouros com memória, permissões por aplicativo, isolamento do computador e revisão proporcional ao risco.",
+        "en": "It presents a concrete design for long-running agents with memory, per-app permissions, computer isolation, and risk-based action review."
+      },
+      "url": "https://openai.com/index/introducing-dots/",
+      "processado_em": "2026-09-30T19:10:28.545501+00:00"
+    },
+    {
+      "id": "url:https://developers.openai.com/cookbook/examples/agents_api/sandboxes/aws/readme",
+      "titulo": {
+        "pt": "Executar sandboxes da Agents API em AWS Lambda MicroVMs",
+        "en": "Run Agents API sandboxes on AWS Lambda MicroVMs"
+      },
+      "fonte": "OpenAI Cookbook",
+      "data": "2026-09-29T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Sandboxes de agentes",
+          "Arquitetura de execução"
+        ],
+        "en": [
+          "Agent sandboxes",
+          "Execution architecture"
+        ]
+      },
+      "resumo": {
+        "pt": "Um exemplo oficial demonstra a execução de ferramentas e arquivos de sessões da Agents API em AWS Lambda MicroVMs na conta do desenvolvedor, enquanto a OpenAI gerencia o harness do agente.",
+        "en": "An official example demonstrates running Agents API session tools and files in AWS Lambda MicroVMs in the developer account while OpenAI manages the agent harness."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo por webhook recebe environment_connection, inicia a MicroVM, busca uma chave de ambiente no Secrets Manager e conecta codex exec-server; inclui suspensão e retomada preservando arquivos, além de separar chaves da aplicação e do executor.",
+        "en": "The webhook flow receives environment_connection, starts the MicroVM, retrieves an environment key from Secrets Manager, and connects codex exec-server; it includes suspend and resume with persistent files and separates application and executor keys."
+      },
+      "relevancia": {
+        "pt": "É uma arquitetura reproduzível para agentes duráveis com execução isolada, controle de credenciais e estado persistente fora da infraestrutura gerenciada pelo provedor do modelo.",
+        "en": "It is a reproducible architecture for durable agents with isolated execution, credential boundaries, and persistent state outside the model provider managed infrastructure."
+      },
+      "url": "https://developers.openai.com/cookbook/examples/agents_api/sandboxes/aws/readme",
+      "processado_em": "2026-09-30T19:11:19.215292+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "titulo": {
+        "pt": "GLM-5.3 e a disseminação de capacidades cibernéticas avançadas",
+        "en": "GLM-5.3 and the spread of advanced cyber capabilities"
+      },
+      "fonte": "Anthropic Research",
+      "data": "2026-09-29T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Avaliação de modelos"
+        ],
+        "en": [
+          "Agent security",
+          "Model evaluation"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic avaliou GLM-5.3 em tarefas de exploração de vulnerabilidades e testes simulados de salvaguardas, concluindo que o modelo aberto alcança capacidades cibernéticas avançadas com controles facilmente contornáveis.",
+        "en": "Anthropic evaluated GLM-5.3 on vulnerability exploitation tasks and simulated safeguard tests, concluding that the open model reaches advanced cyber capabilities with easily bypassed controls."
+      },
+      "novidade_principal": {
+        "pt": "Em ExploitBench, GLM-5.3 produziu exploits completos em 50 de 410 tentativas, próximo das 56 do Claude Mythos Preview. Em testes simulados, prompts enganosos, preenchimento prévio do raciocínio ou remoção das recusas levaram o modelo a iniciar tarefas danosas em 64%, 92% e 100% das amostras, respectivamente.",
+        "en": "On ExploitBench, GLM-5.3 produced complete exploits in 50 of 410 attempts, close to Claude Mythos Preview at 56. In simulated tests, deceptive prompts, prefilled reasoning, or removal of refusals led the model to engage in harmful tasks in 64%, 92%, and 100% of samples, respectively."
+      },
+      "relevancia": {
+        "pt": "Os resultados mostram a necessidade de avaliar capacidades e resistência a contornos de salvaguardas separadamente antes de conceder ferramentas, rede e autonomia a agentes.",
+        "en": "The results show the need to evaluate capability and resistance to safeguard bypass separately before granting tools, network access, and autonomy to agents."
+      },
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "processado_em": "2026-09-30T19:11:59.514500+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/how-we-will-do-better-for-australia",
       "titulo": {
         "pt": "Como vamos melhorar para a Austrália",
