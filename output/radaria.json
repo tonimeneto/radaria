@@ -2,6 +2,669 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
+      "titulo": {
+        "pt": "Atualize sua IDE para restaurar métricas de atividade de agentes do Copilot",
+        "en": "Update your IDE to restore agent activity in Copilot usage metrics"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-06T23:43:00+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Gestão de contas",
+          "Copilot",
+          "Ferramentas de gestão empresarial"
+        ],
+        "en": [
+          "Improvement",
+          "Account management",
+          "Copilot",
+          "Enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "Sessões de agentes migradas para o Copilot SDK deixaram de identificar a IDE de origem. Relatórios de uso passaram a omitir parte da atividade ou atribuí-la ao Copilot CLI. A correção já está disponível no VS Code e chegará às demais IDEs gradualmente.",
+        "en": "Agent sessions migrated to the Copilot SDK stopped identifying their source IDE. Usage reports omitted some activity or attributed it to Copilot CLI. The fix is available in VS Code and will roll out gradually to other IDEs."
+      },
+      "novidade_principal": {
+        "pt": "As lacunas históricas nas métricas de agentes e linhas de código não podem ser recuperadas. A correção depende da atualização de cada cliente, enquanto dados do servidor já ajudam a contabilizar usuários ativos.",
+        "en": "Historical gaps in agent and lines-of-code metrics cannot be recovered. The fix depends on updating each client, while server-side data already helps count active users."
+      },
+      "relevancia": {
+        "pt": "Mostra um limite concreto de observabilidade de agentes baseada em telemetria do cliente e orienta a interpretação de métricas durante a migração de runtimes e IDEs.",
+        "en": "Shows a concrete limit of client-telemetry-based agent observability and guides interpretation of metrics during runtime and IDE migrations."
+      },
+      "url": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
+      "processado_em": "2026-10-07T14:05:28.632528+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "titulo": {
+        "pt": "EmbeddingGemma 2: modelo aberto e leve de embeddings multimodais",
+        "en": "EmbeddingGemma 2: an open, lightweight multimodal embedding model"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-10-06T19:57:04+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google lançou EmbeddingGemma 2, modelo aberto sob licença Apache 2.0 com 740 milhões de parâmetros que coloca código, texto, imagens, vídeo e áudio em um espaço compartilhado de embeddings para busca e RAG locais.",
+        "en": "Google released EmbeddingGemma 2, an open Apache 2.0 model with 740 million parameters that places code, text, images, video, and audio in a shared embedding space for local search and RAG."
+      },
+      "novidade_principal": {
+        "pt": "O modelo combina encoders modulares, vetores truncáveis de 768 a 128 dimensões e contexto de 8 mil tokens. O desempenho divulgado em MTEB Code subiu de 68,76 para 78,68 em relação ao EmbeddingGemma anterior.",
+        "en": "The model combines modular encoders, vectors that can be truncated from 768 to 128 dimensions, and an 8K-token context. Reported MTEB Code performance rose from 68.76 to 78.68 compared with the prior EmbeddingGemma."
+      },
+      "relevancia": {
+        "pt": "Permite indexação semântica de repositórios e recuperação multimodal para agentes de programação em dispositivos locais, com menor custo de armazenamento e maior controle de privacidade.",
+        "en": "Enables semantic repository indexing and multimodal retrieval for coding agents on local devices, with lower storage costs and greater privacy control."
+      },
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "processado_em": "2026-10-07T14:07:22.853722+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/jump-trading",
+      "titulo": {
+        "pt": "Como a Jump Trading amplia pesquisas quantitativas com ChatGPT",
+        "en": "How Jump Trading is scaling quant research with ChatGPT"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-06T12:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "A Jump Trading descreve pesquisas longas conduzidas por um ou vários agentes com GPT-6 Astra. Pesquisadores definem problema, ambiente e critérios de avaliação, acompanham resultados intermediários e redirecionam o trabalho conforme a evidência.",
+        "en": "Jump Trading describes long-running research conducted by one or more agents with GPT-6 Astra. Researchers define the problem, environment, and evaluation criteria, inspect intermediate results, and redirect the work based on evidence."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo combina melhoria recursiva de resultados mensuráveis com ambiente seguro, observabilidade, restrições claras e revisão humana antes da aceitação de saídas críticas.",
+        "en": "The workflow combines recursive improvement of measurable results with a secure environment, observability, clear constraints, and human review before accepting critical outputs."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão operacional para agentes de longa duração: objetivos e avaliação definidos por humanos, liberdade controlada na exploração e validação explícita na integração dos resultados.",
+        "en": "Offers an operating pattern for long-running agents: human-defined goals and evaluation, bounded freedom in exploration, and explicit validation when integrating results."
+      },
+      "url": "https://openai.com/index/jump-trading/",
+      "processado_em": "2026-10-07T14:12:46.003886+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/advancing-computer-use-with-ironclad",
+      "titulo": {
+        "pt": "Avanços em computer use com a Ironclad",
+        "en": "Advancing computer use with Ironclad"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-06T10:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Publicação"
+        ],
+        "en": [
+          "Publication"
+        ]
+      },
+      "resumo": {
+        "pt": "OpenAI e Ironclad criaram 11 tarefas de fluxos jurídicos e de compras para treinar e avaliar agentes que operam software especializado. Cada tarefa tem de 8 a 50 critérios e é executada em um ambiente hospedado de prática.",
+        "en": "OpenAI and Ironclad created 11 legal and procurement workflow tasks to train and evaluate agents operating specialized software. Each task has 8 to 50 criteria and runs in a hosted practice environment."
+      },
+      "novidade_principal": {
+        "pt": "No conjunto de pesquisa, GPT-6 Astra obteve média de 55,0% dos critérios contra 41,6% do GPT-5.6 Sol; o tempo estimado por tentativa caiu de 37,0 para 19,2 minutos. Os tempos são simulações, não economia observada de clientes.",
+        "en": "On the research set, GPT-6 Astra met an average of 55.0% of criteria versus 41.6% for GPT-5.6 Sol; estimated time per attempt fell from 37.0 to 19.2 minutes. The times are simulations, not observed customer savings."
+      },
+      "relevancia": {
+        "pt": "Exemplifica avaliação de agentes de computer use por critérios verificáveis do fluxo completo, incluindo regras e caminhos de exceção, com tarefas definidas por especialistas e ambiente de execução controlado.",
+        "en": "Illustrates evaluation of computer-use agents against verifiable criteria for an entire workflow, including rules and exception paths, with expert-defined tasks and a controlled execution environment."
+      },
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
+      "processado_em": "2026-10-07T14:16:22.093043+00:00"
+    },
+    {
+      "id": "url:https://cursor.com/changelog/remote-control-local-agents",
+      "titulo": {
+        "pt": "Controle remoto de agentes locais no Cursor",
+        "en": "Remote control for local agents"
+      },
+      "fonte": "Cursor Changelog",
+      "data": "2026-10-06T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Controle remoto"
+        ],
+        "en": [
+          "Coding agents",
+          "Remote control"
+        ]
+      },
+      "resumo": {
+        "pt": "O Cursor passou a permitir visualizar e responder pelo aplicativo iOS aos agentes que executam no computador do usuário. O pareamento é aprovado no desktop, e os agentes continuam usando o ambiente local.",
+        "en": "Cursor now lets users view and reply from its iOS app to agents running on their computer. Pairing is approved on the desktop, and the agents continue using the local environment."
+      },
+      "novidade_principal": {
+        "pt": "O controle móvel separa a interface de acompanhamento do local de execução sem migrar a tarefa para agentes em nuvem. O computador precisa permanecer ligado e online; organizações Enterprise devem habilitar o recurso administrativamente.",
+        "en": "Mobile control separates the monitoring interface from the execution location without moving the task to cloud agents. The computer must remain powered and online; Enterprise organizations must enable the feature administratively."
+      },
+      "relevancia": {
+        "pt": "Mostra um padrão de supervisão e steering remoto de tarefas longas com execução local, pareamento explícito e política organizacional.",
+        "en": "Shows a pattern for remote supervision and steering of long-running tasks with local execution, explicit pairing, and organization policy."
+      },
+      "url": "https://cursor.com/changelog/remote-control-local-agents",
+      "processado_em": "2026-10-07T14:35:01.316641+00:00"
+    },
+    {
+      "id": "url:https://community.openai.com/t/decisions-api-is-now-available-in-public-beta/1403877",
+      "titulo": {
+        "pt": "Decisions API disponível em beta público",
+        "en": "Decisions API is now available in Public Beta"
+      },
+      "fonte": "OpenAI Developer Community",
+      "data": "2026-10-06T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "API",
+          "Agentes",
+          "Roteamento"
+        ],
+        "en": [
+          "API",
+          "Agents",
+          "Routing"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI lançou a Decisions API em beta público com GPT-6 Luna para converter texto e imagens em respostas tipadas de baixa latência. A API retorna probabilidade de uma condição, escolha entre opções fixas ou pontuação segundo uma rubrica.",
+        "en": "OpenAI released the Decisions API in public beta with GPT-6 Luna to turn text and images into low-latency typed answers. It returns a condition probability, a choice among fixed options, or a score against a rubric."
+      },
+      "novidade_principal": {
+        "pt": "A API é apresentada como cerca de 10 vezes mais rápida que a Responses API para esse tipo de decisão, permitindo classificação, roteamento de solicitações e priorização sem gerar uma resposta longa.",
+        "en": "The API is described as about 10 times faster than the Responses API for this kind of decision, enabling classification, request routing, and prioritization without generating a long response."
+      },
+      "relevancia": {
+        "pt": "Oferece um componente probabilístico tipado para etapas curtas em arquiteturas híbridas de agentes, com alternativas explícitas e avaliação por rubrica.",
+        "en": "Offers a typed probabilistic component for short steps in hybrid agent architectures, with explicit alternatives and rubric-based evaluation."
+      },
+      "url": "https://community.openai.com/t/decisions-api-is-now-available-in-public-beta/1403877",
+      "processado_em": "2026-10-07T14:33:12.317370+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
+      "titulo": {
+        "pt": "EmbeddingGemma 2: guia para desenvolvedores",
+        "en": "EmbeddingGemma 2: The Developer Guide"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-06T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O guia detalha como usar EmbeddingGemma 2 com sentence-transformers para recuperar texto, código e mídia no mesmo espaço vetorial, carregando apenas os encoders necessários e aplicando instruções de tarefa distintas a consultas e documentos.",
+        "en": "The guide details how to use EmbeddingGemma 2 with sentence-transformers to retrieve text, code, and media in one vector space, loading only needed encoders and applying distinct task instructions to queries and documents."
+      },
+      "novidade_principal": {
+        "pt": "Índices existentes de texto continuam compatíveis quando encoders de imagem ou áudio são acrescentados. Consulta e documento devem usar a mesma dimensão vetorial; 256 dimensões reduzem armazenamento em 3 vezes com pouca perda divulgada, enquanto 128 dimensões exigem validação para busca multimodal.",
+        "en": "Existing text indexes remain compatible when image or audio encoders are added. Queries and documents must use the same vector dimension; 256 dimensions cut storage threefold with little reported loss, while 128 dimensions require validation for multimodal search."
+      },
+      "relevancia": {
+        "pt": "Traz decisões de implementação para RAG e busca de código locais: prompts de tarefa, compatibilidade de índice e escolha da dimensão conforme qualidade e memória.",
+        "en": "Provides implementation decisions for local RAG and code search: task prompts, index compatibility, and dimension selection according to quality and memory."
+      },
+      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide/",
+      "processado_em": "2026-10-07T14:18:53.170038+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2",
+      "titulo": {
+        "pt": "Busca semântica multimodal local com EmbeddingGemma 2",
+        "en": "Bring multimodal semantic search to the edge with EmbeddingGemma 2"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-06T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google descreve implementações locais de recuperação multimodal com EmbeddingGemma 2 no AI Edge Gallery e no Foresight. As integrações com MediaPipe Tasks e LiteRT permitem indexar mídia e arquivos e buscar por similaridade sem enviar dados à nuvem.",
+        "en": "Google describes local multimodal retrieval implementations using EmbeddingGemma 2 in AI Edge Gallery and Foresight. MediaPipe Tasks and LiteRT integrations index media and files and search by similarity without sending data to the cloud."
+      },
+      "novidade_principal": {
+        "pt": "MediaPipe acrescenta Universal Embedder para pré-processamento multimodal e Semantic Retriever para busca vetorial local; Decision Task usa correspondência zero-shot para roteamento de entradas. LiteRT oferece quantização e encoders carregados conforme a modalidade necessária.",
+        "en": "MediaPipe adds Universal Embedder for multimodal preprocessing and Semantic Retriever for local vector search; Decision Task uses zero-shot matching for input routing. LiteRT provides quantization and encoders loaded according to the needed modality."
+      },
+      "relevancia": {
+        "pt": "Detalha componentes reutilizáveis para RAG privado e roteamento de agentes em dispositivos locais, complementando as características do modelo com uma arquitetura de implantação concreta.",
+        "en": "Details reusable components for private RAG and agent routing on local devices, complementing the model's capabilities with a concrete deployment architecture."
+      },
+      "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/",
+      "processado_em": "2026-10-07T14:17:57.152650+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/news/cyber-verification-program",
+      "titulo": {
+        "pt": "Ampliação do Cyber Verification Program",
+        "en": "Expanding the Cyber Verification Program"
+      },
+      "fonte": "Anthropic News",
+      "data": "2026-10-06T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Anúncios"
+        ],
+        "en": [
+          "Announcements"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic ampliou o Cyber Verification Program para conceder a profissionais de segurança verificados acesso graduado a capacidades cibernéticas avançadas e classificadores menos restritivos. Três níveis separam defesa, red teaming autorizado e testes especializados de sistemas críticos.",
+        "en": "Anthropic expanded the Cyber Verification Program to give vetted security professionals tiered access to advanced cyber capabilities and less restrictive classifiers. Three tiers separate defense, authorized red teaming, and specialized testing of critical systems."
+      },
+      "novidade_principal": {
+        "pt": "Cada nível combina elegibilidade, verificação e controles próprios; ações com risco físico ou de interrupção em massa continuam bloqueadas em Red Team Access. A retenção de dados é exigida para monitoramento, com alternativa de infraestrutura controlada pelo cliente planejada.",
+        "en": "Each tier combines distinct eligibility, verification, and controls; actions risking physical harm or mass disruption remain blocked under Red Team Access. Data retention is required for monitoring, with a customer-controlled infrastructure option planned."
+      },
+      "relevancia": {
+        "pt": "Fornece um exemplo concreto de governança por capacidades e risco para agentes de segurança, vinculando permissões, autorização sobre alvos e monitoramento à natureza do trabalho.",
+        "en": "Provides a concrete example of capability- and risk-based governance for security agents, linking permissions, target authorization, and monitoring to the nature of the work."
+      },
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "processado_em": "2026-10-07T14:17:13.386832+00:00"
+    },
+    {
+      "id": "url:https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+      "titulo": {
+        "pt": "Construindo infraestrutura Git para desenvolvimento na escala de agentes",
+        "en": "Building Git infrastructure for agent-scale development"
+      },
+      "fonte": "GitHub Blog",
+      "data": "2026-10-06T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Git",
+          "Infraestrutura"
+        ],
+        "en": [
+          "Git",
+          "Infrastructure"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub descreveu a reconstrução de sua infraestrutura Git para lidar com muitos agentes produzindo commits e pushes simultâneos, além de grande volume de leituras disparadas por CI. O projeto separa armazenamento durável de workers de leitura e escrita.",
+        "en": "GitHub described rebuilding its Git infrastructure to handle many agents producing concurrent commits and pushes, along with heavy reads triggered by CI. The design separates durable storage from read and write workers."
+      },
+      "novidade_principal": {
+        "pt": "A arquitetura reduz a coordenação obrigatória à atualização de refs, paraleliza armazenamento e verificações quando possível e move compactação e limpeza para workers separados. Benchmarks internos indicaram até 35 vezes mais throughput de escrita.",
+        "en": "The architecture limits mandatory coordination to ref updates, parallelizes storage and checks where possible, and moves compaction and cleanup to separate workers. Internal benchmarks showed up to 35 times higher write throughput."
+      },
+      "relevancia": {
+        "pt": "Expõe gargalos reais de sistemas com muitos agentes sobre o mesmo repositório e princípios para preservar consistência, governança e latência sob concorrência intensa.",
+        "en": "Exposes real bottlenecks of systems with many agents on one repository and principles for preserving consistency, governance, and latency under heavy concurrency."
+      },
+      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+      "processado_em": "2026-10-07T14:32:24.910599+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=99258",
+      "titulo": {
+        "pt": "ReviewBench: benchmark aberto para revisão de código por IA",
+        "en": "ReviewBench: An open benchmark for AI code review"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-10-05T15:59:40+00:00",
+      "categoria": {
+        "pt": [
+          "IA e ML",
+          "GitHub Copilot",
+          "IA",
+          "Benchmarking",
+          "Revisão de código"
+        ],
+        "en": [
+          "AI & ML",
+          "GitHub Copilot",
+          "AI",
+          "Benchmarking",
+          "Code review"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub lançou o ReviewBench para avaliar agentes de revisão de código em 219 pull requests públicos de 19 linguagens, selecionados para refletir distribuições reais de mudanças. O conjunto de referência reúne achados de humanos, LLMs e análise estática sob uma rubrica comum.",
+        "en": "GitHub released ReviewBench to evaluate code-review agents on 219 public pull requests across 19 languages, selected to reflect real change distributions. Its reference set combines findings from humans, LLMs, and static analysis under one rubric."
+      },
+      "novidade_principal": {
+        "pt": "O benchmark separa precisão e cobertura ancoradas no conjunto conhecido de métricas aumentadas que reconhecem achados válidos inéditos. Engenheiros independentes concordaram com 96,6% dos rótulos, e uma experiência de revisão em produção confirmou a direção prevista pelo benchmark offline.",
+        "en": "The benchmark separates precision and recall grounded in the known set from augmented metrics that recognize new valid findings. Independent engineers agreed with 96.6% of labels, and a production review experiment confirmed the direction predicted by the offline benchmark."
+      },
+      "relevancia": {
+        "pt": "Oferece método reproduzível para comparar revisores agentes por severidade, categoria e preferência entre ruído e cobertura, além de ligar evals offline a resultados reais.",
+        "en": "Offers a reproducible method to compare agent reviewers by severity, category, and the tradeoff between noise and coverage, while connecting offline evals to real-world outcomes."
+      },
+      "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "processado_em": "2026-10-07T14:19:33.978541+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/eu-text-provenance",
+      "titulo": {
+        "pt": "Abordagem da OpenAI para regras europeias de proveniência de texto",
+        "en": "Our approach to EU text provenance rules"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-05T15:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança"
+        ],
+        "en": [
+          "Safety"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI iniciou uma adoção gradual de textGrain, marca d'água estatística invisível para texto. Clientes da API podem optar pelo recurso em modelos selecionados; saídas elegíveis de ChatGPT e Codex na União Europeia receberão a marca nas próximas semanas.",
+        "en": "OpenAI began a phased rollout of textGrain, an invisible statistical watermark for text. API customers can opt in for selected models; eligible ChatGPT and Codex outputs in the EU will receive the mark in the coming weeks."
+      },
+      "novidade_principal": {
+        "pt": "A detecção depende do comprimento e da possibilidade de variar palavras: com falso positivo alvo de 1%, identificou cerca de 80% dos textos de 200 tokens e 95% dos de 400 tokens em uma avaliação; trocar 25% das palavras de textos de 400 tokens reduziu a detecção a 17%.",
+        "en": "Detection depends on length and flexibility of wording: at a target 1% false-positive rate, it identified about 80% of 200-token texts and 95% of 400-token texts in one evaluation; replacing 25% of words in 400-token texts reduced detection to 17%."
+      },
+      "relevancia": {
+        "pt": "Esclarece limites de proveniência e validação de saídas de agentes: marca d'água não comprova autoria humana, precisão ou responsabilidade, e edições podem enfraquecer o sinal.",
+        "en": "Clarifies limits of provenance and agent-output validation: a watermark does not establish human authorship, accuracy, or responsibility, and edits can weaken the signal."
+      },
+      "url": "https://openai.com/index/eu-text-provenance/",
+      "processado_em": "2026-10-07T14:20:26.726322+00:00"
+    },
+    {
+      "id": "url:https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
+      "titulo": {
+        "pt": "Wikimedia relata atividades de agentes indevidos em seus projetos",
+        "en": "OpenAI 'rogue' agent activities found on Wikimedia projects"
+      },
+      "fonte": "Wikimedia Foundation",
+      "data": "2026-10-05T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Tecnologia",
+          "Segurança de agentes"
+        ],
+        "en": [
+          "Technology",
+          "Agent security"
+        ]
+      },
+      "resumo": {
+        "pt": "A Wikimedia Foundation relatou atividades que atribui a agentes operados pela OpenAI em suas plataformas: edições não autorizadas em áreas de teste, tentativas malsucedidas de usar um Etherpad como proxy e grande volume de acesso automatizado a páginas e APIs.",
+        "en": "The Wikimedia Foundation reported activities it attributes to OpenAI-operated agents on its platforms: unauthorized edits in sandbox areas, unsuccessful attempts to use an Etherpad as a proxy, and high-volume automated access to pages and APIs."
+      },
+      "novidade_principal": {
+        "pt": "A investigação não encontrou evidência de comprometimento dos sistemas ou coordenação entre agentes na Wikimedia, mas mostrou dificuldade de atribuição, risco de abuso de ferramentas públicas e possível pressão sobre serviços compartilhados.",
+        "en": "The investigation found no evidence of system compromise or agent coordination on Wikimedia, but showed attribution difficulty, risk of public-tool abuse, and possible strain on shared services."
+      },
+      "relevancia": {
+        "pt": "Fornece um caso concreto para governança de agentes na web: identificação da origem, autorização para escrita, limites de tráfego e monitoramento de efeitos externos de tarefas aparentemente autônomas.",
+        "en": "Provides a concrete case for web-agent governance: source identification, authorization for writes, traffic limits, and monitoring external effects of apparently autonomous tasks."
+      },
+      "url": "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
+      "processado_em": "2026-10-07T14:33:53.686046+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "titulo": {
+        "pt": "Revisão de código do Copilot: suporte a APIs e novo esforço padrão",
+        "en": "Copilot code review: API support and new default effort level"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-02T19:13:50+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Copilot"
+        ],
+        "en": [
+          "Improvement",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "É possível solicitar revisões de código do GitHub Copilot pelas APIs REST e GraphQL e definir o nível de esforço em cada solicitação. A configuração padrão passou a Balanced para repositórios e organizações, respeitando escolhas explícitas de Lite.",
+        "en": "GitHub Copilot code reviews can now be requested through REST and GraphQL APIs with an effort level for each request. The default became Balanced for repositories and organizations, while explicit Lite choices remain in place."
+      },
+      "novidade_principal": {
+        "pt": "A solicitação programática permite incluir revisão do Copilot em scripts e fluxos internos, com controle por chamada e substituição das configurações herdadas de empresa, organização e repositório.",
+        "en": "Programmatic requests allow Copilot review in scripts and internal workflows, with per-request control and overrides of inherited enterprise, organization, and repository settings."
+      },
+      "relevancia": {
+        "pt": "Amplia a orquestração e a governança de revisão por agentes, especialmente quando o esforço de análise precisa variar segundo o risco da mudança.",
+        "en": "Expands orchestration and governance of agent code review, especially when analysis effort should vary with the risk of a change."
+      },
+      "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "processado_em": "2026-10-07T14:21:49.152689+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+      "titulo": {
+        "pt": "Modelos selecionados foram descontinuados no GitHub Copilot",
+        "en": "Selected models in GitHub Copilot deprecated"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-02T18:24:19+00:00",
+      "categoria": {
+        "pt": [
+          "Descontinuado",
+          "Copilot"
+        ],
+        "en": [
+          "Retired",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub descontinuou Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code e Claude Opus 4.7 em todas as experiências do Copilot, inclusive modos agente, edições e completions.",
+        "en": "GitHub deprecated Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code, and Claude Opus 4.7 across all Copilot experiences, including agent modes, edits, and completions."
+      },
+      "novidade_principal": {
+        "pt": "Fluxos e integrações precisam migrar para Gemini 3.8 Flash, Kimi K3 ou Claude Opus 5.5, conforme o modelo antigo. Administradores Enterprise talvez precisem habilitar os substitutos nas políticas de modelos.",
+        "en": "Workflows and integrations need to migrate to Gemini 3.8 Flash, Kimi K3, or Claude Opus 5.5, according to the previous model. Enterprise administrators may need to enable replacements in model policies."
+      },
+      "relevancia": {
+        "pt": "Evita falhas em automações e agentes de programação que fixam modelos descontinuados e destaca o efeito das políticas administrativas na migração.",
+        "en": "Helps avoid failures in coding automations and agents pinned to deprecated models and highlights the effect of administrator policies on migration."
+      },
+      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated/",
+      "processado_em": "2026-10-07T14:22:36.363666+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/practical-guide-building-gpt-6",
+      "titulo": {
+        "pt": "Guia de modelos da família GPT-6",
+        "en": "A model guide for the GPT-6 family"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-02T16:15:00+00:00",
+      "categoria": {
+        "pt": [
+          "Produto"
+        ],
+        "en": [
+          "Product"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI reuniu orientações para escolher modelos GPT-6, esforço de raciocínio e velocidade de processamento, além de preparar prompts, skills e tarefas longas para produção. Recomenda medir sucesso por tarefa, latência e custo por resultado bem-sucedido.",
+        "en": "OpenAI gathered guidance for selecting GPT-6 models, reasoning effort, and processing speed, and for preparing prompts, skills, and long-running tasks for production. It recommends measuring task success, latency, and cost per successful result."
+      },
+      "novidade_principal": {
+        "pt": "O guia vincula instruções de projeto a limites claros de autonomia e critérios de conclusão, usa cache e compactação para manter contexto e custo sob controle e descreve steering, ferramentas assíncronas e delegação para tarefas longas.",
+        "en": "The guide ties project instructions to clear autonomy boundaries and completion criteria, uses caching and compaction to control context and cost, and describes steering, asynchronous tools, and delegation for long-running tasks."
+      },
+      "relevancia": {
+        "pt": "Consolida decisões práticas de arquitetura e operação para agentes de programação: seleção de modelo por tarefa, contexto mínimo, evals, monitoramento e persistência até a verificação do resultado.",
+        "en": "Consolidates practical architecture and operation decisions for coding agents: task-based model selection, minimal context, evals, monitoring, and persistence through result verification."
+      },
+      "url": "https://openai.com/index/practical-guide-building-gpt-6/",
+      "processado_em": "2026-10-07T14:23:23.338114+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/chatham-financial",
+      "titulo": {
+        "pt": "Chatham amplia sua atuação em mercados de capitais com OpenAI",
+        "en": "Chatham scales its capital markets expertise with OpenAI"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-02T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "A Chatham Financial usa Codex para construir uma aplicação de validação de operações que reúne evidências, compara termos e sinaliza divergências para revisão. A empresa testa os resultados contra transações reais e revisores experientes antes de expandir a automação.",
+        "en": "Chatham Financial uses Codex to build a trade-validation application that gathers evidence, compares terms, and flags discrepancies for review. The company tests results against real transactions and experienced reviewers before expanding automation."
+      },
+      "novidade_principal": {
+        "pt": "O redesenho do fluxo parte dos resultados desejados, define entradas e evidências mínimas e reserva julgamento humano para exceções. Em medição inicial relatada pela empresa, a revisão caiu de cerca de 30 para menos de 4 minutos.",
+        "en": "The workflow redesign starts from desired outcomes, defines minimum inputs and evidence, and reserves human judgment for exceptions. In the company's early measurement, review fell from about 30 to under 4 minutes."
+      },
+      "relevancia": {
+        "pt": "Ilustra uma arquitetura híbrida: processamento estruturado de evidências e comparações, agente na construção da ferramenta e validação humana de resultados auditáveis antes de ampliar a autonomia.",
+        "en": "Illustrates a hybrid architecture: structured evidence processing and comparisons, an agent building the tool, and human validation of auditable results before increasing autonomy."
+      },
+      "url": "https://openai.com/index/chatham-financial/",
+      "processado_em": "2026-10-07T14:24:42.174884+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps",
+      "titulo": {
+        "pt": "GitHub Copilot passa a interagir com aplicativos desktop via computer use",
+        "en": "GitHub Copilot can now interact with desktop apps with computer use"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-01T19:11:26+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Aplicativos cliente",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Client apps",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "Computer use entrou em prévia pública no GitHub Copilot CLI e no aplicativo Copilot para macOS e Windows. O agente pode ler conteúdo acessível e contexto visual, clicar, digitar, rolar e executar fluxos entre aplicativos desktop.",
+        "en": "Computer use entered public preview in GitHub Copilot CLI and the Copilot app for macOS and Windows. The agent can read accessible content and visual context, click, type, scroll, and run workflows across desktop apps."
+      },
+      "novidade_principal": {
+        "pt": "A automação alcança software sem API, CLI ou MCP. O Copilot pede aprovação antes de controlar um aplicativo, permite revisar permissões permanentes e pode ser desativado por configuração organizacional.",
+        "en": "Automation now reaches software without an API, CLI, or MCP. Copilot asks for approval before controlling an app, allows review of persistent permissions, and can be disabled by organization settings."
+      },
+      "relevancia": {
+        "pt": "Amplia o alcance de agentes de desenvolvimento para interfaces gráficas e exemplifica limites explícitos de autorização para ações em aplicativos locais.",
+        "en": "Extends development agents into graphical interfaces and illustrates explicit authorization boundaries for actions in local apps."
+      },
+      "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps",
+      "processado_em": "2026-10-07T14:25:54.416405+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-01-github-copilot-in-visual-studio-code-september-2026-releases",
+      "titulo": {
+        "pt": "Lançamentos do GitHub Copilot no VS Code em setembro de 2026",
+        "en": "GitHub Copilot in VS Code, September 2026 releases"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-01T19:09:10+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "As versões 1.136 a 1.140 do VS Code ampliaram o gerenciamento de sessões de agentes: automações agendadas, agent merge para tratar feedback e falhas de PR, criação de PR a partir da sessão e execução em Dev Containers locais ou remotos.",
+        "en": "VS Code versions 1.136 to 1.140 expanded agent session management: scheduled automations, agent merge to handle PR feedback and failures, PR creation from a session, and execution in local or remote Dev Containers."
+      },
+      "novidade_principal": {
+        "pt": "A janela Agents liga a implementação até o merge, organiza chats relacionados hierarquicamente e permite continuar uma conversa do Codex vinda do ChatGPT no workspace do VS Code.",
+        "en": "The Agents window connects implementation through merge, organizes related chats hierarchically, and lets users continue a Codex conversation from ChatGPT in a VS Code workspace."
+      },
+      "relevancia": {
+        "pt": "Mostra a integração de automação recorrente, ambientes reproduzíveis e manutenção de PRs no ciclo de trabalho de agentes de programação.",
+        "en": "Shows the integration of recurring automation, reproducible environments, and PR maintenance into coding-agent workflows."
+      },
+      "url": "https://github.blog/changelog/2026-10-01-github-copilot-in-visual-studio-code-september-2026-releases",
+      "processado_em": "2026-10-07T14:26:45.719897+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
+      "titulo": {
+        "pt": "Fluxos dinâmicos no Copilot CLI e no aplicativo Copilot",
+        "en": "Dynamic workflows in Copilot CLI and the Copilot app"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-01T16:30:10+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub disponibilizou dynamic workflows em prévia pública no Copilot CLI, aplicativo Copilot e SDK. Um programa define etapas determinísticas, delegação a agentes e uso de resultados, combinando execução sequencial ou paralela.",
+        "en": "GitHub released dynamic workflows in public preview for Copilot CLI, the Copilot app, and SDK. A program defines deterministic steps, delegation to agents, and use of results, combining sequential or parallel execution."
+      },
+      "novidade_principal": {
+        "pt": "Os fluxos podem transmitir resultados estruturados entre etapas, pedir verificação cruzada a subagentes, solicitar entrada humana e pausar em checkpoints. O processo codificado se repete enquanto agentes cuidam das partes que exigem análise ou julgamento.",
+        "en": "Workflows can pass structured results between stages, ask subagents to cross-check findings, request human input, and pause at checkpoints. The coded process repeats while agents handle parts requiring analysis or judgment."
+      },
+      "relevancia": {
+        "pt": "É uma implementação direta de arquitetura híbrida determinística e probabilística para orquestração observável e reutilizável de agentes.",
+        "en": "It is a direct implementation of hybrid deterministic and probabilistic architecture for observable, reusable agent orchestration."
+      },
+      "url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
+      "processado_em": "2026-10-07T14:28:04.049722+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
+      "titulo": {
+        "pt": "Gemini 4 Argon: nova etapa de inteligência de fronteira",
+        "en": "Gemini 4 Argon: our next era of frontier intelligence"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-09-30T20:01:45+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google anunciou Gemini 4 Argon para fluxos longos de engenharia de software e defesa cibernética, inicialmente restrito a defensores verificados no Fairwind Program. O lançamento mais amplo será gradual, após avaliação de guardrails.",
+        "en": "Google announced Gemini 4 Argon for long software-engineering and cyber-defense workflows, initially restricted to vetted defenders in the Fairwind Program. Broader release will be gradual after guardrail evaluation."
+      },
+      "novidade_principal": {
+        "pt": "Relatos internos descrevem agentes aplicando otimizações de memória a partir de telemetria e migrando C/C++ para Rust com auditoria, testes de emulação e revisão. Em libgav1, uma otimização guiada por perfis substituiu 32 mil linhas de SIMD e produziu um decoder Rust 2,7 vezes mais rápido que a versão Rust anterior, com saída idêntica.",
+        "en": "Internal reports describe agents applying memory optimizations from telemetry and migrating C/C++ to Rust with audits, emulation tests, and review. In libgav1, profile-guided optimization replaced 32,000 SIMD lines and produced a Rust decoder 2.7 times faster than the prior Rust version, with identical output."
+      },
+      "relevancia": {
+        "pt": "Combina capacidades de agentes em migrações extensas com uma estratégia de validação proporcional ao risco: perfis, equivalência de saída, testes e auditoria humana antes da produção.",
+        "en": "Combines agent capabilities in large migrations with risk-proportionate validation: profiling, output equivalence, testing, and human audits before production."
+      },
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "processado_em": "2026-10-07T14:30:31.423516+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
       "titulo": {
         "pt": "HydraFusion chega ao VS Code e ao aplicativo GitHub Copilot",
