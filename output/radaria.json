@@ -2,6 +2,332 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://developers.googleblog.com/the-outer-loop-insights-first-an-ambient-quality-agent-that-diagnoses-your-production-agent",
+      "titulo": {
+        "pt": "O loop externo: um agente de qualidade ambiente que diagnostica agentes em produção",
+        "en": "The Outer Loop, Insights First: An Ambient Quality Agent That Diagnoses Your Production Agent"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-08T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google apresentou o AQuA, um agente de qualidade que examina trajetórias de agentes em produção, avalia falhas, agrupa ocorrências, verifica padrões e acompanha recorrência. A análise de causa combina traces com um snapshot imutável do código implantado.",
+        "en": "Google introduced AQuA, a quality agent that examines production agent trajectories, grades failures, clusters occurrences, verifies patterns, and tracks recurrence. Root-cause analysis combines traces with an immutable snapshot of deployed code."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo separa avaliação, agrupamento e verificação por outro modelo antes de criar insights, com evidências vinculadas às sessões e citações de linhas validadas no snapshot. Em um exemplo multiagente, ajustes em prompts reduziram em 87% as falhas de checagem de assento e eliminaram omissões de preferência alimentar.",
+        "en": "The workflow separates grading, clustering, and verification by another model before creating insights, with evidence linked to sessions and line citations validated against the snapshot. In a multi-agent example, prompt changes cut seat-check failures by 87% and eliminated dietary-preference omissions."
+      },
+      "relevancia": {
+        "pt": "Fornece um método prático de observabilidade e avaliação contínua para detectar regressões silenciosas, localizar falhas de handoff ou tools e validar correções de agentes.",
+        "en": "It provides a practical continuous observability and evaluation method to detect silent regressions, locate handoff or tool failures, and validate agent fixes."
+      },
+      "url": "https://developers.googleblog.com/the-outer-loop-insights-first-an-ambient-quality-agent-that-diagnoses-your-production-agent/",
+      "processado_em": "2026-10-08T17:22:35.966576+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/news/2026-usage-policy-update",
+      "titulo": {
+        "pt": "Atualização de 2026 da Política de Uso da Anthropic",
+        "en": "2026 Usage Policy update"
+      },
+      "fonte": "Anthropic News",
+      "data": "2026-10-08T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Anúncios"
+        ],
+        "en": [
+          "Announcements"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic esclareceu como sua Política de Uso se aplica a capacidades mais autônomas do Claude, com regras sobre atividade enganosa, vigilância, casos de alto risco e ações físicas autônomas. A versão entra em vigor em 12 de novembro de 2026.",
+        "en": "Anthropic clarified how its Usage Policy applies to Claude''s more autonomous capabilities, with rules on deceptive activity, surveillance, high-risk uses, and autonomous physical actions. The version takes effect on November 12, 2026."
+      },
+      "novidade_principal": {
+        "pt": "Para modelos conectados a hardware capaz de causar lesões, a política exige um operador qualificado que possa observar e interromper a operação e um estado seguro quando Claude se desconectar. Ela também explicita revisão humana e aviso de uso de IA em decisões individuais de alto risco.",
+        "en": "For models connected to hardware capable of causing injury, the policy requires a qualified operator able to observe and stop the operation and a safe state if Claude disconnects. It also makes human review and AI-use disclosure explicit for high-risk individual decisions."
+      },
+      "relevancia": {
+        "pt": "Oferece requisitos concretos de supervisão, interrupção segura e transparência para a governança de agentes autônomos, úteis como referência ao projetar limites operacionais.",
+        "en": "It provides concrete oversight, safe-stop, and transparency requirements for autonomous-agent governance, useful when designing operational boundaries."
+      },
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "processado_em": "2026-10-08T17:21:36.429183+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+      "titulo": {
+        "pt": "Claude Haiku 5.5 no GitHub Copilot",
+        "en": "Claude Haiku 5.5 in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-07T20:12:18+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O Claude Haiku 5.5 está disponível no GitHub Copilot para tarefas rápidas e de alto volume, como subagentes, edições curtas e trabalho no terminal, com implantação gradual nas principais interfaces do Copilot.",
+        "en": "Claude Haiku 5.5 is available in GitHub Copilot for fast, high-volume tasks such as subagents, quick edits, and terminal work, with gradual rollout across major Copilot surfaces."
+      },
+      "novidade_principal": {
+        "pt": "O GitHub relata que, em testes iniciais, o modelo igualou o Claude Sonnet 5 em muitas tarefas de programação usando menos tokens e etapas; administradores podem controlar seu acesso pela política de modelos.",
+        "en": "GitHub reports that in early tests the model matched Claude Sonnet 5 on many coding tasks while using fewer tokens and steps; administrators can control access through model policy."
+      },
+      "relevancia": {
+        "pt": "Amplia as opções para escolher modelos eficientes em fluxos de programação e orquestração de subagentes no Copilot.",
+        "en": "It expands efficient model choices for coding workflows and subagent orchestration in Copilot."
+      },
+      "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot/",
+      "processado_em": "2026-10-08T17:22:58.675271+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=99310",
+      "titulo": {
+        "pt": "Proteção de segredos precisa acompanhar a escala do software",
+        "en": "Secret protection must scale with software"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-10-07T17:45:34+00:00",
+      "categoria": {
+        "pt": [
+          "IA e aprendizado de máquina",
+          "IA generativa",
+          "GitHub Copilot",
+          "IA",
+          "Proteção de segredos",
+          "Varredura de segredos"
+        ],
+        "en": [
+          "AI & ML",
+          "Generative AI",
+          "GitHub Copilot",
+          "AI",
+          "Secret Protection",
+          "Secret Scanning"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub analisou nove trimestres de push protection e concluiu que o volume de credenciais expostas cresce com o volume de pushes, sem tendência detectável de aumento na prevalência por push. Apresentou um classificador contextual para barrar também segredos sem padrão fixo antes do envio.",
+        "en": "GitHub analyzed nine quarters of push protection and found that exposed credentials grow with push volume, with no detectable increase in prevalence per push. It introduced a contextual classifier to block secrets without fixed patterns before the push."
+      },
+      "novidade_principal": {
+        "pt": "Um classificador ModernBERT avalia lotes de possíveis segredos em contexto em menos de 2 ms; sua inclusão na proteção de push pode mais que dobrar os segredos barrados. O modelo também irá ao comando /security-review do Copilot CLI e do app.",
+        "en": "A ModernBERT classifier evaluates batches of candidate secrets in context in under 2 ms; adding it to push protection could more than double blocked secrets. The model is also coming to the Copilot CLI and app /security-review command."
+      },
+      "relevancia": {
+        "pt": "Mostra uma arquitetura híbrida: detecção contextual por modelo no caminho crítico, com limite de latência, bloqueio determinístico e correção antecipada de vazamentos em fluxos com agentes.",
+        "en": "It shows a hybrid architecture: model-based contextual detection on the critical path, with a latency bound, deterministic blocking, and earlier leak prevention in agent workflows."
+      },
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
+      "processado_em": "2026-10-08T17:23:25.517635+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+      "titulo": {
+        "pt": "Modelo especializado para detectar vazamento de segredos",
+        "en": "Purpose-built model for leaked secret detection"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-07T16:13:56+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Segurança de aplicações",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "application security",
+          "copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub detalhou a implantação do classificador de segredos contextuais em alertas, proteção de push e futuras revisões de segurança do Copilot. Ele identifica credenciais sem formato fixo usando o código ao redor.",
+        "en": "GitHub detailed deployment of its contextual secret classifier in alerts, push protection, and future Copilot security reviews. It identifies credentials without fixed formats using surrounding code."
+      },
+      "novidade_principal": {
+        "pt": "Alertas existentes migram automaticamente sem cobrança adicional; verificações no push e no /security-review exigirão adesão e consumirão AI Credits, inclusive quando uma checagem não bloquear o push. O comando de revisão permanece somente leitura e os novos checks ficam desativados por padrão.",
+        "en": "Existing alerts migrate automatically without an extra charge; push and /security-review checks require opt-in and will consume AI Credits, even when a check does not block a push. The review command remains read-only and new checks are off by default."
+      },
+      "relevancia": {
+        "pt": "Esclarece controles de adoção, custo e autorização para inserir detecção por IA no fluxo de agentes e revisão de código sem ativação implícita de recursos pagos.",
+        "en": "It clarifies adoption, cost, and authorization controls for adding AI detection to agent and code-review workflows without implicitly enabling paid features."
+      },
+      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/",
+      "processado_em": "2026-10-08T17:23:50.687322+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "titulo": {
+        "pt": "Sandbox local do GitHub Copilot está disponível em geral",
+        "en": "Local sandboxing for GitHub Copilot now generally available"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-07T15:46:17+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Segurança de aplicações",
+          "Copilot",
+          "Governança de plataforma"
+        ],
+        "en": [
+          "Release",
+          "application security",
+          "copilot",
+          "platform governance"
+        ]
+      },
+      "resumo": {
+        "pt": "O sandbox local do GitHub Copilot está disponível no CLI, no app e em sessões do VS Code com Agent Host. Políticas limitam acesso de comandos iniciados pelo agente a arquivos, rede, credenciais e serviços locais.",
+        "en": "GitHub Copilot local sandboxing is generally available in the CLI, app, and VS Code sessions using Agent Host. Policies limit agent-initiated commands'' access to files, network, credentials, and local services."
+      },
+      "novidade_principal": {
+        "pt": "O Microsoft eXecution Container traduz uma política comum em controles nativos para Windows, macOS e Linux. Organizações podem exigir sandboxing com configurações gerenciadas que usuários não conseguem enfraquecer; o isolamento de tools independe do modelo escolhido.",
+        "en": "Microsoft eXecution Container translates one policy into native controls on Windows, macOS, and Linux. Organizations can require sandboxing through managed settings users cannot weaken; tool isolation does not depend on the chosen model."
+      },
+      "relevancia": {
+        "pt": "Oferece um mecanismo concreto de menor privilégio para ampliar a autonomia de agentes de programação com limites auditáveis de execução local.",
+        "en": "It provides a concrete least-privilege mechanism for expanding coding-agent autonomy with enforceable local execution boundaries."
+      },
+      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+      "processado_em": "2026-10-08T17:24:22.195277+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
+      "titulo": {
+        "pt": "Descoberta de modelos locais no GitHub Copilot CLI",
+        "en": "Discover local models in GitHub Copilot CLI"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-07T15:46:13+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Copilot"
+        ],
+        "en": [
+          "Improvement",
+          "copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "Desde a versão 1.0.94-0, o comando /model do Copilot CLI descobre modelos compatíveis em uma instância Ollama local e permite adicioná-los à sessão sem reiniciar. O runtime e o modelo já devem estar instalados e suportar tool calling e streaming.",
+        "en": "From version 1.0.94-0, Copilot CLI''s /model command discovers compatible models in a local Ollama instance and can add them to the session without a restart. The runtime and model must already be installed and support tool calling and streaming."
+      },
+      "novidade_principal": {
+        "pt": "A descoberta exige confirmação do provedor e endpoint antes do uso. Escolher modelo local não ativa o modo offline nem desliga a telemetria; o modo offline depende de COPILOT_OFFLINE=true e provedores remotos ainda podem receber contexto.",
+        "en": "Discovery requires confirmation of provider and endpoint before use. Selecting a local model does not enable offline mode or disable telemetry; offline mode requires COPILOT_OFFLINE=true, and remote providers can still receive context."
+      },
+      "relevancia": {
+        "pt": "Ajuda a selecionar modelos locais para agentes de programação sem confundir execução local com privacidade ou isolamento de rede.",
+        "en": "It helps select local models for coding agents without confusing local execution with privacy or network isolation."
+      },
+      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/",
+      "processado_em": "2026-10-08T17:24:44.666677+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/claude-haiku-5-5",
+      "titulo": {
+        "pt": "Apresentação do Claude Haiku 5.5",
+        "en": "Introducing Claude Haiku 5.5"
+      },
+      "fonte": "Anthropic News",
+      "data": "2026-10-07T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Anúncios"
+        ],
+        "en": [
+          "Announcements"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic lançou o Haiku 5.5 para tarefas rápidas e volumosas, como compactação, classificação, busca e subagentes de programação. O modelo tem ajuste de esforço e custa, em média, cerca de 75% menos por tarefa que o Haiku 4.5, segundo a empresa.",
+        "en": "Anthropic launched Haiku 5.5 for fast, high-volume tasks such as compaction, classification, retrieval, and coding subagents. The model offers adjustable effort and costs about 75% less per task on average than Haiku 4.5, according to the company."
+      },
+      "novidade_principal": {
+        "pt": "É o primeiro Haiku com esforço ajustável; a Anthropic o posiciona para subtarefas delimitadas, enquanto Sonnet 5.5 e Opus 5.5 permanecem indicados para programação agêntica complexa. A empresa também reduziu pela metade o preço de leituras de cache do Sonnet 5.5.",
+        "en": "It is the first Haiku with adjustable effort; Anthropic positions it for bounded subtasks, while Sonnet 5.5 and Opus 5.5 remain better suited to complex agentic coding. The company also halved Sonnet 5.5 cache-read pricing."
+      },
+      "relevancia": {
+        "pt": "Ajuda a dimensionar modelos por etapa de um sistema multiagente, equilibrando capacidade, latência e custo com base em avaliações de programação e computer use.",
+        "en": "It helps size models by stage in a multi-agent system, balancing capability, latency, and cost using coding and computer-use evaluations."
+      },
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "processado_em": "2026-10-08T17:26:08.789163+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/supercharge-your-development-with-the-google-developer-knowledge-api-ecosystem",
+      "titulo": {
+        "pt": "Ecossistema da Google Developer Knowledge API para desenvolvimento",
+        "en": "Supercharge your development with the Google Developer Knowledge API ecosystem"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-07T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google ampliou o acesso à documentação técnica oficial para agentes e ferramentas de desenvolvimento por CLI, skill, MCP, API Explorer e bibliotecas cliente em várias linguagens.",
+        "en": "Google expanded access to official technical documentation for agents and developer tools through a CLI, skill, MCP, API Explorer, and multi-language client libraries."
+      },
+      "novidade_principal": {
+        "pt": "A skill orienta a busca em trechos antes de buscar páginas Markdown completas ou respostas fundamentadas, reduzindo uso de contexto. Bibliotecas oferecem busca, recuperação em lote de até 20 documentos, respostas fundamentadas e rastreamento estruturado de citações.",
+        "en": "The skill directs agents to search document chunks before fetching complete Markdown pages or grounded answers, reducing context use. Libraries offer search, retrieval of up to 20 documents per batch, grounded answers, and structured citation tracking."
+      },
+      "relevancia": {
+        "pt": "Fornece um padrão oficial de RAG para agentes de programação: recuperar documentação atual com granularidade adequada, citações e menor custo de contexto.",
+        "en": "It provides an official RAG pattern for coding agents: retrieve current documentation at appropriate granularity, with citations and lower context cost."
+      },
+      "url": "https://developers.googleblog.com/supercharge-your-development-with-the-google-developer-knowledge-api-ecosystem/",
+      "processado_em": "2026-10-08T17:26:40.310532+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/gpt-6-for-everyone",
+      "titulo": {
+        "pt": "GPT-6 e Intelligent UI para todos",
+        "en": "GPT-6 and Intelligent UI for everyone"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-07T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Produto"
+        ],
+        "en": [
+          "Product"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI lançou GPT-6 no ChatGPT com Intelligent UI, que combina texto, recursos visuais e controles interativos conforme a tarefa, além de começar a responder enquanto continua o raciocínio.",
+        "en": "OpenAI launched GPT-6 in ChatGPT with Intelligent UI, which combines text, visuals, and interactive controls according to the task, and can start responding while reasoning continues."
+      },
+      "novidade_principal": {
+        "pt": "A interface usa uma biblioteca de componentes nativos transmitidos em streaming e um compilador que monta a UI progressivamente durante a geração. O modelo foi avaliado quanto a clareza, utilidade e completude e treinado para escolher quando interatividade ou texto simples atende melhor.",
+        "en": "The interface uses a library of native streamable components and a compiler that assembles UI progressively during generation. The model was evaluated for clarity, usefulness, and completeness and trained to choose when interactivity or plain text works best."
+      },
+      "relevancia": {
+        "pt": "Apresenta um padrão arquitetural para respostas de agentes com interface dinâmica, composição progressiva e avaliação explícita da experiência, aplicável a ferramentas de desenvolvimento.",
+        "en": "It presents an architectural pattern for agent responses with dynamic UI, progressive composition, and explicit experience evaluation, applicable to developer tools."
+      },
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "processado_em": "2026-10-08T17:25:39.906533+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
       "titulo": {
         "pt": "Atualize sua IDE para restaurar métricas de atividade de agentes do Copilot",
