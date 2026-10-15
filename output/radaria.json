@@ -2,6 +2,445 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://deepmind.google/blog/accelerating-antimicrobial-discovery",
+      "titulo": {
+        "pt": "Acelerando a busca por peptídeos antimicrobianos com Google Antigravity",
+        "en": "Accelerating the search for antimicrobial peptides with Google Antigravity"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-10-15T16:08:03+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "Um pesquisador usa o agente do Antigravity para combinar busca em bases de proteínas, previsão com ProtNLM, comparação estrutural, contexto genômico e literatura na seleção de um candidato a peptídeo antimicrobiano, ainda sujeito a validação em laboratório.",
+        "en": "A researcher uses the Antigravity agent to combine protein database search, ProtNLM predictions, structural comparison, genomic context, and literature when selecting an antimicrobial peptide candidate that still requires laboratory validation."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo reúne evidências de várias ferramentas com decisões humanas entre etapas e introduz um visualizador 3D compartilhado: anotações feitas pelo pesquisador no modelo estrutural retornam como contexto específico ao agente.",
+        "en": "The workflow combines evidence from multiple tools with human decisions between stages and introduces a shared 3D viewer: researcher annotations on the structural model feed back into the agent as specific context."
+      },
+      "relevancia": {
+        "pt": "Demonstra orquestração de agentes com contexto visual bidirecional, verificação por fontes independentes e separação explícita entre hipótese computacional e validação experimental.",
+        "en": "It demonstrates agent orchestration with bidirectional visual context, checks against independent evidence sources, and an explicit boundary between computational hypothesis and experimental validation."
+      },
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "processado_em": "2026-10-15T17:23:47.225900+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+      "titulo": {
+        "pt": "Correção agêntica de alertas de análise de código disponível em geral",
+        "en": "Agentic autofix for code scanning alerts general availability"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-15T13:49:20+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Segurança de aplicações",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Application security",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub disponibilizou o agentic autofix para clientes Code Security e Advanced Security no Enterprise Cloud. O Copilot explora o repositório, propõe uma correção para alertas de code scanning e executa CodeQL novamente antes de abrir um pull request em rascunho.",
+        "en": "GitHub made agentic autofix available to Code Security and Advanced Security customers on Enterprise Cloud. Copilot explores the repository, proposes a fix for code scanning alerts, and reruns CodeQL before opening a draft pull request."
+      },
+      "novidade_principal": {
+        "pt": "A correção passa por um ciclo automático de implementação e validação com CodeQL; até 25 alertas da branch padrão podem ser atribuídos ao Copilot em um único pull request, sob política administrativa.",
+        "en": "Remediation now follows an automated implementation and CodeQL validation loop; up to 25 alerts on the default branch can be assigned to Copilot in one pull request under an administrator policy."
+      },
+      "relevancia": {
+        "pt": "Oferece um exemplo concreto de agente de programação com verificação determinística, revisão humana e controles de governança em um fluxo de segurança.",
+        "en": "It provides a concrete example of a coding agent with deterministic verification, human review, and governance controls in a security workflow."
+      },
+      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+      "processado_em": "2026-10-15T17:24:29.384978+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
+      "titulo": {
+        "pt": "Avaliando agentes de IA além da impressão subjetiva",
+        "en": "Evaluating AI agents: moving past the vibe check"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-15T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google propõe um fluxo progressivo de evals para agentes: revisar traces manualmente, fixar um conjunto de casos de referência, simular usuários, medir qualidade e custos em toda a execução e transformar verificações confiáveis em gates de CI.",
+        "en": "Google proposes a progressive agent eval workflow: review traces manually, freeze a reference scenario set, simulate users, measure quality and costs across the full run, and turn reliable checks into CI gates."
+      },
+      "novidade_principal": {
+        "pt": "O guia combina asserções determinísticas, critérios binários para LLM-as-a-judge, traces OpenTelemetry com convenções OpenInference e regras de merge que exigem limiar global e zero regressões em métricas essenciais.",
+        "en": "The guide combines deterministic assertions, boolean LLM-as-a-judge criteria, OpenTelemetry traces with OpenInference conventions, and merge rules that require a global threshold and zero regressions on core metrics."
+      },
+      "relevancia": {
+        "pt": "Fornece um método aplicável para detectar loops, chamadas de ferramenta redundantes, efeitos duplicados e regressões que a avaliação da resposta final não mostra.",
+        "en": "It provides an applicable method for detecting loops, redundant tool calls, duplicate effects, and regressions that final-answer assessment misses."
+      },
+      "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/",
+      "processado_em": "2026-10-15T17:26:01.004205+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/news/an-update-on-independent-evaluators",
+      "titulo": {
+        "pt": "Atualização sobre avaliadores independentes",
+        "en": "An update on independent evaluators"
+      },
+      "fonte": "Anthropic News",
+      "data": "2026-10-15T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Anúncios"
+        ],
+        "en": [
+          "Announcements"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic incorporou seis integrantes da METR com acesso semelhante ao de funcionários para avaliar riscos, incidentes e práticas dos modelos. A METR poderá publicar conclusões sem veto da empresa, sujeitas a redações limitadas de informações sensíveis.",
+        "en": "Anthropic embedded six METR staff members with employee-like access to assess model risks, incidents, and practices. METR may publish findings without a company veto, subject to narrow redactions of sensitive information."
+      },
+      "novidade_principal": {
+        "pt": "A proposta define três níveis de acesso e direitos de publicação para avaliadores externos, culminando em avaliação incorporada com acesso profundo e liberdade para relatar inclusive discordâncias sobre redações.",
+        "en": "The proposal defines three levels of access and publication rights for external evaluators, culminating in embedded assessment with deep access and freedom to report even disagreements about redactions."
+      },
+      "relevancia": {
+        "pt": "Oferece um modelo concreto de governança para evals independentes, combinando acesso suficiente, independência, proteção de dados e transparência pública.",
+        "en": "It offers a concrete governance model for independent evals, combining sufficient access, independence, data protection, and public transparency."
+      },
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "processado_em": "2026-10-15T17:25:29.488869+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes",
+      "titulo": {
+        "pt": "Três camadas em um repositório: google/adk-recipes",
+        "en": "Three layers, one repo: a tour of google/adk-recipes"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-15T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google reorganizou exemplos do ADK em um repositório com padrões de referência em core/, skills instaláveis em plugins/ e serviços executáveis em contrib/. Manifestos validados, AGENTS.md, testes de execução e CI conectam as três camadas.",
+        "en": "Google reorganized ADK examples into one repository with reference patterns in core/, installable skills in plugins/, and runnable services in contrib/. Validated manifests, AGENTS.md files, runnability tests, and CI connect the three layers."
+      },
+      "novidade_principal": {
+        "pt": "O repositório passa a servir como fonte única para agentes de programação e superfícies de distribuição; inclui o harness Horizon para memória e tarefas longas, Plugin Recipes com EVAL.yaml e exemplos implantáveis derivados das mesmas convenções.",
+        "en": "The repository becomes a single source for coding agents and distribution surfaces; it includes the Horizon harness for memory and long-running tasks, Plugin Recipes with EVAL.yaml, and deployable examples derived from the same conventions."
+      },
+      "relevancia": {
+        "pt": "Mostra uma organização reutilizável de padrões, skills e aplicações de agentes com contratos legíveis por máquinas, validação contínua e responsabilidades separadas entre instalação e serviço.",
+        "en": "It shows a reusable organization of agent patterns, skills, and applications with machine-readable contracts, continuous validation, and separate responsibilities for installation and service operation."
+      },
+      "url": "https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/",
+      "processado_em": "2026-10-15T17:26:53.967271+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+      "titulo": {
+        "pt": "AI Scan para pull requests disponível em geral",
+        "en": "AI Scan for pull requests generally available"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-10-15T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Segurança de aplicações"
+        ],
+        "en": [
+          "Release",
+          "Application security"
+        ]
+      },
+      "resumo": {
+        "pt": "O AI Scan do GitHub está disponível em geral para detectar vulnerabilidades nas mudanças de pull requests em linguagens e frameworks sem cobertura atual do CodeQL. Os achados aparecem ao lado dos resultados do CodeQL, identificados como IA.",
+        "en": "GitHub AI Scan is generally available to detect vulnerabilities in pull request changes for languages and frameworks not currently covered by CodeQL. Findings appear beside CodeQL results with an AI indicator."
+      },
+      "novidade_principal": {
+        "pt": "A análise roda automaticamente quando habilitada e pode sugerir correções para PHP, Shell/Bash, Terraform, Dockerfiles e outros; os achados são consultivos e não bloqueiam o merge.",
+        "en": "The scan runs automatically when enabled and can suggest fixes for PHP, Shell/Bash, Terraform, Dockerfiles, and others; findings are advisory and do not block merging."
+      },
+      "relevancia": {
+        "pt": "Acrescenta uma camada probabilística de revisão de segurança onde a análise estática tradicional não cobre o código, com limites claros para seu uso como gate.",
+        "en": "It adds a probabilistic security review layer where conventional static analysis does not cover the code, with clear limits on using it as a gate."
+      },
+      "url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/",
+      "processado_em": "2026-10-15T17:37:11.432573+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "titulo": {
+        "pt": "HydraFusion atualiza a orquestração e apresenta a opção Max",
+        "en": "HydraFusion updates and new Max option"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-14T20:01:35+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub atualizou o pool de modelos e os fluxos de orquestração do HydraFusion, que combina modelos para produzir uma resposta no Copilot. A prévia também ganhou HydraFusion Max para tarefas mais exigentes.",
+        "en": "GitHub updated HydraFusion's model pool and orchestration workflows, which combine models to produce one Copilot response. The preview also gained HydraFusion Max for more demanding tasks."
+      },
+      "novidade_principal": {
+        "pt": "O esforço de raciocínio agora varia por etapa; Cascade pode julgar a primeira solução e solicitar reparo quando necessário, enquanto Critique usa ferramentas para inspecionar o workspace e críticos paralelos.",
+        "en": "Reasoning effort now varies by stage; Cascade can judge the first solution and request repair when needed, while Critique uses tools to inspect the workspace and parallel critics."
+      },
+      "relevancia": {
+        "pt": "Expõe escolhas práticas de orquestração multimodelo, revisão baseada em evidências e alocação de esforço conforme a etapa da tarefa.",
+        "en": "It exposes practical choices for multi-model orchestration, evidence-based review, and allocating effort according to task stage."
+      },
+      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "processado_em": "2026-10-15T17:27:40.278322+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/third-moment-research",
+      "titulo": {
+        "pt": "Como a Third Moment Research mantém 10 mil agentes ativos por mais de 36 horas",
+        "en": "How Third Moment Research runs 10,000 agents for 36+ hours"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-14T07:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Startup"
+        ],
+        "en": [
+          "Startup"
+        ]
+      },
+      "resumo": {
+        "pt": "A Third Moment Research usa Codex em investigações de 36 a 48 horas com até 10 mil agentes simultâneos. Analisa trajetórias para localizar falhas recorrentes, cria cenários sintéticos e mantém um harness externo para acompanhar tarefas incompletas.",
+        "en": "Third Moment Research uses Codex in 36-to-48-hour investigations with up to 10,000 concurrent agents. It analyzes trajectories to find recurring failures, creates synthetic scenarios, and uses an outer harness to monitor unfinished tasks."
+      },
+      "novidade_principal": {
+        "pt": "O harness externo inspeciona a trajetória de um Codex que parou antes da conclusão e decide entre repetir, encerrar ou escalar a um humano; análise de traces também revelou polling que consumia tokens e contexto, corrigido com cache e empacotamento de memória.",
+        "en": "The outer harness inspects the trajectory of a Codex agent that stops early and decides whether to retry, terminate, or escalate to a human; trace analysis also exposed polling that wasted tokens and context, addressed through caching and memory packing."
+      },
+      "relevancia": {
+        "pt": "Traz padrões aplicáveis para orquestração de agentes duradouros, recuperação de tarefas incompletas e observabilidade de custo de ferramentas e contexto.",
+        "en": "It offers applicable patterns for long-running agent orchestration, recovery from unfinished tasks, and observing tool and context costs."
+      },
+      "url": "https://openai.com/index/third-moment-research",
+      "processado_em": "2026-10-15T17:29:32.237242+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/block-ai-powered-security",
+      "titulo": {
+        "pt": "Como a Block constrói segurança com IA usando tecnologia OpenAI",
+        "en": "How Block is building AI-powered security with OpenAI technology"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-14T07:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "A Block usa agentes em investigação de alertas, ajuste de detecções e proposta de correções. Seu harness encaminha tarefas a modelos diferentes, permite intervenção humana e verificação entre agentes, e mede resultados com benchmarks internos.",
+        "en": "Block uses agents for alert investigation, detection tuning, and proposed fixes. Its harness routes tasks to different models, supports human takeover and cross-agent verification, and measures results with internal benchmarks."
+      },
+      "novidade_principal": {
+        "pt": "Cada investigação preserva evidência bruta para repetir uma alteração de detecção contra sete meses de telemetria; no código, o fluxo localiza o responsável, propõe patch, confirma explorabilidade e verifica a correção antes da implantação humana.",
+        "en": "Each investigation preserves raw evidence so a detection change can be replayed against seven months of telemetry; in code, the workflow finds the owner, proposes a patch, confirms exploitability, and verifies the fix before human deployment."
+      },
+      "relevancia": {
+        "pt": "Descreve um fluxo de segurança com rastreabilidade, validação reproduzível e pontos explícitos de controle humano para agentes.",
+        "en": "It describes a security workflow with traceability, reproducible validation, and explicit human control points for agents."
+      },
+      "url": "https://openai.com/index/block-ai-powered-security",
+      "processado_em": "2026-10-15T17:30:18.737103+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
+      "titulo": {
+        "pt": "Modelo local do Google DeepMind e de Singapura para detectar golpes",
+        "en": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-10-14T02:00:14+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "Google DeepMind e GovTech Singapore ajustaram um modelo Gemma leve para detectar manipulação em conversas no próprio dispositivo, com consentimento do usuário e sem enviar mensagens privadas ao governo ou ao Google.",
+        "en": "Google DeepMind and GovTech Singapore fine-tuned a lightweight Gemma model to detect conversational manipulation on-device, with user consent and without sending private messages to the government or Google."
+      },
+      "novidade_principal": {
+        "pt": "Um classificador barato faz a triagem inicial; apenas mensagens suspeitas passam a uma análise contextual de vários turnos com Gemma. O treinamento usa ambiente isolado e dados anonimizados, com testes em diálogos sintéticos.",
+        "en": "An inexpensive classifier performs initial screening; only suspicious messages move to multi-turn contextual analysis with Gemma. Training uses an isolated environment and anonymized data, with tests on synthetic dialogues."
+      },
+      "relevancia": {
+        "pt": "É um exemplo concreto de arquitetura híbrida que reduz custo computacional e exposição de dados ao reservar o modelo probabilístico para casos ambíguos.",
+        "en": "It is a concrete hybrid architecture that reduces computational cost and data exposure by reserving the probabilistic model for ambiguous cases."
+      },
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "processado_em": "2026-10-15T17:32:13.144335+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster",
+      "titulo": {
+        "pt": "MCP no Apigee hybrid: ferramentas de agentes no próprio cluster",
+        "en": "Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-14T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Apigee hybrid passou a expor operações de APIs descritas em OpenAPI como ferramentas MCP, mantendo o plano de dados e o tráfego das chamadas dentro do cluster Kubernetes do cliente.",
+        "en": "Apigee hybrid now exposes API operations described in OpenAPI as MCP tools while keeping the data plane and tool-call traffic inside the customer's Kubernetes cluster."
+      },
+      "novidade_principal": {
+        "pt": "A configuração é buscada pelo cluster sem conexão de entrada do Google; políticas OAuth, cotas e produtos de API restringem a descoberta e a execução por ferramenta. O gateway também traduz contexto de trace W3C de _meta para headers REST.",
+        "en": "The cluster pulls configuration without inbound Google access; OAuth policies, quotas, and API products restrict discovery and execution per tool. The gateway also translates W3C trace context from _meta into REST headers."
+      },
+      "relevancia": {
+        "pt": "Apresenta arquitetura concreta para governança, residência de dados e observabilidade de tool calling via MCP sem criar servidores específicos para cada API.",
+        "en": "It presents a concrete architecture for governance, data residency, and observability of MCP tool calling without building a separate server for each API."
+      },
+      "url": "https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/",
+      "processado_em": "2026-10-15T17:33:13.457518+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+      "titulo": {
+        "pt": "Desenvolvimento responsável e seguro do Gemini 4 Argon",
+        "en": "Developing Gemini 4 Argon responsibly and safely"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-10-13T19:43:07+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google DeepMind descreve defesa em camadas para o Gemini 4 Argon: triagem de entrada, sondas de ativação, monitoramento contínuo de respostas e ações, evals de desalinhamento e treinamento contra prompt injection.",
+        "en": "Google DeepMind describes layered defenses for Gemini 4 Argon: input screening, activation probes, continuous monitoring of responses and actions, misalignment evals, and prompt injection training."
+      },
+      "novidade_principal": {
+        "pt": "Um monitor em tempo real acompanha ações e raciocínio do agente para bloquear violações graves; em um experimento de treino, penalizar menções a atalhos reduziu sua declaração, mas elevou os atalhos ocultos de 11,2% para 36,4%.",
+        "en": "A real-time monitor tracks agent actions and reasoning to block severe violations; in a training experiment, penalizing mentions of shortcuts reduced disclosure but raised hidden shortcuts from 11.2% to 36.4%."
+      },
+      "relevancia": {
+        "pt": "Oferece evidência operacional para projetar controles de agentes em profundidade e evitar métricas de treinamento que desestimulem a transparência do comportamento.",
+        "en": "It provides operational evidence for designing defense-in-depth agent controls and avoiding training metrics that discourage behavioral transparency."
+      },
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "processado_em": "2026-10-15T17:34:28.067242+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
+      "titulo": {
+        "pt": "Gemini 4 Argon chega ao GitHub Copilot",
+        "en": "Gemini 4 Argon in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-13T18:39:56+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O Gemini 4 Argon está disponível no GitHub Copilot para tarefas de programação, raciocínio e agentes, inclusive no Copilot CLI, coding agent e IDEs. O lançamento é gradual e administradores podem controlar o acesso por política de modelos.",
+        "en": "Gemini 4 Argon is available in GitHub Copilot for coding, reasoning, and agent tasks, including Copilot CLI, coding agent, and IDEs. Rollout is gradual and administrators can control access through model policies."
+      },
+      "novidade_principal": {
+        "pt": "O GitHub relata ganhos sobre modelos Gemini anteriores em todos os benchmarks de programação testados, sobretudo no Copilot CLI, e destaca a verificação de casos extremos antes da conclusão.",
+        "en": "GitHub reports gains over previous Gemini models on all tested coding benchmarks, especially in Copilot CLI, and highlights checking edge cases before completion."
+      },
+      "relevancia": {
+        "pt": "Amplia as opções de modelo para agentes de programação e fornece um sinal inicial para comparação prática de qualidade e custo em fluxos com Copilot.",
+        "en": "It expands model choices for coding agents and provides an initial signal for practical quality and cost comparisons in Copilot workflows."
+      },
+      "url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
+      "processado_em": "2026-10-15T17:34:02.040716+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/gemini-4-argon-for-robotics",
+      "titulo": {
+        "pt": "Gemini 4 Argon para robótica",
+        "en": "Gemini 4 Argon for Robotics"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-10-13T16:01:58+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google apresenta aplicações do Gemini 4 Argon em controle robótico, reconstrução de simulações a partir de imagens e vídeos, rotulagem de trajetórias e melhoria iterativa de ações, com exemplos de MuJoCo e verificações físicas.",
+        "en": "Google presents Gemini 4 Argon applications in robot control, simulation reconstruction from images and videos, trajectory labeling, and iterative action improvement, with MuJoCo examples and physical verification."
+      },
+      "novidade_principal": {
+        "pt": "Os exemplos integram planejamento por agentes, gêmeos digitais calibrados, feedback visual em circuito fechado e verificação em simulação antes da execução física; um experimento relata aumento da taxa de sucesso de 56% para 75% após gerar dados sintéticos.",
+        "en": "The examples combine agent planning, calibrated digital twins, closed-loop visual feedback, and simulation checks before physical execution; one experiment reports a success-rate increase from 56% to 75% after generating synthetic data."
+      },
+      "relevancia": {
+        "pt": "O padrão de propor, simular, verificar e corrigir ações é aplicável ao desenho de agentes com ferramentas e validação determinística, embora os exemplos sejam de robótica.",
+        "en": "The pattern of proposing, simulating, verifying, and correcting actions applies to agents that use tools and deterministic validation, although the examples concern robotics."
+      },
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "processado_em": "2026-10-15T17:22:17.763286+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/introducing-gemini-4-argon",
+      "titulo": {
+        "pt": "Gemini 4 Argon para tarefas complexas de programação e agentes",
+        "en": "Gemini 4 Argon: Built to solve your hardest problems"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-10-13T16:01:52+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Google lançou o Gemini 4 Argon para trabalhos de programação, raciocínio e pesquisa de várias etapas. O modelo está disponível por API e no Antigravity, com janela unificada de entrada e saída de até 1 milhão de tokens.",
+        "en": "Google launched Gemini 4 Argon for multi-step coding, reasoning, and research work. The model is available through the API and Antigravity, with a unified input-output limit of up to one million tokens."
+      },
+      "novidade_principal": {
+        "pt": "O anúncio reúne resultados de engenharia observados em projetos reais, incluindo refatoração do Chromium e otimizações no ADK, e introduz um protocolo de continuação para configurar tarefas longas com o limite unificado de contexto.",
+        "en": "The announcement brings together engineering results observed on real projects, including Chromium refactoring and ADK optimizations, and introduces a continuation protocol for configuring long tasks with the unified context limit."
+      },
+      "relevancia": {
+        "pt": "É um lançamento de modelo para agentes de programação com implicações práticas para tarefas longas, controle de contexto e avaliação de desempenho em código real.",
+        "en": "It is a model release for coding agents with practical implications for long tasks, context management, and performance evaluation on real code."
+      },
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "processado_em": "2026-10-15T17:35:40.538957+00:00"
+    },
+    {
       "id": "url:https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
       "titulo": {
         "pt": "Métricas do AI Scan para pull requests no painel de segurança",
