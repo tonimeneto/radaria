@@ -2,6 +2,74 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "titulo": {
+        "pt": "Copilot em Slack e Teams passa a consultar vários repositórios na mesma conversa",
+        "en": "Copilot in Slack and Teams can query multiple repositories in one conversation"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-16T02:16:35+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Ferramentas de colaboração",
+          "Copilot"
+        ],
+        "en": [
+          "Improvement",
+          "Collaboration tools",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub Copilot em Slack e Microsoft Teams agora responde a consultas que abrangem vários repositórios na mesma conversa, incluindo pull requests, issues e atividade dos projetos. Também aceita menções em qualquer posição da mensagem, usa mensagens e threads do Slack como contexto e melhora a retomada após interrupções.",
+        "en": "GitHub Copilot in Slack and Microsoft Teams now answers queries spanning multiple repositories in one conversation, including pull requests, issues, and project activity. It also accepts mentions anywhere in a message, uses Slack messages and threads as context, and improves recovery from interruptions."
+      },
+      "novidade_principal": {
+        "pt": "A conversa pode combinar contexto de vários repositórios e, no Slack, do histórico compartilhado da thread, reduzindo a necessidade de alternar sessões ou copiar discussões.",
+        "en": "A conversation can combine context from multiple repositories and, in Slack, the shared thread history, reducing the need to switch sessions or copy discussions."
+      },
+      "relevancia": {
+        "pt": "Oferece um exemplo prático de recuperação de contexto entre repositórios e conversas para agentes de desenvolvimento, com continuidade após interrupções.",
+        "en": "It offers a practical example of cross-repository and conversational context retrieval for development agents, with continuity after interruptions."
+      },
+      "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "processado_em": "2026-10-16T21:38:13.582508+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "titulo": {
+        "pt": "GitHub Copilot encerrará três modelos em 16 de novembro",
+        "en": "GitHub Copilot will retire three models on November 16"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-15T19:35:13+00:00",
+      "categoria": {
+        "pt": [
+          "Descontinuação",
+          "Copilot"
+        ],
+        "en": [
+          "Retired",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub Copilot descontinuará Claude Opus 4.8, Claude Opus 5 e GPT-5.6 Terra em Chat, edição, modos ask e agent e sugestões de código em 16 de novembro de 2026. Assinantes individuais de plano anual mantêm acesso ao Opus 4.8.",
+        "en": "GitHub Copilot will retire Claude Opus 4.8, Claude Opus 5, and GPT-5.6 Terra across Chat, editing, ask and agent modes, and code completions on November 16, 2026. Individual annual subscribers retain access to Opus 4.8."
+      },
+      "novidade_principal": {
+        "pt": "O aviso define substituições: Claude Opus 5.5 para os modelos Opus e GPT-6.1 Sol ou GPT-6 Luna para GPT-5.6 Terra. Em organizações, a disponibilidade automática depende das políticas de habilitação de modelos.",
+        "en": "The notice names replacements: Claude Opus 5.5 for the Opus models and GPT-6.1 Sol or GPT-6 Luna for GPT-5.6 Terra. In organizations, automatic availability depends on model enablement policies."
+      },
+      "relevancia": {
+        "pt": "Fluxos de desenvolvimento que fixam modelos no Copilot precisam migrar antes da data e conferir as políticas organizacionais para evitar interrupções.",
+        "en": "Development workflows that pin Copilot models need to migrate before the deadline and check organization policies to avoid interruptions."
+      },
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/",
+      "processado_em": "2026-10-16T21:41:30.050078+00:00"
+    },
+    {
       "id": "guid:https://deepmind.google/blog/accelerating-antimicrobial-discovery",
       "titulo": {
         "pt": "Acelerando a busca por peptídeos antimicrobianos com Google Antigravity",
@@ -62,6 +130,78 @@
       },
       "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
       "processado_em": "2026-10-15T17:24:29.384978+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/sullivan-cromwell",
+      "titulo": {
+        "pt": "Revisão de contratos com precedentes, ciclos de análise e decisão humana",
+        "en": "Agreement review with precedents, analysis cycles, and human judgment"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-15T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes",
+          "Validação de saída",
+          "Recuperação de contexto"
+        ],
+        "en": [
+          "Agents",
+          "Output validation",
+          "Context retrieval"
+        ]
+      },
+      "resumo": {
+        "pt": "O Agreement Analyzer, criado pela Sullivan & Cromwell com Codex e ChatGPT Enterprise, combina minuta, precedentes selecionados, playbooks e posições do cliente. O sistema executa ciclos de revisão sob perspectivas diferentes, sintetiza achados e sugere alterações que advogados podem aceitar, adaptar ou rejeitar.",
+        "en": "Agreement Analyzer, built by Sullivan & Cromwell with Codex and ChatGPT Enterprise, combines a draft, selected precedents, playbooks, and client positions. The system runs review cycles from different perspectives, synthesizes findings, and suggests changes that lawyers can accept, adapt, or reject."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo associa achados às explicações e aos precedentes consultáveis e mantém a decisão final com o especialista. A fonte descreve revisão adversarial entre agentes como possibilidade de evolução, não como recurso já comprovadamente implantado.",
+        "en": "The workflow links findings to inspectable explanations and precedents while leaving the final decision to the expert. The source describes adversarial review among agents as a possible extension, not as a confirmed deployed feature."
+      },
+      "relevancia": {
+        "pt": "O padrão de recuperação de evidências, análise por perspectivas, rastreabilidade e revisão humana pode orientar validação de saídas de agentes em outros domínios.",
+        "en": "The pattern of evidence retrieval, multi-perspective analysis, traceability, and human review can inform validation of agent outputs in other domains."
+      },
+      "url": "https://openai.com/index/sullivan-cromwell/",
+      "processado_em": "2026-10-16T21:42:37.938998+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens",
+      "titulo": {
+        "pt": "Google OAuth passa a vincular refresh tokens a chaves com DPoP",
+        "en": "Google OAuth adds DPoP key binding for refresh tokens"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-15T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança",
+          "OAuth",
+          "MCP",
+          "Agentes"
+        ],
+        "en": [
+          "Security",
+          "OAuth",
+          "MCP",
+          "Agents"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google OAuth agora oferece DPoP para vincular criptograficamente refresh tokens à chave assimétrica do cliente, impedindo a reutilização de um token roubado sem a chave privada. Access tokens de curta duração continuam Bearer para evitar custo criptográfico em cada chamada às APIs.",
+        "en": "Google OAuth now offers DPoP to cryptographically bind refresh tokens to a client's asymmetric key, preventing reuse of a stolen token without the private key. Short-lived access tokens remain Bearer to avoid cryptographic cost on every API call."
+      },
+      "novidade_principal": {
+        "pt": "O artigo explicita o limite da delegação entre agentes: um agente não deve receber a chave privada de outro. Para cadeias federadas, recomenda trocar o token via Google Cloud Secure Token Service por um token curto vinculado à chave do agente delegado.",
+        "en": "The article makes the multi-agent delegation boundary explicit: one agent should not receive another's private key. For federated chains, it recommends exchanging the token through Google Cloud Secure Token Service for a short-lived token bound to the delegated agent's key."
+      },
+      "relevancia": {
+        "pt": "Fornece um padrão concreto de proteção de credenciais para integrações OAuth, ferramentas MCP e delegação entre agentes, com trade-off explícito entre segurança e latência.",
+        "en": "It provides a concrete credential-protection pattern for OAuth integrations, MCP tools, and agent delegation, with an explicit security versus latency trade-off."
+      },
+      "url": "https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens/",
+      "processado_em": "2026-10-16T21:43:10.351882+00:00"
     },
     {
       "id": "guid:https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
