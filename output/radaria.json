@@ -2,6 +2,41 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk",
+      "titulo": {
+        "pt": "Guia passo a passo: crie um agente de voz que nunca fica em silêncio com ADK",
+        "en": "Step-by-step guide: Build a voice agent that never goes silent with ADK"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-19T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de IA",
+          "Tool calling",
+          "Orquestração"
+        ],
+        "en": [
+          "AI agents",
+          "Tool calling",
+          "Orchestration"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google apresenta padrões de ferramentas não bloqueantes para agentes de voz com ADK e Gemini Live. Streaming de atualizações, execução em segundo plano e response_scheduling permitem continuar a conversa enquanto consultas demoradas são executadas; em um exemplo, o tempo até a primeira fala caiu de 14,4 para 1,2 segundo.",
+        "en": "Google presents non-blocking tool patterns for voice agents using ADK and Gemini Live. Streaming updates, background execution, and response_scheduling keep the conversation going while slow queries run; in one example, time to first speech fell from 14.4 to 1.2 seconds."
+      },
+      "novidade_principal": {
+        "pt": "O ADK permite declarar ferramentas de streaming com AsyncGenerator e controlar a entrega de cada resultado com WHEN_IDLE, INTERRUPT ou SILENT, separando a execução da ferramenta do momento em que o agente responde. O guia também aborda cancelamento explícito e idempotência.",
+        "en": "ADK lets developers declare streaming tools with AsyncGenerator and control delivery of each result with WHEN_IDLE, INTERRUPT, or SILENT, separating tool execution from when the agent responds. The guide also covers explicit cancellation and idempotency."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão arquitetural concreto para tool calling assíncrono, concorrência, cancelamento e entrega de resultados em agentes, aplicável além de interfaces de voz.",
+        "en": "It provides a concrete architectural pattern for asynchronous tool calling, concurrency, cancellation, and result delivery in agents, applicable beyond voice interfaces."
+      },
+      "url": "https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/",
+      "processado_em": "2026-10-19T17:05:33.909792+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/itau-generative-ai",
       "titulo": {
         "pt": "Como o Itaú está construindo IA generativa para toda a sua base de clientes",
