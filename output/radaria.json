@@ -2,6 +2,33 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://openai.com/index/itau-generative-ai",
+      "titulo": {
+        "pt": "Como o Itaú está construindo IA generativa para toda a sua base de clientes",
+        "en": "How Itaú is building generative AI for its entire customer base"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-16T19:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "O Itaú usa uma camada conversacional multimodal e a plataforma IARA para orquestrar modelos sob políticas internas. A IARA controla custo por token, qualidade, observabilidade e IA responsável; uma solução jurídica processa mais de 2 milhões de tarefas mensais sobre um acervo de 90 milhões de documentos.",
+        "en": "Itaú uses a multimodal conversational layer and the IARA platform to orchestrate models under internal policies. IARA controls token cost, quality, observability, and responsible AI; a legal solution processes over 2 million monthly tasks across a 90 million document repository."
+      },
+      "novidade_principal": {
+        "pt": "Caso de escala em setor regulado que centraliza acesso a diferentes modelos, governança, observabilidade e custo em uma camada de orquestração antes de ampliar as aplicações.",
+        "en": "A regulated-sector scaling case that centralizes access to different models, governance, observability, and cost in an orchestration layer before expanding applications."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão arquitetural concreto para combinar seleção de modelos, recuperação de contexto, controle de custos e políticas em sistemas de IA de larga escala.",
+        "en": "Offers a concrete architectural pattern for combining model selection, context retrieval, cost control, and policies in large-scale AI systems."
+      },
+      "url": "https://openai.com/index/itau-generative-ai/",
+      "processado_em": "2026-10-19T12:51:35.424414+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
       "titulo": {
         "pt": "Copilot em Slack e Teams passa a consultar vários repositórios na mesma conversa",
