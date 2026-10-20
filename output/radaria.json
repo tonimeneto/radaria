@@ -262,6 +262,33 @@
       "processado_em": "2026-10-19T17:05:33.909792+00:00"
     },
     {
+      "id": "guid:https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api",
+      "titulo": {
+        "pt": "Criação nativa de modelos para dispositivos com LiteRT Tensor API",
+        "en": "Native model authoring for edge devices with LiteRT Tensor API"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-19T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "Google lançou uma API C++ para compor grafos de modelos operação por operação, carregar pesos diretamente de checkpoints e executar o mesmo grafo em diferentes backends de CPU, GPU e NPU. Pré-processamento e pós-processamento podem compartilhar buffers do acelerador.",
+        "en": "Google launched a C++ API to compose model graphs operation by operation, load weights directly from checkpoints, and run the same graph on different CPU, GPU, and NPU backends. Preprocessing and postprocessing can share accelerator buffers."
+      },
+      "novidade_principal": {
+        "pt": "A interface oferece primitivas estruturadas para agentes de programação gerarem e otimizarem grafos. No exemplo SAM 2, um agente alterou o grafo, comparou cada mudança à implementação de referência e elevou a taxa de menos de 10 para mais de 30 quadros por segundo em WebGPU.",
+        "en": "The interface provides structured primitives for coding agents to generate and optimize graphs. In the SAM 2 example, an agent changed the graph, checked each change against the reference implementation, and increased throughput from under 10 to over 30 frames per second on WebGPU."
+      },
+      "relevancia": {
+        "pt": "Demonstra um fluxo de agente sobre uma API determinística, com comparação funcional e benchmark antes de aceitar otimizações; também interessa à portabilidade de modelos locais.",
+        "en": "It demonstrates an agent workflow over a deterministic API, with functional comparison and benchmarking before accepting optimizations; it also informs local-model portability."
+      },
+      "url": "https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api/",
+      "processado_em": "2026-10-20T17:11:50.597579+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/itau-generative-ai",
       "titulo": {
         "pt": "Como o Itaú está construindo IA generativa para toda a sua base de clientes",
