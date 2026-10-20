@@ -2,6 +2,231 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/?p=99538",
+      "titulo": {
+        "pt": "Como três Java Champions usam GitHub Copilot para aumentar a produtividade",
+        "en": "How three Java Champions use GitHub Copilot to increase productivity"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-10-20T16:05:03+00:00",
+      "categoria": {
+        "pt": [
+          "IA e aprendizado de máquina",
+          "GitHub Copilot",
+          "Java"
+        ],
+        "en": [
+          "AI and machine learning",
+          "GitHub Copilot",
+          "Java"
+        ]
+      },
+      "resumo": {
+        "pt": "Três desenvolvedores Java descrevem usos de Copilot em migrações, depuração, revisão de código e documentação. Eles definem requisitos e verificações antes da execução, fornecem contexto específico e revisam as mudanças propostas pelo agente.",
+        "en": "Three Java developers describe using Copilot for migrations, debugging, code review, and documentation. They define requirements and verification checks before execution, provide specific context, and review the agent's proposed changes."
+      },
+      "novidade_principal": {
+        "pt": "Os relatos detalham práticas verificáveis: comparar visualmente versões de uma migração, transformar bugs em testes reproduzíveis, compactar a representação de testes para preservar contexto e reunir verificações determinísticas em um ciclo de correção guiado pelo agente.",
+        "en": "The accounts detail verifiable practices: visually comparing migration versions, turning bugs into reproducible tests, compacting test representations to preserve context, and combining deterministic checks in an agent-guided correction loop."
+      },
+      "relevancia": {
+        "pt": "Oferece exemplos aplicáveis de engenharia de contexto, skills, validação de saída e divisão de responsabilidade entre agente e mantenedor.",
+        "en": "It offers applicable examples of context engineering, skills, output validation, and the division of responsibility between agent and maintainer."
+      },
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+      "processado_em": "2026-10-20T17:05:35.259945+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu",
+      "titulo": {
+        "pt": "Integração do TorchTPU ao TorchTitan e otimização de modelos para TPU",
+        "en": "Integrating TorchTPU into TorchTitan and optimizing models for TPU"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-20T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "Google descreve o TorchTitan adaptado para treinamento PyTorch nativo em TPU, com receitas configuráveis para paralelismo, compilação e kernels. O artigo apresenta testes de paridade e medições de desempenho em modelos densos e MoE.",
+        "en": "Google describes TorchTitan adapted for native PyTorch training on TPU, with configurable recipes for parallelism, compilation, and kernels. The article presents parity tests and performance measurements on dense and MoE models."
+      },
+      "novidade_principal": {
+        "pt": "O repositório inclui uma skill de onboarding de modelos para agentes de programação, que transforma o porte para TPU em etapas repetíveis com testes, critérios de aceitação e armadilhas documentadas. Um backend de Transformers oferece um primeiro caminho para mais de 500 modelos Hugging Face sem alterar a definição do modelo.",
+        "en": "The repository includes a model onboarding skill for coding agents that turns TPU porting into repeatable steps with tests, acceptance criteria, and documented pitfalls. A Transformers backend provides a first path for more than 500 Hugging Face models without changing the model definition."
+      },
+      "relevancia": {
+        "pt": "A skill mostra como codificar conhecimento especializado e verificações em um procedimento executável por agentes; as receitas também exemplificam validação incremental com baseline, testes e perfil de desempenho.",
+        "en": "The skill shows how to encode specialist knowledge and checks in a procedure agents can execute; the recipes also illustrate incremental validation with a baseline, tests, and performance profiling."
+      },
+      "url": "https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/",
+      "processado_em": "2026-10-20T17:08:05.620856+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu",
+      "titulo": {
+        "pt": "Novos mecanismos de inferência vLLM e SGLang em TPU",
+        "en": "New vLLM and SGLang inference engines on TPU"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-20T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "Google lançou backends PyTorch nativos para vLLM e SGLang em TPU, construídos sobre TorchTPU. Eles mantêm os modelos de execução e as APIs dos frameworks e acrescentam implementações e kernels específicos para TPU.",
+        "en": "Google launched native PyTorch backends for vLLM and SGLang on TPU, built on TorchTPU. They retain the frameworks' execution models and APIs while adding TPU-specific implementations and kernels."
+      },
+      "novidade_principal": {
+        "pt": "Os mecanismos combinam prefix caching e descarregamento de KV cache em camadas para conversas agênticas, tool calling e saída estruturada, além de separar prefill e decode entre hosts. A biblioteca aberta TPU Sync transfere o cache sem cópia intermediária no host e sobrepõe transferência e computação.",
+        "en": "The engines combine prefix caching and tiered KV cache offloading for agentic conversations, tool calling, and structured output, and separate prefill and decode across hosts. The open TPU Sync library transfers cache without an intermediate host copy and overlaps transfer with computation."
+      },
+      "relevancia": {
+        "pt": "Mostra escolhas de arquitetura para servir agentes com contexto crescente, preservar prefixos reutilizáveis e reduzir latência e custo de inferência.",
+        "en": "It shows architectural choices for serving agents with growing context, preserving reusable prefixes, and reducing inference latency and cost."
+      },
+      "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/",
+      "processado_em": "2026-10-20T17:07:05.413535+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+      "titulo": {
+        "pt": "API de políticas de modelos do Copilot para empresas, organizações e equipes",
+        "en": "Copilot model policy API for enterprises, organizations, and teams"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-19T21:32:18+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Copilot",
+          "Ferramentas de gestão empresarial"
+        ],
+        "en": [
+          "Improvement",
+          "Copilot",
+          "Enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "A API REST do GitHub agora permite consultar e atualizar políticas de disponibilidade de modelos do Copilot em empresas, equipes empresariais, aplicativos empresariais e organizações.",
+        "en": "GitHub's REST API now allows reading and updating Copilot model availability policies for enterprises, enterprise teams, enterprise apps, and organizations."
+      },
+      "novidade_principal": {
+        "pt": "Endpoints GET e PATCH estão disponíveis nos quatro níveis; a política empresarial pode delegar o controle dos modelos a organizações ou a equipes e aplicativos, conforme o modo de gestão.",
+        "en": "GET and PATCH endpoints are available at all four levels; the enterprise policy can delegate model control to organizations or to teams and apps, depending on the management mode."
+      },
+      "relevancia": {
+        "pt": "Permite automatizar e auditar a governança dos modelos acessíveis a agentes de programação em diferentes unidades organizacionais.",
+        "en": "It enables automated and auditable governance of models available to coding agents across organizational units."
+      },
+      "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+      "processado_em": "2026-10-20T17:08:26.464217+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
+      "titulo": {
+        "pt": "Modelos do GitHub Copilot descontinuados em 19 de outubro de 2026",
+        "en": "GitHub Copilot models deprecated on October 19, 2026"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-19T21:27:10+00:00",
+      "categoria": {
+        "pt": [
+          "Descontinuação",
+          "Copilot"
+        ],
+        "en": [
+          "Retired",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "GitHub efetivou a descontinuação de Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini e Grok 4.5 na maioria das experiências do Copilot, incluindo chat, edições e modos de agente.",
+        "en": "GitHub completed the deprecation of Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini, and Grok 4.5 in most Copilot experiences, including chat, edits, and agent modes."
+      },
+      "novidade_principal": {
+        "pt": "A retirada anunciada em setembro entrou em vigor. Integrações devem migrar para modelos suportados; administradores Enterprise podem precisar habilitar os substitutos nas políticas de modelos.",
+        "en": "The retirement announced in September took effect. Integrations must move to supported models; Enterprise administrators may need to enable replacements in model policies."
+      },
+      "relevancia": {
+        "pt": "Fluxos de agentes e automações que selecionam esses modelos explicitamente precisam revisar configuração e disponibilidade para continuar funcionando.",
+        "en": "Agent workflows and automations that explicitly select these models need to review configuration and availability to keep working."
+      },
+      "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
+      "processado_em": "2026-10-20T17:08:58.148284+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=99556",
+      "titulo": {
+        "pt": "Como continuar uma sessão do GitHub Copilot app no VS Code",
+        "en": "How to continue a GitHub Copilot app session in VS Code"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-10-19T18:47:22+00:00",
+      "categoria": {
+        "pt": [
+          "IA e aprendizado de máquina",
+          "GitHub Copilot",
+          "GitHub Copilot app",
+          "GitHub Copilot app para iniciantes"
+        ],
+        "en": [
+          "AI and machine learning",
+          "GitHub Copilot",
+          "GitHub Copilot app",
+          "GitHub Copilot app for beginners"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub explica como abrir no VS Code uma sessão iniciada no Copilot app para revisar o diff, editar e testar localmente e continuar a conversa no mesmo contexto.",
+        "en": "GitHub explains how to open a session started in the Copilot app in VS Code to review the diff, edit and test locally, and continue the conversation in the same context."
+      },
+      "novidade_principal": {
+        "pt": "A transferência preserva a conversa, o plano, as alterações e o worktree da sessão; o VS Code abre o mesmo trabalho e a branch associada, permitindo atualizar o pull request sem reconstruir o contexto.",
+        "en": "The handoff preserves the session's conversation, plan, changes, and worktree; VS Code opens the same work and associated branch, allowing the pull request to be updated without reconstructing context."
+      },
+      "relevancia": {
+        "pt": "É um padrão prático para alternar entre execução por agente e revisão humana mantendo estado, rastreabilidade e validação local.",
+        "en": "It is a practical pattern for switching between agent execution and human review while retaining state, traceability, and local validation."
+      },
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+      "processado_em": "2026-10-20T17:09:19.800494+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/low-resource-programming-languages",
+      "titulo": {
+        "pt": "Avanços na programação em linguagens com poucos recursos de treinamento",
+        "en": "Advancing coding in low-resource programming languages"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-19T12:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Publicação"
+        ],
+        "en": [
+          "Publication"
+        ]
+      },
+      "resumo": {
+        "pt": "OpenAI apresenta avaliações de agentes de programação em 20 linguagens e de migração de COBOL para cinco linguagens, medindo criação de software e preservação de comportamento.",
+        "en": "OpenAI presents coding-agent evaluations across 20 languages and COBOL migration to five languages, measuring software creation and behavior preservation."
+      },
+      "novidade_principal": {
+        "pt": "O MultiLangBench testa a construção de um banco compatível com SQLite usando a mesma interface e testes entre linguagens; a avaliação de migração exige paridade byte a byte em testes ocultos. GPT-6 Astra atingiu média de 87,4% no primeiro, e GPT-6.1 Sol atingiu 86,6% no segundo em baixo esforço, segundo a OpenAI. O conjunto do MultiLangBench foi publicado.",
+        "en": "MultiLangBench tests building a SQLite-compatible database using the same interface and tests across languages; the migration evaluation requires byte-for-byte parity on hidden tests. OpenAI reports that GPT-6 Astra averaged 87.4% on the former and GPT-6.1 Sol reached 86.6% on the latter at low reasoning effort. The MultiLangBench suite was released."
+      },
+      "relevancia": {
+        "pt": "Oferece um desenho reproduzível de evals para agentes de programação e ressalta a necessidade de testar a equivalência comportamental em modernizações de sistemas legados.",
+        "en": "It offers a reproducible eval design for coding agents and highlights the need to test behavioral equivalence when modernizing legacy systems."
+      },
+      "url": "https://openai.com/index/low-resource-programming-languages/",
+      "processado_em": "2026-10-20T17:09:49.004685+00:00"
+    },
+    {
       "id": "guid:https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk",
       "titulo": {
         "pt": "Guia passo a passo: crie um agente de voz que nunca fica em silêncio com ADK",
