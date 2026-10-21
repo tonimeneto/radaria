@@ -2,6 +2,140 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://openai.com/index/openai-models-google-cloud",
+      "titulo": {
+        "pt": "Modelos da OpenAI e fluxos do Codex chegarão ao Google Cloud",
+        "en": "OpenAI models and Codex workflows are coming to Google Cloud"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-21T12:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos e APIs",
+          "Governança de IA"
+        ],
+        "en": [
+          "Models and APIs",
+          "AI governance"
+        ]
+      },
+      "resumo": {
+        "pt": "OpenAI e Google Cloud anunciaram a disponibilização futura de modelos avançados e fluxos agênticos do Codex no Model Garden, com compra pelo Marketplace e uso dos controles de acesso e governança de dados do Google Cloud. Os modelos também estão previstos para Antigravity e Gemini Agent; a disponibilidade geral ainda não começou.",
+        "en": "OpenAI and Google Cloud announced future availability of frontier models and Codex agentic workflows in Model Garden, with Marketplace purchasing and Google Cloud access controls and data governance. The models are also planned for Antigravity and Gemini Agent; general availability has not started yet."
+      },
+      "novidade_principal": {
+        "pt": "Uma via nativa planejada para usar modelos OpenAI e fluxos Codex dentro da infraestrutura e dos controles de governança do Google Cloud.",
+        "en": "A planned native path for OpenAI models and Codex workflows within Google Cloud infrastructure and governance controls."
+      },
+      "relevancia": {
+        "pt": "Afeta decisões de escolha de modelos, integração de agentes de programação e governança de dados em ambientes Google Cloud; requer confirmação de disponibilidade antes de adoção.",
+        "en": "It affects model choice, coding-agent integration, and data governance decisions in Google Cloud environments; availability needs confirmation before adoption."
+      },
+      "url": "https://openai.com/index/openai-models-google-cloud/",
+      "processado_em": "2026-10-21T17:04:07.640837+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "titulo": {
+        "pt": "Patch the Planet: coordenação global quando agentes encontram vulnerabilidades críticas",
+        "en": "Patch the Planet: global coordination when agents find critical vulnerabilities"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-21T07:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança",
+          "Governança de agentes"
+        ],
+        "en": [
+          "Security",
+          "Agent governance"
+        ]
+      },
+      "resumo": {
+        "pt": "Após uma descoberta de falhas críticas em PHP com auxílio de IA, a OpenAI propõe um processo de divulgação coordenada liderado pelos mantenedores: validar e corrigir a falha, avisar defensores capazes de agir, preparar atualizações e mitigadores e publicar orientações de implantação. A proposta inclui testes adversariais das correções e revisão do cronograma diante de vazamentos ou exploração ativa.",
+        "en": "After AI-assisted discovery of critical PHP flaws, OpenAI proposes a maintainer-led coordinated disclosure process: validate and fix the flaw, notify defenders able to act, prepare updates and mitigations, and publish deployment guidance. The proposal includes adversarial testing of patches and timeline reassessment if details leak or exploitation begins."
+      },
+      "novidade_principal": {
+        "pt": "Um fluxo de resposta para descobertas de vulnerabilidades por IA que combina validação técnica, preparação escalonada de defensores e divulgação conforme o risco.",
+        "en": "A response workflow for AI-discovered vulnerabilities combining technical validation, staged defender preparation, and risk-based disclosure."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão de governança e validação para agentes de segurança, com mantenedores no controle e testes das correções antes de ampla divulgação.",
+        "en": "It offers a governance and validation pattern for security agents, keeping maintainers in control and testing fixes before broad disclosure."
+      },
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+      "processado_em": "2026-10-21T17:04:38.967002+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/building-chatgpt-ad-stack",
+      "titulo": {
+        "pt": "Como a OpenAI construiu a arquitetura agêntica de anúncios do ChatGPT",
+        "en": "How OpenAI built ChatGPT's agentic ads architecture"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-21T07:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Sistemas agênticos",
+          "Arquitetura híbrida",
+          "Governança de IA"
+        ],
+        "en": [
+          "Agentic systems",
+          "Hybrid architecture",
+          "AI governance"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve um serviço de anúncios separado da geração de respostas. Um LLM orquestra consultas e ferramentas de recuperação, filtros, avaliação e leilão a partir de uma sessão com estado; regras determinísticas validam elegibilidade e entrega. O serviço opera em paralelo e pode não exibir anúncio se falhar, atrasar ou não atingir os critérios, sem bloquear a resposta principal.",
+        "en": "OpenAI describes an ads service separate from answer generation. An LLM orchestrates retrieval queries and tools, filtering, evaluation, and auction from a stateful session; deterministic rules validate eligibility and delivery. The service runs in parallel and may show no ad if it fails, arrives late, or misses the criteria, without blocking the main answer."
+      },
+      "novidade_principal": {
+        "pt": "Fronteira explícita entre um orquestrador probabilístico com estado e etapas determinísticas de elegibilidade, preço e entrega, isolada do caminho crítico de resposta.",
+        "en": "An explicit boundary between a stateful probabilistic orchestrator and deterministic eligibility, pricing, and delivery steps, isolated from the critical answer path."
+      },
+      "relevancia": {
+        "pt": "Exemplifica desenho de agentes com tool calling, contexto incremental, limites de autonomia, isolamento entre serviços e falha segura aplicáveis a outros sistemas do Ecossistema DEV.",
+        "en": "It illustrates agent design with tool calling, incremental context, autonomy boundaries, service isolation, and safe failure that can apply to other DEV Ecosystem systems."
+      },
+      "url": "https://openai.com/index/building-chatgpt-ad-stack/",
+      "processado_em": "2026-10-21T17:04:59.923944+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "titulo": {
+        "pt": "Milhares de agentes paralelos analisam dados biológicos complexos",
+        "en": "Thousands of parallel agents analyze complex biological data"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-21T04:50:00+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de agentes",
+          "Avaliação de agentes"
+        ],
+        "en": [
+          "Agent orchestration",
+          "Agent evaluation"
+        ]
+      },
+      "resumo": {
+        "pt": "OpenAI, PerturbAI e Scripps dividiram um atlas de perturbações genéticas entre milhares de agentes, cada qual analisando um recorte dos dados e buscando literatura antes da consolidação dos relatórios. Na comparação descrita pela equipe, um agente único com modelo e recursos fixos cobriu menos referências que a execução distribuída; especialistas humanos avaliaram as interpretações às cegas.",
+        "en": "OpenAI, PerturbAI, and Scripps split a genetic perturbation atlas among thousands of agents, each analyzing a data slice and searching literature before reports were consolidated. In the team's comparison, a single agent with fixed model and resources covered fewer references than the distributed run; human experts assessed the interpretations blindly."
+      },
+      "novidade_principal": {
+        "pt": "Decomposição massiva de uma investigação em tarefas independentes, seguida de síntese e avaliação humana, com comparação controlada frente a um agente único.",
+        "en": "Massive decomposition of an investigation into independent tasks followed by synthesis and human evaluation, with a controlled comparison against a single agent."
+      },
+      "relevancia": {
+        "pt": "Traz evidência prática para decidir quando paralelizar subagentes e como validar cobertura e qualidade, embora os resultados científicos específicos dependam de confirmação experimental.",
+        "en": "It provides practical evidence for deciding when to parallelize subagents and how to validate coverage and quality, although specific scientific findings still need experimental confirmation."
+      },
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+      "processado_em": "2026-10-21T17:05:22.558716+00:00"
+    },
+    {
       "id": "guid:https://github.blog/?p=99538",
       "titulo": {
         "pt": "Como três Java Champions usam GitHub Copilot para aumentar a produtividade",
@@ -35,6 +169,41 @@
       },
       "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
       "processado_em": "2026-10-20T17:05:35.259945+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/terminal-x",
+      "titulo": {
+        "pt": "Terminal X avalia cada resposta de agente com rubrica de 54 critérios",
+        "en": "Terminal X evaluates every agent response against a 54-criterion rubric"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-20T07:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Evals",
+          "Memória de agentes",
+          "Governança de IA"
+        ],
+        "en": [
+          "Evals",
+          "Agent memory",
+          "AI governance"
+        ]
+      },
+      "resumo": {
+        "pt": "A Terminal X codifica critérios de decisão de cada cliente em memórias versionadas e fluxos auditáveis. Um Eval Agent verifica todas as saídas com uma rubrica de 54 critérios, registra motivo e fonte corrigida para cada falha e transforma correções humanas em novas instruções ou casos de teste. A empresa relata 88,6% de concordância com revisores seniores em 500 julgamentos para GPT-6.1 Sol.",
+        "en": "Terminal X encodes each customer's decision criteria in versioned memories and auditable workflows. An Eval Agent checks every output against a 54-criterion rubric, records a reason and corrected source for each failure, and turns human corrections into new instructions or test cases. The company reports 88.6% agreement with senior reviewers across 500 judgments using GPT-6.1 Sol."
+      },
+      "novidade_principal": {
+        "pt": "Ciclo fechado em que avaliação por rubrica, trilha de fontes e correção humana atualizam uma memória versionada para orientar execuções futuras.",
+        "en": "A closed loop in which rubric evaluation, source trails, and human corrections update versioned memory to guide future runs."
+      },
+      "relevancia": {
+        "pt": "O método de avaliação contínua e memória auditável pode orientar governança de agentes em outros domínios; as métricas relatadas são do próprio fornecedor e requerem validação independente.",
+        "en": "The continuous evaluation and auditable-memory method can guide agent governance in other domains; the reported metrics come from the vendor and need independent validation."
+      },
+      "url": "https://openai.com/index/terminal-x/",
+      "processado_em": "2026-10-21T17:06:10.984865+00:00"
     },
     {
       "id": "guid:https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu",
