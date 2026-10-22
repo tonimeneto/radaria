@@ -2,6 +2,177 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
+      "titulo": {
+        "pt": "Comparações setoriais no painel de impacto do Copilot",
+        "en": "Industry comparisons in the Copilot impact dashboard"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-22T16:28:24+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Gestão de contas",
+          "Copilot",
+          "Gestão empresarial"
+        ],
+        "en": [
+          "Improvement",
+          "Account management",
+          "Copilot",
+          "Enterprise management"
+        ]
+      },
+      "resumo": {
+        "pt": "O painel de impacto do Copilot permite que empresas comparem adoção agêntica e taxa de merge de pull requests de usuários agênticos com benchmarks agregados de pares do mesmo porte e setor. A participação é opcional e desativada por padrão.",
+        "en": "The Copilot impact dashboard lets businesses compare agentic adoption and the pull request merge rate of agentic users with aggregated benchmarks from peers of similar size and industry. Participation is optional and disabled by default."
+      },
+      "novidade_principal": {
+        "pt": "As métricas distinguem usuários agent-first e multi-agent e comparam a taxa de merge com a de usuários não agênticos. A classificação usa a mediana de pares em janela de 28 dias e, quando houver participantes suficientes, o decil superior; a política central controla participação e visualização.",
+        "en": "The metrics distinguish agent-first and multi-agent users and compare their merge rate with nonagentic users. Rankings use the peer median over a 28-day window and, when enough participants exist, the top decile; a central policy controls both contribution and access."
+      },
+      "relevancia": {
+        "pt": "Oferece uma forma concreta de avaliar a adoção de agentes de programação e seus resultados, com limites explícitos de amostra, privacidade e governança que evitam interpretar benchmarks imaturos como evidência conclusiva.",
+        "en": "It provides a concrete way to evaluate coding-agent adoption and outcomes, with explicit sample, privacy, and governance limits that prevent immature benchmarks from being treated as conclusive evidence."
+      },
+      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
+      "processado_em": "2026-10-22T16:59:50.081504+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/forward-deployed-engineering-means",
+      "titulo": {
+        "pt": "O que significa Forward Deployed Engineering na OpenAI",
+        "en": "What FDE means at OpenAI"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-22T06:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Engenharia"
+        ],
+        "en": [
+          "Engineering"
+        ]
+      },
+      "resumo": {
+        "pt": "A equipe de Forward Deployed Engineering descreve como transforma protótipos de IA em fluxos confiáveis em produção: define resultados com usuários, cria evals com especialistas do domínio, monta harnesses por caso de uso e reaproveita o que funcionou em skills, plugins e primitivas do Codex.",
+        "en": "OpenAI's Forward Deployed Engineering team describes how it turns AI prototypes into reliable production workflows: define outcomes with users, build evals with domain experts, create harnesses for each use case, and reuse what worked through Codex skills, plugins, and primitives."
+      },
+      "novidade_principal": {
+        "pt": "Em um projeto de verificação de semicondutores, a equipe levou mais de dez casos a produção e depois migrou aplicações customizadas para um harness comum baseado em Codex, removendo cerca de 90% do código específico por projeto. Evals de clientes também guiaram melhorias de modelo de cerca de 60% para mais de 90% em um fluxo de voz.",
+        "en": "In semiconductor verification, the team brought more than ten use cases to production, then moved custom applications to a shared Codex-based harness, removing roughly 90% of project-specific code. Customer evals also guided model improvements from about 60% to over 90% in a voice workflow."
+      },
+      "relevancia": {
+        "pt": "Mostra uma sequência prática para engenharia de agentes: validar valor e limites em contexto real, medir com evals do domínio, simplificar a infraestrutura em componentes reutilizáveis e manter feedback entre implantação, produto e modelo.",
+        "en": "It shows a practical agent-engineering sequence: validate value and limits in real settings, measure with domain evals, simplify infrastructure into reusable components, and maintain feedback between deployment, product, and model."
+      },
+      "url": "https://openai.com/index/forward-deployed-engineering-means/",
+      "processado_em": "2026-10-22T17:01:05.218263+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec",
+      "titulo": {
+        "pt": "API Gateway ganha streaming para APIs em tempo real e de IA sem mudar a especificação",
+        "en": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "APIs",
+          "Agentes",
+          "Governança"
+        ],
+        "en": [
+          "APIs",
+          "Agents",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "O API Gateway do Google Cloud passa a aceitar, em preview público, SSE, respostas HTTP em chunks, WebSockets e streaming gRPC. Endpoints de modelos e agentes podem manter autenticação, limites e observabilidade no mesmo gateway usado pelas demais APIs.",
+        "en": "Google Cloud API Gateway now supports SSE, chunked HTTP responses, WebSockets, and gRPC streaming in public preview. Model and agent endpoints can retain authentication, limits, and observability through the same gateway as other APIs."
+      },
+      "novidade_principal": {
+        "pt": "O gateway transmite saídas progressivamente sem alterar o contrato da API e combina streaming com roteamento por modelo para Gemini, Claude e OpenAI gpt-oss. Conexões duram até uma hora; a ativação requer novo gateway e métricas de latência medem a duração total do stream.",
+        "en": "The gateway passes output progressively without changing the API contract and combines streaming with model routing for Gemini, Claude, and OpenAI gpt-oss. Connections last up to one hour; enablement requires a new gateway, and latency metrics measure the full stream duration."
+      },
+      "relevancia": {
+        "pt": "É aplicável à arquitetura de agentes e servidores MCP com respostas incrementais, reunindo controle de acesso, roteamento e observabilidade para tráfego de IA sem criar um caminho de streaming sem governança.",
+        "en": "It applies to agent and MCP server architectures with incremental responses, combining access control, routing, and observability for AI traffic without an ungoverned streaming path."
+      },
+      "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
+      "processado_em": "2026-10-22T17:01:59.467072+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform",
+      "titulo": {
+        "pt": "Arquitetura de agentes de IA autoevolutivos com governança no Gemini Agent Platform",
+        "en": "Architecting Governed, Self-Evolving AI Agents on Gemini Agent Platform"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Arquitetura de agentes",
+          "Governança",
+          "SRE"
+        ],
+        "en": [
+          "Agent architecture",
+          "Governance",
+          "SRE"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google apresenta o Project Chrysalis, arquitetura de referência no ADK para agentes de SRE que diagnosticam incidentes, geram mitigação temporária, atribuem crédito às ações e registram princípios operacionais para ocorrências futuras. Mudanças estruturais na hierarquia de agentes exigem aprovação humana.",
+        "en": "Google presents Project Chrysalis, an ADK reference architecture for SRE agents that diagnose incidents, generate temporary mitigations, attribute credit to actions, and record operational principles for future incidents. Structural changes to the agent hierarchy require human approval."
+      },
+      "novidade_principal": {
+        "pt": "O loop combina triagem por agentes, verificação AST e OPA de patches, assinatura por Cloud KMS e Binary Authorization, memória semântica assinada e alteração do grafo de agentes em memória após dupla aprovação. Em uma simulação de cache stampede, a mitigação reduziu erros HTTP 5xx de 72,7%–80% para zero; o resultado ainda requer validação fora do cenário demonstrado.",
+        "en": "The loop combines agent triage, AST and OPA patch checks, Cloud KMS and Binary Authorization signatures, signed semantic memory, and in-memory agent-graph changes after dual approval. In a simulated cache stampede, mitigation reduced HTTP 5xx errors from 72.7%–80% to zero; the result still needs validation beyond the demonstrated scenario."
+      },
+      "relevancia": {
+        "pt": "Mostra como combinar execução probabilística de agentes com controles determinísticos, trilha verificável, memória e autorização humana para ações de alto impacto em produção.",
+        "en": "It shows how to combine probabilistic agent execution with deterministic controls, verifiable records, memory, and human authorization for high-impact production actions."
+      },
+      "url": "https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/",
+      "processado_em": "2026-10-22T17:02:22.985883+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/broad-access-through-consistent-standards",
+      "titulo": {
+        "pt": "Acesso amplo a modelos com padrões de segurança consistentes",
+        "en": "Broad access through consistent standards"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-21T21:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança",
+          "Governança"
+        ],
+        "en": [
+          "Safety",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve salvaguardas alinhadas entre seus serviços e parceiros que hospedam ou revendem modelos, incluindo investigação coordenada de violações e regras de aplicação proporcionais ao risco.",
+        "en": "OpenAI describes aligned safeguards across its services and partners that host or resell models, including coordinated investigation of violations and risk-proportionate enforcement."
+      },
+      "novidade_principal": {
+        "pt": "As Usage Policies atualizadas, previstas para 20 de novembro de 2026, exigem revisão e aprovação da OpenAI para serviços que oferecem acesso direto aos modelos, como model routers e AI gateways. A empresa também desenvolve SafetyIDs para distinguir usuários finais em investigações sem revelar suas identidades.",
+        "en": "Updated Usage Policies, effective November 20, 2026, require OpenAI review and approval for services offering direct model access, such as model routers and AI gateways. The company is also developing SafetyIDs to distinguish end users during investigations without learning their identities."
+      },
+      "relevancia": {
+        "pt": "Afeta a governança de arquiteturas multi-modelo e gateways de agentes: operadores precisam considerar as novas condições de acesso e mecanismos de investigação ao desenhar roteamento e controles de uso.",
+        "en": "It affects governance for multi-model architectures and agent gateways: operators need to account for the new access conditions and investigation mechanisms when designing routing and usage controls."
+      },
+      "url": "https://openai.com/index/broad-access-through-consistent-standards/",
+      "processado_em": "2026-10-22T17:02:49.432297+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/openai-models-google-cloud",
       "titulo": {
         "pt": "Modelos da OpenAI e fluxos do Codex chegarão ao Google Cloud",
@@ -134,6 +305,142 @@
       },
       "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
       "processado_em": "2026-10-21T17:05:22.558716+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/empowering-cyber-defenders",
+      "titulo": {
+        "pt": "Governança democrática da IA de fronteira, parte II: capacitar defensores cibernéticos",
+        "en": "Democratic governance of frontier AI, part II: Empowering cyber defenders"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-21T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança",
+          "Governança de agentes"
+        ],
+        "en": [
+          "Security",
+          "Agent governance"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI apresenta propostas de governança para ampliar o uso defensivo de IA avançada e reduzir riscos de sistemas agênticos em segurança cibernética. O plano distribui responsabilidades entre laboratórios, empresas e governos.",
+        "en": "OpenAI presents governance proposals to expand defensive use of advanced AI and reduce risks from agentic systems in cybersecurity. The blueprint assigns responsibilities across labs, companies, and governments."
+      },
+      "novidade_principal": {
+        "pt": "As propostas pedem responsabilidades claras para proteger modelos e agentes, detectar comportamento perigoso e manter controles confiáveis de desligamento, além de avaliações independentes, comunicação consistente de incidentes e coordenação de resposta.",
+        "en": "The proposals call for clear responsibilities to secure models and agents, detect dangerous behavior, and maintain reliable shutdown controls, alongside independent evaluations, consistent incident reporting, and coordinated response."
+      },
+      "relevancia": {
+        "pt": "Oferece critérios de governança para agentes com ações de alto impacto e para processos de avaliação, contenção e resposta a incidentes em sistemas de IA.",
+        "en": "It provides governance criteria for agents with high-impact actions and for evaluation, containment, and incident response processes in AI systems."
+      },
+      "url": "https://openai.com/index/empowering-cyber-defenders/",
+      "processado_em": "2026-10-22T17:04:03.014130+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/cloudflare-cyber",
+      "titulo": {
+        "pt": "Cloudflare conecta descoberta de vulnerabilidades à defesa com OpenAI",
+        "en": "Cloudflare links vulnerability discovery to defense with OpenAI"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-21T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança",
+          "Engenharia de software com IA"
+        ],
+        "en": [
+          "Security",
+          "AI-assisted software engineering"
+        ]
+      },
+      "resumo": {
+        "pt": "A Cloudflare combina análise de código por modelos OpenAI com tráfego de produção e sinais de segurança para priorizar possíveis vulnerabilidades. O serviço propõe patches de código e regras de WAF; verificações automáticas, equipe da Cloudflare e clientes revisam as ações antes da aplicação.",
+        "en": "Cloudflare combines OpenAI model analysis of code with production traffic and security signals to prioritize possible vulnerabilities. The service proposes code patches and WAF rules; automated checks, Cloudflare staff, and customers review actions before application."
+      },
+      "novidade_principal": {
+        "pt": "A priorização considera se a rota vulnerável está ativa, recebe tráfego suspeito e já conta com proteção. A resposta liga evidências de exploração, mitigação temporária no edge e correção de código, mantendo a decisão de implantação com o cliente.",
+        "en": "Prioritization considers whether the vulnerable route is active, receives suspicious traffic, and already has protection. The response links exploitation evidence, temporary edge mitigation, and a code fix while leaving deployment decisions with the customer."
+      },
+      "relevancia": {
+        "pt": "É um exemplo prático de arquitetura híbrida para segurança de software: agentes ajudam na investigação e proposta de correções, enquanto telemetria, validação e revisão humana controlam prioridade e execução.",
+        "en": "It is a practical hybrid architecture for software security: agents assist investigation and fix proposals, while telemetry, validation, and human review control priority and execution."
+      },
+      "url": "https://openai.com/index/cloudflare-cyber/",
+      "processado_em": "2026-10-22T17:03:38.137310+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond",
+      "titulo": {
+        "pt": "Ciclo de desenvolvimento de agentes com qualquer framework no Agents CLI",
+        "en": "Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-21T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Ferramentas de agentes",
+          "Governança",
+          "Evals"
+        ],
+        "en": [
+          "Agent tools",
+          "Governance",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google apresenta o Extension System do Agents CLI, que permite substituir ou acrescentar comandos de criação, execução, implantação e avaliação sem fazer fork da ferramenta. Uma extensão oficial integra agentes LangChain ao mesmo ciclo antes voltado ao ADK.",
+        "en": "Google presents the Agents CLI Extension System, which lets teams replace or add create, run, deploy, and evaluation commands without forking the tool. A first-party extension brings LangChain agents into the lifecycle previously centered on ADK."
+      },
+      "novidade_principal": {
+        "pt": "Uma extensão pode envolver o comando de deploy com um controle corporativo, como varredura de SBOM; a chamada recursiva delega ao comando nativo sem repetir o override. Referências Git são fixadas por SHA em lockfile e a cópia da extensão pode ser versionada, tornando a implantação reproduzível.",
+        "en": "An extension can wrap deployment with an enterprise control such as an SBOM scan; recursive invocation delegates to the native command without repeating the override. Git references are pinned by SHA in a lockfile and the extension copy can be versioned, making deployment reproducible."
+      },
+      "relevancia": {
+        "pt": "Mostra uma forma concreta de separar o framework do agente do ciclo operacional e de inserir validações determinísticas e políticas de segurança nos comandos compartilhados.",
+        "en": "It shows a concrete way to separate an agent framework from its operational lifecycle and insert deterministic validation and security policies into shared commands."
+      },
+      "url": "https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/",
+      "processado_em": "2026-10-22T17:04:24.211394+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
+      "titulo": {
+        "pt": "GitHub CLI permite tokens OAuth temporários com renovação automática",
+        "en": "GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-10-21T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Segurança de aplicações",
+          "Aplicativos cliente"
+        ],
+        "en": [
+          "Release",
+          "Application security",
+          "Client apps"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub CLI 2.103.0 oferece, em preview público e mediante adesão, tokens OAuth de acesso com expiração e refresh token rotativo. O comando gh renova a credencial automaticamente, reduzindo o tempo de utilidade de um token de acesso vazado.",
+        "en": "GitHub CLI 2.103.0 offers opt-in expiring OAuth access tokens with rotating refresh tokens in public preview. The gh command refreshes credentials automatically, reducing the useful lifetime of a leaked access token."
+      },
+      "novidade_principal": {
+        "pt": "A opção --expiring ativa o fluxo no login. Para Git por HTTPS, gh auth setup-git faz o CLI servir e renovar a credencial; scripts que guardam a saída de gh auth token precisam obtê-la a cada uso, pois o token capturado anteriormente expira.",
+        "en": "The --expiring option enables the flow at login. For Git over HTTPS, gh auth setup-git lets the CLI serve and refresh credentials; scripts that store the output of gh auth token must fetch it for each use because a previously captured token expires."
+      },
+      "relevancia": {
+        "pt": "É diretamente aplicável à segurança de automações e agentes que usam GitHub CLI: reduz exposição de credenciais e exige revisar fluxos que armazenam tokens em vez de consultar o gerenciador no momento do uso.",
+        "en": "It directly applies to automation and agent security when using GitHub CLI: it reduces credential exposure and calls for reviewing workflows that store tokens instead of consulting the credential manager at use time."
+      },
+      "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens/",
+      "processado_em": "2026-10-22T17:05:05.568751+00:00"
     },
     {
       "id": "guid:https://github.blog/?p=99538",
