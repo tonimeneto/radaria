@@ -2,6 +2,142 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
+      "titulo": {
+        "pt": "Copilot no Visual Studio integra Git agent, BYOM e correção de vulnerabilidades NuGet",
+        "en": "Copilot in Visual Studio adds Git agent, BYOM, and NuGet vulnerability fixes"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-23T00:17:51+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "A atualização do Copilot no Visual Studio permite explorar pull requests pelo Git agent com contexto via MCP, usar modelos próprios no novo Agent (Preview) e acionar correções de pacotes NuGet vulneráveis a partir da lista de erros.",
+        "en": "The Copilot update for Visual Studio lets the Git agent explore pull requests with MCP-provided context, use bring-your-own models in the new Agent (Preview), and trigger fixes for vulnerable NuGet packages from the Error List."
+      },
+      "novidade_principal": {
+        "pt": "BYOM passa a exigir o Agent (Preview) baseado no harness do Copilot SDK; o fluxo de correção de vulnerabilidades usa o servidor MCP do NuGet, enquanto o Git agent lê PRs por servidores MCP do provedor Git.",
+        "en": "BYOM now requires Agent (Preview), built on the Copilot SDK harness; the vulnerability fix workflow uses the NuGet MCP server, while the Git agent reads pull requests through Git provider MCP servers."
+      },
+      "relevancia": {
+        "pt": "Oferece padrões concretos para conectar agentes de programação a contexto de PRs, modelos configuráveis e remediação de dependências com ferramentas MCP.",
+        "en": "It offers concrete patterns for connecting coding agents to pull request context, configurable models, and dependency remediation through MCP tools."
+      },
+      "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
+      "processado_em": "2026-10-23T17:06:50.871866+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
+      "titulo": {
+        "pt": "API de métricas do Copilot identifica skills, agentes personalizados e servidores MCP",
+        "en": "Copilot metrics API identifies custom skills, agents, and MCP servers"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-22T22:19:17+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Gestão de contas",
+          "Copilot",
+          "Gestão empresarial"
+        ],
+        "en": [
+          "Improvement",
+          "Account management",
+          "Copilot",
+          "Enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "Relatórios de uso do Copilot passam a mostrar o nome configurado de skills, agentes personalizados, servidores MCP, slash commands e plugins criados pela organização. Cada lista exibe até 25 entradas, permitindo acompanhar adoção de extensões internas.",
+        "en": "Copilot usage reports now show configured names for organization-created skills, custom agents, MCP servers, slash commands, and plugins. Each list displays up to 25 entries, making adoption of internal extensions visible."
+      },
+      "novidade_principal": {
+        "pt": "Os campos totals_by_skill, totals_by_custom_agent, totals_by_mcp, totals_by_slash_cmd e totals_by_plugin deixam de agrupar essas extensões apenas como other ou custom; a cobertura depende de versões recentes do Copilot CLI e SDK.",
+        "en": "The totals_by_skill, totals_by_custom_agent, totals_by_mcp, totals_by_slash_cmd, and totals_by_plugin fields no longer group those extensions only as other or custom; coverage depends on recent Copilot CLI and SDK versions."
+      },
+      "relevancia": {
+        "pt": "Ajuda a observar quais capacidades agênticas internas são usadas e a avaliar sua adoção, considerando limites de telemetria e possível subcontagem.",
+        "en": "It helps observe which internal agent capabilities are used and assess adoption while accounting for telemetry limits and possible undercounting."
+      },
+      "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api/",
+      "processado_em": "2026-10-23T17:07:57.964223+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available",
+      "titulo": {
+        "pt": "Padrão global para recursos do Copilot começa a ser aplicado",
+        "en": "Global default for Copilot features begins enforcement"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-22T20:44:28+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Copilot",
+          "Gestão empresarial"
+        ],
+        "en": [
+          "Improvement",
+          "Copilot",
+          "Enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub começa a aplicar até 26 de outubro a política padrão global para recursos do Copilot Business e Enterprise que permaneceram não configurados, inclusive servidores MCP. Escolhas explícitas são preservadas e recursos em preview seguem opt-in.",
+        "en": "GitHub is rolling out enforcement through October 26 of a global default policy for unconfigured Copilot Business and Enterprise features, including MCP servers. Explicit choices are preserved, and preview features remain opt-in."
+      },
+      "novidade_principal": {
+        "pt": "Configurações elegíveis não definidas passam uma única vez ao padrão Enabled, Disabled ou Let organizations decide; alterações posteriores no padrão não mudam políticas de recursos já definidas.",
+        "en": "Eligible unconfigured settings are assigned the Enabled, Disabled, or Let organizations decide default once; later default changes do not alter feature policies already set."
+      },
+      "relevancia": {
+        "pt": "Afeta diretamente a governança de capacidades agênticas e servidores MCP; administradores precisam revisar o padrão antes que recursos sem decisão explícita recebam a política.",
+        "en": "It directly affects governance of agent capabilities and MCP servers; administrators need to review the default before undecided features receive a policy."
+      },
+      "url": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available/",
+      "processado_em": "2026-10-23T17:08:20.942824+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/decisions-api",
+      "titulo": {
+        "pt": "Decisions API chega à disponibilidade geral para decisões rápidas em agentes",
+        "en": "Decisions API reaches general availability for fast agent decisions"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-22T19:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Produto"
+        ],
+        "en": [
+          "Product"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI disponibilizou a Decisions API com GPT-6 Luna para classificar, pontuar ou escolher respostas limitadas a partir de texto, imagem ou JSON. A API pode orientar roteamento, escalonamento e próximas ações em fluxos agênticos com baixa latência.",
+        "en": "OpenAI made the GPT-6 Luna-based Decisions API generally available to classify, score, or choose bounded answers from text, images, or JSON. It can guide routing, escalation, and next actions in agent workflows with low latency."
+      },
+      "novidade_principal": {
+        "pt": "A API admite tipos de resposta predicate, choice e score, até 400 perguntas por requisição, cache de contexto e integração nativa com GPT-Live; a OpenAI relata execução até 10 vezes mais rápida que GPT-6 Luna via Responses API para essas decisões.",
+        "en": "The API supports predicate, choice, and score answers, up to 400 questions per request, context caching, and native GPT-Live integration; OpenAI reports up to 10 times faster execution than GPT-6 Luna through the Responses API for these decisions."
+      },
+      "relevancia": {
+        "pt": "Fornece um componente probabilístico de resposta limitada para decisões frequentes em orquestração agêntica, com tipos explícitos e avaliação de confiança que podem ser combinados com regras determinísticas.",
+        "en": "It provides a bounded probabilistic component for frequent decisions in agent orchestration, with explicit answer types and confidence that can be combined with deterministic rules."
+      },
+      "url": "https://openai.com/index/decisions-api/",
+      "processado_em": "2026-10-23T17:08:45.337457+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
       "titulo": {
         "pt": "Comparações setoriais no painel de impacto do Copilot",
