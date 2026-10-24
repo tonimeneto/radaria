@@ -2,6 +2,144 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode",
+      "titulo": {
+        "pt": "API de métricas do Copilot passa a contabilizar uso por cliente, incluindo OpenCode e Codex",
+        "en": "Copilot metrics API now tracks usage by client, including OpenCode and Codex"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-23T23:42:03+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Gestão de contas",
+          "Copilot",
+          "Gestão empresarial"
+        ],
+        "en": [
+          "Improvement",
+          "Account management",
+          "Copilot",
+          "Enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "Os relatórios de uso do Copilot para empresas, organizações e usuários passam a incluir solicitações, sessões e tokens por ferramenta cliente. A cobertura inclui ferramentas externas ao IDE, como OpenCode, Claude Code e Codex, quando usam o Copilot como provedor de modelos.",
+        "en": "Copilot usage reports for enterprises, organizations, and users now include requests, sessions, and tokens by client tool. Coverage includes tools outside the IDE, such as OpenCode, Claude Code, and Codex, when they use Copilot as their model provider."
+      },
+      "novidade_principal": {
+        "pt": "O novo array totals_by_client segmenta métricas por cliente e modelo nos relatórios de 1 e 28 dias, com modo de seleção do modelo. A contagem é feita no servidor; request_count mede chamadas ao modelo, não prompts, e a identificação do cliente é aproximada.",
+        "en": "The new totals_by_client array segments metrics by client and model in 1-day and 28-day reports, including model selection mode. Counting happens on the server; request_count measures model calls rather than prompts, and client identification is approximate."
+      },
+      "relevancia": {
+        "pt": "Ajuda a observar custo e adoção de agentes de programação em múltiplas ferramentas e a fundamentar decisões de governança com métricas de uso reais.",
+        "en": "It helps observe cost and adoption of coding agents across multiple tools and grounds governance decisions in actual usage metrics."
+      },
+      "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode/",
+      "processado_em": "2026-10-24T17:03:13.844286+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams",
+      "titulo": {
+        "pt": "GitHub Copilot no Teams transforma notificações de issues em pull requests",
+        "en": "GitHub Copilot in Teams turns issue notifications into pull requests"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-23T21:29:58+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Aplicativos cliente",
+          "Copilot"
+        ],
+        "en": [
+          "Improvement",
+          "Client apps",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O aplicativo consolidado do GitHub no Microsoft Teams combina notificações e Copilot. Em canais ou conversas, a equipe pode mencionar @GitHub após receber uma issue para iniciar investigação, correção e criação de pull request, seguida de revisão e testes humanos.",
+        "en": "The consolidated GitHub app in Microsoft Teams combines notifications and Copilot. In channels or chats, a team can mention @GitHub after receiving an issue to start investigation, a fix, and pull request creation, followed by human review and testing."
+      },
+      "novidade_principal": {
+        "pt": "A notificação vira ponto de entrada para um fluxo de agente que produz um pull request dentro da conversa do Teams. Usuários do aplicativo legado precisam migrar para a versão consolidada antes da aposentadoria anunciada para 16 de novembro.",
+        "en": "A notification becomes the entry point for an agent workflow that produces a pull request from a Teams conversation. Users of the legacy app need to migrate to the consolidated version before its announced November 16 retirement."
+      },
+      "relevancia": {
+        "pt": "Mostra uma forma concreta de ligar triagem colaborativa de issues à execução de agentes de programação, preservando revisão e testes antes do merge.",
+        "en": "It shows a concrete way to connect collaborative issue triage to coding agent execution while retaining review and testing before merge."
+      },
+      "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/",
+      "processado_em": "2026-10-24T17:03:49.399759+00:00"
+    },
+    {
+      "id": "url:https://community.openai.com/t/introducing-scheduled-automations-to-the-agents-api/1409223",
+      "titulo": {
+        "pt": "Agents API passa a agendar execuções e permitir que agentes criem automações",
+        "en": "Agents API now schedules runs and lets agents create automations"
+      },
+      "fonte": "OpenAI Developer Community",
+      "data": "2026-10-23T21:24:00+00:00",
+      "categoria": {
+        "pt": [
+          "API",
+          "Agentes",
+          "Anúncio"
+        ],
+        "en": [
+          "API",
+          "Agents",
+          "Announcement"
+        ]
+      },
+      "resumo": {
+        "pt": "A Agents API agora agenda mensagens para sessões existentes ou inicia novas sessões em horários definidos. Aceita expressões cron para recorrência ou data e hora para execução única; uma ferramenta automations permite que agentes administrem agendamentos durante a própria sessão.",
+        "en": "The Agents API now schedules messages for existing sessions or starts new sessions at defined times. It accepts cron expressions for recurrence or a timestamp for a one-time run; an automations tool lets agents manage schedules during their own sessions."
+      },
+      "novidade_principal": {
+        "pt": "O agendamento virou recurso da Agents API, com alvo de nova sessão ou continuação de uma sessão, gestão de automações pelo agente e registros de invocação para acompanhar entrega e resultado.",
+        "en": "Scheduling is now an Agents API capability, targeting either a new session or continuation of an existing one, with agent-managed automations and invocation records for tracking delivery and results."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão nativo para trabalho recorrente e acompanhamento de agentes duráveis, incluindo distinção entre criar sessões independentes e preservar o contexto de uma sessão existente.",
+        "en": "It offers a native pattern for recurring work and monitoring of durable agents, including the choice between independent new sessions and preserving an existing session's context."
+      },
+      "url": "https://community.openai.com/t/introducing-scheduled-automations-to-the-agents-api/1409223",
+      "processado_em": "2026-10-24T17:05:21.740500+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/securing-our-frontier-model-training-environment",
+      "titulo": {
+        "pt": "OpenAI reforça o isolamento de agentes no treinamento de modelos de fronteira",
+        "en": "OpenAI strengthens agent containment in frontier model training"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-23T10:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança"
+        ],
+        "en": [
+          "Security"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve controles para treinamento e avaliação de modelos de fronteira sem acesso livre à internet. Ambientes offline, containers em microVMs, perímetros de rede, monitoramento e pausas automáticas formam camadas de contenção testadas por equipes de agentes de red team.",
+        "en": "OpenAI describes controls for training and evaluating frontier models without unrestricted internet access. Offline environments, containers in microVMs, network perimeters, monitoring, and automatic pauses form layers of containment tested by red-team agent groups."
+      },
+      "novidade_principal": {
+        "pt": "Testes de red team com agentes encontraram escapes de microVM, rotas indiretas para a internet e canais de comunicação entre tarefas isoladas. A organização corrigiu falhas, ampliou o monitoramento e incorporou red teaming de alta capacidade aos safety cases para autorizar novas execuções.",
+        "en": "Agent red-team tests found microVM escapes, indirect routes to the internet, and communication channels between isolated tasks. The organization fixed weaknesses, expanded monitoring, and added high-compute red teaming to safety cases that authorize future runs."
+      },
+      "relevancia": {
+        "pt": "Oferece um exemplo técnico de defesa em profundidade e validação contínua de limites de acesso para agentes capazes de executar código e usar ferramentas.",
+        "en": "It provides a technical example of defense in depth and continuous validation of access boundaries for agents able to execute code and use tools."
+      },
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "processado_em": "2026-10-24T17:04:13.663998+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
       "titulo": {
         "pt": "Copilot no Visual Studio integra Git agent, BYOM e correção de vulnerabilidades NuGet",
