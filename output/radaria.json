@@ -2,6 +2,39 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive",
+      "titulo": {
+        "pt": "Visualização, edição e colaboração nativas em arquivos Markdown no Google Docs e Drive",
+        "en": "Native preview, editing, and collaboration for Markdown files in Google Docs and Drive"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-26T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Documentação",
+          "Colaboração entre pessoas e agentes"
+        ],
+        "en": [
+          "Documentation",
+          "Human-agent collaboration"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google Docs agora abre e edita arquivos .md sem conversão de formato, com coedição em tempo real, comentários, sugestões e histórico de versões. O Drive mostra uma prévia renderizada, inclusive de tabelas e links, e permite alternar para o texto bruto.",
+        "en": "Google Docs now opens and edits .md files without format conversion, with real-time co-editing, comments, suggestions, and version history. Drive provides a rendered preview, including tables and links, with an option to switch to raw text."
+      },
+      "novidade_principal": {
+        "pt": "A colaboração no Docs passa a atuar diretamente sobre o arquivo Markdown nativo, preservando um formato utilizável por ferramentas de desenvolvimento e agentes de IA.",
+        "en": "Docs collaboration now works directly on the native Markdown file, preserving a format usable by developer tools and AI agents."
+      },
+      "relevancia": {
+        "pt": "Permite revisar e manter documentação compartilhada por pessoas e agentes sem uma conversão intermediária, com rastreabilidade de alterações útil para fluxos de engenharia.",
+        "en": "It enables people and agents to review and maintain shared documentation without an intermediate conversion, with change traceability useful in engineering workflows."
+      },
+      "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
+      "processado_em": "2026-10-26T17:09:01.719135+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode",
       "titulo": {
         "pt": "API de métricas do Copilot passa a contabilizar uso por cliente, incluindo OpenCode e Codex",
