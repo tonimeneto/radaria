@@ -2,6 +2,68 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://openai.com/index/lifeval",
+      "titulo": {
+        "pt": "LifeVal",
+        "en": "LifeVal"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-02T09:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Pesquisa"
+        ],
+        "en": [
+          "Research"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI apresentou LifeVal, avaliação de tarefas cotidianas para acompanhar modelos e agentes pessoais. A seleção combina pesquisas de uso do tempo com uma consulta representativa a 3.995 pessoas sobre onde mais desejam assistência.",
+        "en": "OpenAI introduced LifeVal, an evaluation of everyday tasks for tracking models and personal agents. Task selection combines time-use surveys with a representative survey of 3,995 people about where they most want assistance."
+      },
+      "novidade_principal": {
+        "pt": "A avaliação parte de necessidades observadas dos usuários e inclui fluxos que exigem ações, browser use, computer use e conectores. A publicação apresenta exemplos de resultados, sem detalhar integralmente protocolos e critérios de pontuação.",
+        "en": "The evaluation starts from observed user needs and includes workflows requiring actions, browser use, computer use, and connectors. The publication presents example results without fully detailing protocols and scoring criteria."
+      },
+      "relevancia": {
+        "pt": "Sugere orientar evals de agentes por tarefas valorizadas pelos usuários e conclusão prática do trabalho. Para adaptação ao Ecossistema DEV, ainda seria necessário definir critérios reproduzíveis de sucesso, autorização e supervisão.",
+        "en": "Suggests grounding agent evals in tasks users value and practical task completion. Adapting it to the DEV Ecosystem would still require reproducible criteria for success, authorization, and oversight."
+      },
+      "url": "https://openai.com/index/lifeval",
+      "processado_em": "2026-11-02T21:37:22.561386+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/qodo-codex-plugin",
+      "titulo": {
+        "pt": "Qodo incorpora contexto à revisão de código com IA usando Codex",
+        "en": "Qodo builds context into AI code review with Codex"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-02T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Startup"
+        ],
+        "en": [
+          "Startup"
+        ]
+      },
+      "resumo": {
+        "pt": "O plugin da Qodo fornece ao Codex regras da organização, histórico de pull requests e conhecimento de dependências entre repositórios. O fluxo recupera contexto antes de programar e devolve uma revisão independente à mesma sessão antes da abertura do pull request.",
+        "en": "Qodo’s plugin gives Codex organizational rules, pull request history, and knowledge of cross-repository dependencies. The workflow retrieves context before coding and returns an independent review to the same session before a pull request is opened."
+      },
+      "novidade_principal": {
+        "pt": "O caso combina contexto organizacional, geração e revisão com configurações próprias. A seleção de regras por Decisions API é apresentada como oportunidade futura, não como resultado já demonstrado.",
+        "en": "The case combines organizational context, generation, and review with separate configurations. Rule selection through the Decisions API is presented as a future opportunity, not an already demonstrated result."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão de recuperação progressiva e revisão independente para alterações cujo impacto ultrapassa um repositório. É um relato de fornecedor, sem benchmark independente que comprove a eficácia anunciada.",
+        "en": "Offers a progressive retrieval and independent review pattern for changes whose impact spans repositories. It is a vendor account without an independent benchmark establishing the advertised effectiveness."
+      },
+      "url": "https://openai.com/index/qodo-codex-plugin",
+      "processado_em": "2026-11-02T21:38:19.196537+00:00"
+    },
+    {
       "id": "guid:https://deepmind.google/blog/speeding-up-planning-decisions-with-ai",
       "titulo": {
         "pt": "PlanAssist acelera análises de planejamento com revisão humana",
@@ -33,6 +95,41 @@
       },
       "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
       "processado_em": "2026-11-02T14:05:17.140354+00:00"
+    },
+    {
+      "id": "url:https://arxiv.org/abs/2610.40578",
+      "titulo": {
+        "pt": "VeriCUA: verificação por exploração agêntica para agentes que usam computadores",
+        "en": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents"
+      },
+      "fonte": "arXiv",
+      "data": "2026-10-29T17:45:26+00:00",
+      "categoria": {
+        "pt": [
+          "Inteligência artificial",
+          "Computação e linguagem",
+          "Visão computacional e reconhecimento de padrões"
+        ],
+        "en": [
+          "Artificial Intelligence",
+          "Computation and Language",
+          "Computer Vision and Pattern Recognition"
+        ]
+      },
+      "resumo": {
+        "pt": "Pesquisadores do Google e da Universidade de Hong Kong propõem VeriCUA, um verificador que inspeciona o ambiente ou a trajetória, constrói uma rubrica e busca evidências por GUI ou código após a execução de um agente.",
+        "en": "Researchers at Google and the University of Hong Kong propose VeriCUA, a verifier that inspects the environment or trajectory, constructs a rubric, and gathers evidence through GUI or code after an agent finishes its attempt."
+      },
+      "novidade_principal": {
+        "pt": "O método distingue ações tentadas, observações da interface e estado persistido. Regras explícitas combinam evidências por requisito e permitem abstenção quando faltam provas; o preprint relata melhor concordância com rótulos de referência e maior rejeição de conclusões falsas.",
+        "en": "The method distinguishes attempted actions, interface observations, and persisted state. Explicit rules combine evidence per requirement and allow abstention when evidence is insufficient; the preprint reports better agreement with reference labels and stronger rejection of false completion claims."
+      },
+      "relevancia": {
+        "pt": "Oferece uma arquitetura para validar efeitos reais de automações, sem aceitar a declaração do executor como comprovação. Os resultados ainda são de pesquisa e dependem do acesso às evidências e do orçamento de inspeção.",
+        "en": "Offers an architecture for validating actual automation effects without accepting the executor’s statement as proof. Results remain research findings and depend on evidence access and inspection budget."
+      },
+      "url": "https://arxiv.org/abs/2610.40578",
+      "processado_em": "2026-11-02T21:38:20.482040+00:00"
     },
     {
       "id": "guid:https://openai.com/index/updated-model-spec",
@@ -478,6 +575,37 @@
       "processado_em": "2026-10-28T20:23:16.066689+00:00"
     },
     {
+      "id": "url:https://arxiv.org/abs/2610.38620",
+      "titulo": {
+        "pt": "Pense antes de agir: uma barreira de decisão para agentes LLM",
+        "en": "Think Before You Act: Decision Gate for LLM Agents"
+      },
+      "fonte": "arXiv",
+      "data": "2026-10-28T10:40:52+00:00",
+      "categoria": {
+        "pt": [
+          "Inteligência artificial"
+        ],
+        "en": [
+          "Artificial Intelligence"
+        ]
+      },
+      "resumo": {
+        "pt": "Pesquisadores da IBM apresentam JevAct, um harness que intercepta ações selecionadas antes da execução. Políticas de domínio são compiladas em verificações de estado, perguntas estruturadas e critérios para encerramento ou transferência da tarefa.",
+        "en": "IBM researchers introduce JevAct, a harness that intercepts selected actions before execution. Domain policies are compiled into state checks, structured questions, and criteria for task completion or hand-off."
+      },
+      "novidade_principal": {
+        "pt": "Código verifica fatos das ferramentas; um modelo de decisão prefill-only julga contexto por probabilidades. Propostas reprovadas recebem feedback e revisões limitadas. O estudo com onze agentes relata ganhos mais consistentes em Telecom e BFCL, com resultados mistos em Airline.",
+        "en": "Code checks tool-state facts; a prefill-only decision model judges context through probabilities. Flagged proposals receive feedback and bounded revision opportunities. The eleven-agent study reports more consistent gains on Telecom and BFCL, with mixed Airline results."
+      },
+      "relevancia": {
+        "pt": "É uma referência de arquitetura híbrida para controlar tool calling e evitar encerramentos prematuros. Os resultados avaliam o harness completo; probabilidades do juiz não garantem correção nem calibração.",
+        "en": "Provides a hybrid architecture reference for controlling tool calling and preventing premature termination. Results evaluate the complete harness; judge probabilities do not guarantee correctness or calibration."
+      },
+      "url": "https://arxiv.org/abs/2610.38620",
+      "processado_em": "2026-11-02T21:38:21.404326+00:00"
+    },
+    {
       "id": "url:https://github.blog/changelog/2026-10-28-connect-your-tools-to-copilot-without-all-the-setup",
       "titulo": {
         "pt": "Conectores MCP verificados acompanham sessões do Copilot",
@@ -812,6 +940,43 @@
       },
       "url": "https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals/",
       "processado_em": "2026-10-28T20:34:46.007465+00:00"
+    },
+    {
+      "id": "url:https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work",
+      "titulo": {
+        "pt": "Apresentando o Microsoft Copilot harness: ampliando o trabalho agêntico com múltiplos modelos",
+        "en": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work"
+      },
+      "fonte": "Microsoft",
+      "data": "2026-10-28T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "GitHub",
+          "GitHub Copilot",
+          "Microsoft Copilot",
+          "Microsoft Foundry"
+        ],
+        "en": [
+          "GitHub",
+          "GitHub Copilot",
+          "Microsoft Copilot",
+          "Microsoft Foundry"
+        ]
+      },
+      "resumo": {
+        "pt": "A Microsoft disponibilizou via Foundry o harness originado no GitHub e adotado em produtos Copilot. A camada gerenciada coordena instruções, contexto, ferramentas, ambiente de execução e controles para agentes com diferentes famílias de modelos.",
+        "en": "Microsoft made the harness originating at GitHub and adopted across Copilot products available through Foundry. The managed layer coordinates instructions, context, tools, execution environments, and controls for agents across model families."
+      },
+      "novidade_principal": {
+        "pt": "O mesmo runtime passa a ser oferecido como SDK ou execução gerenciada na nuvem, com suporte a MCP, agent skills e plugins. A Microsoft administra o loop e o sandbox; a aplicação fornece instruções, ferramentas e escolha de modelos.",
+        "en": "The same runtime is offered as an SDK or managed cloud execution, supporting MCP, agent skills, and plugins. Microsoft manages the loop and sandbox; the application supplies instructions, tools, and model choices."
+      },
+      "relevancia": {
+        "pt": "Amplia as opções entre construir um harness e adotar uma infraestrutura gerenciada com múltiplos modelos. A adoção requer avaliar governança, portabilidade, custo e comportamento real nas tarefas do projeto.",
+        "en": "Expands options between building a harness and adopting managed multi-model infrastructure. Adoption requires assessing governance, portability, cost, and actual behavior on project tasks."
+      },
+      "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+      "processado_em": "2026-11-02T21:38:19.833010+00:00"
     },
     {
       "id": "guid:https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation",
@@ -1597,6 +1762,43 @@
       "processado_em": "2026-10-22T17:02:22.985883+00:00"
     },
     {
+      "id": "url:https://anthropic.com/research/formal-verification",
+      "titulo": {
+        "pt": "LLMs estão tornando a verificação formal de software viável em escala muito maior",
+        "en": "LLMs are making formal software verification feasible at a much larger scale"
+      },
+      "fonte": "Anthropic",
+      "data": "2026-10-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Cibersegurança",
+          "Programação",
+          "Open source",
+          "Parcerias"
+        ],
+        "en": [
+          "Cybersecurity",
+          "Coding",
+          "Open source",
+          "Partnerships"
+        ]
+      },
+      "resumo": {
+        "pt": "Anthropic e Theorem usaram Claude para provar propriedades de 239 pontos de entrada em 123 bibliotecas OSS-Fuzz. Fuzz tests compilados em RISC-V originam especificações; Claude escreve provas e o kernel Rocq verifica sua validade.",
+        "en": "Anthropic and Theorem used Claude to prove properties of 239 entry points across 123 OSS-Fuzz libraries. Fuzz tests compiled to RISC-V yield specifications; Claude writes proofs and the Rocq kernel checks their validity."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo combina geração probabilística de provas e verificação formal determinística sobre binários. As garantias têm escopo explícito: entradas menores que 64 MB, binários estáticos de uma thread, memória fixa e semânticas modeladas de RISC-V e Linux.",
+        "en": "The workflow combines probabilistic proof generation and deterministic formal checking over binaries. Guarantees have explicit scope: inputs below 64 MB, single-threaded static binaries, fixed memory, and modeled RISC-V and Linux semantics."
+      },
+      "relevancia": {
+        "pt": "Mostra como separar geração de validação e transformar testes existentes em propriedades verificáveis. A aplicação exige revisar especificações e componentes confiáveis; não garante ausência de todos os bugs.",
+        "en": "Shows how to separate generation from validation and turn existing tests into verifiable properties. Application requires reviewing specifications and trusted components; it does not guarantee the absence of all bugs."
+      },
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "processado_em": "2026-11-02T21:37:21.134120+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/broad-access-through-consistent-standards",
       "titulo": {
         "pt": "Acesso amplo a modelos com padrões de segurança consistentes",
@@ -1968,6 +2170,43 @@
       },
       "url": "https://openai.com/index/terminal-x/",
       "processado_em": "2026-10-21T17:06:10.984865+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/research/attack-surface-reduction",
+      "titulo": {
+        "pt": "Usando Claude para reduzir a superfície de ataque do código",
+        "en": "Using Claude to reduce the attack surface of code"
+      },
+      "fonte": "Anthropic",
+      "data": "2026-10-20T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Cibersegurança",
+          "Programação",
+          "Open source",
+          "Aplicações benéficas"
+        ],
+        "en": [
+          "Cybersecurity",
+          "Coding",
+          "Open source",
+          "Beneficial Deployments"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic aplicou Claude a 25 projetos open source e encontrou 493 problemas de exposição desnecessária de código. O método examina configurações padrão, execução anterior a controles de segurança e combinações de opções que enfraquecem proteções.",
+        "en": "Anthropic applied Claude to 25 open-source projects and found 493 instances of unnecessary code exposure. The method examines default configurations, execution before security controls, and combinations of options that weaken protections."
+      },
+      "novidade_principal": {
+        "pt": "Uma skill organiza três passagens com contexto reiniciado, confirma achados com traces dinâmicos e compara regressões. No OpenSSH, correções restringiram parsing antes da autenticação; alterações que afetam configurações alternativas ficam para decisão humana.",
+        "en": "A skill organizes three passes with fresh context, confirms findings with dynamic traces, and compares regressions. In OpenSSH, fixes restricted parsing before authentication; changes affecting alternative configurations are left for human decisions."
+      },
+      "relevancia": {
+        "pt": "Oferece um método transferível de auditoria com agentes: reduzir caminhos acessíveis, exigir evidência de execução e validar preservação de comportamento antes de aceitar correções.",
+        "en": "Offers a transferable agent-auditing method: reduce reachable paths, require execution evidence, and validate behavior preservation before accepting fixes."
+      },
+      "url": "https://www.anthropic.com/research/attack-surface-reduction",
+      "processado_em": "2026-11-02T21:37:14.646951+00:00"
     },
     {
       "id": "guid:https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu",
@@ -2925,6 +3164,43 @@
       },
       "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates/",
       "processado_em": "2026-10-13T16:59:20.757737+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/research/redesigning-source-control",
+      "titulo": {
+        "pt": "Redesenhando o controle de versão na Anthropic",
+        "en": "Redesigning source control at Anthropic"
+      },
+      "fonte": "Anthropic",
+      "data": "2026-10-13T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Programação",
+          "Agentes",
+          "Produtividade",
+          "Claude Code"
+        ],
+        "en": [
+          "Coding",
+          "Agents",
+          "Productivity",
+          "Claude Code"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic descreve o Scion, sistema interno criado após o volume de alterações integradas crescer de cerca de 2.500 para mais de 30.000 por dia. A arquitetura centraliza operações, disponibiliza consultas programáticas e recupera arquivos sob demanda.",
+        "en": "Anthropic describes Scion, an internal system built after merged changes grew from roughly 2,500 to over 30,000 per day. Its architecture centralizes operations, exposes programmatic queries, and retrieves files on demand."
+      },
+      "novidade_principal": {
+        "pt": "Changesets incrementais, objetos imutáveis, caches em camadas e checkouts esparsos ou virtualizados reduzem trabalho repetido de agentes e CI. A empresa relata infraestrutura de CPU e memória 200 vezes menor que a anterior baseada em mirrors Git.",
+        "en": "Incremental changesets, immutable objects, tiered caches, and sparse or virtualized checkouts reduce repeated work by agents and CI. The company reports a CPU and memory infrastructure footprint 200 times smaller than its previous Git-mirror setup."
+      },
+      "relevancia": {
+        "pt": "O caso mostra que agentes podem deslocar gargalos para versionamento, builds e CI. São transferíveis a recuperação mínima de dados e a revisão humana de invariantes; os ganhos relatados refletem um monorepo de escala excepcional.",
+        "en": "The case shows that agents can shift bottlenecks to version control, builds, and CI. Minimal data retrieval and human review of invariants are transferable; reported gains reflect an exceptionally large monorepo."
+      },
+      "url": "https://www.anthropic.com/research/redesigning-source-control",
+      "processado_em": "2026-11-02T21:37:21.737911+00:00"
     },
     {
       "id": "url:https://developers.googleblog.com/en/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon",
