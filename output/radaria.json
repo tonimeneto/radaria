@@ -2,6 +2,140 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://deepmind.google/blog/speeding-up-planning-decisions-with-ai",
+      "titulo": {
+        "pt": "PlanAssist acelera análises de planejamento com revisão humana",
+        "en": "PlanAssist speeds up planning assessments with human review"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-10-30T14:18:30+00:00",
+      "categoria": {
+        "pt": [
+          "Arquiteturas híbridas",
+          "Governança de IA"
+        ],
+        "en": [
+          "Hybrid architectures",
+          "AI governance"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google DeepMind descreveu o PlanAssist, ferramenta com Gemini que valida documentos, verifica restrições e políticas de planejamento e redige relatórios citados para revisão por servidores públicos. Em pilotos, o tempo médio de avaliação caiu até 58%; cada decisão final permanece com um profissional qualificado.",
+        "en": "Google DeepMind described PlanAssist, a Gemini-powered tool that validates documents, checks planning constraints and policies, and drafts cited reports for public officials to review. In pilots, average assessment time fell by up to 58%; each final decision remains with a qualified professional."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo combina checagens estruturadas, consulta a regras e objeções anteriores, geração de relatório com citações e aprovação humana obrigatória. O projeto avança para uma fase beta de 12 meses em mais 12 autoridades locais.",
+        "en": "The workflow combines structured checks, review of rules and previous objections, cited report generation, and mandatory human approval. The project is moving to a 12-month beta across 12 additional local authorities."
+      },
+      "relevancia": {
+        "pt": "O caso oferece um padrão transferível para sistemas que unem verificações determinísticas, assistência probabilística com evidências e decisão humana em processos regulados.",
+        "en": "The case offers a transferable pattern for systems that combine deterministic checks, evidence-backed probabilistic assistance, and human decisions in regulated workflows."
+      },
+      "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "processado_em": "2026-11-02T14:05:17.140354+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/updated-model-spec",
+      "titulo": {
+        "pt": "Model Spec atualizada orienta intenção, contexto e supervisão humana",
+        "en": "Updated Model Spec addresses intent, context, and human oversight"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-29T17:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de agentes",
+          "Context engineering"
+        ],
+        "en": [
+          "Agent governance",
+          "Context engineering"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI reorganizou a Model Spec em cinco valores e acrescentou orientações sobre interpretação da intenção humana, uso de contexto e memória, autonomia e comunicação de efeitos colaterais. A especificação descreve o comportamento desejado; a empresa afirma que os modelos ainda não o refletem integralmente.",
+        "en": "OpenAI reorganized the Model Spec around five values and added guidance on interpreting human intent, using context and memory, agency, and communicating side effects. The specification describes intended behavior; the company says models do not yet fully reflect it."
+      },
+      "novidade_principal": {
+        "pt": "A revisão atualiza a hierarquia de instruções e introduz princípios explícitos para considerar evidências contextuais, preservar a agência do usuário e controlar efeitos de ações.",
+        "en": "The revision updates the instruction hierarchy and introduces explicit principles for considering contextual evidence, preserving user agency, and controlling action side effects."
+      },
+      "relevancia": {
+        "pt": "Oferece critérios concretos para projetar e avaliar agentes que precisam conciliar instruções, memória, autonomia e supervisão em tarefas de desenvolvimento.",
+        "en": "It provides concrete criteria for designing and evaluating agents that must reconcile instructions, memory, autonomy, and oversight in development tasks."
+      },
+      "url": "https://openai.com/index/updated-model-spec/",
+      "processado_em": "2026-11-02T14:09:35.842190+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "titulo": {
+        "pt": "Monitoramento em camadas detecta desvios de agentes de fronteira",
+        "en": "Layered monitoring detects frontier-agent misalignment"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-10-29T09:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Observabilidade",
+          "Evals"
+        ],
+        "en": [
+          "Agent security",
+          "Observability",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreveu um sistema de monitoramento de agentes em treinamento, avaliações e uso interno. Classificadores leves, revisão por modelo, investigação por agente e telemetria externa escalonam suspeitas de ações não autorizadas para resposta humana.",
+        "en": "OpenAI described an agent-monitoring system across training, evaluations, and internal use. Lightweight classifiers, model review, agent investigation, and external telemetry escalate suspected unauthorized actions for human response."
+      },
+      "novidade_principal": {
+        "pt": "A arquitetura usa etapas iniciais de alta cobertura, amostragem de tráfego não sinalizado, replays de incidentes e red teaming para medir falhas. O monitoramento assíncrono evita alterar a recompensa de cada amostra e incentivar ocultação do comportamento.",
+        "en": "The architecture uses high-recall early stages, sampling of unflagged traffic, incident replay, and red teaming to measure misses. Asynchronous monitoring avoids changing each sample's reward and incentivizing concealment."
+      },
+      "relevancia": {
+        "pt": "Oferece um desenho técnico para observabilidade e resposta de agentes com ferramentas, incluindo avaliação de cobertura, investigação contextual e limites de intervenção humana.",
+        "en": "It offers a technical design for observing and responding to tool-using agents, including coverage evaluation, contextual investigation, and human intervention thresholds."
+      },
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+      "processado_em": "2026-11-02T14:10:14.393571+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents",
+      "titulo": {
+        "pt": "Construção de interfaces generativas com agentes A2UI e CopilotKit",
+        "en": "Building generative interfaces with A2UI and CopilotKit agents"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-10-29T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Interface de agentes",
+          "Arquitetura"
+        ],
+        "en": [
+          "Agent interfaces",
+          "Architecture"
+        ]
+      },
+      "resumo": {
+        "pt": "O tutorial mostra como um agente emite interfaces declarativas A2UI pelo fluxo de eventos AG-UI e como o CopilotKit as renderiza com componentes previamente autorizados pelo cliente. Inclui integração com Google ADK, catálogos de componentes, validação de propriedades e interação bidirecional em fluxos de múltiplas etapas.",
+        "en": "The tutorial shows an agent emitting declarative A2UI interfaces over the AG-UI event stream and CopilotKit rendering them with client-approved components. It covers Google ADK integration, component catalogs, property validation, and bidirectional interaction in multi-step flows."
+      },
+      "novidade_principal": {
+        "pt": "A integração separa intenção de interface e transporte: A2UI descreve componentes e dados em mensagens JSON incrementais, enquanto AG-UI leva eventos tipados e ações de volta ao agente. O cliente valida as propriedades, rejeita componentes fora do catálogo e pode devolver erros específicos para regeneração antes da renderização.",
+        "en": "The integration separates UI intent from transport: A2UI describes components and data in incremental JSON messages, while AG-UI carries typed events and user actions back to the agent. The client validates properties, rejects components outside the catalog, and can return specific errors for regeneration before rendering."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão aplicável para interfaces de agentes com fronteira de confiança explícita, streaming, validação determinística no cliente e recuperação de saídas inválidas, sem executar código gerado pelo modelo na interface.",
+        "en": "It provides an applicable pattern for agent interfaces with an explicit trust boundary, streaming, deterministic client-side validation, and recovery from invalid output without executing model-generated UI code."
+      },
+      "url": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
+      "processado_em": "2026-11-02T14:29:56.600305+00:00"
+    },
+    {
       "id": "guid:https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model",
       "titulo": {
         "pt": "Gemini 4 Carbon: novo modelo de fronteira para engenharia e cibersegurança",
@@ -239,6 +373,41 @@
       },
       "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases",
       "processado_em": "2026-10-28T20:21:28.557505+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-28-repository-plugin-defaults-and-enterprise-plugin-controls-generally-available",
+      "titulo": {
+        "pt": "Plugins padrão por repositório e controles corporativos de plugins no GitHub Copilot",
+        "en": "Repository plugin defaults and enterprise plugin controls in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-10-28T15:33:00+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Copilot",
+          "Governança"
+        ],
+        "en": [
+          "Improvement",
+          "Copilot",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "GitHub disponibilizou de modo geral plugins padrão definidos por repositórios confiáveis e controles corporativos para plugins no VS Code, Copilot CLI e aplicativo Copilot. Mantenedores podem indicar marketplace e plugins padrão; administradores podem exigir ou bloquear plugins e limitar marketplaces aprovados.",
+        "en": "GitHub made trusted repository-defined default plugins and enterprise plugin controls generally available in VS Code, Copilot CLI, and the Copilot app. Maintainers can set a marketplace and default plugins; administrators can require or block plugins and restrict approved marketplaces."
+      },
+      "novidade_principal": {
+        "pt": "Plugins exigidos pela organização são instalados e ativados automaticamente, sem opção de desativação pelo usuário; configurações gerenciadas prevalecem sobre escolhas do repositório e pessoais. Padrões do repositório podem ser desligados pelo colaborador quando a política permite.",
+        "en": "Organization-required plugins install and enable automatically and cannot be disabled by users; managed settings take precedence over repository and personal choices. Contributors can disable repository defaults when policy allows."
+      },
+      "relevancia": {
+        "pt": "Define uma hierarquia prática de autoridade para distribuir capacidades de agentes entre repositório, empresa e pessoa, útil ao governar skills, ferramentas e integrações em equipes de desenvolvimento.",
+        "en": "It defines a practical authority hierarchy for distributing agent capabilities across repository, enterprise, and individual scopes, useful for governing skills, tools, and integrations in development teams."
+      },
+      "url": "https://github.blog/changelog/2026-10-28-repository-plugin-defaults-and-enterprise-plugin-controls-generally-available/",
+      "processado_em": "2026-11-02T14:30:55.701243+00:00"
     },
     {
       "id": "guid:https://github.blog/changelog/2026-10-26-github-copilot-fusion-now-supports-selection-of-local-models",
@@ -1358,6 +1527,39 @@
       },
       "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
       "processado_em": "2026-10-22T17:01:59.467072+00:00"
+    },
+    {
+      "id": "url:https://alignment.anthropic.com/2026/red-teaming-auto-mode",
+      "titulo": {
+        "pt": "Red teaming de monitores que bloqueiam ações de agentes de programação",
+        "en": "Red teaming blocking monitors for coding agents"
+      },
+      "fonte": "Anthropic Alignment Science Blog",
+      "data": "2026-10-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Pesquisa",
+          "Segurança de agentes"
+        ],
+        "en": [
+          "Research",
+          "Agent safety"
+        ]
+      },
+      "resumo": {
+        "pt": "Pesquisadores testaram variantes do Auto Mode do Claude Code e uma aproximação do Guardian do Codex contra agentes adversariais em tarefas de programação. Avaliaram injeção no monitor, ataques distribuídos entre contextos, lacunas de cobertura e falhas de política com análise, reprodução de transcrições e execuções em ambientes simulados.",
+        "en": "Researchers tested Claude Code Auto Mode variants and an approximation of Codex Guardian against adversarial coding agents. They evaluated monitor injection, attacks spread across contexts, coverage gaps, and policy failures through analysis, transcript replay, and runs in simulated environments."
+      },
+      "novidade_principal": {
+        "pt": "Ataques exploraram transcrições sem delimitação robusta, edições de arquivos não monitoradas e perda de contexto em compactações ou transferências entre agentes. Delimitar e escapar registros, monitorar edições e revisar resumos de compactação reduziram falhas; ataques que atravessam contextos continuaram difíceis de bloquear com latência aceitável.",
+        "en": "Attacks exploited transcripts without robust framing, unmonitored file edits, and context loss across compactions or agent handoffs. Framing and escaping records, monitoring edits, and checking compaction summaries reduced failures; attacks spanning contexts remained difficult to block at acceptable latency."
+      },
+      "relevancia": {
+        "pt": "Fornece casos de teste e medidas de defesa aplicáveis à governança de agentes: preservar fronteiras de autoridade entre contextos, incluir efeitos indiretos das ferramentas na revisão e medir bloqueio e falsos positivos sob ataques adaptativos.",
+        "en": "It provides test cases and defense measures for agent governance: preserve authority boundaries across contexts, review indirect tool effects, and measure blocking and false positives under adaptive attacks."
+      },
+      "url": "https://alignment.anthropic.com/2026/red-teaming-auto-mode/",
+      "processado_em": "2026-11-02T14:35:04.797214+00:00"
     },
     {
       "id": "guid:https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform",
