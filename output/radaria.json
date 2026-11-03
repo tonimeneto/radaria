@@ -10,16 +10,8 @@
       "fonte": "Google DeepMind",
       "data": "2026-11-03T17:01:49+00:00",
       "categoria": {
-        "pt": [
-          "Agentes",
-          "Skills",
-          "Arquitetura híbrida"
-        ],
-        "en": [
-          "Agents",
-          "Skills",
-          "Hybrid architecture"
-        ]
+        "pt": [],
+        "en": []
       },
       "resumo": {
         "pt": "O Google DeepMind apresenta Cheminformatics Skills para Antigravity que integram busca em literatura e bases de compostos, curadoria de moléculas, análise de pares, modelos preditivos e propostas de síntese em um fluxo acompanhado por cientistas.",
@@ -72,22 +64,14 @@
     {
       "id": "guid:https://openai.com/index/heimstaden",
       "titulo": {
-        "pt": "Heimstaden usa Codex para criar análise ambiental reproduzível",
-        "en": "Heimstaden uses Codex to build reproducible environmental analysis"
+        "pt": "Heimstaden está transformando a gestão de imóveis residenciais com IA",
+        "en": "Heimstaden is changing residential real estate management with AI"
       },
       "fonte": "OpenAI News",
       "data": "2026-11-03T08:00:00+00:00",
       "categoria": {
-        "pt": [
-          "Caso de uso",
-          "Codex",
-          "Governança"
-        ],
-        "en": [
-          "Use case",
-          "Codex",
-          "Governance"
-        ]
+        "pt": [],
+        "en": []
       },
       "resumo": {
         "pt": "Uma analista sem formação em software usou Codex para descobrir, limpar e padronizar dados ambientais, verificar qualidade e criar pipelines repetíveis para avaliar 20.112 imóveis; a metodologia e a validação ficaram sob controle humano.",
@@ -107,8 +91,8 @@
     {
       "id": "url:https://github.blog/changelog/2026-11-03-codeql-2-27-3-adds-python-3-15-features-and-json-data-extensions",
       "titulo": {
-        "pt": "CodeQL 2.27.3 adiciona modelo de ameaça para dados gerados por LLM",
-        "en": "CodeQL 2.27.3 adds a threat model for LLM-generated data"
+        "pt": "CodeQL 2.27.3 adiciona recursos do Python 3.15 e extensões de dados JSON",
+        "en": "CodeQL 2.27.3 adds Python 3.15 features and JSON data extensions"
       },
       "fonte": "GitHub Changelog",
       "data": "2026-11-03T00:00:00+00:00",
@@ -147,12 +131,10 @@
       "data": "2026-11-02T15:30:00+00:00",
       "categoria": {
         "pt": [
-          "Engenharia",
-          "Agentes de programação"
+          "Engenharia"
         ],
         "en": [
-          "Engineering",
-          "Coding agents"
+          "Engineering"
         ]
       },
       "resumo": {
@@ -235,8 +217,8 @@
     {
       "id": "url:https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2",
       "titulo": {
-        "pt": "GitHub bloqueará pull_request_target por padrão em repositórios públicos",
-        "en": "GitHub to block pull_request_target by default in public repositories"
+        "pt": "pull_request_target bloqueado por padrão em 2 de dezembro",
+        "en": "pull_request_target blocked by default December 2"
       },
       "fonte": "GitHub Changelog",
       "data": "2026-11-02T00:00:00+00:00",
