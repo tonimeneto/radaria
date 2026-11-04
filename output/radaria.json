@@ -2,6 +2,43 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+      "titulo": {
+        "pt": "BYOK e modelos personalizados corporativos na API de uso do Copilot",
+        "en": "BYOK and enterprise custom models in the Copilot usage API"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-04T00:32:19+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "gestão de contas",
+          "Copilot",
+          "ferramentas de gestão corporativa"
+        ],
+        "en": [
+          "Improvement",
+          "account management",
+          "copilot",
+          "enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "A API de métricas do GitHub Copilot passou a distinguir o uso de BYOK local no CLI e no app e o de modelos personalizados configurados pela empresa. Relatórios por usuário e agregados de 1 e 28 dias mostram atividade, sessões, solicitações e tokens; os totais existentes não mudam.",
+        "en": "The GitHub Copilot usage metrics API now distinguishes local BYOK use in the CLI and app from enterprise configured custom models. Per-user and aggregate 1-day and 28-day reports show activity, sessions, requests, and tokens; existing totals do not change."
+      },
+      "novidade_principal": {
+        "pt": "Os campos used_local_byok e totals_by_local_byok identificam uso local por tipo e superfície; is_custom_enterprise_model separa modelos corporativos hospedados externamente mesmo quando compartilham nome com modelos do Copilot. Métricas locais dependem de telemetria do cliente e podem subcontar uso e tokens; o novo campo corporativo não tem retroatividade.",
+        "en": "The used_local_byok and totals_by_local_byok fields identify local usage by kind and surface; is_custom_enterprise_model separates enterprise custom models even when they share names with Copilot models. Local metrics depend on client telemetry and may undercount usage and tokens; the new enterprise field is not backfilled."
+      },
+      "relevancia": {
+        "pt": "Permite governar o uso de chaves e modelos próprios, separar custos de modelos hospedados pelo Copilot e interpretar métricas de adoção de agentes sem confundir provedores ou ignorar subcontagens.",
+        "en": "It helps govern use of personal keys and custom models, separate costs from Copilot-hosted models, and interpret agent adoption metrics without conflating providers or overlooking undercounts."
+      },
+      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api/",
+      "processado_em": "2026-11-04T17:18:40.026928+00:00"
+    },
+    {
       "id": "guid:https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity",
       "titulo": {
         "pt": "Quimioinformática agêntica com Google Antigravity",
@@ -122,6 +159,33 @@
       "processado_em": "2026-11-03T17:08:26.540264+00:00"
     },
     {
+      "id": "guid:https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels",
+      "titulo": {
+        "pt": "Custo por tarefa: usando classificadores leves para rotear entre modelos Gemini e níveis de raciocínio",
+        "en": "Cost per task: Using cheap classifiers to route across Gemini models and thinking levels"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-03T00:00:00+00:00",
+      "categoria": {
+        "pt": [],
+        "en": []
+      },
+      "resumo": {
+        "pt": "Um experimento com 50 tarefas de agentes de programação compara heurísticas, Gemini 3.8 Flash com raciocínio baixo e um classificador leve que encaminha tarefas simples para Flash-Lite e complexas para Flash. O roteamento manteve 50 acertos, com menor custo e latência que Flash com raciocínio baixo em todas as tarefas, embora o estudo tenha apenas uma execução por configuração.",
+        "en": "A 50-task coding-agent experiment compares heuristics, Gemini 3.8 Flash with low thinking, and a lightweight classifier that sends simple tasks to Flash-Lite and complex ones to Flash. Routing solved all 50 tasks at lower cost and latency than using low-thinking Flash for every task, although the study ran each configuration only once."
+      },
+      "novidade_principal": {
+        "pt": "A heurística de regex e comprimento caiu para 70,6% em 34 tarefas inéditas, enquanto o classificador acertou 34 de 34. Limitar maxOutputTokens não reduziu tokens de raciocínio e prejudicou sete tarefas difíceis. O artigo recomenda medir custo por tarefa verificada, começar com raciocínio baixo, rotear tarefas curtas e manter tarefas com contexto longo no mesmo modelo para preservar o cache.",
+        "en": "A regex and length heuristic fell to 70.6% on 34 unseen tasks, while the classifier agreed on all 34. Lowering maxOutputTokens did not reduce thinking tokens and harmed seven hard tasks. The article recommends measuring cost per verified task, starting with low thinking, routing short tasks, and keeping long-context tasks on one model to preserve caching."
+      },
+      "relevancia": {
+        "pt": "Oferece critérios mensuráveis para arquiteturas híbridas de agentes: classificar decisões simples, escalar as complexas, verificar acertos e contabilizar loops, tentativas, latência e perdas de cache no custo real.",
+        "en": "It offers measurable criteria for hybrid agent architectures: classify simple decisions, escalate complex ones, verify outcomes, and account for loops, retries, latency, and cache losses in actual cost."
+      },
+      "url": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
+      "processado_em": "2026-11-04T17:22:09.883441+00:00"
+    },
+    {
       "id": "guid:https://openai.com/index/scaling-git-at-openai",
       "titulo": {
         "pt": "Escalando Git na OpenAI",
@@ -182,6 +246,37 @@
       },
       "url": "https://openai.com/index/lifeval",
       "processado_em": "2026-11-02T21:37:22.561386+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/research/provable-inference",
+      "titulo": {
+        "pt": "Avanços em inferência verificável para grandes modelos de linguagem",
+        "en": "Progress on provable inference for large language models"
+      },
+      "fonte": "Anthropic Research",
+      "data": "2026-11-02T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Pesquisa"
+        ],
+        "en": [
+          "Research"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic apresentou FlashProve, protótipo aberto de prova criptográfica de inferência que permite verificar se tokens vieram dos pesos de um modelo comprometido sem revelar esses pesos. Para Llama 4 Maverick quantizado de 400 bilhões de parâmetros, relata 110 tokens provados por segundo em uma H100, prova de cerca de 19 MB por solicitação de 1.024 tokens e verificação em segundos na CPU.",
+        "en": "Anthropic presented FlashProve, an open-source cryptographic inference proof prototype that verifies whether tokens came from committed model weights without revealing those weights. For a quantized 400-billion-parameter Llama 4 Maverick, it reports 110 proved tokens per second on one H100, a roughly 19 MB proof per 1,024-token request, and CPU verification in seconds."
+      },
+      "novidade_principal": {
+        "pt": "O sistema combina compromisso prévio com os pesos, provas zkSNARK posteriores à resposta e especificações verificadas em Lean; publica protocolo, código e verificadores. O custo de prova ainda é cerca de 70 a 95 vezes o da inferência, e o protótipo cobre modelo inteiro com decodificação greedy e contexto de até 1.024 tokens, sem garantia formal para o verificador rápido em C++.",
+        "en": "The system combines a prior commitment to model weights, post-hoc zkSNARK response proofs, and Lean-verified specifications; it releases the protocol, code, and verifiers. Proving still costs roughly 70 to 95 times inference, and the prototype covers an integer model with greedy decoding and up to 1,024 context tokens, without a formal guarantee for the fast C++ verifier."
+      },
+      "relevancia": {
+        "pt": "Oferece uma abordagem concreta para atestar a identidade do modelo usado por agentes, roteadores e avaliações independentes, tornando verificáveis alegações sobre qual modelo gerou uma saída e explicitando os limites atuais dessa garantia.",
+        "en": "It offers a concrete way to attest the identity of the model used by agents, routers, and independent evaluations, making claims about which model produced an output verifiable while exposing the current limits of that guarantee."
+      },
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "processado_em": "2026-11-04T17:24:40.051953+00:00"
     },
     {
       "id": "guid:https://openai.com/index/qodo-codex-plugin",
