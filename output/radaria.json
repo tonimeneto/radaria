@@ -2,6 +2,144 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates",
+      "titulo": {
+        "pt": "Revisão de código do Copilot: gerenciamento por API e melhorias no resumo",
+        "en": "Copilot code review: API management and review overview updates"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-07T00:27:19+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Copilot"
+        ],
+        "en": [
+          "Improvement",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub ampliou as APIs REST e GraphQL para configurar a revisão de código do Copilot em empresas, organizações e repositórios. As respostas identificam revisões e comentários do Copilot, esforço empregado e fontes como skills, servidores MCP e instruções personalizadas.",
+        "en": "GitHub expanded its REST and GraphQL APIs to configure Copilot code review at enterprise, organization and repository levels. Responses identify Copilot reviews and comments, review effort, and sources such as skills, MCP servers and custom instructions."
+      },
+      "novidade_principal": {
+        "pt": "Administradores podem controlar esforço, runners e uso de MCP e instruções via API; a revisão equilibrada usa três modelos revisores e um quarto para combinar resultados. Falhas e timeouts recebem uma nova tentativa automática.",
+        "en": "Administrators can control effort, runners and use of MCP and instructions through APIs; balanced review uses three reviewer models and a fourth to combine findings. Failed or timed-out reviews get one automatic retry."
+      },
+      "relevancia": {
+        "pt": "Os controles e metadados ajudam a governar revisões feitas por agentes, rastrear a origem de comentários e avaliar confiabilidade e custo no fluxo de desenvolvimento.",
+        "en": "These controls and metadata help govern agent-driven reviews, trace comment provenance, and evaluate reliability and cost in development workflows."
+      },
+      "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/",
+      "processado_em": "2026-11-08T14:56:10.636567+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
+      "titulo": {
+        "pt": "Dashboard de impacto do Copilot passa a incluir chat e agentes do VS Code",
+        "en": "Copilot impact dashboard adds chat and VS Code agent usage"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-06T22:17:28+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Gerenciamento de contas",
+          "Copilot",
+          "Ferramentas de gestão empresarial"
+        ],
+        "en": [
+          "Improvement",
+          "Account management",
+          "Copilot",
+          "Enterprise management tools"
+        ]
+      },
+      "resumo": {
+        "pt": "O dashboard de impacto e os relatórios de 28 dias do Copilot agora mostram engajamento em Copilot Chat e na janela Agents do VS Code, totalizando nove experiências. A coorte antes chamada Passive users foi renomeada Chat-first users.",
+        "en": "The Copilot impact dashboard and 28-day reports now show engagement in Copilot Chat and the VS Code Agents window, covering nine experiences. The former Passive users cohort was renamed Chat-first users."
+      },
+      "novidade_principal": {
+        "pt": "Os relatórios de empresas e organizações adicionam chat e vscode_agent em copilot_feature_engagement.totals_by_feature. O engajamento exige uso em pelo menos dois dias de 28; essas atividades ainda não alteram as fases de adoção.",
+        "en": "Enterprise and organization reports add chat and vscode_agent to copilot_feature_engagement.totals_by_feature. Engagement requires use on at least two of 28 days; these activities do not change adoption phases."
+      },
+      "relevancia": {
+        "pt": "A cobertura permite medir a adoção real de chat e agentes de programação, evitando interpretar como passivos usuários que trabalham principalmente nessas interfaces.",
+        "en": "This coverage helps measure actual adoption of chat and coding agents, avoiding misclassification of users who mainly work through those interfaces as passive."
+      },
+      "url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage/",
+      "processado_em": "2026-11-08T14:57:51.922516+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2",
+      "titulo": {
+        "pt": "Lançamentos semanais do GitHub Copilot — 2 de novembro",
+        "en": "GitHub Copilot weekly releases — November 2"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-06T21:00:26+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O resumo semanal apresenta atualizações do aplicativo Copilot, CLI e VS Code: configuração de Agent Merge no pull request, compactação de conversas ao atingir o limite de contexto, instruções pessoais opcionais para aprovação assistida e um painel unificado para plugins e servidores MCP.",
+        "en": "The weekly roundup covers Copilot app, CLI and VS Code updates: Agent Merge setup from a pull request, conversation compaction at the context limit, opt-in personal instructions for assisted approval, and a unified dashboard for plugins and MCP servers."
+      },
+      "novidade_principal": {
+        "pt": "No VS Code 1.145, automações locais aceitam expressões cron e agentes personalizados do workspace; a janela Agents também oferece prévias de aplicativos remotos e canvases interativos. O aplicativo permite definir orientações para aprovações assistidas em sessões locais.",
+        "en": "In VS Code 1.145, local automations support cron expressions and custom workspace agents; the Agents window also previews remote apps and interactive canvases. The app supports instructions for assisted approvals in local sessions."
+      },
+      "relevancia": {
+        "pt": "As mudanças são aplicáveis a orquestração recorrente, gestão de contexto, permissões e integração de ferramentas no fluxo de agentes de programação.",
+        "en": "These changes apply to recurring orchestration, context management, permissions and tool integration in coding-agent workflows."
+      },
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2/",
+      "processado_em": "2026-11-08T14:58:46.921734+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available",
+      "titulo": {
+        "pt": "@GitHub no Slack e Teams chega à disponibilidade geral com Canvas no Teams",
+        "en": "@GitHub in Slack and Teams is generally available and more"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-06T20:31:08+00:00",
+      "categoria": {
+        "pt": [
+          "Lançamento",
+          "Aplicativos cliente",
+          "Copilot"
+        ],
+        "en": [
+          "Release",
+          "Client apps",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "A integração @GitHub no Slack e Teams agora está em disponibilidade geral para investigar bugs, criar issues, implementar mudanças e abrir pull requests a partir de conversas. O Teams ganhou Canvas para revisar planos, código e prévias em conjunto.",
+        "en": "The @GitHub integration in Slack and Teams is now generally available for investigating bugs, creating issues, implementing changes and opening pull requests from conversations. Teams gained Canvas for collaborative review of plans, code and previews."
+      },
+      "novidade_principal": {
+        "pt": "O agente identifica automaticamente o repositório citado na mensagem e atribui issues e pull requests à conversa e ao usuário de origem; o Canvas no Teams concentra discussão e revisão da implementação.",
+        "en": "The agent automatically identifies the repository mentioned in a message and attributes issues and pull requests to the originating conversation and user; Canvas in Teams brings discussion and implementation review together."
+      },
+      "relevancia": {
+        "pt": "Atribuição da origem, seleção de repositório e revisão compartilhada são mecanismos práticos de contexto, rastreabilidade e controle em fluxos de agentes de programação.",
+        "en": "Source attribution, repository selection and shared review are practical mechanisms for context, traceability and control in coding-agent workflows."
+      },
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/",
+      "processado_em": "2026-11-08T14:59:17.811204+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
       "titulo": {
         "pt": "API de métricas de uso acrescenta detalhes da revisão de código e taxa de comentários atendidos",
@@ -101,6 +239,74 @@
       },
       "url": "https://developers.googleblog.com/agent-distraction/",
       "processado_em": "2026-11-06T17:03:06.393270+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/research/components-of-agent-memory",
+      "titulo": {
+        "pt": "Os componentes da memória de agentes",
+        "en": "The components of agent memory"
+      },
+      "fonte": "Anthropic Research",
+      "data": "2026-11-06T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Engenharia",
+          "Agentes",
+          "Context engineering",
+          "Memória de agentes"
+        ],
+        "en": [
+          "Engineering",
+          "Agents",
+          "Context engineering",
+          "Agent memory"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic descreve uma hierarquia de memória entre transcrições pesquisáveis, notas, representações como wikis e um pequeno contexto carregado em cada sessão. Um processo posterior, chamado dreaming, revisita transcrições para corrigir notas, consolidar conhecimento e manter índices.",
+        "en": "Anthropic describes a memory hierarchy of searchable transcripts, notes, representations such as wikis, and a small context loaded into each session. A later process called dreaming revisits transcripts to correct notes, consolidate knowledge and maintain indexes."
+      },
+      "novidade_principal": {
+        "pt": "Em avaliações, memória melhorou tarefas sequenciais quando agentes registraram regras verificadas; uma wiki combinada com busca elevou a pontuação de 53% para 61% e economizou cerca de 20 mil tokens por pergunta. Escrita concorrente em uma página perdeu fatos, enquanto páginas separadas por agente preservaram os 57 fatos avaliados.",
+        "en": "In evaluations, memory improved sequential tasks when agents recorded verified rules; a wiki combined with search raised scores from 53% to 61% and saved about 20,000 tokens per question. Concurrent writes to one page lost facts, while separate pages per agent preserved all 57 graded facts."
+      },
+      "relevancia": {
+        "pt": "O estudo traz evidência para projetar memória seletiva, validação contra fontes originais, recuperação híbrida e isolamento de escrita entre agentes, evitando contexto excessivo e conhecimento incorreto persistente.",
+        "en": "The study provides evidence for selective memory, validation against original sources, hybrid retrieval and isolated writes between agents, avoiding excess context and persistent incorrect knowledge."
+      },
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "processado_em": "2026-11-08T15:01:24.915878+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "titulo": {
+        "pt": "Medindo como agentes de IA lidam com tarefas cotidianas de laboratório",
+        "en": "Measuring how AI agents handle everyday wet-lab science"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-06T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Publicação"
+        ],
+        "en": [
+          "Publication"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI e a Ligo criaram o BioBasicsBench com 100 tarefas baseadas em dados experimentais brutos, perguntas e rubricas redigidas por especialistas. As tarefas exigem interpretar evidências multimodais, identificar erros e reconhecer conclusões sem suporte suficiente.",
+        "en": "OpenAI and Ligo created BioBasicsBench with 100 tasks based on raw experimental data, questions and expert-written rubrics. Tasks require interpreting multimodal evidence, detecting errors and recognizing unsupported conclusions."
+      },
+      "novidade_principal": {
+        "pt": "O benchmark preserva dados reais e controles experimentais, usa revisão independente das tarefas e pontuação por critério. Em 18.500 tentativas, GPT-6 Astra obteve média de 66,7% no esforço xhigh, mas exemplos revelam erros persistentes de interpretação de controles e evidências contraditórias.",
+        "en": "The benchmark preserves real data and experimental controls, uses independent task review and criterion-level scoring. Across 18,500 attempts, GPT-6 Astra averaged 66.7% at xhigh effort, but examples reveal persistent errors in interpreting controls and contradictory evidence."
+      },
+      "relevancia": {
+        "pt": "O desenho de evals com evidência bruta, rubricas granulares, revisão humana e análise de falhas é transferível à validação de agentes, especialmente quando respostas plausíveis podem ignorar sinais contrários.",
+        "en": "Its eval design using raw evidence, granular rubrics, human review and failure analysis transfers to agent validation, especially where plausible answers can ignore contrary signals."
+      },
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+      "processado_em": "2026-11-08T15:00:28.235976+00:00"
     },
     {
       "id": "guid:https://openai.com/index/cultfit-builds-with-codex",
