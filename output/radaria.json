@@ -2,6 +2,282 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-11-10-c-language-server-now-auto-configures-msbuild-builds",
+      "titulo": {
+        "pt": "Servidor de linguagem C++ configura automaticamente projetos MSBuild no Copilot CLI",
+        "en": "C++ language server automatically configures MSBuild projects in Copilot CLI"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-10T17:04:10+00:00",
+      "categoria": {
+        "pt": [
+          "Copilot",
+          "Inteligência de código"
+        ],
+        "en": [
+          "Copilot",
+          "Code intelligence"
+        ]
+      },
+      "resumo": {
+        "pt": "O Microsoft C++ Language Server do Copilot CLI agora inclui o extrator de comandos de compilação MSBuild e o executa ao abrir o projeto, gerando automaticamente a base de compilação necessária para navegação e análise semântica.",
+        "en": "The Microsoft C++ Language Server in Copilot CLI now bundles the MSBuild compile-command extractor and runs it when a project opens, automatically generating the compilation database needed for semantic navigation and analysis."
+      },
+      "novidade_principal": {
+        "pt": "A configuração de projetos C++ com MSBuild passa de uma skill descoberta e executada pelo agente para uma etapa determinística integrada ao servidor de linguagem, reduzindo preparação e uso de tokens.",
+        "en": "Configuration of MSBuild C++ projects moves from an agent-discovered setup skill to a deterministic step built into the language server, reducing setup work and token use."
+      },
+      "relevancia": {
+        "pt": "Mostra uma aplicação concreta de arquitetura híbrida: preparar contexto de código por ferramenta determinística antes da atuação do agente, com menos chamadas e melhor precisão.",
+        "en": "It demonstrates a concrete hybrid architecture: prepare code context with a deterministic tool before the agent works, using fewer calls and improving precision."
+      },
+      "url": "https://github.blog/changelog/2026-11-10-c-language-server-now-auto-configures-msbuild-builds",
+      "processado_em": "2026-11-10T17:27:08.043366+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/gemini-4-carbon-is-now-available",
+      "titulo": {
+        "pt": "Gemini 4 Carbon está disponível",
+        "en": "Gemini 4 Carbon is now available"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-11-10T16:03:47+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de IA",
+          "Agentes de programação",
+          "Segurança"
+        ],
+        "en": [
+          "AI models",
+          "Coding agents",
+          "Security"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google disponibilizou Gemini 4 Carbon para desenvolvedores e empresas, com foco em tarefas técnicas complexas, programação agêntica e segurança. A prévia de /swarm no Antigravity coordena agentes em espaços isolados e verificadores adversariais.",
+        "en": "Google made Gemini 4 Carbon available to developers and enterprises for complex technical tasks, agentic coding, and security. The /swarm preview in Antigravity coordinates agents in isolated workspaces with adversarial verifiers."
+      },
+      "novidade_principal": {
+        "pt": "Carbon combina raciocínio mais profundo e ciclos extensos de verificação com /swarm, que distribui papéis entre agentes e usa verificadores para testar alterações; o anúncio também relata avaliações de honestidade e resistência a prompt injection.",
+        "en": "Carbon combines deeper reasoning and extended verification loops with /swarm, which distributes roles among agents and uses verifiers to test changes; the announcement also reports honesty and prompt-injection robustness evaluations."
+      },
+      "relevancia": {
+        "pt": "Oferece um exemplo recente de orquestração de agentes, isolamento de trabalho e validação adversarial aplicável ao desenho e à governança de fluxos de engenharia de software com IA.",
+        "en": "It offers a recent example of agent orchestration, workspace isolation, and adversarial validation applicable to the design and governance of AI-assisted software engineering workflows."
+      },
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "processado_em": "2026-11-10T17:28:28.416478+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/introducing-alphaproof-code",
+      "titulo": {
+        "pt": "AlphaProof Code verifica formalmente código criptográfico do Signal",
+        "en": "AlphaProof Code formally verifies Signal's cryptographic code"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-11-10T12:02:28+00:00",
+      "categoria": {
+        "pt": [
+          "Verificação formal",
+          "Agentes de IA",
+          "Segurança de software"
+        ],
+        "en": [
+          "Formal verification",
+          "AI agents",
+          "Software security"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google DeepMind apresentou AlphaProof Code, um framework multiagente que ajudou especialistas a formalizar propriedades de segurança e produziu provas verificadas por Lean para a implementação do protocolo Signal. A equipe concentrou a revisão humana em trechos sinalizados pelos agentes.",
+        "en": "Google DeepMind introduced AlphaProof Code, a multi-agent framework that helped experts formalize security properties and produced Lean-checked proofs for the Signal protocol implementation. The team focused human review on sections flagged by the agents."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo combina especificações revisadas por humanos, geração de provas por agentes e checagem determinística em Lean; também reinseriu dois bugs corrigidos para verificar que o sistema identificava versões inseguras.",
+        "en": "The workflow combines human-reviewed specifications, agent-generated proofs, and deterministic checking in Lean; it also reintroduced two fixed bugs to verify that the system identified insecure versions."
+      },
+      "relevancia": {
+        "pt": "Demonstra uma forma concreta de validar saída agêntica por um verificador formal independente e direcionar a revisão humana às partes que exigem julgamento.",
+        "en": "It demonstrates a concrete way to validate agent output with an independent formal checker and direct human review to the parts that require judgment."
+      },
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "processado_em": "2026-11-10T17:29:01.206301+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-09-claude-fable-5-5-in-github-copilot",
+      "titulo": {
+        "pt": "Claude Fable 5.2 chega ao GitHub Copilot",
+        "en": "Claude Fable 5.2 arrives in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-09T16:46:43+00:00",
+      "categoria": {
+        "pt": [
+          "GitHub Copilot",
+          "Modelos de IA",
+          "Governança de dados"
+        ],
+        "en": [
+          "GitHub Copilot",
+          "AI models",
+          "Data governance"
+        ]
+      },
+      "resumo": {
+        "pt": "Claude Fable 5.2 está disponível gradualmente no Copilot CLI, coding agent, IDEs e aplicativo Copilot para planos elegíveis. Administradores Business e Enterprise precisam ativar uma política específica, desativada por padrão.",
+        "en": "Claude Fable 5.2 is gradually available in Copilot CLI, coding agent, IDEs, and the Copilot app for eligible plans. Business and Enterprise administrators must enable a dedicated policy that is off by default."
+      },
+      "novidade_principal": {
+        "pt": "Além do novo modelo para tarefas de programação longas, seu uso requer retenção de prompts e saídas por padrão para classificadores de segurança da Anthropic; acesso sem retenção exige elegibilidade empresarial específica.",
+        "en": "Alongside the new model for long coding tasks, its use requires retention of prompts and outputs by default for Anthropic safety classifiers; zero-retention access requires specific enterprise eligibility."
+      },
+      "relevancia": {
+        "pt": "A escolha de modelo em agentes de programação passa a envolver uma decisão explícita de governança de dados e ativação administrativa, além de desempenho técnico.",
+        "en": "Model choice for coding agents now involves an explicit data-governance and administrative-enablement decision alongside technical performance."
+      },
+      "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/",
+      "processado_em": "2026-11-10T17:32:21.881014+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/control-room",
+      "titulo": {
+        "pt": "Control Room centraliza a interrupção de cargas de modelos",
+        "en": "Control Room centralizes stopping model workloads"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-09T13:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de agentes",
+          "Segurança",
+          "Arquitetura"
+        ],
+        "en": [
+          "Agent governance",
+          "Security",
+          "Architecture"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreveu o Control Room, serviço que associa cargas de pesquisa agêntica a um identificador e a um caso de segurança aprovado. Motores de inferência consultam a autorização antes de produzir saída e bloqueiam cargas interrompidas.",
+        "en": "OpenAI described Control Room, a service that associates agentic research workloads with an identifier and an approved safety case. Inference engines check authorization before producing output and block stopped workloads."
+      },
+      "novidade_principal": {
+        "pt": "O mecanismo de parada fica na camada de inferência, independente do código da carga, nega requisições se o serviço central falhar e interrompe novas saídas em até 35 segundos após a decisão de parar.",
+        "en": "The stop mechanism sits in the inference layer, independent of workload code, denies requests if the central service fails, and halts further output within 35 seconds of a stop decision."
+      },
+      "relevancia": {
+        "pt": "Apresenta um padrão concreto de controle externo, fail-closed e interrupção de agentes que pode orientar a arquitetura de sistemas agênticos governáveis.",
+        "en": "It presents a concrete pattern for external control, fail-closed behavior, and agent interruption that can guide the architecture of governable agent systems."
+      },
+      "url": "https://openai.com/index/control-room/",
+      "processado_em": "2026-11-10T17:32:58.972112+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/coderabbit-codex-daybreak",
+      "titulo": {
+        "pt": "CodeRabbit adapta revisão e entrega ao desenvolvimento agêntico",
+        "en": "CodeRabbit adapts review and delivery to agentic development"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-09T08:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Engenharia de software com IA",
+          "Revisão de código",
+          "Orquestração de agentes"
+        ],
+        "en": [
+          "AI-assisted software engineering",
+          "Code review",
+          "Agent orchestration"
+        ]
+      },
+      "resumo": {
+        "pt": "Estudo de caso da OpenAI descreve como a CodeRabbit usa benchmarks de bugs conhecidos para avaliar modelos de revisão, modelos leves em subagentes de navegação e modelos mais fortes em planejamento, além de ajustar testes e aprovações ao aumento de código gerado por agentes.",
+        "en": "An OpenAI case study describes how CodeRabbit uses benchmarks of known bugs to evaluate review models, smaller models in navigation subagents, and stronger models for planning, while adjusting tests and approvals as agent-generated code grows."
+      },
+      "novidade_principal": {
+        "pt": "A equipe relata que paralelizar agentes exigiu redesenhar gargalos de testes, build e release e definir quais mudanças de baixo risco podem seguir automaticamente, mantendo revisão humana nas demais.",
+        "en": "The team reports that parallel agents required redesigning test, build, and release bottlenecks and defining which low-risk changes can proceed automatically while retaining human review for the rest."
+      },
+      "relevancia": {
+        "pt": "Traz práticas operacionais para validar código de agentes, distribuir modelos por função e ajustar os pontos de aprovação quando a produção de mudanças aumenta.",
+        "en": "It provides operational practices for validating agent-generated code, assigning models by role, and adjusting approval points as change volume increases."
+      },
+      "url": "https://openai.com/index/coderabbit-codex-daybreak/",
+      "processado_em": "2026-11-10T17:33:30.113815+00:00"
+    },
+    {
+      "id": "url:https://anthropic.com/claude-fable-and-mythos-5-2",
+      "titulo": {
+        "pt": "Anthropic lança Claude Fable 5.2 e Mythos 5.2",
+        "en": "Anthropic releases Claude Fable 5.2 and Mythos 5.2"
+      },
+      "fonte": "Anthropic",
+      "data": "2026-11-09T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de IA",
+          "Agentes de programação",
+          "Avaliação de segurança"
+        ],
+        "en": [
+          "AI models",
+          "Coding agents",
+          "Safety evaluation"
+        ]
+      },
+      "resumo": {
+        "pt": "A Anthropic lançou Fable 5.2 e Mythos 5.2, variantes do mesmo modelo para trabalho técnico complexo. Relata avanço em benchmarks de programação agêntica, geração até 30% mais rápida que a versão 5.1 e modo rápido opcional; Fable tem salvaguardas de cyber e biologia, enquanto Mythos exige acesso verificado.",
+        "en": "Anthropic released Fable 5.2 and Mythos 5.2, variants of the same model for complex technical work. It reports gains on agentic coding benchmarks, generation up to 30% faster than version 5.1, and an optional fast mode; Fable has cyber and biology safeguards, while Mythos requires verified access."
+      },
+      "novidade_principal": {
+        "pt": "A avaliação pré-lançamento inclui cenários adversariais de fuga de sandbox e auditoria comportamental; a arquitetura também usa classificadores de segurança e preservação de raciocínio anterior para reduzir abuso e destilação.",
+        "en": "Pre-release evaluation includes adversarial sandbox-escape scenarios and behavioral audits; the architecture also uses safety classifiers and preserved prior reasoning to reduce misuse and distillation."
+      },
+      "relevancia": {
+        "pt": "O lançamento traz nova opção para programação agêntica e exemplos concretos de avaliação de comportamento, limites de sandbox e controles que importam ao selecionar modelos para agentes.",
+        "en": "The release adds an option for agentic coding and concrete examples of behavioral evaluation, sandbox boundaries, and controls that matter when selecting models for agents."
+      },
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "processado_em": "2026-11-10T17:34:59.547535+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs",
+      "titulo": {
+        "pt": "GitHub detecta segredos em logs do Actions",
+        "en": "GitHub detects secrets in Actions logs"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-11-09T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de automações",
+          "GitHub Actions"
+        ],
+        "en": [
+          "Automation security",
+          "GitHub Actions"
+        ]
+      },
+      "resumo": {
+        "pt": "Em prévia pública, o secret scanning do GitHub passa a analisar logs de execuções do Actions após sua conclusão, gerar alertas vinculados ao log e manter esses alertas mesmo se o log for apagado.",
+        "en": "In public preview, GitHub secret scanning now examines Actions run logs after completion, creates alerts linked to the log, and retains those alerts even if the log is deleted."
+      },
+      "novidade_principal": {
+        "pt": "A verificação de logs cobre padrões de provedores em novas execuções após a ativação; não faz backfill, não identifica segredos mascarados ou padrões genéricos e não envia notificações na prévia.",
+        "en": "Log scanning covers provider patterns in new runs after enablement; it does not backfill, detect masked secrets or generic patterns, or send notifications during preview."
+      },
+      "relevancia": {
+        "pt": "Automação e agentes de programação podem expor credenciais em saída de CI; a novidade amplia a superfície de detecção e explicita limites que precisam entrar na validação operacional.",
+        "en": "Automation and coding agents can expose credentials in CI output; this expands the detection surface and states limitations that matter for operational validation."
+      },
+      "url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs/",
+      "processado_em": "2026-11-10T17:35:23.404600+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates",
       "titulo": {
         "pt": "Revisão de código do Copilot: gerenciamento por API e melhorias no resumo",
