@@ -105,6 +105,39 @@
       "processado_em": "2026-11-10T17:29:01.206301+00:00"
     },
     {
+      "id": "guid:https://github.blog/changelog/2026-11-06-github-app-support-for-enterprise-copilot-seat-management",
+      "titulo": {
+        "pt": "GitHub Apps podem gerenciar licenças do Copilot Enterprise",
+        "en": "GitHub Apps can manage Copilot Enterprise seats"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-10T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Copilot",
+          "Governança empresarial"
+        ],
+        "en": [
+          "Copilot",
+          "Enterprise governance"
+        ]
+      },
+      "resumo": {
+        "pt": "GitHub Apps empresariais agora podem usar as APIs de gerenciamento de licenças do Copilot no nível da empresa para atribuir ou retirar licenças de usuários e equipes.",
+        "en": "Enterprise GitHub Apps can now use enterprise-level Copilot seat management APIs to assign or remove seats for users and teams."
+      },
+      "novidade_principal": {
+        "pt": "Uma nova permissão granular, Enterprise Copilot license management, permite automatizar a gestão de licenças por GitHub Apps com escopo explícito.",
+        "en": "A new fine-grained permission, Enterprise Copilot license management, lets GitHub Apps automate seat management with an explicit scope."
+      },
+      "relevancia": {
+        "pt": "Oferece um controle de acesso específico para automações administrativas do Copilot, útil para governar a concessão e a revogação de acesso a ferramentas de IA em equipes.",
+        "en": "It provides a specific access control for Copilot administration automation, useful for governing AI tool access grants and revocations across teams."
+      },
+      "url": "https://github.blog/changelog/2026-11-10-github-app-support-for-enterprise-copilot-seat-management/",
+      "processado_em": "2026-11-11T17:07:39.489548+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-11-09-claude-fable-5-5-in-github-copilot",
       "titulo": {
         "pt": "Claude Fable 5.2 chega ao GitHub Copilot",
