@@ -2,6 +2,468 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-11-12-upcoming-deprecation-of-selected-github-copilot-models-in-december",
+      "titulo": {
+        "pt": "GitHub Copilot descontinuará seis modelos em dezembro",
+        "en": "GitHub Copilot will retire six models in December"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-13T20:40:05+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de IA",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "AI models",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "Em 14 de dezembro de 2026, o Copilot retirará Claude Fable 5, Claude Haiku 4.5, Gemini 3.8 Flash, Gemini 4 Argon, Grok 4.6 e Kimi K3 de chat, edição, agentes e completions. O anúncio indica alternativas para todos, exceto Kimi K3.",
+        "en": "On December 14, 2026, Copilot will retire Claude Fable 5, Claude Haiku 4.5, Gemini 3.8 Flash, Gemini 4 Argon, Grok 4.6, and Kimi K3 from chat, editing, agents, and completions. The notice names alternatives for all except Kimi K3."
+      },
+      "novidade_principal": {
+        "pt": "Prazo único e substituições explícitas para seis modelos usados em todas as experiências do Copilot, com exceção de Claude Haiku 4.5 para assinantes individuais anuais.",
+        "en": "A single retirement date and explicit replacements for six models across Copilot experiences, with an exception for Claude Haiku 4.5 on annual individual subscriptions."
+      },
+      "relevancia": {
+        "pt": "Fluxos e integrações de programação que selecionam esses modelos precisam migrar antes da retirada; administradores devem conferir políticas de habilitação das alternativas.",
+        "en": "Coding workflows and integrations selecting these models must migrate before retirement; administrators should check policies that enable the alternatives."
+      },
+      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/",
+      "processado_em": "2026-11-16T12:23:59.417372+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app",
+      "titulo": {
+        "pt": "Copilot app passa a oferecer suporte geral ao GitHub Enterprise Server",
+        "en": "Copilot app generally supports GitHub Enterprise Server"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-13T18:27:13+00:00",
+      "categoria": {
+        "pt": [
+          "GitHub Copilot",
+          "Integração empresarial"
+        ],
+        "en": [
+          "GitHub Copilot",
+          "Enterprise integration"
+        ]
+      },
+      "resumo": {
+        "pt": "A versão 1.2.0 do Copilot app permite conectar uma conta GitHub Enterprise Server e trabalhar com repositórios remotos, issues e pull requests. O recurso saiu da prévia opcional, mas sessões em nuvem não estão disponíveis para GHES.",
+        "en": "Copilot app 1.2.0 lets users connect a GitHub Enterprise Server account and work with remote repositories, issues, and pull requests. The feature has left opt-in preview, but cloud sessions are unavailable for GHES."
+      },
+      "novidade_principal": {
+        "pt": "Suporte geral a GHES no aplicativo, com autenticação adicional após uma conta GitHub.com ou GHE.com e limite explícito para sessões em nuvem.",
+        "en": "General GHES support in the app, with an additional sign-in after a GitHub.com or GHE.com account and an explicit cloud-session limitation."
+      },
+      "relevancia": {
+        "pt": "Amplia o uso do agente de programação em repositórios empresariais locais e esclarece a restrição de execução em nuvem para planejar fluxos de trabalho.",
+        "en": "Expands coding-agent use with enterprise-hosted repositories and clarifies the cloud execution limit for workflow planning."
+      },
+      "url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/",
+      "processado_em": "2026-11-16T12:24:43.725000+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+      "titulo": {
+        "pt": "Gemini 4 Hydrogen chega ao GitHub Copilot",
+        "en": "Gemini 4 Hydrogen arrives in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-13T18:23:48+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de IA",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "AI models",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "O modelo Gemini 4 Hydrogen está disponível de forma geral no GitHub Copilot para programação agêntica, uso de ferramentas e fluxos de várias etapas. Pode ser selecionado no CLI, coding agent, aplicativo, IDEs, web e Copilot SDK, com liberação gradual.",
+        "en": "Gemini 4 Hydrogen is generally available in GitHub Copilot for agentic coding, tool use, and multistep workflows. It can be selected in the CLI, coding agent, app, IDEs, web, and Copilot SDK, with a gradual rollout."
+      },
+      "novidade_principal": {
+        "pt": "Novo modelo Flash do Google com melhor seguimento de instruções que Gemini 3.8 Flash e disponibilidade ampla nas superfícies de programação do Copilot.",
+        "en": "A new Google Flash model with better instruction following than Gemini 3.8 Flash and broad availability across Copilot coding surfaces."
+      },
+      "relevancia": {
+        "pt": "Oferece uma opção de modelo para agentes de programação e uso de ferramentas; equipes podem avaliar desempenho e ajustar políticas de acesso e custos.",
+        "en": "Provides a model option for coding agents and tool use; teams can evaluate performance and adjust access and cost policies."
+      },
+      "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+      "processado_em": "2026-11-16T12:25:11.209481+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/introducing-chatgpt-wallet",
+      "titulo": {
+        "pt": "ChatGPT Wallet exige aprovação por compra e isola dados do cartão dos agentes",
+        "en": "ChatGPT Wallet requires per-purchase approval and isolates card data from agents"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-13T15:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de agentes",
+          "Segurança"
+        ],
+        "en": [
+          "Agent governance",
+          "Security"
+        ]
+      },
+      "resumo": {
+        "pt": "ChatGPT Wallet permite que agentes concluam compras após o usuário revisar itens, total e cartão e aprovar cada transação com verificação de segurança. A rede de pagamentos emite um token, sem expor os dados reais do cartão ao agente ou ao comerciante.",
+        "en": "ChatGPT Wallet lets agents complete purchases after the user reviews the items, total, and card and approves each transaction with a security check. The payment network issues a token without exposing actual card details to the agent or merchant."
+      },
+      "novidade_principal": {
+        "pt": "Fluxo de pagamento agêntico com autorização humana por transação, registro claro da aprovação e tokenização das credenciais; delegação por limites prévios é apenas uma possibilidade futura.",
+        "en": "An agentic payment flow with human authorization per transaction, a clear approval record, and tokenized credentials; delegation under preset limits remains a future possibility."
+      },
+      "relevancia": {
+        "pt": "Ilustra uma arquitetura de controle para ações externas sensíveis de agentes: aprovação vinculada aos detalhes da operação e isolamento de credenciais.",
+        "en": "Illustrates a control architecture for sensitive external agent actions: approval tied to operation details and credential isolation."
+      },
+      "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "processado_em": "2026-11-16T12:26:09.177880+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api",
+      "titulo": {
+        "pt": "GitHub libera gestão do AI Scan de repositórios pela API REST",
+        "en": "GitHub enables REST API management of repository AI Scan"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-11-13T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de código",
+          "Automação"
+        ],
+        "en": [
+          "Code security",
+          "Automation"
+        ]
+      },
+      "resumo": {
+        "pt": "A prévia pública adiciona repository_scan aos endpoints de habilitação do AI Scan em organizações e repositórios. A configuração pode ser automatizada por scripts ou infraestrutura como código, com herança da política da organização e opt-out por repositório.",
+        "en": "The public preview adds repository_scan to AI Scan enablement endpoints for organizations and repositories. Configuration can be automated with scripts or infrastructure as code, with organization policy inheritance and repository opt-out."
+      },
+      "novidade_principal": {
+        "pt": "É possível atualizar repository_scan e pr_scan na mesma requisição, com falha atômica se a política bloquear uma alteração. Habilitar a opção não inicia a varredura, que continua sob demanda e consome créditos.",
+        "en": "repository_scan and pr_scan can be updated in one request, with atomic failure if policy blocks either change. Enabling the setting does not start a scan, which remains on demand and consumes credits."
+      },
+      "relevancia": {
+        "pt": "Permite governar e automatizar a cobertura de análise de segurança com IA em repositórios, mantendo explícitos os limites de política e execução.",
+        "en": "Enables governance and automation of AI-assisted security scan coverage across repositories while making policy and execution limits explicit."
+      },
+      "url": "https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api/",
+      "processado_em": "2026-11-16T12:41:52.478274+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=100122",
+      "titulo": {
+        "pt": "Crie skills uma vez e execute em agentes diferentes",
+        "en": "Build skills once and run them across agents"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-11-12T22:54:52+00:00",
+      "categoria": {
+        "pt": [
+          "Agent Skills",
+          "Orquestração de agentes"
+        ],
+        "en": [
+          "Agent Skills",
+          "Agent orchestration"
+        ]
+      },
+      "resumo": {
+        "pt": "Guia do GitHub para organizar skills versionadas com tarefa, entrada e saída claras. Os exemplos separam contexto de projeto em um manifesto, compartilham caminhos de execução e adicionam verificações e pontos de revisão humana.",
+        "en": "GitHub guide to versioned skills with clear tasks, inputs, and outputs. Examples separate project context into a manifest, share execution paths, and add checks and human review points."
+      },
+      "novidade_principal": {
+        "pt": "Padrão de portabilidade que mantém SKILL.md como fonte, gera pacotes específicos para Claude Code, Cursor e Copilot e valida o reconhecimento e as permissões em cada cliente.",
+        "en": "A portability pattern that keeps SKILL.md as the source, generates client-specific packages for Claude Code, Cursor, and Copilot, and validates recognition and permissions in each client."
+      },
+      "relevancia": {
+        "pt": "Fornece critérios práticos para desenhar, compartilhar e verificar skills de agentes sem confundir instruções reutilizáveis com acesso, contexto local ou controles obrigatórios.",
+        "en": "Provides practical criteria for designing, sharing, and verifying agent skills without conflating reusable instructions with access, local context, or mandatory controls."
+      },
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+      "processado_em": "2026-11-16T12:28:13.811766+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/introducing-gemini-4-hydrogen",
+      "titulo": {
+        "pt": "Gemini 4 Hydrogen e Orchestrator aceleram fluxos agênticos multimodelo",
+        "en": "Gemini 4 Hydrogen and Orchestrator accelerate multi-model agent workflows"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-11-12T18:00:50+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de IA",
+          "Orquestração de agentes"
+        ],
+        "en": [
+          "AI models",
+          "Agent orchestration"
+        ]
+      },
+      "resumo": {
+        "pt": "Google lançou Gemini 4 Hydrogen para programação e tarefas agênticas rápidas, com quatro níveis de raciocínio e janela de contexto de um milhão de tokens. O Orchestrator do Antigravity alterna dinamicamente entre Carbon e Hydrogen em uma sessão.",
+        "en": "Google launched Gemini 4 Hydrogen for fast coding and agentic tasks, with four reasoning levels and a one-million-token context window. Antigravity Orchestrator dynamically switches between Carbon and Hydrogen in one session."
+      },
+      "novidade_principal": {
+        "pt": "No Terminal-Bench 4.0, a orquestração alcançou taxa de sucesso próxima à de Carbon com 24% menos quota e 19% menos tempo, segundo o Google; Carbon pode coordenar agentes Hydrogen de execução e verificação.",
+        "en": "On Terminal-Bench 4.0, orchestration reached near-Carbon success with 24% less quota and 19% less time, according to Google; Carbon can coordinate Hydrogen worker and verifier agents."
+      },
+      "relevancia": {
+        "pt": "Apresenta um padrão concreto de seleção dinâmica de modelos e separação entre coordenação, execução e verificação em engenharia de software agêntica.",
+        "en": "Presents a concrete pattern for dynamic model selection and separation of coordination, execution, and verification in agentic software engineering."
+      },
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "processado_em": "2026-11-16T12:30:49.683871+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver",
+      "titulo": {
+        "pt": "Gemini e Z3 encontram bugs de Go que o fuzzing deixou passar",
+        "en": "Gemini and Z3 find Go bugs missed by fuzzing"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-12T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Validação de código",
+          "Agentes de programação"
+        ],
+        "en": [
+          "Code validation",
+          "Coding agents"
+        ]
+      },
+      "resumo": {
+        "pt": "O autor compilou funções Go, usou Gemini 4 Argon para traduzir caminhos até traps de limites em restrições Z3 e reproduziu os casos encontrados com go test. O processo descobriu três bugs latentes no skill-lint, além de três bugs inseridos em parsers de teste.",
+        "en": "The author compiled Go functions, used Gemini 4 Argon to translate paths to bounds traps into Z3 constraints, and replayed findings with go test. The process found three latent skill-lint bugs and three planted test-parser bugs."
+      },
+      "novidade_principal": {
+        "pt": "O fuzzing de Go pode ocultar acessos além do comprimento quando a capacidade do slice é maior; limitar cap a len no alvo de fuzzing revelou dois crashes que haviam escapado. O solver ajuda a buscar entradas concretas, mas unsat não prova correção.",
+        "en": "Go fuzzing can hide out-of-length accesses when slice capacity exceeds length; clipping cap to len in the fuzz target exposed two previously missed crashes. The solver helps find concrete inputs, but unsat does not prove correctness."
+      },
+      "relevancia": {
+        "pt": "Combina análise probabilística de agente, solver determinístico e reprodução executável para validar código gerado ou editado por IA, com limites de confiança explícitos.",
+        "en": "Combines probabilistic agent analysis, a deterministic solver, and executable reproduction to validate AI-generated or edited code, with explicit trust limits."
+      },
+      "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
+      "processado_em": "2026-11-16T12:35:34.242263+00:00"
+    },
+    {
+      "id": "url:https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai",
+      "titulo": {
+        "pt": "OpenAI detalha controles para agentes persistentes com OpenClaw e Codex",
+        "en": "OpenAI details controls for persistent agents with OpenClaw and Codex"
+      },
+      "fonte": "OpenAI Developers Blog",
+      "data": "2026-11-12T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Governança"
+        ],
+        "en": [
+          "Agent security",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "OpenAI descreve sua implantação interna de agentes persistentes com gateway determinístico separado da execução não confiável, sandbox do Codex para rede, arquivos e processos, broker de credenciais, revisão automática e logs de configuração e ações.",
+        "en": "OpenAI describes its internal persistent-agent deployment with a deterministic gateway separated from untrusted execution, Codex sandbox controls for network, files, and processes, a credential broker, automatic review, and configuration and action logs."
+      },
+      "novidade_principal": {
+        "pt": "A arquitetura coloca identidade, rede e configuração em um plano de controle confiável e isola o harness do agente; cada agente tem identidade própria distinta da do usuário, com rastreabilidade e credencial de inferência separada.",
+        "en": "The architecture puts identity, networking, and configuration in a trusted control plane and isolates the agent harness; each agent has its own identity distinct from the user, with traceability and a separate inference credential."
+      },
+      "relevancia": {
+        "pt": "Fornece controles operacionais concretos para agentes de longa duração: limites rígidos, permissões mínimas, revisão de ações e observabilidade de comportamento.",
+        "en": "Provides concrete operational controls for long-running agents: hard boundaries, least-privilege permissions, action review, and behavioral observability."
+      },
+      "url": "https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai",
+      "processado_em": "2026-11-16T12:41:30.711913+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write",
+      "titulo": {
+        "pt": "Detecção de anomalias de agentes sinaliza 87% das ações nocivas executadas",
+        "en": "Agent Anomaly Detection flags 87% of harmful actions carried out"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-12T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Evals"
+        ],
+        "en": [
+          "Agent security",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "Google avaliou Agent Anomaly Detection em 1.774 sessões de cinco benchmarks públicos de segurança de agentes. A ferramenta sinalizou 87% das instruções nocivas efetivamente executadas, com falsos alarmes em 2% a 16% das sessões benignas.",
+        "en": "Google evaluated Agent Anomaly Detection on 1,774 sessions from five public agent-security benchmarks. It flagged 87% of harmful instructions actually carried out, with false alarms on 2% to 16% of benign sessions."
+      },
+      "novidade_principal": {
+        "pt": "A avaliação separa ataques nunca lidos, resistidos e executados por verificação determinística do estado final; memória envenenada foi a principal lacuna, com apenas 4 de 18 casos detectados. A detecção é posterior à execução e não bloqueia ações.",
+        "en": "The evaluation separates never-read, resisted, and carried-out attacks using deterministic final-state checks; poisoned memory was the main gap, with only 4 of 18 cases detected. Detection happens after execution and does not block actions."
+      },
+      "relevancia": {
+        "pt": "Oferece evidência concreta para defesa em profundidade, observabilidade e desenho de evals de agentes, incluindo limites de detectores e necessidade de controles preventivos.",
+        "en": "Provides concrete evidence for defense in depth, observability, and agent eval design, including detector limits and the need for preventive controls."
+      },
+      "url": "https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/",
+      "processado_em": "2026-11-16T12:36:15.401003+00:00"
+    },
+    {
+      "id": "url:https://safeguards.anthropic.com/2026/automated-red-teaming",
+      "titulo": {
+        "pt": "Anvil automatiza red teaming e avalia a robustez de salvaguardas",
+        "en": "Anvil automates red teaming and evaluates safeguard robustness"
+      },
+      "fonte": "Anthropic Safeguards Blog",
+      "data": "2026-11-12T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Evals"
+        ],
+        "en": [
+          "Agent security",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "Anthropic descreve Anvil, sistema com Claude que itera autonomamente ataques contra modelos e classificadores em tarefas controladas. Em avaliações internas, encontrou falhas de salvaguardas mais rapidamente que red teamers contratados e gerou casos para melhorar classificadores antes da implantação.",
+        "en": "Anthropic describes Anvil, a Claude-based system that autonomously iterates attacks against models and classifiers on controlled tasks. In internal evaluations, it found safeguard failures faster than contracted red-teamers and generated cases to improve classifiers before deployment."
+      },
+      "novidade_principal": {
+        "pt": "A robustez é comparada pelo esforço necessário para romper uma salvaguarda; transcrições de ataques alimentam evals estáticas e testes adaptativos. Em classificadores contra extração de raciocínio, a taxa de ataques não detectados nas evals caiu de 31,5% para 0,4%, segundo a Anthropic.",
+        "en": "Robustness is compared by the effort required to break a safeguard; attack transcripts feed static evals and adaptive tests. For reasoning-extraction classifiers, the share of attacks missed in evals fell from 31.5% to 0.4%, according to Anthropic."
+      },
+      "relevancia": {
+        "pt": "Mostra como usar agentes adversariais para validar controles de modelos e como transformar falhas encontradas em regressões mensuráveis antes de publicar sistemas agênticos.",
+        "en": "Shows how to use adversarial agents to validate model controls and turn discovered failures into measurable regressions before deploying agentic systems."
+      },
+      "url": "https://safeguards.anthropic.com/2026/automated-red-teaming/",
+      "processado_em": "2026-11-16T12:42:22.783542+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences",
+      "titulo": {
+        "pt": "A2UI 1.0 estabiliza protocolo aberto para interfaces de agentes",
+        "en": "A2UI 1.0 stabilizes an open protocol for agent interfaces"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-11T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Interfaces agênticas",
+          "MCP"
+        ],
+        "en": [
+          "Agent interfaces",
+          "MCP"
+        ]
+      },
+      "resumo": {
+        "pt": "Google lançou a primeira versão estável do A2UI, protocolo no qual o agente descreve telas interativas e cada aplicativo renderiza seus componentes nativos registrados. Há renderizadores web e móveis e SDKs de agentes para Python, TypeScript e Dart.",
+        "en": "Google released the first stable A2UI version, a protocol where an agent describes interactive screens and each app renders its registered native components. Web and mobile renderers and agent SDKs for Python, TypeScript, and Dart are available."
+      },
+      "novidade_principal": {
+        "pt": "A versão 1.0 acrescenta chamadas de função bidirecionais, acessibilidade e extensões; vinculação de dados e componentes no servidor evita enviar valores sensíveis ao modelo, e renderizadores web e Flutter operam em MCP Apps.",
+        "en": "Version 1.0 adds bidirectional function calls, accessibility, and extensions; server-side data and component binding keeps sensitive values from the model, and web and Flutter renderers work in MCP Apps."
+      },
+      "relevancia": {
+        "pt": "Define um contrato prático entre saída de agente e UI nativa, com controles de componentes, dados e confirmação humana para aplicações agênticas.",
+        "en": "Defines a practical contract between agent output and native UI, with component, data, and human confirmation controls for agentic applications."
+      },
+      "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+      "processado_em": "2026-11-16T12:38:42.080160+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/jiostar-vijay-seshadri",
+      "titulo": {
+        "pt": "JioStar descreve evals e validação para descoberta conversacional em escala",
+        "en": "JioStar describes evals and validation for conversational discovery at scale"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-11T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Evals",
+          "Engenharia de sistemas com IA"
+        ],
+        "en": [
+          "Evals",
+          "AI systems engineering"
+        ]
+      },
+      "resumo": {
+        "pt": "A JioStar construiu um assistente de descoberta de vídeo e estatísticas em mais de 15 idiomas para uma plataforma de 500 milhões de usuários. O arquiteto descreve equilíbrio entre precisão, latência e custo, guardrails iniciais e evals alimentadas por especialistas do domínio e falhas de produção.",
+        "en": "JioStar built a video and statistics discovery assistant in over 15 languages for a platform with 500 million users. Its architect describes balancing accuracy, latency, and cost, setting guardrails early, and building evals from domain experts and production failures."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo maker-checker usa um modelo para responder e outro como validador com objetivo concorrente; o próprio avaliador precisa ser testado, e a eficácia do modelo deve ser monitorada em produção.",
+        "en": "A maker-checker flow uses one model to answer and another as a validator with a competing objective; the judge itself must be tested, and model efficacy monitored in production."
+      },
+      "relevancia": {
+        "pt": "Traz práticas transferíveis de validação, observabilidade e definição de escopo para sistemas de IA em produção, além de uso do Codex para gerar casos de avaliação.",
+        "en": "Offers transferable validation, observability, and scope-setting practices for production AI systems, including Codex use to generate evaluation cases."
+      },
+      "url": "https://openai.com/index/jiostar-vijay-seshadri/",
+      "processado_em": "2026-11-16T12:38:12.067731+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-09-gemini-4-carbon-in-github-copilot",
+      "titulo": {
+        "pt": "Gemini 4 Carbon passa a integrar o GitHub Copilot",
+        "en": "Gemini 4 Carbon joins GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-10T19:26:51+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de IA",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "AI models",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "Gemini 4 Carbon está disponível de forma geral no GitHub Copilot para tarefas complexas de programação, agentes e raciocínio, com foco em código seguro. Pode ser selecionado no CLI, coding agent, aplicativo, IDEs, web e mobile, com liberação gradual.",
+        "en": "Gemini 4 Carbon is generally available in GitHub Copilot for complex coding, agent, and reasoning tasks, with a focus on secure code. It can be selected in the CLI, coding agent, app, IDEs, web, and mobile, with a gradual rollout."
+      },
+      "novidade_principal": {
+        "pt": "Disponibilidade do modelo Carbon nas superfícies de programação do Copilot e controle de acesso por política para planos Business e Enterprise.",
+        "en": "Carbon model availability across Copilot coding surfaces and policy-based access control for Business and Enterprise plans."
+      },
+      "relevancia": {
+        "pt": "Amplia a escolha de modelo para agentes de programação e revisão de segurança; equipes podem avaliar resultados e configurar o acesso empresarial.",
+        "en": "Expands model choice for coding agents and security review; teams can evaluate results and configure enterprise access."
+      },
+      "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/",
+      "processado_em": "2026-11-16T12:39:12.095019+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-11-10-c-language-server-now-auto-configures-msbuild-builds",
       "titulo": {
         "pt": "Servidor de linguagem C++ configura automaticamente projetos MSBuild no Copilot CLI",
@@ -105,6 +567,39 @@
       "processado_em": "2026-11-10T17:29:01.206301+00:00"
     },
     {
+      "id": "guid:https://openai.com/index/singapore-airlines-travel-work",
+      "titulo": {
+        "pt": "Singapore Airlines usa IA em requisitos, testes e revisão de arquitetura",
+        "en": "Singapore Airlines uses AI for requirements, tests, and architecture review"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-10T08:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Engenharia de software com IA",
+          "Governança"
+        ],
+        "en": [
+          "AI-assisted software engineering",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "Em partes do ciclo de desenvolvimento, a Singapore Airlines usa modelos para refinar requisitos, revelar ambiguidades e casos extremos, criar planos e testes, revisar arquitetura e interpretar comportamento em produção. A empresa relata ganhos de produtividade de até 20% nas atividades selecionadas.",
+        "en": "In parts of its development lifecycle, Singapore Airlines uses models to refine requirements, expose ambiguity and edge cases, create plans and tests, review architecture, and interpret production behavior. It reports productivity gains of up to 20% in selected activities."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo começa pelo escopo e pelas premissas antes de gerar código, mantém revisão humana ao longo do ciclo e combina orquestração, controles de dados e validação em produção.",
+        "en": "The workflow starts with scope and assumptions before code generation, keeps human review throughout the lifecycle, and combines orchestration, data controls, and production validation."
+      },
+      "relevancia": {
+        "pt": "Oferece exemplo operacional de IA aplicada ao ciclo completo de engenharia, com atenção a requisitos, cobertura de testes, governança e validação humana.",
+        "en": "Offers an operational example of AI across the engineering lifecycle, emphasizing requirements, test coverage, governance, and human validation."
+      },
+      "url": "https://openai.com/index/singapore-airlines-travel-work/",
+      "processado_em": "2026-11-16T12:40:19.326530+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-11-06-github-app-support-for-enterprise-copilot-seat-management",
       "titulo": {
         "pt": "GitHub Apps podem gerenciar licenças do Copilot Enterprise",
@@ -136,6 +631,39 @@
       },
       "url": "https://github.blog/changelog/2026-11-10-github-app-support-for-enterprise-copilot-seat-management/",
       "processado_em": "2026-11-11T17:07:39.489548+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/cogent-security",
+      "titulo": {
+        "pt": "Cogent usa políticas determinísticas e grafo de contexto na remediação por agentes",
+        "en": "Cogent uses deterministic policies and a context graph for agent remediation"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-10T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Context engineering"
+        ],
+        "en": [
+          "Agent security",
+          "Context engineering"
+        ]
+      },
+      "resumo": {
+        "pt": "A Cogent descreve agentes que investigam vulnerabilidades e executam correções autorizadas com base em um grafo empresarial de ativos, identidades, responsáveis e dependências. Agentes de fundo reconciliam dados de ferramentas de segurança para manter o contexto compartilhado.",
+        "en": "Cogent describes agents that investigate vulnerabilities and perform authorized fixes using an enterprise graph of assets, identities, owners, and dependencies. Background agents reconcile security-tool data to maintain shared context."
+      },
+      "novidade_principal": {
+        "pt": "Um mecanismo determinístico verifica tool calls contra políticas de alteração antes da execução; um gateway separado confere autorização, e tarefas de maior risco podem usar sandboxes isolados e aprovação humana.",
+        "en": "A deterministic engine checks tool calls against change policies before execution; a separate gateway verifies authorization, and higher-risk tasks can use isolated sandboxes and human approval."
+      },
+      "relevancia": {
+        "pt": "Mostra uma arquitetura híbrida concreta para agentes de segurança: memória estrutural reutilizável, controle prévio de ações e verificação de correções.",
+        "en": "Shows a concrete hybrid architecture for security agents: reusable structured memory, pre-action controls, and fix verification."
+      },
+      "url": "https://openai.com/index/cogent-security/",
+      "processado_em": "2026-11-16T12:40:43.314643+00:00"
     },
     {
       "id": "guid:https://github.blog/changelog/2026-11-09-claude-fable-5-5-in-github-copilot",
