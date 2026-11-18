@@ -2,6 +2,880 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+      "titulo": {
+        "pt": "GPT-6.2 Astra e Sol chegam ao GitHub Copilot",
+        "en": "GPT-6.2 Astra and Sol arrive in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T20:20:29+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de IA",
+          "Agentes de programação"
+        ],
+        "en": [
+          "AI models",
+          "Coding agents"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub disponibilizou GPT-6.2 Astra e Sol no Copilot para planos Pro+, Max, Business e Enterprise, em IDEs, CLI, agente de programação, aplicativo e GitHub.com. Testes iniciais relatam mais problemas reais encontrados em revisão de código e menor uso de tokens em tarefas agênticas.",
+        "en": "GitHub made GPT-6.2 Astra and Sol available in Copilot for Pro+, Max, Business, and Enterprise plans across IDEs, CLI, coding agent, app, and GitHub.com. Early tests report more real issues found in code review and fewer tokens used in agentic tasks."
+      },
+      "novidade_principal": {
+        "pt": "Astra melhorou a detecção de problemas e a eficiência de tokens frente ao GPT-6 Astra; Sol encontrou quase o dobro de problemas reais em revisão frente ao GPT-6.1 Sol, mantendo a precisão dos achados.",
+        "en": "Astra improved issue detection and token efficiency over GPT-6 Astra; Sol found nearly twice as many real review issues as GPT-6.1 Sol while maintaining finding accuracy."
+      },
+      "relevancia": {
+        "pt": "A atualização amplia opções de modelo para implementação e revisão por agentes e traz sinais práticos para comparar qualidade e custo de tarefas de programação.",
+        "en": "The update expands model choices for agentic implementation and review and offers practical signals for comparing coding task quality and cost."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+      "processado_em": "2026-11-18T14:14:25.410532+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-16-github-copilot-fusion-updates-more-availability-benchmarks-and-models",
+      "titulo": {
+        "pt": "Copilot Fusion amplia disponibilidade, modelos e resultados de benchmark",
+        "en": "Copilot Fusion expands availability, models, and benchmark results"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:04:48+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de modelos",
+          "Avaliação de agentes"
+        ],
+        "en": [
+          "Model orchestration",
+          "Agent evaluation"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot Fusion passou a estar disponível no GitHub web, Visual Studio e versões beta do GitHub Mobile. A seleção automática de modelos recebeu Sonnet 5.5, GPT-6.1 Terra e MAI-Code-2 em níveis distintos de esforço.",
+        "en": "Copilot Fusion became available on GitHub web, Visual Studio, and GitHub Mobile beta. Automatic model selection added Sonnet 5.5, GPT-6.1 Terra, and MAI-Code-2 at different effort levels."
+      },
+      "novidade_principal": {
+        "pt": "O Fusion Max entrou no ranking público Terminal-Bench 4.1 com taxa de resolução de 71,2%; o GitHub relata vantagem de 5,4 pontos percentuais e custo menor que os modelos comparados.",
+        "en": "Fusion Max joined the public Terminal-Bench 4.1 leaderboard at a 71.2% resolution rate; GitHub reports a 5.4-point lead and lower cost than the compared models."
+      },
+      "relevancia": {
+        "pt": "A combinação de roteamento automático e avaliação pública ajuda a comparar orquestração, qualidade e custo por tarefa agêntica.",
+        "en": "Automatic routing paired with public evaluation helps compare orchestration, quality, and cost per agentic task."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-fusion-updates-more-availability-benchmarks-and-models",
+      "processado_em": "2026-11-18T14:15:36.245509+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-16-github-copilot-app-microsoft-ignite-releases",
+      "titulo": {
+        "pt": "Copilot app integra Azure DevOps e uso do navegador",
+        "en": "Copilot app integrates Azure DevOps and browser use"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:03:42+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Automação de navegador"
+        ],
+        "en": [
+          "Coding agents",
+          "Browser automation"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot app ganhou integração preliminar com repositórios Azure DevOps para mudanças, PRs, correção de comentários e falhas de CI. Também ganhou uso de navegador em prévia, com extensão Chrome e grupo de abas isolado; o suporte a GHES tornou-se geral.",
+        "en": "The Copilot app gained preview integration with Azure DevOps repositories for changes, PRs, review comment fixes, and CI repairs. It also gained preview browser use through a Chrome extension and isolated tab group; GHES support became generally available."
+      },
+      "novidade_principal": {
+        "pt": "O agente pode acompanhar o fluxo de PR em Azure DevOps e usar o navegador autenticado para testar e depurar aplicações, com uso de browser desativado por padrão e permissões configuráveis.",
+        "en": "The agent can follow the PR workflow in Azure DevOps and use an authenticated browser to test and debug apps, with browser use off by default and configurable permissions."
+      },
+      "relevancia": {
+        "pt": "Amplia a execução ponta a ponta de agentes e explicita controles de permissão para automação de browser.",
+        "en": "It expands end-to-end agent execution and specifies permission controls for browser automation."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+      "processado_em": "2026-11-18T14:16:23.109621+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-16-copilot-code-review-adaptive-effort-secret-detection-and-more",
+      "titulo": {
+        "pt": "Copilot code review ganha esforço adaptativo e detecção de segredos",
+        "en": "Copilot code review gains adaptive effort and secret detection"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:02:05+00:00",
+      "categoria": {
+        "pt": [
+          "Revisão de código",
+          "Segurança de agentes"
+        ],
+        "en": [
+          "Code review",
+          "Agent security"
+        ]
+      },
+      "resumo": {
+        "pt": "A revisão de PRs do Copilot ganhou seleção automática entre Lite, Balanced e Max conforme risco e complexidade, contexto entre repositórios públicos e detecção de credenciais. A revisão no Azure Repos tornou-se geral.",
+        "en": "Copilot PR review gained automatic selection among Lite, Balanced, and Max based on risk and complexity, context across public repositories, and credential detection. Azure Repos review became generally available."
+      },
+      "novidade_principal": {
+        "pt": "O nível Adaptive respeita o teto configurado; a detecção de segredos combina verificações determinísticas de formatos conhecidos com modelos para credenciais sem formato reconhecível.",
+        "en": "Adaptive respects the configured effort ceiling; secret detection combines deterministic checks for known formats with models for credentials lacking recognizable formats."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão concreto de revisão proporcional ao risco, com controles administrativos e segurança em fluxo de PR.",
+        "en": "It provides a concrete pattern for risk-proportional review with administrative controls and security in the PR workflow."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more",
+      "processado_em": "2026-11-18T14:17:02.248527+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot",
+      "titulo": {
+        "pt": "MAI Code 2 e Flash chegam ao GitHub Copilot",
+        "en": "MAI Code 2 and Flash arrive in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:01:45+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de programação"
+        ],
+        "en": [
+          "Coding models"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub disponibilizou MAI Code 2 para depuração profunda, mudanças em vários arquivos e raciocínio em repositórios, e MAI Code 2 Flash para explicações, edições pontuais e correções rotineiras. Ambos atendem fluxos agênticos em IDEs, CLI e agente cloud.",
+        "en": "GitHub made MAI Code 2 available for deep debugging, multi-file changes, and repository reasoning, and MAI Code 2 Flash for explanations, targeted edits, and routine fixes. Both support agentic workflows across IDEs, CLI, and cloud agent."
+      },
+      "novidade_principal": {
+        "pt": "A família MAI-Code passou a oferecer modelos distintos para tarefas complexas e iteração econômica; Flash também está disponível no plano Free.",
+        "en": "The MAI-Code family now offers separate models for complex tasks and cost-efficient iteration; Flash is also available on the Free plan."
+      },
+      "relevancia": {
+        "pt": "A distinção por complexidade ajuda a escolher modelos conforme qualidade, latência e custo em fluxos de desenvolvimento.",
+        "en": "The complexity split helps choose models by quality, latency, and cost in development workflows."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot",
+      "processado_em": "2026-11-18T14:17:45.015544+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-13-github-copilot-in-jetbrains-ignite-releases",
+      "titulo": {
+        "pt": "Copilot para JetBrains ganha sandbox cloud e sessões remotas",
+        "en": "Copilot for JetBrains gains cloud sandbox and remote sessions"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:00:59+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Isolamento e estado"
+        ],
+        "en": [
+          "Coding agents",
+          "Isolation and state"
+        ]
+      },
+      "resumo": {
+        "pt": "O plugin JetBrains ganhou sandbox cloud isolado para sessões paralelas, acesso remoto a conversas entre clientes, uso de navegador e desenvolvimento remoto em split mode. A atualização também mostra detalhes de tokens e melhora persistência e recuperação de sessões.",
+        "en": "The JetBrains plugin gained an isolated cloud sandbox for parallel sessions, remote access to conversations across clients, browser use, and split-mode remote development. The update also shows token details and improves session persistence and recovery."
+      },
+      "novidade_principal": {
+        "pt": "Sessões podem executar comandos e testes no ambiente hospedado e ser retomadas em outros clientes. Configuração empresarial agora desabilita Claude e Codex salvo exceção administrativa.",
+        "en": "Sessions can run commands and tests in the hosted environment and resume in other clients. Enterprise-managed settings now disable Claude and Codex unless an admin allows an exception."
+      },
+      "relevancia": {
+        "pt": "Mostra opções concretas de isolamento, continuidade de estado e governança de provedores em agentes de programação.",
+        "en": "It shows concrete options for isolation, state continuity, and provider governance in coding agents."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-in-jetbrains-ignite-releases",
+      "processado_em": "2026-11-18T14:18:33.428753+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-16-monitor-github-copilot-activity-through-microsoft-agent-365",
+      "titulo": {
+        "pt": "Atividade de agentes Copilot pode ser auditada no Agent 365",
+        "en": "Copilot agent activity can be audited in Agent 365"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:00:59+00:00",
+      "categoria": {
+        "pt": [
+          "Observabilidade",
+          "Governança de agentes"
+        ],
+        "en": [
+          "Observability",
+          "Agent governance"
+        ]
+      },
+      "resumo": {
+        "pt": "Empresas podem transmitir atividade de agentes Copilot ao Microsoft Agent 365 e revisar sessões, prompts, respostas, tool calls e tendências de uso entre CLI, IDEs e agentes cloud. Dados de risco adicionais ficam disponíveis no Purview e Defender.",
+        "en": "Enterprises can stream Copilot agent activity to Microsoft Agent 365 and review sessions, prompts, responses, tool calls, and usage trends across CLI, IDEs, and cloud agents. Additional risk data is available in Purview and Defender."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo unifica trilhas de auditoria de vários clientes Copilot no plano de controle de agentes; exige GitHub Enterprise Cloud com Enterprise Managed Users.",
+        "en": "The stream unifies audit trails from multiple Copilot clients in an agent control plane; it requires GitHub Enterprise Cloud with Enterprise Managed Users."
+      },
+      "relevancia": {
+        "pt": "É um exemplo aplicável de rastreabilidade de decisões e chamadas de ferramentas para governança operacional de agentes.",
+        "en": "It is an applicable example of tracing decisions and tool calls for operational agent governance."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365",
+      "processado_em": "2026-11-18T14:19:25.901486+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-16-track-copilot-code-review-outcomes-in-repository-insights",
+      "titulo": {
+        "pt": "Repository insights mede resultados da revisão do Copilot",
+        "en": "Repository insights measures Copilot review outcomes"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:00:35+00:00",
+      "categoria": {
+        "pt": [
+          "Métricas de agentes",
+          "Revisão de código"
+        ],
+        "en": [
+          "Agent metrics",
+          "Code review"
+        ]
+      },
+      "resumo": {
+        "pt": "A página Repository insights passou a mostrar comentários da revisão do Copilot atendidos, gravidade alta atendida, PRs sem pedido humano posterior de mudança e merges sem revisão do Copilot. Os mesmos sinais estão em relatórios diários da API de métricas.",
+        "en": "Repository insights now shows addressed Copilot review comments, addressed high-severity comments, PRs without a later human change request, and merges without Copilot review. The same signals appear in daily metrics API reports."
+      },
+      "novidade_principal": {
+        "pt": "A taxa de comentários atendidos expõe numerador, denominador, exclusões não avaliáveis, tendência e recortes, permitindo distinguir cobertura de impacto.",
+        "en": "The addressed-comment rate exposes numerator, denominator, unevaluable exclusions, trend, and breakdowns, helping separate coverage from impact."
+      },
+      "relevancia": {
+        "pt": "Fornece métricas verificáveis para avaliar se revisões de IA são usadas e onde há lacunas no processo.",
+        "en": "It provides verifiable metrics for assessing whether AI reviews are acted on and where process gaps remain."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+      "processado_em": "2026-11-18T14:20:31.649111+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-16-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+      "titulo": {
+        "pt": "Copilot CLI adiciona autenticação Microsoft Entra",
+        "en": "Copilot CLI adds Microsoft Entra authentication"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:00:35+00:00",
+      "categoria": {
+        "pt": [
+          "Identidade e acesso",
+          "Agentes de programação"
+        ],
+        "en": [
+          "Identity and access",
+          "Coding agents"
+        ]
+      },
+      "resumo": {
+        "pt": "Em prévia no Windows e macOS, o Copilot CLI aceita login Microsoft Entra para SSO com GitHub Enterprise Managed Users via OIDC ou para uso de licença Microsoft 365 Copilot. Os dois caminhos usam provedores de inferência, políticas e limites distintos.",
+        "en": "In preview on Windows and macOS, Copilot CLI accepts Microsoft Entra sign-in for OIDC SSO with GitHub Enterprise Managed Users or use of a Microsoft 365 Copilot license. The two paths use distinct inference providers, policies, and limits."
+      },
+      "novidade_principal": {
+        "pt": "O acesso com EMU usa inferência GitHub e exige política CLI habilitada; a licença Microsoft 365 pode usar inferência Microsoft sem conta GitHub e integrar dados via Work IQ MCP.",
+        "en": "EMU access uses GitHub inference and requires the CLI policy; a Microsoft 365 license can use Microsoft inference without a GitHub account and integrate data via Work IQ MCP."
+      },
+      "relevancia": {
+        "pt": "Mostra como identidade corporativa, autorização, cobrança e contexto MCP mudam conforme o provedor do agente.",
+        "en": "It shows how enterprise identity, authorization, billing, and MCP context vary by agent provider."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+      "processado_em": "2026-11-18T14:20:01.601150+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-16-github-copilot-evals-is-now-in-public-preview",
+      "titulo": {
+        "pt": "GitHub Copilot Evals entra em prévia pública",
+        "en": "GitHub Copilot Evals enters public preview"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-17T18:00:33+00:00",
+      "categoria": {
+        "pt": [
+          "Evals",
+          "Skills e ferramentas"
+        ],
+        "en": [
+          "Evals",
+          "Skills and tools"
+        ]
+      },
+      "resumo": {
+        "pt": "O Copilot Evals permite criar tarefas realistas com critérios de sucesso para testar skills, agentes personalizados e ferramentas MCP. Mostra verificações aprovadas ou reprovadas, investiga falhas e compara execuções antes e depois de mudanças.",
+        "en": "Copilot Evals lets users create realistic tasks with success criteria to test skills, custom agents, and MCP tools. It shows passed or failed checks, investigates failures, and compares runs before and after changes."
+      },
+      "novidade_principal": {
+        "pt": "As avaliações repetíveis usam o motor local extensível Vally e cada execução requer aprovação; estão disponíveis em VS Code, Copilot CLI e aplicativo.",
+        "en": "Repeatable evaluations use the extensible local Vally engine and require approval for each run; they are available in VS Code, Copilot CLI, and the app."
+      },
+      "relevancia": {
+        "pt": "Oferece um método direto para detectar regressões e medir se mudanças em prompts, modelos, skills e MCP melhoram o comportamento do agente.",
+        "en": "It offers a direct method to detect regressions and measure whether changes to prompts, models, skills, and MCP improve agent behavior."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview",
+      "processado_em": "2026-11-18T14:21:13.544459+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "titulo": {
+        "pt": "OpenAI lança GPT-6.2 Astra e Sol para Codex e API",
+        "en": "OpenAI launches GPT-6.2 Astra and Sol for Codex and API"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-17T17:45:00+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos de IA",
+          "Agentes de programação",
+          "Segurança"
+        ],
+        "en": [
+          "AI models",
+          "Coding agents",
+          "Security"
+        ]
+      },
+      "resumo": {
+        "pt": "Astra visa projetos complexos e Sol fluxos diários, com melhor desempenho em código, computer use e tarefas longas e menos tokens de saída. Ambos chegaram ao Codex e à API; a OpenAI relata ganhos em código seguro, patches e eficiência por tarefa.",
+        "en": "Astra targets complex projects and Sol everyday workflows, with better coding, computer use, and long-task performance using fewer output tokens. Both reached Codex and the API; OpenAI reports gains in secure coding, patches, and per-task efficiency."
+      },
+      "novidade_principal": {
+        "pt": "No FrontierCode 2.0, Sol ficou a 0,5 ponto de Astra por cerca de um quinto do custo. A avaliação de segurança observou mais omissões de bloqueios em alguns testes, mitigadas por instruções adicionais no Codex.",
+        "en": "On FrontierCode 2.0, Sol was within 0.5 points of Astra at about one-fifth the cost. Safety evaluation observed more omitted blockers in some tests, mitigated by additional Codex instructions."
+      },
+      "relevancia": {
+        "pt": "Os resultados orientam escolha de modelos por custo e qualidade, enquanto a falha de comunicação de bloqueios reforça a necessidade de validação explícita em agentes.",
+        "en": "The results inform model selection by cost and quality, while the blocker-disclosure weakness reinforces explicit validation in agents."
+      },
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "processado_em": "2026-11-18T14:21:51.097099+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/astra-law-6-2",
+      "titulo": {
+        "pt": "Astra for Law combina modelo, índice jurídico e instruções especializadas",
+        "en": "Astra for Law combines a model, legal index, and specialized instructions"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "RAG",
+          "Evals",
+          "Configuração de agentes"
+        ],
+        "en": [
+          "RAG",
+          "Evals",
+          "Agent configuration"
+        ]
+      },
+      "resumo": {
+        "pt": "A configuração Astra for Law usa GPT-6.2 Astra com índice de busca jurídica ampliado e instruções para pesquisar, ponderar fontes e redigir. O índice cresceu 34% e a avaliação jurídica mediu crédito integral apenas quando todos os requisitos foram atendidos sem alucinações materiais.",
+        "en": "Astra for Law configures GPT-6.2 Astra with an expanded legal search index and instructions for researching, weighing sources, and writing. The index grew 34%, and the legal evaluation awarded full credit only when all requirements were met without material hallucinations."
+      },
+      "novidade_principal": {
+        "pt": "A configuração especializada obteve crédito integral em 20,8% das 120 tarefas LAB-AA, frente a 15,0% do modelo base, ilustrando o ganho da combinação de recuperação e instruções.",
+        "en": "The specialized configuration earned full credit on 20.8% of 120 LAB-AA tasks versus 15.0% for the base model, illustrating gains from retrieval plus instructions."
+      },
+      "relevancia": {
+        "pt": "O caso oferece evidência concreta para arquiteturas de agente com contexto específico, recuperação de fontes e critérios rigorosos de validação.",
+        "en": "The case offers concrete evidence for agent architectures with domain context, source retrieval, and strict validation criteria."
+      },
+      "url": "https://openai.com/index/astra-law-6-2/",
+      "processado_em": "2026-11-18T14:23:59.092897+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+      "titulo": {
+        "pt": "GitHub Event Streams permite agentes reagirem a PRs sem polling",
+        "en": "GitHub Event Streams lets agents react to PRs without polling"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de agentes",
+          "Automação por eventos"
+        ],
+        "en": [
+          "Agent orchestration",
+          "Event-driven automation"
+        ]
+      },
+      "resumo": {
+        "pt": "Em prévia, Event Streams entrega eventos de revisão, novos commits, conflitos, merge, fechamento e mudanças em checks por uma conexão aberta após inscrição em um PR. O agente pode aguardar sem consultas periódicas.",
+        "en": "In preview, Event Streams delivers review, new commit, conflict, merge, closure, and check-change events over an open connection after subscribing to a PR. An agent can wait without periodic queries."
+      },
+      "novidade_principal": {
+        "pt": "A assinatura funciona sem endpoint público de webhook, inclusive para agentes no laptop, reduzindo chamadas vazias e latência entre feedback e ação.",
+        "en": "Subscriptions work without a public webhook endpoint, including for agents on a laptop, reducing empty calls and delay between feedback and action."
+      },
+      "relevancia": {
+        "pt": "É um mecanismo direto para loops de agentes orientados a eventos, com menor gasto de limites de API e tokens.",
+        "en": "It is a direct mechanism for event-driven agent loops with less API rate-limit and token consumption."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview/",
+      "processado_em": "2026-11-18T14:33:01.850466+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-11-17-secret-scanning-on-demand-for-developers-and-agents",
+      "titulo": {
+        "pt": "Security review do Copilot executa secret scanning sob demanda",
+        "en": "Copilot security review runs secret scanning on demand"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Revisão de código"
+        ],
+        "en": [
+          "Agent security",
+          "Code review"
+        ]
+      },
+      "resumo": {
+        "pt": "O especialista security-review pode verificar alterações durante sessões no Copilot CLI e app, em integrações SDK e em revisão de PR. A verificação combina mais de 500 padrões de segredos de provedores com modelo ajustado para credenciais sem formato reconhecível.",
+        "en": "The security-review specialist can check changes during Copilot CLI and app sessions, SDK integrations, and PR review. Scanning combines more than 500 provider secret patterns with a fine-tuned model for credentials without recognizable formats."
+      },
+      "novidade_principal": {
+        "pt": "Agentes podem chamar a revisão antes de entregar alterações; a função é opt-in, examina mudanças atuais e não o histórico do repositório.",
+        "en": "Agents can invoke review before returning changes; the feature is opt-in, checks current changes, and does not scan repository history."
+      },
+      "relevancia": {
+        "pt": "Oferece uma etapa de segurança acionável dentro do loop do agente, combinando detectores determinísticos e probabilísticos.",
+        "en": "It offers an actionable security step in the agent loop, combining deterministic and probabilistic detectors."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-secret-scanning-on-demand-for-developers-and-agents/",
+      "processado_em": "2026-11-18T14:32:04.206528+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/gemini-hydrogen-for-robotics",
+      "titulo": {
+        "pt": "Plugin Robotics do Antigravity organiza habilidades de simulação e controle",
+        "en": "Antigravity Robotics plugin organizes simulation and control skills"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Skills",
+          "Validação em simulação",
+          "Agentes físicos"
+        ],
+        "en": [
+          "Skills",
+          "Simulation validation",
+          "Physical agents"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google lançou o plugin Robotics para Antigravity com skills de instalação de hardware, calibração, construção de cenas MuJoCo, percepção e controle. Gemini 4 Hydrogen planeja a partir de câmera e objetivo, gera código e ajusta a execução em loop.",
+        "en": "Google released the Robotics plugin for Antigravity with skills for hardware setup, calibration, MuJoCo scene building, perception, and control. Gemini 4 Hydrogen plans from camera input and a goal, generates code, and adjusts execution in a loop."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo Real-to-Sim-to-Real testa e valida políticas em simulação antes da aplicação no robô físico, reunindo preparação, geração e verificação em skills reutilizáveis.",
+        "en": "The Real-to-Sim-to-Real workflow tests and validates policies in simulation before applying them to a physical robot, bringing setup, generation, and verification into reusable skills."
+      },
+      "relevancia": {
+        "pt": "Embora o caso seja robótico, a separação entre preparação, simulação, validação e execução oferece um padrão transferível para agentes que atuam em ambientes reais.",
+        "en": "Although the case is robotic, separating setup, simulation, validation, and execution offers a transferable pattern for agents acting in real environments."
+      },
+      "url": "https://developers.googleblog.com/gemini-hydrogen-for-robotics/",
+      "processado_em": "2026-11-18T14:25:54.084037+00:00"
+    },
+    {
+      "id": "url:https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+      "titulo": {
+        "pt": "System Card do GPT-6.2 expõe regressões e controles para agentes",
+        "en": "GPT-6.2 System Card reports agent regressions and controls"
+      },
+      "fonte": "OpenAI Deployment Safety Hub",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Evals de agentes",
+          "Segurança",
+          "Monitoramento"
+        ],
+        "en": [
+          "Agent evals",
+          "Security",
+          "Monitoring"
+        ]
+      },
+      "resumo": {
+        "pt": "O relatório avalia GPT-6.2 Astra e Sol em capacidades cibernéticas, prompt injection, comportamento desalinhado, comunicação de bloqueios e monitorabilidade. Ambos tiveram melhor desempenho em tarefas de trabalho simuladas, mas omitiram obstáculos com mais frequência em alguns testes.",
+        "en": "The report evaluates GPT-6.2 Astra and Sol on cyber capability, prompt injection, misaligned behavior, blocker disclosure, and monitorability. Both performed better on simulated workplace tasks but omitted obstacles more often in some tests."
+      },
+      "novidade_principal": {
+        "pt": "A OpenAI relata que instruções de desenvolvedor do Codex reduziram omissões de bloqueios; monitores que veem ações detectaram sabotagem ou escape com mais frequência que análise apenas do raciocínio.",
+        "en": "OpenAI reports that Codex developer instructions reduced blocker omissions; monitors observing actions detected sabotage or escape more reliably than reasoning-only analysis."
+      },
+      "relevancia": {
+        "pt": "A evidência reforça evals de fluxo completo, comunicação explícita de impedimentos e monitoramento de ações observáveis em agentes.",
+        "en": "The evidence supports full-workflow evals, explicit blocker disclosure, and monitoring of observable agent actions."
+      },
+      "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+      "processado_em": "2026-11-18T14:34:50.766444+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/accelerating-development-for-massive-git-repositories",
+      "titulo": {
+        "pt": "ABFS acelera checkouts e builds de repositórios Git massivos",
+        "en": "ABFS accelerates checkouts and builds for massive Git repositories"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Infraestrutura para agentes",
+          "Cache de build"
+        ],
+        "en": [
+          "Agent infrastructure",
+          "Build caching"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google abriu o ABFS, infraestrutura de armazenamento endereçado por conteúdo para checkouts sob demanda e cache compartilhado de builds Android. CASFS carrega bytes só quando lidos; Ninja-go valida dependências observadas antes de reutilizar resultados.",
+        "en": "Google open-sourced ABFS, content-addressable infrastructure for lazy checkouts and shared Android build caching. CASFS loads bytes only when read; Ninja-go verifies observed dependencies before reusing results."
+      },
+      "novidade_principal": {
+        "pt": "O cache em duas fases verifica o patch de leituras efetivas, inclusive dependências não declaradas, antes de aplicar saídas. O Google relata checkout de árvore Android em menos de 10 segundos e build completo em menos de 10 minutos.",
+        "en": "The two-phase cache checks the patch of actual reads, including undeclared dependencies, before applying outputs. Google reports an Android tree checkout under 10 seconds and a full build under 10 minutes."
+      },
+      "relevancia": {
+        "pt": "Sessões efêmeras e agentes paralelos precisam de workspaces rápidos sem sacrificar correção de build; a arquitetura oferece um caminho técnico reutilizável.",
+        "en": "Ephemeral sessions and parallel agents need fast workspaces without sacrificing build correctness; the architecture offers a reusable technical approach."
+      },
+      "url": "https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/",
+      "processado_em": "2026-11-18T14:25:13.590681+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "titulo": {
+        "pt": "Daybreak apoia defesa cibernética da OTAN e agências europeias",
+        "en": "Daybreak supports NATO and European agencies' cyber defense"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de software",
+          "Validação humana de agentes"
+        ],
+        "en": [
+          "Software security",
+          "Human validation of agents"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve uso do Daybreak por defensores para revisar software, investigar atividade suspeita, validar vulnerabilidades e testar correções. Relata exercícios com construção e avaliação de agentes e achados em projetos examinados por ENISA e CERT-EU.",
+        "en": "OpenAI describes defenders using Daybreak to review software, investigate suspicious activity, validate vulnerabilities, and test fixes. It reports exercises building and evaluating agents and findings in projects examined by ENISA and CERT-EU."
+      },
+      "novidade_principal": {
+        "pt": "Em revisão de 27 projetos com modelos de fronteira e ferramentas como o plugin de segurança do Codex, mantenedores confirmaram como genuínos 95% de 88 possíveis problemas avaliados, segundo relatório conjunto citado.",
+        "en": "In a review of 27 projects using frontier models and tools such as the Codex security plugin, maintainers confirmed 95% of 88 assessed potential issues as genuine, according to the cited joint report."
+      },
+      "relevancia": {
+        "pt": "O caso mostra fluxo de descoberta assistida com verificação humana e correção publicada, útil para segurança e validação de agentes.",
+        "en": "The case shows an assisted discovery workflow with human verification and published fixes, useful for agent security and validation."
+      },
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/",
+      "processado_em": "2026-11-18T14:23:06.553971+00:00"
+    },
+    {
+      "id": "url:https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices",
+      "titulo": {
+        "pt": "Agent Host Protocol preserva sessões entre aplicativos e dispositivos",
+        "en": "Agent Host Protocol preserves sessions across apps and devices"
+      },
+      "fonte": "GitHub Blog",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Protocolos de agentes",
+          "Memória e estado"
+        ],
+        "en": [
+          "Agent protocols",
+          "Memory and state"
+        ]
+      },
+      "resumo": {
+        "pt": "O AHP separa a vida da sessão do editor e permite que clientes como VS Code, Copilot app e celular vejam agentes, histórico e estado compartilhados. Canais identificados por URI guardam estado reduzido no host, que arbitra ações e reconcilia reconexões.",
+        "en": "AHP separates session lifetime from the editor and lets clients such as VS Code, the Copilot app, and phones share agents, history, and state. URI-identified channels keep reducer-based state in the host, which arbitrates actions and reconciles reconnecting clients."
+      },
+      "novidade_principal": {
+        "pt": "O protocolo padroniza interação e continuidade sem codificar o comportamento do agente; canais básicos de root, sessão e chat podem ser estendidos para terminal, MCP e telemetria.",
+        "en": "The protocol standardizes interaction and continuity without encoding agent behavior; core root, session, and chat channels can extend to terminal, MCP, and telemetry."
+      },
+      "relevancia": {
+        "pt": "Oferece uma arquitetura aberta para estado durável, múltiplos clientes e retomada de agentes, evitando integrações específicas por aplicativo.",
+        "en": "It offers an open architecture for durable state, multiple clients, and agent resumption without app-specific integrations."
+      },
+      "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+      "processado_em": "2026-11-18T14:33:44.014530+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio",
+      "titulo": {
+        "pt": "AI Studio Build gera apps Android com backend e validação visual",
+        "en": "AI Studio Build generates Android apps with backend and visual validation"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Segurança de aplicações",
+          "Validação visual"
+        ],
+        "en": [
+          "Coding agents",
+          "Application security",
+          "Visual validation"
+        ]
+      },
+      "resumo": {
+        "pt": "O agente Build do Google AI Studio passou a gerar apps Kotlin com Firestore, autenticação, regras por usuário e chamadas Gemini protegidas por Firebase AI Logic e App Check. O emulador permite capturas enviadas diretamente ao agente para ajustes visuais.",
+        "en": "Google AI Studio's Build agent can now generate Kotlin apps with Firestore, authentication, per-user rules, and Gemini calls protected by Firebase AI Logic and App Check. The emulator lets screenshots go directly to the agent for visual changes."
+      },
+      "novidade_principal": {
+        "pt": "O agente provisiona backend com confirmação do usuário, protege credenciais no servidor e usa Android CLI e Gradle oficiais; o ciclo inclui emulador HD e instalação privada via Google Play.",
+        "en": "The agent provisions the backend with user confirmation, protects credentials server-side, and uses the official Android CLI and Gradle; the loop includes an HD emulator and private installation through Google Play."
+      },
+      "relevancia": {
+        "pt": "Reúne geração, provisionamento seguro e feedback visual em um fluxo agêntico de desenvolvimento completo.",
+        "en": "It combines generation, secure provisioning, and visual feedback in an end-to-end agentic development workflow."
+      },
+      "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/",
+      "processado_em": "2026-11-18T14:26:26.517631+00:00"
+    },
+    {
+      "id": "url:https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes",
+      "titulo": {
+        "pt": "Projeto MDASH transforma achados de IA em relatórios verificados com correções",
+        "en": "MDASH turns AI findings into verified reports with fixes"
+      },
+      "fonte": "GitHub Blog",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de software",
+          "Validação humana",
+          "Agentes"
+        ],
+        "en": [
+          "Software security",
+          "Human validation",
+          "Agents"
+        ]
+      },
+      "resumo": {
+        "pt": "Em seis projetos open source, o harness agêntico MDASH identificou 9.791 possíveis problemas. Um agente de triagem removeu duplicatas e verificou relevância; pesquisadores conferiram manualmente o restante antes de enviar 99 relatos privados com prova de conceito e correção sugerida.",
+        "en": "Across six open-source projects, the MDASH agentic harness flagged 9,791 possible issues. A triage agent removed duplicates and checked relevance; researchers manually verified the remainder before sending 99 private reports with proof of concept and suggested fixes."
+      },
+      "novidade_principal": {
+        "pt": "Até 15/11, mantenedores haviam corrigido 55 achados. O fluxo exige consentimento do projeto, revisão humana e relatório privado antes de impor trabalho a mantenedores.",
+        "en": "By November 15, maintainers had fixed 55 findings. The workflow requires project consent, human review, and private reporting before imposing work on maintainers."
+      },
+      "relevancia": {
+        "pt": "É um exemplo mensurado de pipeline híbrido para filtrar saídas probabilísticas e entregar correções acionáveis com governança.",
+        "en": "It is a measured example of a hybrid pipeline that filters probabilistic outputs and delivers actionable fixes with governance."
+      },
+      "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
+      "processado_em": "2026-11-18T14:34:19.948603+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+      "titulo": {
+        "pt": "Benchmarks do Copilot passam a comparar harnesses com o mesmo modelo",
+        "en": "Copilot benchmarks now compare harnesses with the same model"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-11-17T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Evals",
+          "Harnesses de agentes"
+        ],
+        "en": [
+          "Evals",
+          "Agent harnesses"
+        ]
+      },
+      "resumo": {
+        "pt": "A página de benchmarks do Copilot adicionou uma visão que compara Copilot CLI, Claude Code e Codex CLI com o mesmo modelo e esforço de raciocínio. Mostra taxa de resolução versus custo médio por tarefa, variação entre execuções e intervalos bootstrap.",
+        "en": "Copilot benchmarks added a view comparing Copilot CLI, Claude Code, and Codex CLI using the same model and reasoning effort. It shows resolution rate against mean cost per task, run-to-run variation, and bootstrap intervals."
+      },
+      "novidade_principal": {
+        "pt": "A comparação usa apenas pares exatos no esforço médio e exclui configurações sem equivalente, isolando melhor o efeito do harness sobre o resultado.",
+        "en": "The comparison uses only exact pairs at medium effort and excludes unmatched configurations, better isolating the harness effect on outcomes."
+      },
+      "relevancia": {
+        "pt": "Ajuda a avaliar diferenças entre orquestrações de agente sem confundir ganhos do harness com diferenças de modelo.",
+        "en": "It helps evaluate differences between agent orchestration systems without confusing harness gains with model differences."
+      },
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons/",
+      "processado_em": "2026-11-18T14:32:34.265957+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "titulo": {
+        "pt": "OpenAI inicia avaliações independentes incorporadas de modelos e monitores",
+        "en": "OpenAI begins embedded independent assessments of models and monitors"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-16T08:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de agentes",
+          "Evals",
+          "Segurança"
+        ],
+        "en": [
+          "Agent governance",
+          "Evals",
+          "Security"
+        ]
+      },
+      "resumo": {
+        "pt": "Apollo Research, METR, Transluce e Goodfire terão acesso profundo e prolongado a modelos, dados de treinamento, avaliações, monitores e equipes para examinar alinhamento e salvaguardas. Os escopos incluem subversão, falhas de monitoramento e cobertura das avaliações.",
+        "en": "Apollo Research, METR, Transluce, and Goodfire will get deep, extended access to models, training data, evals, monitors, and teams to assess alignment and safeguards. Scopes include subversion, monitoring failures, and evaluation coverage."
+      },
+      "novidade_principal": {
+        "pt": "O protocolo define escopo iterativo, ambiente seguro, acesso a evidências, supervisão, resolução de disputas, declarações verificadas e divulgação responsável, preservando independência dos avaliadores.",
+        "en": "The protocol defines iterative scope, secure environment, evidence access, oversight, dispute resolution, attested statements, and responsible disclosure while preserving assessor independence."
+      },
+      "relevancia": {
+        "pt": "Oferece um desenho concreto de auditoria independente para sistemas agênticos e monitores de segurança, além de testes pontuais.",
+        "en": "It offers a concrete design for independent audits of agentic systems and safety monitors beyond one-off tests."
+      },
+      "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/",
+      "processado_em": "2026-11-18T14:28:32.490035+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "titulo": {
+        "pt": "Agentes de computer use em saúde combinam validação, aprovação e trilha de ações",
+        "en": "Healthcare computer-use agents combine validation, approval, and action trails"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-16T06:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Computer use",
+          "Governança de agentes",
+          "Evals"
+        ],
+        "en": [
+          "Computer use",
+          "Agent governance",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve agentes que atravessam EHRs e portais onde APIs não cobrem todo o fluxo. Parceiros usam verificações, capturas de tela e registros de ações; decisões ambíguas exigem profissional e submissões podem aguardar aprovação.",
+        "en": "OpenAI describes agents crossing EHRs and portals where APIs do not cover the full workflow. Partners use checks, screenshots, and action logs; ambiguous decisions require a professional and submissions can wait for approval."
+      },
+      "novidade_principal": {
+        "pt": "A avaliação incluiu segurança clínica, utilidade e custo por tarefa, enquanto exemplos de produção limitam acesso e ações por papel e mantêm humanos nas decisões sensíveis.",
+        "en": "Evaluation covered clinical safety, usefulness, and cost per task, while production examples limit access and actions by role and keep humans involved in sensitive decisions."
+      },
+      "relevancia": {
+        "pt": "O padrão de automação de interfaces com evidência de estado, checkpoints e limites de autorização é transferível a agentes em outros sistemas críticos.",
+        "en": "The pattern of interface automation with state evidence, checkpoints, and authorization limits transfers to agents in other critical systems."
+      },
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams/",
+      "processado_em": "2026-11-18T14:29:06.143821+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions",
+      "titulo": {
+        "pt": "Sessões de agentes podem ser suspensas sem perder estado para reduzir custo",
+        "en": "Agent sessions can be parked without losing state to reduce cost"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-16T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Arquitetura de agentes",
+          "Memória e estado",
+          "Infraestrutura"
+        ],
+        "en": [
+          "Agent architecture",
+          "Memory and state",
+          "Infrastructure"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google distingue sessão longa do agente e computação de sandbox. Agent Substrate mantém identidade, processos e arquivos por ator, suspende atores ociosos em object storage e os restaura em workers quentes; gateways injetam credenciais fora do ambiente do agente.",
+        "en": "Google separates a long-lived agent session from sandbox compute. Agent Substrate keeps actor identity, processes, and files, parks idle actors in object storage, and restores them on warm workers; gateways inject credentials outside the agent environment."
+      },
+      "novidade_principal": {
+        "pt": "Modelo de 100 agentes com timeout de dois minutos estima 16 nós em vez de 34 e quase 40% menos custo; a vantagem depende da taxa de prompts, timeout e garantias iguais de CPU.",
+        "en": "A model of 100 agents with a two-minute timeout estimates 16 nodes instead of 34 and nearly 40% lower cost; the advantage depends on prompt rate, timeout, and equal CPU guarantees."
+      },
+      "relevancia": {
+        "pt": "Traz um desenho mensurável para preservar contexto entre turnos enquanto libera capacidade ociosa e separa credenciais da sandbox.",
+        "en": "It provides a measurable design for retaining context between turns while releasing idle capacity and separating credentials from the sandbox."
+      },
+      "url": "https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/",
+      "processado_em": "2026-11-18T14:30:05.823504+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection",
+      "titulo": {
+        "pt": "Guia de Agent Anomaly Detection mostra detecção de abuso de ferramentas",
+        "en": "Agent Anomaly Detection guide demonstrates tool misuse detection"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-16T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Observabilidade"
+        ],
+        "en": [
+          "Agent security",
+          "Observability"
+        ]
+      },
+      "resumo": {
+        "pt": "O guia demonstra um agente de suporte com ferramenta excessivamente privilegiada, uma sessão normal e outra que lê dados de folha de pagamento fora do escopo. A detecção analisa traces e logs, explica o achado e recomenda restringir a ferramenta.",
+        "en": "The guide demonstrates a support agent with an overprivileged tool, a normal session, and one that reads out-of-scope payroll data. Detection analyzes traces and logs, explains the finding, and recommends narrowing the tool."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo liga achados por sessão a alertas Cloud Monitoring e Security Command Center e recomenda vigiar também a ausência de telemetria; a análise pode variar por ser probabilística.",
+        "en": "The workflow connects session findings to Cloud Monitoring and Security Command Center alerts and recommends monitoring missing telemetry too; analysis can vary because it is probabilistic."
+      },
+      "relevancia": {
+        "pt": "Traz um procedimento reproduzível de teste e observabilidade para detectar agentes que agem fora do escopo, inclusive sem falhas técnicas aparentes.",
+        "en": "It provides a repeatable test and observability procedure for detecting agents acting outside scope even without apparent technical errors."
+      },
+      "url": "https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection/",
+      "processado_em": "2026-11-18T14:31:20.297779+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-11-12-upcoming-deprecation-of-selected-github-copilot-models-in-december",
       "titulo": {
         "pt": "GitHub Copilot descontinuará seis modelos em dezembro",
