@@ -2,6 +2,795 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
+      "titulo": {
+        "pt": "Mass Spec Skills combinam Antigravity com ferramentas científicas validadas",
+        "en": "Mass Spec Skills combine Antigravity with validated scientific tools"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-11-24T13:07:53+00:00",
+      "categoria": {
+        "pt": [
+          "Skills",
+          "Ferramentas de agentes",
+          "Evals"
+        ],
+        "en": [
+          "Skills",
+          "Agent tools",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "Um conjunto de skills guia o Antigravity por ferramentas de espectrometria e bases químicas, reunindo evidências para revisão de especialistas.",
+        "en": "A set of skills guides Antigravity through mass-spectrometry tools and chemical databases, assembling evidence for expert review."
+      },
+      "novidade_principal": {
+        "pt": "Em 100 espectros de referência, acesso à internet com skills validadas elevou a identificação exata para cerca de 97% nos três modelos testados, incluindo um modelo leve, e reduziu tokens gerados frente a scripts improvisados.",
+        "en": "On 100 reference spectra, internet access with validated skills raised exact identification to about 97% across three tested models, including a lightweight one, while reducing generated tokens versus improvised scripts."
+      },
+      "relevancia": {
+        "pt": "Demonstra, com comparação experimental, como skills que encapsulam ferramentas determinísticas podem superar raciocínio isolado e improvisação de código por agentes.",
+        "en": "Demonstrates experimentally how skills wrapping deterministic tools can outperform isolated reasoning and improvised agent code."
+      },
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "processado_em": "2026-11-25T17:11:25.602151+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/from-files-to-cited-answers-in-one-api-call-managed-ingestion-and-searchdocuments-in-agent-retrieval",
+      "titulo": {
+        "pt": "Ingestão gerenciada e SearchDocuments no Agent Retrieval",
+        "en": "Managed ingestion and SearchDocuments in Agent Retrieval"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-24T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "RAG",
+          "Recuperação de contexto"
+        ],
+        "en": [
+          "RAG",
+          "Context retrieval"
+        ]
+      },
+      "resumo": {
+        "pt": "O Agent Retrieval em prévia pública ingere documentos e vídeos do Cloud Storage e oferece busca híbrida por uma chamada SearchDocuments, com citações de páginas ou intervalos de tempo.",
+        "en": "Agent Retrieval in public preview ingests documents and videos from Cloud Storage and provides hybrid search through one SearchDocuments call, with page or timestamp citations."
+      },
+      "novidade_principal": {
+        "pt": "Ingestão gerenciada faz parsing, segmentação e embeddings com Gemini Embedding 2; a busca combina semântica e texto, aceita filtros e reranking de documentos, e pode recuperar áudio de vídeos.",
+        "en": "Managed ingestion handles parsing, segmentation, and embeddings with Gemini Embedding 2; search combines semantic and text retrieval, supports filters and document reranking, and can retrieve video audio."
+      },
+      "relevancia": {
+        "pt": "Oferece um padrão prático de RAG para agentes com proveniência explícita e menos infraestrutura própria de indexação.",
+        "en": "Provides a practical RAG pattern for agents with explicit provenance and less custom indexing infrastructure."
+      },
+      "url": "https://developers.googleblog.com/from-files-to-cited-answers-in-one-api-call-managed-ingestion-and-searchdocuments-in-agent-retrieval/",
+      "processado_em": "2026-11-25T17:02:01.696016+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/introducing-shirudo",
+      "titulo": {
+        "pt": "OpenAI e Cisco apresentam Shirudo para proteção temporária de serviços Linux",
+        "en": "OpenAI and Cisco introduce Shirudo for temporary Linux service protection"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-23T21:20:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança",
+          "Agentes de programação"
+        ],
+        "en": [
+          "Security",
+          "Coding agents"
+        ]
+      },
+      "resumo": {
+        "pt": "Shirudo é um runtime open source que usa eBPF para aplicar proteções temporárias em serviços Linux enquanto correções são testadas e implantadas, sem reiniciar o serviço.",
+        "en": "Shirudo is an open-source runtime that uses eBPF to apply temporary protections to Linux services while patches are tested and deployed, without restarting the service."
+      },
+      "novidade_principal": {
+        "pt": "Um agente Codex pode gerar um shield contra um exploit; operadores testam se ele bloqueia o ataque sem interromper tráfego legítimo e aprovam sua implantação. Um teste controlado bloqueou Java4Shell no Elasticsearch.",
+        "en": "A Codex agent can generate an exploit shield; operators test whether it blocks the attack without disrupting legitimate traffic and approve deployment. A controlled test blocked Java4Shell against Elasticsearch."
+      },
+      "relevancia": {
+        "pt": "Ilustra uma arquitetura híbrida em que IA propõe mitigação, testes verificam o efeito e um operador controla a aplicação em produção.",
+        "en": "Illustrates a hybrid architecture where AI proposes mitigation, tests verify its effect, and an operator controls production deployment."
+      },
+      "url": "https://openai.com/index/introducing-shirudo",
+      "processado_em": "2026-11-25T17:02:52.828300+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+      "titulo": {
+        "pt": "Equipes de agentes melhoram algoritmos com verificação formal",
+        "en": "Agent teams improve algorithms with formal verification"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-11-23T16:59:40+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de agentes",
+          "Validação formal"
+        ],
+        "en": [
+          "Agent orchestration",
+          "Formal verification"
+        ]
+      },
+      "resumo": {
+        "pt": "Equipes independentes de agentes Gemini 4 propuseram melhorias em algoritmos quânticos, com provas em Lean antes de compartilhar resultados entre equipes.",
+        "en": "Independent Gemini 4 agent teams proposed improvements to quantum algorithms, with Lean proofs before results were shared across teams."
+      },
+      "novidade_principal": {
+        "pt": "O fluxo combinou exploração paralela, verificação matemática obrigatória, caderno compartilhado e encontros periódicos entre agentes; o grupo publicou biblioteca Lean, especificações e soluções verificadas.",
+        "en": "The workflow combined parallel exploration, mandatory mathematical verification, a shared notebook, and periodic agent meetings; the team released a Lean library, specifications, and verified solutions."
+      },
+      "relevancia": {
+        "pt": "Mostra um padrão transferível de orquestração em que propostas probabilísticas de agentes só avançam após validação formal determinística.",
+        "en": "Shows a transferable orchestration pattern in which probabilistic agent proposals advance only after deterministic formal validation."
+      },
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "processado_em": "2026-11-25T17:03:39.559790+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies",
+      "titulo": {
+        "pt": "Políticas semânticas verificam se ações de agentes correspondem à intenção do usuário",
+        "en": "Semantic policies check whether agent actions match user intent"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-23T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Governança",
+          "Evals"
+        ],
+        "en": [
+          "Agent security",
+          "Governance",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "O Agent Gateway avalia cada chamada de ferramenta proposta contra o pedido do usuário e políticas semânticas antes de executá-la, tratando resultados de ferramentas como dados não confiáveis.",
+        "en": "Agent Gateway evaluates each proposed tool call against the user's request and semantic policies before execution, treating tool results as untrusted data."
+      },
+      "novidade_principal": {
+        "pt": "No AgentDojo, a checagem padrão de intenção reduziu ataques bem-sucedidos de 48,7% para 0,9% em seis rodadas, com queda média de 2,6 pontos percentuais na utilidade benigna; ataques apenas textuais ficaram fora do controle.",
+        "en": "On AgentDojo, default intent checking reduced successful attacks from 48.7% to 0.9% over six runs, with a mean 2.6 percentage point drop in benign utility; text-only attacks remained outside this control."
+      },
+      "relevancia": {
+        "pt": "Fornece um controle operacional de tool calling e uma avaliação quantitativa com limites explícitos para prompt injection indireta.",
+        "en": "Provides an operational tool-calling control and a quantitative evaluation with explicit limits for indirect prompt injection."
+      },
+      "url": "https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies/",
+      "processado_em": "2026-11-25T17:04:30.010255+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview",
+      "titulo": {
+        "pt": "Status de issues e quadros de repositório dão contexto compartilhado a agentes",
+        "en": "Issue statuses and repository boards give agents shared context"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-11-23T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de agentes",
+          "GitHub"
+        ],
+        "en": [
+          "Agent orchestration",
+          "GitHub"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub introduziu status específicos para issues e quadros por repositório em prévia pública, com transições automáticas ligadas a PRs e atribuições.",
+        "en": "GitHub introduced specific issue statuses and repository boards in public preview, with automatic transitions tied to PRs and assignments."
+      },
+      "novidade_principal": {
+        "pt": "Agentes podem ler e alterar status por GraphQL, REST e MCP; atribuir uma issue a um agente a move para Em andamento, e mudanças de status podem disparar automações do Copilot.",
+        "en": "Agents can read and update status through GraphQL, REST, and MCP; assigning an issue to an agent moves it to In progress, and status changes can trigger Copilot automations."
+      },
+      "relevancia": {
+        "pt": "Fornece estado explícito e eventos para coordenação de agentes de programação em workflows de issues e PRs.",
+        "en": "Provides explicit state and events for coordinating coding agents in issue and PR workflows."
+      },
+      "url": "https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview/",
+      "processado_em": "2026-11-25T17:15:06.571138+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/perplexity-and-intelligence",
+      "titulo": {
+        "pt": "OpenAI propõe perplexidade como referência compartilhada para governança de modelos",
+        "en": "OpenAI proposes perplexity as a shared reference for model governance"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-22T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de IA",
+          "Avaliação de modelos"
+        ],
+        "en": [
+          "AI governance",
+          "Model evaluation"
+        ]
+      },
+      "resumo": {
+        "pt": "O cientista-chefe da OpenAI propõe divulgar medidas de perplexidade de pré-treinamento e usá-las, junto com outros sinais, para coordenar avaliações e limites de desenvolvimento entre laboratórios.",
+        "en": "OpenAI's chief scientist proposes disclosing pretraining perplexity measurements and using them alongside other signals to coordinate evaluations and development limits across labs."
+      },
+      "novidade_principal": {
+        "pt": "A proposta vincula limites compartilhados ao avanço da capacidade de monitorar modelos e de testar safety cases, reconhecendo que perplexidade não mede diretamente tarefas nem melhorias fora do pré-treinamento.",
+        "en": "The proposal ties shared limits to progress in model monitoring and safety-case testing, while acknowledging that perplexity does not directly measure tasks or improvements outside pretraining."
+      },
+      "relevancia": {
+        "pt": "Oferece uma hipótese concreta para monitorar modelos de fronteira e definir gatilhos de avaliação e governança, com limitações explícitas.",
+        "en": "Offers a concrete hypothesis for monitoring frontier models and setting evaluation and governance triggers, with explicit limitations."
+      },
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "processado_em": "2026-11-25T17:05:18.546640+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/combatting-adversarial-distillation",
+      "titulo": {
+        "pt": "Defesas contra destilação adversarial e extração de raciocínio protegido",
+        "en": "Defenses against adversarial distillation and protected reasoning extraction"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-20T10:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de modelos",
+          "Governança",
+          "Evals"
+        ],
+        "en": [
+          "Model security",
+          "Governance",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve proteção contra uso não autorizado de saídas de modelos para treinar modelos sem salvaguardas, combinando testes adversariais, classificadores, controles de API e investigação de campanhas.",
+        "en": "OpenAI describes protection against unauthorized use of model outputs to train models without safeguards, combining adversarial tests, classifiers, API controls, and campaign investigations."
+      },
+      "novidade_principal": {
+        "pt": "Em avaliação adaptativa interna, a extração de raciocínio protegido caiu de 54,0% no GPT-6 Astra para 0,2% no GPT-6.2 Astra; estudo separado indica que traces exatos podem transferir mais capacidade cibernética do que resumos.",
+        "en": "In an internal adaptive evaluation, protected reasoning extraction fell from 54.0% on GPT-6 Astra to 0.2% on GPT-6.2 Astra; a separate study indicates exact traces can transfer more cyber capability than summaries."
+      },
+      "relevancia": {
+        "pt": "Informa decisões de segurança para modelos usados em programação e agentes, especialmente exposição de traces e defesa em múltiplas camadas.",
+        "en": "Informs security decisions for models used in coding and agents, especially trace exposure and layered defenses."
+      },
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "processado_em": "2026-11-25T17:05:53.063376+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies",
+      "titulo": {
+        "pt": "Políticas de governança semântica controlam chamadas de ferramentas antes da execução",
+        "en": "Semantic governance policies control tool calls before execution"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-20T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de agentes",
+          "Segurança",
+          "Tool calling"
+        ],
+        "en": [
+          "Agent governance",
+          "Security",
+          "Tool calling"
+        ]
+      },
+      "resumo": {
+        "pt": "Em prévia na Gemini platform, o Agent Gateway intercepta chamadas de ferramenta propostas e usa um avaliador externo ao agente para conferir regras em linguagem natural e intenção do usuário.",
+        "en": "In preview on Gemini platform, Agent Gateway intercepts proposed tool calls and uses a judge outside the agent to check natural-language rules and user intent."
+      },
+      "novidade_principal": {
+        "pt": "Chamadas negadas são substituídas por mensagem sem executar a ação; veredictos e motivos são registrados. Há modo dry run, suporte a diferentes APIs de modelos e limites para respostas textuais e streaming.",
+        "en": "Denied calls are replaced by a message without executing the action; verdicts and reasons are logged. Dry-run mode and multiple model APIs are supported, with limits for text-only responses and streaming."
+      },
+      "relevancia": {
+        "pt": "É uma arquitetura concreta para separar política do código e do contexto não confiável do agente, com trilha de auditoria antes de ações externas.",
+        "en": "It is a concrete architecture for separating policy from agent code and untrusted context, with an audit trail before external actions."
+      },
+      "url": "https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/",
+      "processado_em": "2026-11-25T17:06:50.094430+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds",
+      "titulo": {
+        "pt": "Agent Anomaly Detection monitora agentes fora do Google Cloud",
+        "en": "Agent Anomaly Detection monitors agents outside Google Cloud"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-20T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Observabilidade de agentes",
+          "Segurança",
+          "OpenTelemetry"
+        ],
+        "en": [
+          "Agent observability",
+          "Security",
+          "OpenTelemetry"
+        ]
+      },
+      "resumo": {
+        "pt": "A prévia privada do Agent Anomaly Detection passa a analisar sessões de agentes em AWS, Azure ou ambientes locais quando logs e traces chegam ao Google Cloud pela Telemetry API.",
+        "en": "The private preview of Agent Anomaly Detection can analyze sessions from agents on AWS, Azure, or on-premises when logs and traces reach Google Cloud through the Telemetry API."
+      },
+      "novidade_principal": {
+        "pt": "O ADK exporta eventos de prompt e resposta com convenções OpenTelemetry; Workload Identity Federation dispensa chave estática. A análise assíncrona detecta padrões de scraping, loops e reembolsos anômalos sem acessar o runtime.",
+        "en": "ADK exports prompt and response events using OpenTelemetry conventions; Workload Identity Federation avoids static keys. Asynchronous analysis detects scraping, loops, and anomalous refunds without runtime access."
+      },
+      "relevancia": {
+        "pt": "Mostra um desenho de observabilidade de agentes independente da nuvem e baseado em telemetria de sessões completas, com limites claros de suporte.",
+        "en": "Shows a cloud-independent agent observability design based on full-session telemetry, with clear support limits."
+      },
+      "url": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/",
+      "processado_em": "2026-11-25T17:07:51.179595+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui",
+      "titulo": {
+        "pt": "Três camadas de autenticação para agentes no Gemini Enterprise com interface própria",
+        "en": "Three authentication layers for Gemini Enterprise agents with a custom UI"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-20T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Autenticação",
+          "Arquitetura"
+        ],
+        "en": [
+          "Agent security",
+          "Authentication",
+          "Architecture"
+        ]
+      },
+      "resumo": {
+        "pt": "O guia descreve identidade de usuário ou workload no StreamAssist, OAuth individual para conectores federados e autorização sob demanda por ferramenta em agentes ADK.",
+        "en": "The guide describes user or workload identity for StreamAssist, per-user OAuth for federated connectors, and on-demand per-tool authorization in ADK agents."
+      },
+      "novidade_principal": {
+        "pt": "Uma interface própria precisa preservar ACLs por usuário, gerenciar consentimento 3LO e adiar o OAuth de ferramentas protegidas com Agent Identity e Token Vault, evitando bloquear o agente inteiro no início.",
+        "en": "A custom UI must preserve per-user ACLs, manage 3LO consent, and defer OAuth for protected tools with Agent Identity and Token Vault, avoiding an upfront block of the whole agent."
+      },
+      "relevancia": {
+        "pt": "Fornece um desenho prático de delegação de identidade em agentes com múltiplos conectores, distinguindo chamadas pessoais de bots compartilhados.",
+        "en": "Provides a practical identity-delegation design for agents with multiple connectors, distinguishing personal calls from shared bots."
+      },
+      "url": "https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui/",
+      "processado_em": "2026-11-25T17:08:20.124294+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise",
+      "titulo": {
+        "pt": "MCP privado no Cloud Run conectado ao Gemini Enterprise",
+        "en": "Private Cloud Run MCP connected to Gemini Enterprise"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-20T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "MCP",
+          "Segurança",
+          "Arquitetura de agentes"
+        ],
+        "en": [
+          "MCP",
+          "Security",
+          "Agent architecture"
+        ]
+      },
+      "resumo": {
+        "pt": "A Google apresenta uma arquitetura para servidores MCP internos no Cloud Run acessados pelo Gemini Enterprise via Agent Gateway e Private Service Connect, sem exposição pública.",
+        "en": "Google presents an architecture for internal Cloud Run MCP servers accessed by Gemini Enterprise through Agent Gateway and Private Service Connect, without public exposure."
+      },
+      "novidade_principal": {
+        "pt": "A solução combina roteamento privado em duas etapas, DNS restrito ao FQDN do serviço e dupla identidade: token OIDC do serviço validado pelo IAM e token OAuth do usuário validado pelo MCP.",
+        "en": "The solution combines two-stage private routing, DNS scoped to the service FQDN, and dual identity: a service OIDC token checked by IAM and a user OAuth token checked by the MCP server."
+      },
+      "relevancia": {
+        "pt": "Detalha um padrão implementável para conectar ferramentas internas a agentes preservando isolamento de rede e autorização por usuário.",
+        "en": "Details an implementable pattern for connecting internal tools to agents while preserving network isolation and per-user authorization."
+      },
+      "url": "https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise/",
+      "processado_em": "2026-11-25T17:07:19.799783+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "titulo": {
+        "pt": "Performance Factory automatiza investigação e correção de regressões com Codex",
+        "en": "Performance Factory automates regression investigation and repair with Codex"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-19T08:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Orquestração",
+          "Observabilidade"
+        ],
+        "en": [
+          "Coding agents",
+          "Orchestration",
+          "Observability"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve um workflow em nuvem que abre tarefas após alertas de desempenho, usa Codex para investigar e propor correções e retoma a tarefa após o deploy para verificar recuperação.",
+        "en": "OpenAI describes a cloud workflow that opens tasks after performance alerts, uses Codex to investigate and propose fixes, and resumes the task after deployment to verify recovery."
+      },
+      "novidade_principal": {
+        "pt": "A arquitetura combina serviço de tarefas, loop de despacho, agentes Codex e subscriptions; em pouco mais de três meses registrou mais de 1.700 investigações e identificou causas em mais de 600 casos, com revisão humana das correções.",
+        "en": "The architecture combines a task service, dispatch loop, Codex agents, and subscriptions; in just over three months it logged more than 1,700 investigations and root-caused over 600 cases, with human review of fixes."
+      },
+      "relevancia": {
+        "pt": "Traz um padrão operacional de automação recorrente com continuidade de estado, evals de skills, revisão adversarial e verificação após implantação.",
+        "en": "Provides an operational pattern for recurring automation with state continuity, skill evals, adversarial review, and post-deployment verification."
+      },
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "processado_em": "2026-11-25T17:08:49.628427+00:00"
+    },
+    {
+      "id": "guid:https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus",
+      "titulo": {
+        "pt": "Tunix treina agentes Gemma 4 com ferramentas em múltiplos turnos",
+        "en": "Tunix trains multi-turn Gemma 4 agents with tools"
+      },
+      "fonte": "Google Developers Blog",
+      "data": "2026-11-19T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Treinamento de agentes",
+          "Tool calling",
+          "Evals"
+        ],
+        "en": [
+          "Agent training",
+          "Tool calling",
+          "Evals"
+        ]
+      },
+      "resumo": {
+        "pt": "A Google demonstra um pipeline de reinforcement learning multi-turn para um agente Gemma 4 que observa um ambiente, chama uma ferramenta e adapta a estratégia ao feedback.",
+        "en": "Google demonstrates a multi-turn reinforcement-learning pipeline for a Gemma 4 agent that observes an environment, calls a tool, and adapts its strategy to feedback."
+      },
+      "novidade_principal": {
+        "pt": "Tunix separa ambiente, parser de ferramentas, agente de conversa e coleta/aprendizado de trajetórias; após 100 etapas de GRPO, a taxa de vitória no jogo de avaliação passou de 9,4% para 95%.",
+        "en": "Tunix separates environment, tool parser, conversation agent, and trajectory collection/learning; after 100 GRPO steps, the evaluation game's win rate rose from 9.4% to 95%."
+      },
+      "relevancia": {
+        "pt": "Expõe uma arquitetura reproduzível de treinamento e avaliação de agentes com estado, feedback e chamadas de ferramentas em sequência.",
+        "en": "Exposes a reproducible architecture for training and evaluating stateful agents with feedback and sequential tool calls."
+      },
+      "url": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
+      "processado_em": "2026-11-25T17:09:18.918819+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-18-connect-supabase-clickup-buildkite-and-more-to-copilot",
+      "titulo": {
+        "pt": "Copilot ganha oito conectores MCP verificados pelo GitHub",
+        "en": "Copilot gains eight GitHub-verified MCP connectors"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-18T22:04:50+00:00",
+      "categoria": {
+        "pt": [
+          "MCP",
+          "Ferramentas de programação"
+        ],
+        "en": [
+          "MCP",
+          "Coding tools"
+        ]
+      },
+      "resumo": {
+        "pt": "O GitHub adicionou em prévia pública conectores MCP para Box, Buildkite, Calendly, ClickUp, Mixpanel, Supabase, Webflow e Wix, disponíveis nas superfícies do Copilot.",
+        "en": "GitHub added public-preview MCP connectors for Box, Buildkite, Calendly, ClickUp, Mixpanel, Supabase, Webflow, and Wix across Copilot surfaces."
+      },
+      "novidade_principal": {
+        "pt": "O agente pode combinar contexto de builds ou esquemas de banco com alterações de código na mesma sessão; empresas devem habilitar a prévia e atualizar a allowlist de MCP quando aplicável.",
+        "en": "The agent can combine build or database-schema context with code changes in one session; enterprises must enable the preview and update MCP allowlists where applicable."
+      },
+      "relevancia": {
+        "pt": "Amplia o uso prático de ferramentas externas por agentes de programação e explicita os controles administrativos da integração.",
+        "en": "Expands practical external-tool use by coding agents and specifies administrative integration controls."
+      },
+      "url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot",
+      "processado_em": "2026-11-25T17:10:06.080907+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot",
+      "titulo": {
+        "pt": "Gemini 4 Neon chega ao GitHub Copilot para programação agêntica",
+        "en": "Gemini 4 Neon reaches GitHub Copilot for agentic coding"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-18T21:49:21+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos para programação",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "Coding models",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "Gemini 4 Neon está disponível gradualmente no GitHub Copilot em IDEs, CLI, agente de programação, aplicativo e web para tarefas de programação com múltiplas etapas e ferramentas.",
+        "en": "Gemini 4 Neon is rolling out in GitHub Copilot across IDEs, CLI, coding agent, app, and web for multistep coding and tool-use tasks."
+      },
+      "novidade_principal": {
+        "pt": "Segundo o Google, aproxima a qualidade do Gemini 4 Carbon com menor custo por tarefa, menor latência inicial e menos mudanças não solicitadas; o GitHub oferece política de modelo para administradores.",
+        "en": "According to Google, it approaches Gemini 4 Carbon quality with lower cost per task, lower initial latency, and fewer unrequested changes; GitHub provides an administrator model policy."
+      },
+      "relevancia": {
+        "pt": "É uma nova opção de modelo para agentes de programação, com diferenças declaradas em custo, velocidade e controle de alterações que merecem avaliação prática.",
+        "en": "It is a new coding-agent model option with stated cost, speed, and change-control differences worth practical evaluation."
+      },
+      "url": "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot",
+      "processado_em": "2026-11-25T17:10:30.360365+00:00"
+    },
+    {
+      "id": "guid:https://deepmind.google/blog/introducing-gemini-4-neon",
+      "titulo": {
+        "pt": "Gemini 4 Neon mira agentes de programação de longa duração",
+        "en": "Gemini 4 Neon targets long-running coding agents"
+      },
+      "fonte": "Google DeepMind",
+      "data": "2026-11-18T21:35:43+00:00",
+      "categoria": {
+        "pt": [
+          "Modelos para programação",
+          "Agentes",
+          "Segurança"
+        ],
+        "en": [
+          "Coding models",
+          "Agents",
+          "Security"
+        ]
+      },
+      "resumo": {
+        "pt": "O Google lançou Gemini 4 Neon na API e no Antigravity para tarefas com múltiplas ferramentas, contexto extenso e coordenação de subagentes.",
+        "en": "Google launched Gemini 4 Neon in the API and Antigravity for multi-tool tasks, long context, and subagent coordination."
+      },
+      "novidade_principal": {
+        "pt": "O anúncio relata quatro níveis de raciocínio, janela de 1 milhão de tokens, 65,2% no Terminal-Bench 4.1 e 46,2% no FrontierCode 2.0; destaca compactação confiável, menos leituras redundantes e proteção contra mudanças não solicitadas.",
+        "en": "The announcement reports four reasoning levels, a 1-million-token window, 65.2% on Terminal-Bench 4.1 and 46.2% on FrontierCode 2.0; it highlights reliable compaction, fewer redundant reads, and protection against unrequested changes."
+      },
+      "relevancia": {
+        "pt": "Oferece dados de capacidade, eficiência e segurança para comparar um novo modelo em workflows de programação agêntica; resultados declarados exigem validação no próprio ambiente.",
+        "en": "Provides capability, efficiency, and safety data for comparing a new model in agentic coding workflows; reported results require validation in the target environment."
+      },
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "processado_em": "2026-11-25T17:11:00.858142+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team",
+      "titulo": {
+        "pt": "Equipes podem definir plugins padrão no GitHub Copilot",
+        "en": "Teams can set default plugins in GitHub Copilot"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-18T16:00:13+00:00",
+      "categoria": {
+        "pt": [
+          "Governança",
+          "Plugins de agentes",
+          "GitHub Copilot"
+        ],
+        "en": [
+          "Governance",
+          "Agent plugins",
+          "GitHub Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "Customizações de equipe estão disponíveis para Copilot Business e Enterprise; mantenedores selecionam Agent Plugins aprovados como padrão para membros diretos.",
+        "en": "Team customizations are available for Copilot Business and Enterprise; maintainers select approved Agent Plugins as defaults for direct members."
+      },
+      "novidade_principal": {
+        "pt": "Os padrões funcionam em VS Code, aplicativo e CLI, sem herança para subequipes; membros podem desligá-los quando permitido e políticas da organização continuam prevalecendo.",
+        "en": "Defaults work in VS Code, app, and CLI, without inheritance to child teams; members can disable them when permitted, and organization policies still take precedence."
+      },
+      "relevancia": {
+        "pt": "Cria uma camada intermediária de distribuição e governança de plugins para agentes de programação em equipes.",
+        "en": "Creates a middle layer for distributing and governing coding-agent plugins across teams."
+      },
+      "url": "https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team",
+      "processado_em": "2026-11-25T17:12:12.172270+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/research-acceleration-jagged-frontier",
+      "titulo": {
+        "pt": "Medição da OpenAI revela progresso desigual de agentes em pesquisa",
+        "en": "OpenAI measurement shows uneven agent progress in research"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-18T08:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Evals",
+          "Governança"
+        ],
+        "en": [
+          "Coding agents",
+          "Evals",
+          "Governance"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI mediu tarefas internas de pesquisa e relata que agentes passaram de 23% para 46% de sucesso em tarefas de duas a quatro horas entre março e outubro, com grande variação por tipo de trabalho.",
+        "en": "OpenAI measured internal research tasks and reports agent success rose from 23% to 46% on two-to-four-hour tasks from March to October, with large variation by task type."
+      },
+      "novidade_principal": {
+        "pt": "A taxa foi 79% para monitorar treinamento, 35% para iniciar treinamento e 25% para escrever código de inferência e serving; entrevistas apontam supervisão humana necessária para qualidade de código, dados e análises.",
+        "en": "Success was 79% for monitoring training, 35% for launching training, and 25% for writing inference and serving code; interviews point to needed human oversight for code, data, and analysis quality."
+      },
+      "relevancia": {
+        "pt": "Oferece evidência de que autonomia de agentes deve ser calibrada por tarefa e acompanhada de avaliações e revisão humana.",
+        "en": "Provides evidence that agent autonomy should be calibrated by task and paired with evaluations and human review."
+      },
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "processado_em": "2026-11-25T17:12:56.594145+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/inside-the-codex-sandbox",
+      "titulo": {
+        "pt": "OpenAI detalha os limites e a arquitetura do sandbox do Codex",
+        "en": "OpenAI details Codex sandbox boundaries and architecture"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-18T08:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Segurança de agentes",
+          "Codex",
+          "Sandbox"
+        ],
+        "en": [
+          "Agent security",
+          "Codex",
+          "Sandbox"
+        ]
+      },
+      "resumo": {
+        "pt": "O artigo explica como perfis de permissão controlam leitura, escrita e rede de comandos executados pelo Codex no ambiente local, com mecanismos próprios de macOS, Linux e Windows.",
+        "en": "The article explains how permission profiles control file reads, writes, and network access for commands Codex runs in the local environment, using platform mechanisms on macOS, Linux, and Windows."
+      },
+      "novidade_principal": {
+        "pt": "O perfil de workspace permite escrita no projeto, protege diretórios como .git e .codex e bloqueia rede por padrão; o texto também descreve riscos residuais em dependências ignoradas pelo Git e a necessidade de defesa em profundidade.",
+        "en": "The workspace profile allows project writes, protects directories such as .git and .codex, and blocks network access by default; it also describes residual risks in Git-ignored dependencies and the need for defense in depth."
+      },
+      "relevancia": {
+        "pt": "Ajuda a definir limites verificáveis para agentes de programação e a entender onde o isolamento local precisa de controles complementares.",
+        "en": "Helps define verifiable boundaries for coding agents and understand where local isolation needs complementary controls."
+      },
+      "url": "https://openai.com/index/inside-the-codex-sandbox",
+      "processado_em": "2026-11-25T17:13:19.946607+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/managing-frontier-ai-risk",
+      "titulo": {
+        "pt": "OpenAI descreve gestão de risco de modelos de fronteira do treino ao deploy",
+        "en": "OpenAI describes frontier-model risk management from training to deployment"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-18T06:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Governança de IA",
+          "Segurança de agentes"
+        ],
+        "en": [
+          "AI governance",
+          "Agent security"
+        ]
+      },
+      "resumo": {
+        "pt": "O texto organiza salvaguardas por fases de pesquisa, uso interno e implantação externa, com revisões de segurança antes de avançar e controles ajustados à capacidade e ao acesso do modelo.",
+        "en": "The article organizes safeguards across research, internal use, and external deployment, with safety reviews before progression and controls matched to model capability and access."
+      },
+      "novidade_principal": {
+        "pt": "Após incidente de contenção, a OpenAI relata treinamento sem internet ao vivo, isolamento em sandboxes e VMs, perímetros de rede, monitoramento amplo de agentes com ferramentas e safety cases para decisões de avanço.",
+        "en": "Following a containment incident, OpenAI reports training without live internet, sandbox and VM isolation, network perimeters, broad monitoring of tool-using agents, and safety cases for progression decisions."
+      },
+      "relevancia": {
+        "pt": "Oferece uma estrutura de defesa em profundidade e governança por etapas aplicável ao desenho de controles para agentes de maior autonomia.",
+        "en": "Offers a phased defense-in-depth and governance structure applicable to controls for more autonomous agents."
+      },
+      "url": "https://openai.com/index/managing-frontier-ai-risk",
+      "processado_em": "2026-11-25T17:13:46.289696+00:00"
+    },
+    {
+      "id": "guid:https://openai.com/index/advancing-chip-design-with-our-models",
+      "titulo": {
+        "pt": "Modelos OpenAI otimizam RTL de chips com avaliadores de engenharia",
+        "en": "OpenAI models optimize chip RTL with engineering evaluators"
+      },
+      "fonte": "OpenAI News",
+      "data": "2026-11-18T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Agentes de programação",
+          "Evals",
+          "Engenharia de hardware"
+        ],
+        "en": [
+          "Coding agents",
+          "Evals",
+          "Hardware engineering"
+        ]
+      },
+      "resumo": {
+        "pt": "Modelos exploraram alterações em RTL e arquitetura de processadores, avaliadas por correção, área e desempenho; a OpenAI relata melhorias em chips próprios e projetos da AMD.",
+        "en": "Models explored RTL and processor-architecture changes evaluated for correctness, area, and performance; OpenAI reports gains in its own chips and AMD projects."
+      },
+      "novidade_principal": {
+        "pt": "A avaliação de 9.881 execuções em dois núcleos RISC-V compara otimizar código existente a projetar sob especificação; partir da especificação obteve pontuação maior, mas podia omitir recursos não cobrados pelo teste.",
+        "en": "An evaluation of 9,881 runs on two RISC-V cores compares improving existing code with designing from a specification; specification-based work scored higher but could omit features not required by the tests."
+      },
+      "relevancia": {
+        "pt": "Mostra como agentes de programação podem produzir ganhos mensuráveis com verificadores confiáveis, e como um benchmark incompleto pode favorecer soluções inviáveis.",
+        "en": "Shows how coding agents can deliver measurable gains with trusted evaluators, and how an incomplete benchmark can favor impractical solutions."
+      },
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+      "processado_em": "2026-11-25T17:14:11.601839+00:00"
+    },
+    {
+      "id": "url:https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli",
+      "titulo": {
+        "pt": "GitHub CLI espera eventos de pull request sem polling",
+        "en": "GitHub CLI waits for pull request events without polling"
+      },
+      "fonte": "GitHub Changelog",
+      "data": "2026-11-18T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Orquestração de agentes",
+          "GitHub CLI",
+          "Automação"
+        ],
+        "en": [
+          "Agent orchestration",
+          "GitHub CLI",
+          "Automation"
+        ]
+      },
+      "resumo": {
+        "pt": "A prévia do comando gh event listen permite que agentes aguardem eventos de revisão, checks, conflitos e mudanças de PR em um stream JSON.",
+        "en": "The preview gh event listen command lets agents wait for review, check, conflict, and PR-change events in a JSON stream."
+      },
+      "novidade_principal": {
+        "pt": "O comando cria uma subscription e encerra após o primeiro evento por padrão, com opções para contar eventos, acompanhar continuamente e definir timeout; comandos gh passam a sugeri-lo no lugar de polling.",
+        "en": "The command creates a subscription and exits after the first event by default, with options to count events, follow continuously, and set a timeout; gh commands now suggest it instead of polling."
+      },
+      "relevancia": {
+        "pt": "Oferece um mecanismo dirigido por eventos para loops de agentes que acompanham PRs, reduzindo consultas repetidas e melhorando a retomada no momento certo.",
+        "en": "Provides an event-driven mechanism for agent loops tracking PRs, reducing repeated queries and improving timely resumption."
+      },
+      "url": "https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli/",
+      "processado_em": "2026-11-25T17:15:36.935040+00:00"
+    },
+    {
       "id": "guid:https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
       "titulo": {
         "pt": "GPT-6.2 Astra e Sol chegam ao GitHub Copilot",
