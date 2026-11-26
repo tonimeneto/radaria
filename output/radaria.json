@@ -2,6 +2,74 @@
   "contract_version": "2.0",
   "items": [
     {
+      "id": "guid:https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+      "titulo": {
+        "pt": "Cobrança do Copilot code review passará a ser da organização por padrão",
+        "en": "Copilot code review billing will default to the organization"
+      },
+      "fonte": "GitHub Copilot Changelog",
+      "data": "2026-11-25T22:18:03+00:00",
+      "categoria": {
+        "pt": [
+          "Melhoria",
+          "Copilot"
+        ],
+        "en": [
+          "Improvement",
+          "Copilot"
+        ]
+      },
+      "resumo": {
+        "pt": "A partir de 30 de dezembro de 2026, revisões do Copilot feitas por membros licenciados serão cobradas da organização proprietária do repositório quando nenhuma opção de cobrança tiver sido salva. Organizações que quiserem manter o uso da franquia do membro devem selecionar Member nas políticas do Copilot antes da mudança.",
+        "en": "Starting December 30, 2026, Copilot reviews by licensed members will be billed to the organization that owns the repository when no billing choice has been saved. Organizations that want to keep using members' entitlements must select Member in Copilot policies before the change."
+      },
+      "novidade_principal": {
+        "pt": "O padrão de cobrança não configurada muda de Member para Organization; escolhas explícitas existentes permanecem, e contas sem AI Credits pagos, com bloqueio de cobrança ou sem cliente faturável ficam em Member.",
+        "en": "The unset billing default changes from Member to Organization; existing explicit choices remain, and accounts without paid AI Credits, with a billing lock, or without a billable customer stay on Member."
+      },
+      "relevancia": {
+        "pt": "Afeta a governança e o custo operacional da revisão automatizada de código, exigindo uma decisão explícita de política antes do prazo para evitar cobrança inesperada.",
+        "en": "It affects governance and operational costs for automated code review, requiring an explicit policy decision before the deadline to avoid unexpected charges."
+      },
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/",
+      "processado_em": "2026-11-26T17:04:23.604721+00:00"
+    },
+    {
+      "id": "guid:https://github.blog/?p=99982",
+      "titulo": {
+        "pt": "Como escolher o próximo passo seguro na modernização de aplicações",
+        "en": "How to choose the next safe step in application modernization"
+      },
+      "fonte": "GitHub Copilot Blog",
+      "data": "2026-11-25T15:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "IA e ML",
+          "GitHub Copilot",
+          "modernização de aplicações"
+        ],
+        "en": [
+          "AI & ML",
+          "GitHub Copilot",
+          "application modernization"
+        ]
+      },
+      "resumo": {
+        "pt": "Um método baseado em evidências para modernizar aplicações legadas: inventariar execução, dependências, contratos e incertezas; escolher por componente entre manter, atualizar, substituir, encapsular ou reescrever; e definir uma prova de regressão proporcional ao que pode ser executado.",
+        "en": "An evidence-based method for modernizing legacy applications: inventory execution, dependencies, contracts, and uncertainties; choose per component whether to keep, upgrade, swap, wrap, or rewrite; and define regression proof proportional to what can run."
+      },
+      "novidade_principal": {
+        "pt": "A decisão operacional separa dois caminhos: capturar o comportamento antes de atualizar quando o legado ainda executa, ou comprovar primeiro uma pequena fatia moderna quando ele não executa. O procedimento pode virar uma agent skill, enquanto as decisões arquiteturais continuam com os responsáveis.",
+        "en": "The operational decision separates two paths: capture behavior before upgrading when the legacy system still runs, or prove a small modern slice first when it does not. The procedure can become an agent skill while architectural decisions stay with system owners."
+      },
+      "relevancia": {
+        "pt": "Oferece critérios verificáveis, limites de experimento e gates de aceitação para orientar agentes de programação em modernizações sem presumir paridade ou autorizar mudanças arquiteturais por conta própria.",
+        "en": "It provides verifiable criteria, experiment bounds, and acceptance gates to guide coding agents through modernization without assuming parity or authorizing architectural changes on their own."
+      },
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/",
+      "processado_em": "2026-11-26T17:05:21.667086+00:00"
+    },
+    {
       "id": "guid:https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
       "titulo": {
         "pt": "Mass Spec Skills combinam Antigravity com ferramentas científicas validadas",
@@ -35,6 +103,41 @@
       },
       "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
       "processado_em": "2026-11-25T17:11:25.602151+00:00"
+    },
+    {
+      "id": "url:https://developers.openai.com/blog/production-monitoring-with-codex",
+      "titulo": {
+        "pt": "Monitoramento de produção com Codex",
+        "en": "Production monitoring with Codex"
+      },
+      "fonte": "OpenAI Developers",
+      "data": "2026-11-24T00:00:00+00:00",
+      "categoria": {
+        "pt": [
+          "Codex",
+          "observabilidade",
+          "agentes"
+        ],
+        "en": [
+          "Codex",
+          "observability",
+          "agents"
+        ]
+      },
+      "resumo": {
+        "pt": "A OpenAI descreve um fluxo de resposta a incidentes em que Codex reúne logs, traces, métricas e estado de execução, cruza essas evidências com código e implantações, formula hipóteses verificáveis e propõe uma ação limitada para aprovação humana.",
+        "en": "OpenAI describes an incident response flow in which Codex gathers logs, traces, metrics, and runtime state, correlates that evidence with code and deployments, forms testable hypotheses, and proposes a bounded action for human approval."
+      },
+      "novidade_principal": {
+        "pt": "O artigo estrutura o ciclo em coleta de evidências, correlação, hipóteses, aprovação, verificação de recuperação e aprendizado; recomenda acesso inicialmente somente leitura e transformar runbooks ensaiados em skills reutilizáveis.",
+        "en": "The article structures the loop around evidence collection, correlation, hypotheses, approval, recovery verification, and learning; it recommends initially read-only access and converting rehearsed runbooks into reusable skills."
+      },
+      "relevancia": {
+        "pt": "Fornece um padrão operacional de observabilidade e controle para agentes em produção, com fontes de evidência citáveis, ações reversíveis e confirmação humana antes da execução.",
+        "en": "It provides an operational observability and control pattern for production agents, with citable evidence sources, reversible actions, and human confirmation before execution."
+      },
+      "url": "https://developers.openai.com/blog/production-monitoring-with-codex",
+      "processado_em": "2026-11-26T17:06:07.377960+00:00"
     },
     {
       "id": "guid:https://developers.googleblog.com/from-files-to-cited-answers-in-one-api-call-managed-ingestion-and-searchdocuments-in-agent-retrieval",
